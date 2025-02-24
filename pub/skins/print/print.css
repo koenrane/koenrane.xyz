@@ -41,9 +41,9 @@ body {
 }
 
   
-a:link { color:#444444; font-weight:bold; text-decoration:none; }
-a:visited { color:#444444; font-weight:bold; text-decoration:none; }
-a.wikilink:hover { color: #444444; text-decoration:underline; }
+a:link { color:#dddddd; font-weight:bold; text-decoration:none; }
+a:visited { color:#dddddd; font-weight:bold; text-decoration:none; }
+a.wikilink:hover { color: #dddddd; text-decoration:underline; }
 a.createlink { color:#444444; }
 a.createlink:visited { color:#444444; }
 a.createlink:hover { color:#ff2222; }

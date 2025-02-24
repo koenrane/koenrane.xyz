@@ -51,7 +51,16 @@ html, body, #bodywrap {
   color: var(--pm-color);
   min-height: 100%;
   position: relative;
+
 }
+
+
+/*change link color on site - last edit: 2/24/25 1:18pm*/
+a:link {color: #dddddd;}
+a:visited {color: #dddddd;}
+a:hover {color: #8c8b8b;}
+/*    END    */
+
 
 #wikibody {
   position: relative;
