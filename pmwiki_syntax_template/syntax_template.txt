@@ -1,0 +1,43 @@
+
+--QUOTE BLOCK--------------------------------------------------------
+
+|| border=0 width=99% cellspacing=0 cellpadding=3
+|| '_'' QUOTE ''_' ||
+|| '-Person-', '-''Medium''-' ||
+
+
+
+
+--BLANK SPACER--------------------------------------------------------
+
+|| border=1 width=99% cellspacing=0 cellpadding=3
+||! ~ CONTENT ~ ||
+
+
+
+
+--STATUS BLOCK--------------------------------------------------------
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| '_2025-02-26 -_' '_''in progress''_' ||
+
+
+
+
+
+--LINK TABLE BLOCK---------------------------------------------------- 
+
+|| border=1 width=50% cellspacing=0 cellpadding=3
+||  [[https://github.com/koenrane | GitHub]] || [[https://twitter.com/KoenRane | Twitter]]  ||  [[https://www.reddit.com/user/koenrane | Reddit]]  ||  [[https://substack.com/@koenrane | Substack]]  ||
+
+
+
+
+--PARAGRAPH BORDER BLOCK----------------------------------------------
+(:table border=1 cellpadding=20 cellspacing=0:)
+(:cell:)
+
+
+
+--EXTERNAL LINK-------------------------------------------------------
+ [[URL | STRING]]
