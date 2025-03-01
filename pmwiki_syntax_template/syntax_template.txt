@@ -41,3 +41,128 @@
 
 --EXTERNAL LINK-------------------------------------------------------
  [[URL | STRING]]
+
+
+
+
+
+--TEXT COLUMNS---------------------------------------------------------------------------------------
+
+(:div style='text-align:justify; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!Subject
+----
+* post 1
+* post 2
+
+(:divend:)
+(:div style='text-align:justify; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!Subject
+----
+* post 1
+* post 2
+
+(:divend:)
+(:div style='text-align:justify; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!Subject
+----
+* post 1
+* post 2
+
+(:divend:)
+
+-------------------------------------------------------------------------------------------------------
+
+--DROPCAPS---------------------------------------------------------------
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++A++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++B++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++C++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++D++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++E++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++F++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++G++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++H++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++I++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++J++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++K++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++L++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++M++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++N++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++O++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++P++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++Q++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++R++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++S++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++T++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++U++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++V++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++W++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++X++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++Y++++++]'+'^'''~'''^'+' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++Z++++++]'+'^'''~'''^'+' ||
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
