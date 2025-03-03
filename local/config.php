@@ -22,7 +22,7 @@ $PubDirUrl = 'https://koenrane.xyz/pub';
 
 ##  $PageLogoUrl is the URL for a logo image -- you can change this
 ##  to your own logo if you wish.
-$PageLogoUrl = "$PubDirUrl/skins/pmwiki/aimountain.png";
+$PageLogoUrl = "$PubDirUrl/skins/pmwiki/KoenRane.png";
 #$PageLogoUrl = "/logo.png";
 #$PageLogoUrlWidth = "50px";  // Adjust width as needed
 #$PageLogoUrlHeight = "auto";  // Keeps aspect ratio
