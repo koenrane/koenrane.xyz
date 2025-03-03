@@ -8,7 +8,8 @@
 
 
 
---BLANK SPACER--------------------------------------------------------
+
+--SECTION TITLE SPACER---------------------------------
 
 || border=1 width=99% cellspacing=0 cellpadding=3
 ||! ~ CONTENT ~ ||
@@ -16,10 +17,32 @@
 
 
 
---STATUS BLOCK--------------------------------------------------------
+
+
+--STATUS BLOCK-----------------------------------------
 
 || border=0 width=99% cellspacing=0 cellpadding=1
 || '_2025-02-26 -_' '_''in progress''_' ||
+
+
+
+
+
+
+--PROGRESS BLOCK---------------------------------------
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| '_2025-02-26 -_' '_''in progress''_' ||
+
+
+
+
+
+
+--QUOTE BLOCK--------------------------------------------------------------------------------------------------------
+|| border=0 width=99% cellspacing=0 cellpadding=3
+|| '_''All men dream: but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity: but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes, to make them possible.''_' ||
+|| [[https://en.wikipedia.org/wiki/T._E._Lawrence | '-T.E. Lawrence]]-', '-''[[https://en.wikipedia.org/wiki/Seven_Pillars_of_Wisdom | The Seven Pillars of Wisdom]]''-' ||
+
 
 
 
@@ -33,14 +56,25 @@
 
 
 
+
+
 --PARAGRAPH BORDER BLOCK----------------------------------------------
 (:table border=1 cellpadding=20 cellspacing=0:)
 (:cell:)
 
 
 
---EXTERNAL LINK-------------------------------------------------------
+
+
+--EXTERNAL LINK-----------------------
  [[URL | STRING]]
+
+
+
+--TITLE-------------
+(:Title ~:)
+
+
 
 
 
@@ -70,9 +104,27 @@
 
 (:divend:)
 
--------------------------------------------------------------------------------------------------------
 
---DROPCAPS---------------------------------------------------------------
+
+
+
+-- PAGE TITLES----------------------------------------------
+|| border=0 width=99% cellspacing=0 cellpadding=3
+||! [++++'''A'-BOUT-' '''M'-E-'++++] ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=3
+||! [++++'''K'-OEN-''''++++] ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=3
+||! [++++'''A'-BOUT-' '''T'-HIS-' W'-EBSITE-'++++] ||
+
+
+
+
+
+
+
+--DROPCAPS-----------------------------------------------
 || border=0 width=99% cellspacing=0 cellpadding=1
 ||'+'^'''~'''^'+'[++++++A++++++]'+'^'''~'''^'+' ||
 
