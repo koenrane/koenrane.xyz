@@ -516,11 +516,11 @@ a.varlink { text-decoration:none; }
 @media screen {
   html.pmDarkTheme {
     --pm-color: #ddd;
-    --pm-bgcolor: #000000;
+    --pm-bgcolor: #161616;
     --pm-overlay-bgcolor: rgba(255, 255, 255, .1);
     --pm-frame-bgcolor: #1a1a1a;
     
-    --pm-wikibody-bgcolor: #000000;
+    --pm-wikibody-bgcolor: #161616;
     --pm-dropdown-bgcolor: #121212; /*#wikileft, #wikihead-searchform, #wikicmds*/
     --pm-bordercolor: #3c3c3c;
     --pm-markuptable-bordercolor: #30355e;
