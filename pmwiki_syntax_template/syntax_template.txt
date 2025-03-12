@@ -9,10 +9,15 @@
 
 
 
+
+
+
 --SECTION TITLE SPACER---------------------------------
 
 || border=1 width=99% cellspacing=0 cellpadding=3
 ||! ~ CONTENT ~ ||
+
+
 
 
 
@@ -29,9 +34,17 @@
 
 
 
+
+
+
+
 --PROGRESS BLOCK---------------------------------------
 || border=0 width=99% cellspacing=0 cellpadding=1
 || '_2025-02-26 -_' '_''in progress''_' ||
+
+
+
+
 
 
 
@@ -48,10 +61,19 @@
 
 
 
+
+
+
+
 --LINK TABLE BLOCK---------------------------------------------------- 
 
 || border=1 width=50% cellspacing=0 cellpadding=3
 ||  [[https://github.com/koenrane | GitHub]] || [[https://twitter.com/KoenRane | Twitter]]  ||  [[https://www.reddit.com/user/koenrane | Reddit]]  ||  [[https://substack.com/@koenrane | Substack]]  ||
+
+
+
+
+
 
 
 
@@ -66,13 +88,24 @@
 
 
 
+
+
+
+
+
 --EXTERNAL LINK-----------------------
  [[URL | STRING]]
 
 
 
+
+
+
+
 --TITLE-------------
 (:Title ~:)
+
+
 
 
 
@@ -108,6 +141,9 @@
 
 
 
+
+
+
 -- PAGE TITLES----------------------------------------------
 || border=0 width=99% cellspacing=0 cellpadding=3
 ||! [++++'''A'-BOUT-' '''M'-E-'++++] ||
@@ -117,6 +153,8 @@
 
 || border=0 width=99% cellspacing=0 cellpadding=3
 ||! [++++'''A'-BOUT-' '''T'-HIS-' W'-EBSITE-'++++] ||
+
+
 
 
 
@@ -211,7 +249,38 @@
 
 
 
+--COLUMNS------------------------------------------------------------------------------------------
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''N'-EWEST-''''
+----
 
+
+(:divend:)
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''A'-RCHIVED-''''
+----
+
+
+(:divend:)
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''D'-OCS-''''
+----
+
+(:divend:)
+
+
+
+
+
+
+
+
+--FLOATING CAPTION------------------------------------------------------------------------------
+(:div style='text-align:left; float:left; width:30%; padding-right:2%; padding-bottom:5px;':)
+
+(:divend:)
+|| border=1 width=30% cellspacing=0 cellpadding=3
+|| '-TEXT HERE-' ||
 
 
 
