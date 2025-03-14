@@ -1,0 +1,30 @@
+(:Title ~:)
+|| border=0 width=99% cellspacing=0 cellpadding=3
+||! [++++'''C'-HANGELOG-''''++++] ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=3
+|| '_'' A list of website updates, progress on personal projects, writing updates, and any other type of additions to koenrane.xyz ''_' ||
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| '_2025-03-02 -_' '_''in progress''_' ||
+
+
+! 2025
+----
+'+March+'
+* created changelog page
+* created 'meta' landing page
+* Added new Koen Rane site logo, altered config.php to map to new logo.
+* KR logo max width CSS adjusted
+* uploaded essay: [[https://koenrane.xyz/?n=Main.ContainerizedIntentionality | Containerized Intentionality]]
+* started essay: [[https://koenrane.xyz/?n=Main.4YearsofWhoop | Analysis From ~ 4 Years of WHOOP]]
+* updated ''About Site'' page with pdf archiving process
+* created dropbox directory for site archiving
+
+'+February+'
+* established the koenrane.xyz domain.
+* created a [[https://www.digitalocean.com/products/droplets | Digital Ocean Droplet server]] to host the website
+* setup Ubuntu 24.10 x64 OS. Also, setup nginx environment
+* established koenrane.xyz [[https://github.com/koenrane/koenrane.xyz | repo]] in GitHub
+* built pmwiki markdown syntax templates for more efficient text formatting: [[https://github.com/koenrane/koenrane.xyz/blob/main/pmwiki_syntax_template/syntax_template.txt | '-@@pmwiki_syntax_template.txt@@-']]
+*built pandoc lua filter to convert standard markdown to pmwiki markdown: [[https://github.com/koenrane/koenrane.xyz/blob/main/pandoc/markdown-to-pmwiki.lua | '-@@markdown-to-pmwiki.lua@@-']]
+* Created all current existing wiki pages (as of Feb 2025)

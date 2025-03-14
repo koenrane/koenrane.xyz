@@ -1,0 +1,41 @@
+(:Title ~:)
+
+|| border=0 width=99% cellspacing=0 cellpadding=3
+||! [++++'''L'-INKS-''''++++] ||
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=3
+|| '_'' Links are posted monthly and include any articles, papers, or essays that I find pertinent to my current research and writing ''_' ||
+|| border=0 width=99% cellspacing=0 cellpadding=3
+|| '_'' I subscribe to many newsletters that arrive in my inbox, which I post here: [[Newsletters]] ''_' ||
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=10
+||  ||
+
+! 2025
+----
+'+March+'
+* re-read: [[https://contraptions.venkateshrao.com/p/the-extended-internet-universe | The Extended Internet Universe, Venkatash Rao 2019]]
+* [[https://www.ribbonfarm.com/2024/10/10/ribbonfarm-is-retiring/ | Ribbonfarm is Retiring, Rao 2024]]
+* [[https://huggingface.co/papers/2503.05592 | R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning]], 2025
+
+'+February+'
+
+Much of my time this month has been spent on researching tools that support the development of this site and implementing visual and basic quality-of-life features to establish a solid foundation for the future. 
+
+* [[https://nxnjz.net/2019/09/how-to-install-pmwiki-on-debian-10-nginx-php-fpm/ | How to Install PmWiki on Debian 10 / Nginx / PHP-FPM]] 
+* [[https://www.pmwiki.org/wiki/Cookbook/ImagePopup | Pmwiki - ImagePopup]]
+* [[https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research | Introducing Perplexity Deep Research]]
+* [[https://old.reddit.com/r/MachineLearning/comments/1ielwh5/d_deepseek_schmidhuber_did_it_first/ | DeepSeek? Schmidhuber did it first]]  ref: [[https://x.com/hardmaru/status/1885490494178025900 | @hardmaru]]
+** [[https://arxiv.org/abs/1511.09249 | On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Recurrent Neural World Models]]
+** [[https://arxiv.org/abs/1802.08864 | One Big Net For Everything]]
+** [[https://gwern.net/doc/ai/nn/rnn/1992-schmidhuber.pdf | Learning complex, extended sequences using the principle of history compression]]
+** [[https://people.idsia.ch/~juergen/world-models-planning-curiosity-fki-1990.html | 1990: Planning & Reinforcement Learning with Recurrent World Models and Artificial Curiosity]]
+** [[https://people.idsia.ch/~juergen/very-deep-learning-1991.html | 1991: First very deep learning with unsupervised pre-training]]
+* [[https://arxiv.org/abs/2501.12948 | DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning]]
+* [[https://gwern.net/book-writing | Why To Not Write A Book, Gwern 2024]]
+* [[https://gwern.net/design#tags | Design of This Website, Gwern 2023]]
+* [[https://edwardtufte.github.io/tufte-css/ | Tufte CSS, David Liepmann]]
+* [[https://www.lesswrong.com/posts/DfrSZaf3JC8vJdbZL/how-to-make-superbabies | How To Make Superbabies, LW Feb 2025]]

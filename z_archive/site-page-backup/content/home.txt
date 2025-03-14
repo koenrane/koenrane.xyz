@@ -1,0 +1,74 @@
+(:Title ~:)
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+||'+'^'''~'''^'+'[++++++I++++++]'+'^'''~'''^'+' ||am an independent researcher and writer who is interested in many different general topics like programming, philosophy, biology, self-experimentation, psychology, economics, meditation, and practical life. I am also currently writing a fictional novel. 
+
+The ''[[https://koenrane.xyz/?n=Site.AboutSite | About Site]]'' page provides information about this website's design, philosophy, writing intent, and the reason for choosing PmWiki. For information about myself, see the ''[[https://koenrane.xyz/?n=Site.AboutMe |About Me]]'' page. For technical and design information about the site, see ''[[Site Design]]''. To see site changes, project updates, and general notes on progress, see the ''[[Changelog]]'' page. 
+
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''N'-EWEST-''''
+----
+* '-[[https://koenrane.xyz/?n=Site.AboutMe | About Me]]-'
+* '-[[https://koenrane.xyz/?n=Site.AboutSite | About This Website]]-'
+* '-[[Main.4YearsofWhoop | ~ 4 Years of Whoop: Analysis]]-'
+* '-[[Main.ContainerizedIntentionality | Containerized Intentionality]]-'
+
+(:divend:)
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''A'-RCHIVED-''''
+----
+* ~
+
+(:divend:)
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''D'-OCS-''''
+----
+* '-[[https://www.researchgate.net/publication/220387969_Relevance_Realization_and_the_Emerging_Framework_in_Cognitive_Science | Relevance Realization and the Emerging Framework in Cognitive Science]], Vervaeke/Richards, 2012-'
+* '-[[https://www.cs.cornell.edu/~haochuan/manuscripts/WangRose_CogSci_07.pdf | A Process Analysis of Idea Generation and Failure]]-' '-(Wang/Rose)-'
+* '-[[https://dspace.mit.edu/handle/1721.1/107168 | ''Material Ecology'']], Oxman, 2015-'
+
+(:divend:)
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''P'-ERSONAL-''''
+----
+* '-[[https://koenrane.xyz/?n=Site.AboutMe | About Me]]-'
+
+(:divend:)
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''C'-URRENT-'''' '''R'-EADING-''''
+----
+* '-[[https://docs.google.com/spreadsheets/d/e/2PACX-1vRwP-rk4fyMo5L00mkJrt989AXA6JYjx_pjrqGnBSWSS_7JJ2S9Yj6ylxYP9-jrYZUxrBs8gXHA02RN/pubhtml | '''Bookantt Chart''' - Reading Tracker]]-'
+* '-[[https://www.goodreads.com/book/show/7235533-the-way-of-kings | ''The Way of Kings'']], Sanderson-'
+* '-[[https://www.goodreads.com/book/show/123471.I_Am_a_Strange_Loop | ''I am A Strange Loop'']], Hofstadter-'
+* '-[[https://www.goodreads.com/book/show/6088007-neuromancer | ''Neuromancer'']], Gibson-'
+(:divend:)
+
+
+
+(:div style='text-align:left; float:left; width:31%; padding-right:2%; padding-bottom:5px;':)
+!!'''B'-LOG-''''
+----
+* '-[[Main.Becoming-Being-Liquidity | Becoming, Being, and Liquidity]]-'
+
+(:divend:)
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+|| border=1 width=99% cellspacing=0 cellpadding=3
+||! ~ ||
+
+
+
+ 

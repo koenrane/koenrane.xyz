@@ -1,0 +1,15 @@
+(:Title ~:)
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=3
+||! Attach:fractals3.jpg ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+
+
+
