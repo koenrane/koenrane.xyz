@@ -28,6 +28,16 @@
     Script maintained by Petko Yotov www.pmwiki.org/petko
     $Id: pmwiki.php 4860 2025-01-27 19:34:31Z petko $
 */
+
+#-------------------SOURCE BLOCK-------------------------------------------
+# added by KR: 20250321
+
+#sourcebklock recipe
+#works in conjuntion with geshi in cookbooks
+include_once("$FarmD/cookbook/sourceblock.php");
+
+#--------------------SOURCE BLOCK END-----------------------------------------
+
 error_reporting(E_ALL ^ E_NOTICE);
 StopWatch('PmWiki');
 @ini_set('magic_quotes_runtime', 0);
