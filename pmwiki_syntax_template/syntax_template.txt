@@ -283,6 +283,8 @@
 
 
 
+
+
 --FLOATING CAPTION------------------------------------------------------------------------------
 (:div style='text-align:left; float:left; width:30%; padding-right:2%; padding-bottom:5px;':)
 
@@ -294,4 +296,22 @@
 
 
 
+
+
+
+
+
+
+--CODE BLOCK--------------------------------------------------
+>>margin-left=5em<<
+(:linebreaks:)
+
+'-[@ 
+
+code here
+
+@]-'
+
+(:nolinebreaks:)
+>><<
 
