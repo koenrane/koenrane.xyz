@@ -59,7 +59,7 @@ SDVA($UploadExts,array(
   'vtt' => 'text/vtt',
   ));
 
-SDV($UploadMaxSize,50000);
+SDV($UploadMaxSize,300000);
 SDV($UploadPrefixQuota,0);
 SDV($UploadDirQuota,0);
 foreach($UploadExts as $k=>$v) 
