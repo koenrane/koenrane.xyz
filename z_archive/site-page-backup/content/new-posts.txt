@@ -1,4 +1,4 @@
-(:Title ~:)
+(:Title ࿔:)
 
 
 || border=0 width=99% cellspacing=0 cellpadding=3
@@ -14,3 +14,8 @@
 '+February+'
 * [[https://koenrane.xyz/?n=Main.ContainerizedIntentionality | Containerized Intentionality]]
 
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| 𖤓 ||

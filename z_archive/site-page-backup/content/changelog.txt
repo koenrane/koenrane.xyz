@@ -1,9 +1,9 @@
-(:Title ~:)
+(:Title ࿔:)
 || border=0 width=99% cellspacing=0 cellpadding=3
 ||! [++++'''C'-HANGELOG-''''++++] ||
 
 || border=0 width=99% cellspacing=0 cellpadding=3
-|| '_'' A list of website updates, progress on personal projects, writing updates, and any other type of additions to koenrane.xyz ''_' ||
+|| '_'' A list of website updates, progress on personal projects, writing updates, and any other type of additions to koenrane.xyz. To see every minor edit by page, select History. Code changes can be tracked in the GitHub [[https://github.com/koenrane/koenrane.xyz | repo]] ''_' ||
 || border=0 width=99% cellspacing=0 cellpadding=1
 || '_2025-03-02 -_' '_''in progress''_' ||
 
@@ -19,6 +19,15 @@
 * started essay: [[https://koenrane.xyz/?n=Main.4YearsofWhoop | Analysis From ~ 4 Years of WHOOP]]
 * updated ''About Site'' page with pdf archiving process
 * created dropbox directory for site archiving
+* added new page: [[https://koenrane.xyz/?n=Main.BookReviews | Book Reviews]]
+* archived Bookantt Tracker for 2024
+* updated Bookantt Tracker for 2025
+* added new page: [[https://koenrane.xyz/?n=Main.Technical | Technical page]]
+* added [[https://github.com/GeSHi/geshi-1.0 | geshi]] and sourceblock.php to cookbooks directory for code highlighting and formatting
+* inserted right-padding to '-@@wiki-text@@-' in '-@@[[https://github.com/koenrane/koenrane.xyz/blob/main/pub/skins/pmwiki-responsive/skin.css | skin.css]]@@-' to make paragraphs more readable. On mobile, the paragraphs were too close to the edge of the screen, which made it difficult to read. On desktop, the right margin size is similar to the left giving the page more symmetry. 
+* adjusted max import file size limit to 300KB
+* reformatted About Me and About Site page section titles
+
 
 '+February+'
 * established the koenrane.xyz domain.
@@ -28,3 +37,17 @@
 * built pmwiki markdown syntax templates for more efficient text formatting: [[https://github.com/koenrane/koenrane.xyz/blob/main/pmwiki_syntax_template/syntax_template.txt | '-@@pmwiki_syntax_template.txt@@-']]
 *built pandoc lua filter to convert standard markdown to pmwiki markdown: [[https://github.com/koenrane/koenrane.xyz/blob/main/pandoc/markdown-to-pmwiki.lua | '-@@markdown-to-pmwiki.lua@@-']]
 * Created all current existing wiki pages (as of Feb 2025)
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| 𖤓 ||
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||

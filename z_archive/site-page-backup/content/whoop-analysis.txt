@@ -1,4 +1,4 @@
-(:Title ~:)
+(:Title ࿔:)
 
 
 || border=0 width=99% cellspacing=0 cellpadding=3
@@ -32,7 +32,7 @@
 ||  ||
 
 
-!!'''P'-RIMER-'''' '''O'-N-'''' '''Q'-UANTIFIED-'''' '''S'-ELF-''''
+!!'''N'-OTES-'''' '''O'-N-'''' '''Q'-UANTIFIED-'''' '''S'-ELF-''''
 ----
 
 Quantified Self is about using modern tools to gather information that can be potentially actionable, which in turn has the opportunity to improve your life. It's not necessarily about expensive sensors and complicated apps but about gathering data, testing, and applying changes. These are all preceded by an idea: "What can I do to improve my life?"
@@ -197,7 +197,7 @@ The newer battery design allows for charging while immersed in water and is stil
 || border=0 width=99% cellspacing=0 cellpadding=15
 ||  ||
 
-!!! '''App home'''
+!!! '''APP HOME'''
 
 
 
@@ -255,11 +255,32 @@ Attach:whoop-home-3.jpg
 
 
 
+!!! '''SLEEP'''
+
+Selecting Sleep in the Activities pane brings up the calculated sleep from the previous night, breaking it down between hours of sleep and restorative sleep at the top. The graph in the middle shows BPMs for the calculated duration of the sleep activity. The bars below are self-explanatory, breaking down calculated sleep by awake, light, SWS, and REM cycles. They are clickable and explode out to show where in the calculated sleep the specific sleep cycle happened.  
 
 
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
 
 
-!!! '''Sleep'''
+(:divend:)
+Attach:full-sleep-metrics.jpg
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+In the sleep graph, the ''Awake'' metric is split out from the heart rate metric in the total calculated sleep, measuring wake events, effects on the 30-day average, and duration of time awake during the previous night.
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:awake.jpg
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
 
 !!! '''Recovery'''
 
