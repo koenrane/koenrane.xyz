@@ -327,3 +327,15 @@ code here
 
 (:nolinebreaks:)
 >><<
+
+
+
+
+
+
+--PROGRESS BLOCKS--------------------------------------------
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| '_2025-03-04 -_' [[!'-''in progress''-']] ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| '_2025-03-04 -_' [[!'-''finished''-']] ||
