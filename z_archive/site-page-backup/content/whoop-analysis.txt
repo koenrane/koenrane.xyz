@@ -1,5 +1,6 @@
 (:Title ࿔:)
 
+[[#top]]
 
 || border=0 width=99% cellspacing=0 cellpadding=3
 ||! [++++'''A'-NALYSIS-' '''F'-ROM-' ~ '-4-' Y'-EARS-' o'-f-' W'-HOOP-'++++] ||
@@ -9,7 +10,39 @@
 || border=0 width=99% cellspacing=0 cellpadding=1
 || '_''[[!personal]], [[!quantified-self]], [[!self-experiment]], [[!metrics]], [[!research]]''_' ||
 || border=0 width=99% cellspacing=0 cellpadding=1
-|| '_2025-03-04 -_' '_''in progress''_' ||
+|| '_2025-03-04 -_' [[!'-''in progress''-']] ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+>>frame<<
+# [[#NotesOnQuantifiedSelf | ''''-Notes On Quantified Self-'''']]
+# [[#MetricsOverview | ''''-Metrics Overview-'''']]
+# [[#Whoop4.0 | ''''-Whoop 4.0-'''']]
+# [[#TestsandQuestions | ''''-Tests and Questions-'''']]
+# [[#Costs | ''''-Costs-'''']]
+# [[#Engineering | ''''-Engineering-'''']]
+# [[#AppOverview | ''''- App Overview-'''']]
+** '-7.1-' [[#AppHome |'- App Home-']]
+** '-7.2-' [[#Sleep | '-Sleep-']]
+*** '-7.2.1-' [[#SleepStatistics | '-Sleep Statistics-']]
+** '-7.3-' [[#Recovery | '-Recovery-']] 
+*** '-7.3.1-' [[#WhatIsRecovery | '-What is Recovery?-']]
+** '-7.4-' [[#Strain | '-Strain-']]
+*** '-7.4.1-' [[#WhatIsStrain | '-What is Strain?-']]
+*** '-7.4.2-' [[#LogExplanation | '-Strain Logarithmic Scale-']]
+
+>><<
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| ~ 𖤓 ~ ||
+
 
 || border=0 width=99% cellspacing=0 cellpadding=15
 ||  ||
@@ -32,21 +65,24 @@
 ||  ||
 
 
+
+[[#NotesOnQuantifiedSelf]]
 !!'''N'-OTES-'''' '''O'-N-'''' '''Q'-UANTIFIED-'''' '''S'-ELF-''''
 ----
 
-Quantified Self is about using modern tools to gather information that can be potentially actionable, which in turn has the opportunity to improve your life. It's not necessarily about expensive sensors and complicated apps but about gathering data, testing, and applying changes. These are all preceded by an idea: "What can I do to improve my life?"
+%left% Quantified Self is about using modern tools to gather information that can be potentially actionable, which in turn has the opportunity to improve your life. It's not necessarily about expensive sensors and complicated apps but about gathering data, testing, and applying changes. These are all preceded by an idea: "What can I do to improve my life?"
 
-If you are like me and wonder about the effects of caffeine and nicotine on sleep and performance, adherence to sleep cycles, supplementing, maintaining a circadian rhythm, ability to recover after a workout, effects of breathwork and meditation, etc, then this is a worthwhile practice. There are numerous questions I have. There is a trap here: adopting protocols that are said to be "magic bullets" or "cheats". Whichever platform you choose to measure biometrics, use that data to do what is right for you. Be willing to make changes and adopt new protocols, but not at the expense of your enjoyment of the process.  
+%left% If you are like me and wonder about the effects of caffeine and nicotine on sleep and performance, adherence to sleep cycles, supplementing, maintaining a circadian rhythm, ability to recover after a workout, effects of breathwork and meditation, etc, then this is a worthwhile practice. There are numerous questions I have. There is a trap here: adopting protocols that are said to be "magic bullets" or "cheats". Whichever platform you choose to measure biometrics, use that data to do what is right for you. Be willing to make changes and adopt new protocols, but not at the expense of your enjoyment of the process.  
 
-Technically speaking, this can be an empirical study using techniques like linear regression, k-means, anomaly detection, factor analysis, etc. Essentially, the majority of people do not use these techniques manually but view the products of their analysis downstream in applications that visualize trends, anomalies, and predictive outcomes. All of this is not entirely necessary to implement the practice of QS. You could simply use paper and pen to keep a log of how you feel when you wake up and note what your activities were the night before. Over time, you could extrapolate how certain activities might affect mood in the morning. The way you measure should be determined by what you can habitually maintain and is low friction in terms of your available bandwidth. 
+%left% Technically speaking, this can be an empirical study using techniques like linear regression, k-means, anomaly detection, factor analysis, etc. Essentially, the majority of people do not use these techniques manually but view the products of their analysis downstream in applications that visualize trends, anomalies, and predictive outcomes. All of this is not entirely necessary to implement the practice of QS. You could simply use paper and pen to keep a log of how you feel when you wake up and note what your activities were the night before. Over time, you could extrapolate how certain activities might affect mood in the morning. The way you measure should be determined by what you can habitually maintain and is low friction in terms of your available bandwidth. 
 
-It's easy to fall into an obsession with data collection and shove off the analysis and interpretation stage. While many applications can help with this, it doesn't naturally push the average user into understanding the methods used to interpret the data. Instead, companies have integrated [[https://en.wikipedia.org/wiki/Gamification | gamification]], to tap into the competitive nature of society and our obsession with accolades. In many instances, the reward system does produce the intended effect of increased engagement and longer-term play. Although, for myself, I do not care much about the award system.
+%left% It's easy to fall into an obsession with data collection and shove off the analysis and interpretation stage. While many applications can help with this, it doesn't naturally push the average user into understanding the methods used to interpret the data. Instead, companies have integrated [[https://en.wikipedia.org/wiki/Gamification | gamification]], to tap into the competitive nature of society and our obsession with accolades. In many instances, the reward system does produce the intended effect of increased engagement and longer-term play. Although, for myself, I do not care much about the award system.
 
 
 || border=0 width=99% cellspacing=0 cellpadding=15
 ||  ||
 
+[[#MetricsOverview]]
 !!'''M'-ETRICS-'''' '''O'-VERVIEW-''''
 ----
 
@@ -122,7 +158,7 @@ It's easy to fall into an obsession with data collection and shove off the analy
 || border=0 width=99% cellspacing=0 cellpadding=15
 ||  ||
 
-
+[[#Whoop4.0]]
 !!'''W'-HOOP-'''' '''4.0'''
 ----
 I first saw this product in a video; the details I can't recall, and I thought it was just another Fitbit-type device. I have long been interested in QS as a practice, especially as it pertains to the quality of my sleep. My struggle with it has revealed many notable negative effects in my life overall. A Whoop is primarily a wrist-worn sensor that consists of an optical heart rate sensor that uses green LEDs and photodiodes to capture blood volume under the skin, which measures heart rate and heart rate variability (HRV). The newest version, which I have been using for almost two years, uses additional red and infrared LEDs, a skin temperature sensor, and a pulse oximeter for measuring blood oxygen saturation (SpO2). Via Bluetooth, it transmits data to the Whoop App. There is also a web app, but it's clunky and only has a few features. 
@@ -137,7 +173,7 @@ Wearing the sensor, after this long, has become an afterthought. It's so light a
 ||  ||
 
 
-
+[[#TestsandQuestions]]
 !!'''T'-ESTS-'''' '''A'-ND-'''' '''Q'-UESTIONS-''''
 ----
 
@@ -162,7 +198,7 @@ I've had a backlog of questions and tests I have wanted to run for years. Other 
 ||  ||
 
 
-
+[[#Costs]]
 !!'''C'-OSTS-''''
 ----
 
@@ -173,7 +209,7 @@ For the 24-month [[https://join.whoop.com/us/en/membership/ | membership]], upfr
 ||  ||
 
 
-
+[[#Engineering]]
 !!'''E'-NGINEERING-''''
 ----
 
@@ -191,13 +227,15 @@ The newer battery design allows for charging while immersed in water and is stil
 ||  ||
 
 
-
+[[#AppOverview]]
 !!'''A'-PP-'''' '''O'-VERVIEW-''''
 ----
 || border=0 width=99% cellspacing=0 cellpadding=15
 ||  ||
 
-!!! '''APP HOME'''
+
+[[#AppHome]]
+!!! '''A'-PP-' H'-OME-''''
 
 
 
@@ -254,8 +292,8 @@ Attach:whoop-home-3.jpg
 
 
 
-
-!!! '''SLEEP'''
+[[#Sleep]]
+!!! '''S'-LEEP-''''
 
 Selecting Sleep in the Activities pane brings up the calculated sleep from the previous night, breaking it down between hours of sleep and restorative sleep at the top. The graph in the middle shows BPMs for the calculated duration of the sleep activity. The bars below are self-explanatory, breaking down calculated sleep by awake, light, SWS, and REM cycles. They are clickable and explode out to show where in the calculated sleep the specific sleep cycle happened.  
 
@@ -280,21 +318,363 @@ Attach:awake.jpg
 || border=0 width=99% cellspacing=0 cellpadding=15
 ||  ||
 
+Navigating to the Sleep tab at the top brings you into an overall view of sleep metrics which shows sleep performance percentage, sleep activities, and all of the associated sleep statistics, which are able to be opened and viewed in a more fine-grained statistical visualization. The trend view selections are the same trend views that are located on the home page., but these are filtered specifically for sleep.
+
+Sleep performance is calculated by the amount of sleep you got, divided by how much sleep you need. The aim is to meet 70% of your sleep need to get by, 85% to perform, and 100% of your sleep need for peak performance (those three goals are adjustable based on user preference)
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
 
 
-!!! '''Recovery'''
+(:divend:)
+Attach:sleep-perf-top.jpg 
 
-!!! '''Stress'''
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
 
-!!! '''HRV'''
- 
-!!! '''RHR'''
 
-!!! '''Heart rate'''
+(:divend:)
+Attach:sleep-perf-top2.jpg
 
-!!! '''Blood Oxygen'''
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
 
-!!! '''Skin Temp'''
+[[#SleepStatistics]]
+!!! '''S'-LEEP-' S'-TATISTICS-''''
+
+Hours vs Need: shows how many hours of sleep you got compared to how many you needed. Sleep need is calculated each day based on your personalized baseline, sleep debt, strain, and naps taken. It measures how much sleep you need to hit peak performance. 
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:sleep-perf-hrsvneed.jpg
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+
+Time in Bed: measures the amount of time between getting into bed and getting out of bed after the sensor recognizes that you are awake. It also takes into account latency, which is the time it takes to fall asleep, and cumulative time awake at night.
+
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:sleep-perf-TIB.jpg
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+
+Restorative Sleep Hours and Percentage: reflects how many hours you spend in the Deep (SWS) and REM stages of sleep each night. Deep sleep is the physically restorative stage and REM sleep is the mentally restorative stage where most dreams occur and short-term memories are converted into long-term memories. 
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:sleep-perf-restorative.jpg
+
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:sleep-perf_restor-sleep-perct.jpg
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+
+Sleep efficiency: the percentage of time you spend in bed actually asleep. To calculate, divide the time spent sleeping by the total time you spent in bed, then multiply by 100. The ratio is scored on a 0-100% scale. 
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:sleep-perf-efficiency.jpg
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+Sleep Debt: the accumulated loss of sleep that occurs when you don't get enough sleep on a regular basis. You measure this by the difference between the calcualted amount of sleeep you need and the amount you actually get (which are shown in the main sleep event metrics).
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:sleep-perf_slep-debt.jpg
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+[[#Recovery]]
+!! '''R'-ECOVERY-''''
+----
+
+[[#WhatIsRecovery]]
+!!! '''W'-HAT-' I'-S-' R'-ECOVERY-'?'''
+
+Recovery is a measure of how well the body adapts to physical, mental, and emotional stress. One mistake I have made for a considerable amount of time is basing my entire workout (type and intensity) solely on recovery. After years of use and reference, I've noticed that the recovery result should be seen as a median result where how well you actually feel may be below or above the result. This is one of the ways to get a pulse on how you might perform throughout the day. There have been many days with considerable differences between the recovery percentage and how well (mentally and physically) I can perform. Some mornings I see that my recovery is at its peak for the week, but I wake up feeling terrible from a bad night's sleep. So while I may have a peak recovery result, I am unable to meet the strain goal, which is measured based on recovery to maximize performance without overtraining. More often than not, I am undertraining according to my strain result at the end of the day. This is possibly due to my limited amount of aerobic exercise. Since Strain is measured on a logarithmic scale, the higher to strain count, the harder it is to attain (with some serious increased heart rate requirements). Recovery isn't a prescription on how much to work out, but an indicator of general well-being and your body's ability to adapt to life's stressors. After realizing this, I apply this metric as a baseline for the day ahead. Sleep is a big driver of Recovery, but it isn't the only factor. Things like alcohol use, hydration, diet, and stress levels all affect the result as well. 
+
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+Attach:recovery-home1_.jpg
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+Recovery % is calculated overnight using your RHR, HRV, RR, sleep, SpO2, and skin temperature, but it also accounts for factors like Strain, stress, and lifestyle choices. Alcohol seems to have a much larger effect on recovery and sleep (for me) than I initially guessed. Even after 1 drink, my recovery result in the morning is considerably lower than the average. It's usually never just one negative factor that can decrease the result though.
+
+This metric is reported using a 0-100% scale
+* Sufficient '-(>67%)-'
+** Body is well recovered and ready to perform
+* Adequate '-(34-66%)-'
+** Body is maintaining health. Can handle a moderately strenuous day
+* Low '-(<33%)-'
+** Body is working hard to recover and most likely signaling that it needs and active rest day.
+
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+(:divend:)
+Attach:recovery-home2_.jpg
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+HRV measures the variance in time between heartbeats while sleeping. This is one of the main indicators of your ability to perform and adapt to the changing nature of each day. This is an individualized metric that depends on age, gender, lifestyle, and overall fitness, so your comparison should solely be against your baseline values over time. 
+
+
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+(:divend:)
+Attach:recovery-hrv.jpg
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+
+Resting Heart Rate (RHR) is calculated by the number of times your heart rate beats per minute while you are in a complete state of rest (eg. sleep, naps), and is measured near the end of a sleep cycle (SWS). To increase fitness, you want your RHR lower and it's a possible indication of a strong heart muscle that can pump more blood with every beat (beats less frequently). Again, on alcohol consumption, I've noticed that even one drink elevates this result (not surprisingly). When I got COVID in 2021, the first time, my elevated RHR over three days was my first indicator that I was getting sick (low recovery during those days also indicated the same).
+
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+(:divend:)
+Attach:recovery-rhr.jpg
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+[[#Strain]]
+!! '''S'-TRAIN-''''
+----
+
+[[#WhatIsStrain]]
+!!! '''W'-HAT-' I'-S-' S'-TRAIN-'?'''
+
+This metric refers to the exertion you put on your body throughout the day, which is Day Strain. It measures all strain accumulated over an entire day plus the calculated strain of recorded activities. Even without recording any activities, you can build up strain passively as you move through the day. Right now, strain is broken down between cardiovascular and muscular load. So, if you record an activity, you can manually enter the exercises you completed during said activity, and the app will calculate the load of those movements into your workout, which will also contribute to the overall Day Strain. But, since strain is logarithmic, not linear, measured strain of individual activities won't add up to the total Day Strain. Instead, the higher your Strain gets, the harder it is to build more.
+
+Strain is measured on a scale from 0 to 21:
+
+* Light '-(0-9)-'
+** Minimal exertion is being put on the body, which encourages active recovery.
+* Moderate '-(10-13)-'
+** Moderate exertion is being put on the body, which balances fitness gains and recovery.
+* High '-(14-17)-'
+** Increased exertion which builds fitness gains, but makes it more difficult for your body to recover the next day.
+* All Out '-(18-21)-'
+** Significant exertion which increases fitness gains, but puts your body at greater risk for injury or overtraining.
+
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+(:divend:)
+Attach:strain-log-scale.jpg
+
+
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+(:table style="font-style:Normal; color:white; border:1px solid grey; background-color:#191919":)
+(:cellnr:)
+[[#LogExplanation]]
+!!! '''L'-OGARITHMIC-' E'-XPLANATION-''''
+
+The Strain metric is reported using a 0-21 log scale:
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+(:divend:)
+Attach:log-scale.png
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+
+(:divend:)
+|| border=1 width=50% cellspacing=0 cellpadding=3
+|| '-''graph showing the natural logarithm (ln) of values from 0.1 to 21. Since log scales can't include zero, I started from a small positive number''.-' ||
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+* '''Function Representation'''
+
+The graph represents the ''natural logarithm function'':
+>>margin-left=5em<<
+(:linebreaks:)
+
+'-[@ 
+y = ln(x)
+@]-'
+
+where:
+- ''x'' is the input (independent variable), ranging from '''0.1 to 21'''.
+- ''y'' is the output (dependent variable), representing the logarithm of ''x''.
+
+(:nolinebreaks:)
+>><<
+
+* '''Logarithmic Properties'''
+
+The natural logarithm function, ln(x), is the inverse of the exponential function  e'''^y^'''= ''x''). It has key properties:
+* '''Domain:''' @@''x'' > 0@@ (logarithms are undefined for @@''x'' ≤ 0@@.)
+* '''Range:''' @@(−'+∞+','+∞+')@@ (logarithm values can be any real number).
+Key Points:
+* ln(1) = 0 (crosses the x-axis at ''x'' = 1)
+* ln(e) = 1, where @@''e'' ≈ 2.718@@
+* As @@x→0'^+^', ln⁡(''x'')→ −'+∞+'@@ (approaches negative infinity).
+* As @@x→'+∞+', ln⁡(''x'')→ '+∞+'@@ (grows without bound but at a decreasing rate).
+
+(:tableend:)
+
+
+Now, let's set up a generic representation of the scale with matplotlib:
+
+
+
+(:table style="font-style:Normal; color:white; border:1px solid grey; background-color:#232323":)
+(:cellnr:)
+
+>>margin-left=5em<<
+(:linebreaks:)
+
+'-[@ 
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Generate x values from a small positive number to 21 (log scale can't include zero)
+x = np.linspace(0.1, 21, 400)
+y = np.log(x)  # Natural logarithm
+
+# Create the plot
+plt.figure(figsize=(8, 5))
+plt.plot(x, y, label="y = ln(x)", color="blue")
+plt.xlabel("X values (0 to 21)")
+plt.ylabel("Logarithm (ln(x))")
+plt.title("Logarithmic Scale (0 to 21)")
+plt.axhline(0, color='black', linewidth=0.5)
+plt.axvline(0, color='black', linewidth=0.5)
+plt.grid(True, which='both', linestyle='--', linewidth=0.5)
+plt.legend()
+
+# Show the plot
+plt.show()
+@]-'
+(:nolinebreaks:)
+>><<
+
+
+(:tableend:)
+
+
+Now, in Jupyter Notebook, with more context added, we create an example of how strain would be measured in a day (activities included):
+
+(:table style="font-style:Normal; color:white; border:1px solid grey; background-color:#232323":)
+(:cellnr:)
+>>margin-left=5em<<
+(:linebreaks:)
+
+'-[@ 
+import numpy as np
+import matplotlib.pyplot as plt
+
+# Create a time vector for a day in minutes
+t = np.linspace(0, 24, 24*60)  # 24 hours in minutes (converted to hours)
+
+# Baseline daily strain accumulation (e.g., constant accumulation across the day)
+baseline_rate = 21 / 24  # if it were linear, accumulate to 21 by midnight
+daily_strain = baseline_rate * t
+
+# Simulate exercise periods with additional strain contribution
+# Define exercise periods (in hours)
+exercise_periods = [(7.5, 8.0), (12.0, 12.5), (18.0, 18.5)]
+exercise_contrib = np.zeros_like(t)
+
+# For activity strain, we'll simulate peaks only during exercise periods
+activity_strain = np.zeros_like(t)
+
+for start, end in exercise_periods:
+    # Create a Gaussian bump centered in the middle of the exercise period
+    center = (start + end) / 2
+    width = 0.1  # controls duration of the spike
+    
+    # Gaussian function for exercise spike (activity strain)
+    spike = 15 * np.exp(-((t - center)**2) / (2 * width**2))
+    
+    # Add the spike to the activity strain curve
+    activity_strain += spike
+    
+    # Also add a portion of the spike to daily strain accumulation
+    # Here we assume that the exercise contributes to daily strain, but in a cumulative way
+    daily_strain += spike * (t[1] - t[0])  # integrate spike contribution
+
+# Ensure daily strain does not exceed 21 (simulate Whoop's max daily strain)
+daily_strain = np.clip(daily_strain, 0, 21)
+
+# Plotting
+plt.figure(figsize=(10, 6))
+plt.plot(t, daily_strain, label="Daily Strain (Cumulative)", color="blue", linewidth=2)
+plt.plot(t, activity_strain, label="Activity Strain (Exercise Exertion)", color="red", linestyle='--')
+
+plt.xlabel("Time of Day (Hours)")
+plt.ylabel("Strain (0 to 21 scale)")
+plt.title("Whoop Strain: Daily Strain vs. Activity Strain")
+plt.xlim(0, 24)
+plt.ylim(0, 22)
+plt.grid(True, linestyle="--", alpha=0.7)
+plt.legend()
+plt.tight_layout()
+plt.show()
+@]-'
+
+(:nolinebreaks:)
+>><<
+
+(:tableend:)
+
+(:div style='text-align:left; float:left; width:25%; padding-right:2%; padding-bottom:5px;':)
+
+(:divend:)
+Attach:jpyt_plot-1-dstrain-v-actstrain.png
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
 
 
 
@@ -303,5 +683,17 @@ Attach:awake.jpg
 ||  ||
 
 
-|| border=1 width=99% cellspacing=0 cellpadding=3
-||! ~ ||
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=1
+|| 𖤓 ||
+
+
+|| border=0 width=99% cellspacing=0 cellpadding=15
+||  ||
+
+[[#top | Top]]
