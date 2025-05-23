@@ -1,0 +1,373 @@
+@use "../../styles/variables.scss" as *;
+@use "search.scss" as *;
+
+.menu {
+  order: 1;
+  top: 5px;
+
+  // Applies to all links in the navbar
+  & ul {
+    list-style: none;
+    max-height: none;
+    padding-left: calc(0.5 * $base-margin);
+    background-color: var(--background);
+    margin: 0;
+
+    @media all and (min-width: $full-page-width) {
+      margin: $base-margin 0;
+    }
+
+    & li {
+      text-align: right;
+
+      & > a {
+        color: var(--midground);
+        transition: opacity 0.5s ease-out;
+        text-decoration: none;
+      }
+    }
+  }
+
+  // Desktop
+  @media (min-width: $full-page-width) {
+    display: flex;
+    text-align: center;
+    flex-direction: column;
+    height: 100%;
+  }
+
+  @media (max-width: $full-page-width) {
+    position: absolute;
+    text-align: right;
+    background-color: transparent;
+    display: none;
+    right: 0;
+    top: 80%;
+
+    &.visible {
+      display: block;
+    }
+
+    li {
+      background-color: var(--background);
+    }
+
+    ul {
+      position: relative;
+      box-shadow: 0 2px 4px 0 rgb(0 0 0 / 10%);
+      clip-path: inset(0 0 -15px -15px);
+      width: max-content;
+      right: 0;
+    }
+  }
+}
+
+// The menu icon
+.hamburger {
+  vertical-align: middle;
+  width: 2rem;
+  height: 2rem;
+  padding: 0;
+  padding-left: calc(2 * $base-margin);
+  background: transparent;
+  border: none;
+  cursor: pointer;
+
+  & span {
+    display: block;
+    height: calc(0.25 * $base-margin);
+    background-color: var(--midground);
+
+    &:not(:last-child) {
+      margin-bottom: 5px;
+    }
+  }
+}
+
+.x:nth-of-type(1) {
+  transition: all 100ms ease-in-out;
+  transform: rotate(45deg);
+  transform-origin: top left;
+  width: 24px;
+
+  @media all and (max-width: $mobile-breakpoint) {
+    width: 23px;
+  }
+}
+
+.x:nth-of-type(2) {
+  transition: all 100ms ease-in-out;
+  transform-origin: center;
+  width: 0;
+}
+
+.x:nth-of-type(3) {
+  transition: all 100ms ease-in-out;
+  transform: rotate(-45deg);
+  transform-origin: bottom left;
+  width: 24px;
+
+  @media all and (max-width: $mobile-breakpoint) {
+    width: 23px;
+  }
+}
+
+@media all and (max-width: $mobile-breakpoint) {
+  .darkmode #night-icon {
+    width: 15px;
+    height: 15px;
+  }
+
+  .hamburger span {
+    height: 2.5px;
+  }
+}
+
+#page-title {
+  margin: 0;
+}
+
+/* Center the site name under the pond video */
+#page-title h2,
+#navbar-left h2 {
+  text-align: center;
+  color: var(--midground);
+
+  & a {
+    color: inherit;
+    text-decoration: none;
+
+    &:visited {
+      color: inherit;
+    }
+  }
+
+  @media all and (max-width: $full-page-width) {
+    margin-bottom: 0;
+    margin-top: calc(0.5 * $base-margin);
+  }
+
+  // Simulate an h3 on mobile. Prevent weird wrapping issues
+  @media all and (max-width: $mobile-breakpoint) {
+    font-size: var(--text-size-500);
+  }
+
+  @media all and (min-width: $full-page-width) {
+    margin-bottom: 0;
+    margin-top: 0;
+    margin-right: calc(0.25 * $base-margin); // Make it flush with the site links
+    font-size: var(--text-size-500);
+  }
+}
+
+#navbar-left,
+.navbar-left,
+#navbar-right {
+  display: flex;
+  align-items: center;
+
+  @media all and (min-width: $full-page-width) {
+    flex-direction: column;
+    align-items: flex-end;
+  }
+}
+
+#navbar-left,
+.navbar-left {
+  position: relative;
+}
+
+#navbar-right {
+  @media all and (min-width: $full-page-width) {
+    margin-right: calc(0.25 * $base-margin);
+  }
+}
+
+@media all and (max-width: $full-page-width) {
+  #quartz-body > #left-sidebar {
+    width: 100%;
+    position: sticky;
+  }
+
+  #quartz-body #navbar {
+    opacity: 1;
+    transition:
+      transform 0.45s ease,
+      opacity 0.45s ease;
+    position: sticky;
+    z-index: 910;
+
+    &.shadow {
+      box-shadow: 0 4px 4px 0 var(--midground-faintest);
+      clip-path: inset(0 0 -1500px 0);
+    }
+
+    &.hide-above-screen {
+      transform: translateY(-100%);
+      opacity: 0;
+      pointer-events: none;
+    }
+  }
+}
+
+#navbar {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  position: relative;
+
+  @media all and (max-width: $full-page-width) {
+    flex-direction: row;
+    width: 100.5%; // Prevent peek-through of other elements
+    background-color: var(--background);
+  }
+}
+
+:root[data-theme="dark"] .shadow {
+  @media all and (max-width: $full-page-width) {
+    box-shadow: 0 4px 4px 0 var(--midground-faintest);
+    clip-path: inset(0 0 -1500px 0);
+  }
+}
+
+.header-img {
+  filter: saturate(85%);
+
+  // Consistent width and spacing for both img and video
+  width: 100%;
+  max-width: 100%;
+  margin-bottom: 0;
+  margin-top: 0;
+  object-fit: contain;
+}
+
+#header-video-container {
+  @media all and (min-width: $full-page-width) {
+    width: 188px;
+    height: 188px;
+    min-height: 188px;
+    aspect-ratio: 188 / 188;
+    display: block;
+  }
+
+  @media all and (max-width: $full-page-width) {
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: $base-margin;
+    width: 2.5em;
+  }
+}
+
+#darkmode-span {
+  z-index: 3;
+  position: absolute;
+  right: 0;
+  top: 5%;
+  font-size: var(--text-size-80);
+  text-align: right;
+  display: flex;
+  flex-direction: row-reverse;
+
+  @media all and (max-width: $full-page-width) {
+    position: relative;
+    left: inherit;
+    top: inherit;
+    margin: 0 calc(1.5 * $base-margin);
+    flex-direction: row; // Left-to-right
+  }
+
+  & #darkmode-toggle {
+    display: none;
+  }
+
+  & #theme-toggle {
+    display: inline-block;
+    width: 20px;
+    min-width: 20px; // Prevent flex collapse
+    height: 20px;
+    position: relative;
+    border: none;
+    background-color: transparent;
+    margin-right: calc(0.5 * $base-margin);
+
+    @media all and (min-width: $full-page-width) {
+      margin-right: 0;
+      margin-bottom: calc(0.5 * $base-margin);
+      align-self: center; // Centered above the auto text
+    }
+  }
+
+  & #theme-label {
+    color: var(--midground);
+    transition: opacity 0.5s ease;
+    margin: 0;
+    margin-right: calc(0.75 * $base-margin);
+    flex-shrink: 0; // Don't want it to wrap
+    font-style: italic; // Differentiate from navbar links
+    user-select: all;
+    cursor: text;
+
+    @media all and (max-width: $full-page-width) {
+      margin-left: calc(0.25 * $base-margin);
+      order: 999; // Push to the end of the row
+    }
+  }
+
+  & svg {
+    cursor: pointer;
+    opacity: 0;
+    position: absolute;
+    width: inherit;
+    height: inherit;
+    left: 0;
+    top: 0;
+    fill: var(--midground);
+    transition: opacity 0.1s ease;
+  }
+}
+
+:root[data-theme="light"] {
+  color-scheme: light;
+
+  & #day-icon {
+    opacity: 1;
+    visibility: visible;
+  }
+
+  & #night-icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+}
+
+:root[data-theme="dark"] {
+  color-scheme: dark;
+
+  & #day-icon {
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  & #night-icon {
+    opacity: 1;
+    visibility: visible;
+  }
+}
+
+#nav-searchbar {
+  @media all and (min-width: $full-page-width) {
+    order: 2; // Search bar comes after other links
+    margin-top: calc(0.25 * $base-margin);
+  }
+}
+
+.theme-toggle-auto {
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+:root[data-theme-mode="auto"] .theme-toggle-auto {
+  visibility: visible;
+  opacity: 1;
+}

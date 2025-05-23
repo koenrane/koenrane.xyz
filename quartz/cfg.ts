@@ -43,6 +43,11 @@ export type Analytics =
       projectId?: string
     }
 
+type Page = {
+  slug: string
+  title: string
+}
+
 export interface GlobalConfiguration {
   pageTitle: string
   pageTitleSuffix?: string
@@ -60,6 +65,12 @@ export interface GlobalConfiguration {
    *   Quartz will avoid using this as much as possible and use relative URLs most of the time
    */
   baseUrl?: string
+
+  /** Configuration for the navbar (sidebar) **/
+  navbar: {
+    pages: Page[]
+  }
+
   theme: Theme
   /**
    * Allow to translate the date in the language of your choice.
