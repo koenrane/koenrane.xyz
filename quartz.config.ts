@@ -15,10 +15,18 @@ const config: QuartzConfig = {
     analytics: {
       provider: "plausible",
     },
+
     locale: "en-US",
     baseUrl: "quartz.jzhao.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "modified",
+    navbar: {
+      pages: [
+        { title: "About Me", slug: "/About" },
+        { title: "About Site", slug: "/about-site" },
+        { title: "New Links", slug: "/links" },
+      ],
+    },
     theme: {
       fontOrigin: "googleFonts",
       cdnCaching: true,

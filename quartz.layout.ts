@@ -37,7 +37,7 @@ export const defaultContentPageLayout: PageLayout = {
         { Component: Component.ReaderMode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Navbar(),
   ],
   right: [
     Component.DesktopOnly(
@@ -65,7 +65,7 @@ export const defaultListPageLayout: PageLayout = {
         { Component: Component.Darkmode() },
       ],
     }),
-    Component.Explorer(),
+    Component.Navbar(),
   ],
   right: [],
 }
