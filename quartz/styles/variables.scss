@@ -23,7 +23,16 @@ $boldWeight: 700;
 $semiBoldWeight: 600;
 $normalWeight: 400;
 
+
+// navbar variables ------------------------------------------------------------
 $base-margin: 0.5rem;
+$full-page-width: #{map.get($breakpoints, desktop)};
+$mobile-breakpoint: #{map.get($breakpoints, mobile)};
+
+//---------------------------------------------------
+
+
+
 
 $mobileGrid: (
   templateRows: "auto auto auto auto auto",

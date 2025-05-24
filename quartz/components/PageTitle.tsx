@@ -3,6 +3,22 @@ import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } fro
 import { classNames } from "../util/lang"
 import { i18n } from "../i18n"
 
+
+// header video container ------------------------------------------------------------
+export const headerVideoContainer = (
+  <div className="header-video-container">
+    <video
+      className="header-video"
+      autoPlay
+      muted
+      loop
+      playsInline
+      src="/static/pond.mp4"
+    />
+  </div>
+)
+
+//---------------------------------------------------
 const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {
   const title = cfg?.pageTitle ?? i18n(cfg.locale).propertyDefaults.title
   const baseDir = pathToRoot(fileData.slug!)
