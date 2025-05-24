@@ -5,7 +5,7 @@ import { i18n } from "../i18n"
 
 
 // header video container ------------------------------------------------------------
-export const headerVideoContainer = (
+/*export const headerVideoContainer = (
   <div className="header-video-container">
     <video
       className="header-video"
@@ -16,7 +16,7 @@ export const headerVideoContainer = (
       src="/static/pond.mp4"
     />
   </div>
-)
+)*/
 
 //---------------------------------------------------
 const PageTitle: QuartzComponent = ({ fileData, cfg, displayClass }: QuartzComponentProps) => {

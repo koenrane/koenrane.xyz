@@ -6,7 +6,7 @@ import React from "react"
 
 import { i18n } from "../i18n"
 import { type FullSlug, pathToRoot, resolveRelative } from "../util/path"
-import { headerVideoContainer } from "./PageTitle"
+//import { headerVideoContainer } from "./PageTitle"
 // @ts-expect-error Not a module but a script
 // skipcq: JS-W1028
 import script from "./scripts/navbar.inline"
@@ -118,7 +118,7 @@ export default (() => {
     return (
       <div id="navbar" className="navbar" spa-preserve>
         <div id="navbar-left">
-          {headerVideoContainer}
+          {/*{headerVideoContainer}*/}
           <h2>
             <a href={baseDir}>{title}</a>
           </h2>
