@@ -17,6 +17,9 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 # 2025
 ----
+### JUNE
+- replaced pmwiki remote repo with quartz site refactor files
+
 ### MAY
 - [Containerized Intentionality](/containerized-intentionality)
 - added page link to longform LessWrong post: A Guide to AI 2027
