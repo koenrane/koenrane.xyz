@@ -1,66 +1,94 @@
-@use "../../styles/variables.scss" as *;
+@use "../../styles/variables" as *;
 
-.toc {
-  display: flex;
-  flex-direction: column;
-  overflow-y: hidden;
-  min-height: 1.4rem;
-  flex: 0 0.5 auto;
-  &:has(button.toc-header.collapsed) {
-    flex: 0 1 1.4rem;
+.toc-title {
+  margin-top: 0;
+  margin-bottom: calc(0.5 * $base-margin);
+
+  & a {
+    text-decoration: none;
   }
 }
 
-button.toc-header {
-  background-color: transparent;
-  border: none;
-  text-align: left;
-  cursor: pointer;
-  padding: 0;
-  color: var(--dark);
-  display: flex;
-  align-items: center;
-
-  & h3 {
-    font-size: 1rem;
-    display: inline-block;
-    margin: 0;
-  }
-
-  & .fold {
-    margin-left: 0.5rem;
-    transition: transform 0.3s ease;
-    opacity: 0.8;
-  }
-
-  &.collapsed .fold {
-    transform: rotateZ(-90deg);
-  }
+ul.overflow,
+ol.overflow {
+  overflow-y: auto;
+  margin-bottom: 0;
+  content: "";
+  clear: both;
 }
 
-ul.toc-content.overflow {
+#toc-content {
+  margin-bottom: 0;
+}
+
+#toc-content,
+#toc-content-mobile,
+#backlinks-admonition,
+#post-statistics {
   list-style: none;
+  overflow: visible;
+  max-height: none;
+  transition: max-height 0.5s ease;
   position: relative;
-  margin: 0.5rem 0;
-  padding: 0;
-  max-height: calc(100% - 2rem);
-  overscroll-behavior: contain;
-  list-style: none;
+  font-size: var(--font-size-minus-1);
 
-  & > li > a {
-    color: var(--dark);
-    opacity: 0.35;
-    transition:
-      0.5s ease opacity,
-      0.3s ease color;
-    &.in-view {
-      opacity: 0.75;
-    }
+  & > ul {
+    padding-left: $base-margin !important;
   }
 
-  @for $i from 0 through 6 {
-    & .depth-#{$i} {
-      padding-left: calc(1rem * #{$i});
+  & ul {
+    --text-indent-multiplier: -0.75;
+
+    list-style: none;
+    padding: 0;
+    line-height: 1.05em;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    // Stagger wrapped text
+    text-indent: calc(var(--text-indent-multiplier) * $base-margin);
+    margin-left: 0;
+
+    & ul {
+      font-size: 0.913em; // approx sqrt(1/1.2), where 1.2 is scale factor
+
+      & li {
+        padding-left: calc(0.75 * $base-margin - $base-margin * var(--text-indent-multiplier));
+      }
     }
+
+    &:not(:first-child) {
+      margin-bottom: 0;
+    }
+
+    & > li {
+      margin-bottom: calc(0.5 * $base-margin);
+      overflow-y: visible;
+
+      &:first-child {
+        margin-top: calc(0.5 * $base-margin);
+      }
+
+      &:last-child {
+        margin-bottom: calc(0.25 * $base-margin);
+      }
+
+      & > a {
+        text-decoration: none;
+        color: var(--midground);
+
+        &.active {
+          color: var(--midground-strong);
+          text-shadow: 0.3px 0.3px var(--midground-strong);
+        }
+      }
+    }
+  }
+}
+
+#center-content #toc-content-mobile {
+  & a,
+  & a:visited {
+    color: var(--foreground);
   }
 }

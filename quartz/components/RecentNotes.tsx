@@ -1,18 +1,22 @@
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { FullSlug, SimpleSlug, resolveRelative } from "../util/path"
-import { QuartzPluginData } from "../plugins/vfile"
+import React from "react"
+
+import { type GlobalConfiguration } from "../cfg"
+import { i18n } from "../i18n"
+import { type QuartzPluginData } from "../plugins/vfile"
+import { classNames } from "../util/lang"
+import { type FullSlug, type SimpleSlug, resolveRelative } from "../util/path"
+import { DateElement } from "./Date"
 import { byDateAndAlphabetical } from "./PageList"
 import style from "./styles/recentNotes.scss"
-import { Date, getDate } from "./Date"
-import { GlobalConfiguration } from "../cfg"
-import { i18n } from "../i18n"
-import { classNames } from "../util/lang"
-
+import {
+  type QuartzComponent,
+  type QuartzComponentConstructor,
+  type QuartzComponentProps,
+} from "./types"
 interface Options {
   title?: string
   limit: number
   linkToMore: SimpleSlug | false
-  showTags: boolean
   filter: (f: QuartzPluginData) => boolean
   sort: (f1: QuartzPluginData, f2: QuartzPluginData) => number
 }
@@ -20,7 +24,6 @@ interface Options {
 const defaultOptions = (cfg: GlobalConfiguration): Options => ({
   limit: 3,
   linkToMore: false,
-  showTags: true,
   filter: () => true,
   sort: byDateAndAlphabetical(cfg),
 })
@@ -36,50 +39,59 @@ export default ((userOpts?: Partial<Options>) => {
     const pages = allFiles.filter(opts.filter).sort(opts.sort)
     const remaining = Math.max(0, pages.length - opts.limit)
     return (
-      <div class={classNames(displayClass, "recent-notes")}>
+      <div className={classNames(displayClass, "recent-notes")}>
         <h3>{opts.title ?? i18n(cfg.locale).components.recentNotes.title}</h3>
-        <ul class="recent-ul">
+        <ul className="recent-ul">
           {pages.slice(0, opts.limit).map((page) => {
             const title = page.frontmatter?.title ?? i18n(cfg.locale).propertyDefaults.title
             const tags = page.frontmatter?.tags ?? []
 
             return (
-              <li class="recent-li">
-                <div class="section">
-                  <div class="desc">
-                    <h3>
-                      <a href={resolveRelative(fileData.slug!, page.slug!)} class="internal">
-                        {title}
+              <li className="recent-li section" key={page.slug}>
+                <h3>
+                  <a
+                    href={resolveRelative(
+                      fileData.slug || ("" as FullSlug),
+                      page.slug || ("" as FullSlug),
+                    )}
+                    className="internal"
+                  >
+                    {title}
+                  </a>
+                </h3>
+                {page.dates?.created && (
+                  <p className="meta">
+                    <DateElement
+                      cfg={cfg}
+                      date={page.dates.created}
+                      monthFormat="long"
+                      includeOrdinalSuffix
+                      formatOrdinalSuffix
+                    />
+                  </p>
+                )}
+                <ul className="tags">
+                  {tags.map((tag) => (
+                    <li key={tag}>
+                      <a
+                        className="internal tag-link"
+                        href={resolveRelative(
+                          fileData.slug || ("" as FullSlug),
+                          `tags/${tag}` as FullSlug,
+                        )}
+                      >
+                        {tag}
                       </a>
-                    </h3>
-                  </div>
-                  {page.dates && (
-                    <p class="meta">
-                      <Date date={getDate(cfg, page)!} locale={cfg.locale} />
-                    </p>
-                  )}
-                  {opts.showTags && (
-                    <ul class="tags">
-                      {tags.map((tag) => (
-                        <li>
-                          <a
-                            class="internal tag-link"
-                            href={resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)}
-                          >
-                            {tag}
-                          </a>
-                        </li>
-                      ))}
-                    </ul>
-                  )}
-                </div>
+                    </li>
+                  ))}
+                </ul>
               </li>
             )
           })}
         </ul>
         {opts.linkToMore && remaining > 0 && (
           <p>
-            <a href={resolveRelative(fileData.slug!, opts.linkToMore)}>
+            <a href={resolveRelative(fileData.slug || ("" as FullSlug), opts.linkToMore)}>
               {i18n(cfg.locale).components.recentNotes.seeRemainingMore({ remaining })}
             </a>
           </p>

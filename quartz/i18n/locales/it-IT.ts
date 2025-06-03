@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "Nessuna descrizione",
   },
   components: {
-    callout: {
+    admonition: {
       note: "Nota",
       abstract: "Astratto",
       info: "Info",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "Tema chiaro",
       darkMode: "Tema scuro",
-    },
-    readerMode: {
-      title: "Modalità lettura",
     },
     explorer: {
       title: "Esplora",
@@ -68,7 +65,6 @@ export default {
     error: {
       title: "Non trovato",
       notFound: "Questa pagina è privata o non esiste.",
-      home: "Ritorna alla home page",
     },
     folderContent: {
       folder: "Cartella",

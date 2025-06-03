@@ -1,16 +1,16 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
-    title: "Untitled",
-    description: "No description provided",
+    title: "The Pond",
+    description: "Writings about doing good, thinking well, and living happily.",
   },
   components: {
-    callout: {
+    admonition: {
       note: "Note",
       abstract: "Abstract",
       info: "Info",
-      todo: "Todo",
+      todo: "To-do",
       tip: "Tip",
       success: "Success",
       question: "Question",
@@ -23,17 +23,14 @@ export default {
     },
     backlinks: {
       title: "Backlinks",
-      noBacklinksFound: "No backlinks found",
+      noBacklinksFound: "No backlinks found.",
     },
     themeToggle: {
       lightMode: "Light mode",
       darkMode: "Dark mode",
     },
-    readerMode: {
-      title: "Reader mode",
-    },
     explorer: {
-      title: "Explorer",
+      title: "Articles",
     },
     footer: {
       createdWith: "Created with",
@@ -66,9 +63,8 @@ export default {
       lastFewNotes: ({ count }) => `Last ${count} notes`,
     },
     error: {
-      title: "Not Found",
+      title: "Not found",
       notFound: "Either this page is private or doesn't exist.",
-      home: "Return to Homepage",
     },
     folderContent: {
       folder: "Folder",
@@ -77,7 +73,7 @@ export default {
     },
     tagContent: {
       tag: "Tag",
-      tagIndex: "Tag Index",
+      tagIndex: "Tag index",
       itemsUnderTag: ({ count }) =>
         count === 1 ? "1 item with this tag." : `${count} items with this tag.`,
       showingFirst: ({ count }) => `Showing first ${count} tags.`,

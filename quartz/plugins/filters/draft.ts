@@ -1,10 +1,8 @@
-import { QuartzFilterPlugin } from "../types"
+import { type QuartzFilterPlugin } from "../types"
 
-export const RemoveDrafts: QuartzFilterPlugin<{}> = () => ({
+export const RemoveDrafts: QuartzFilterPlugin = () => ({
   name: "RemoveDrafts",
-  shouldPublish(_ctx, [_tree, vfile]) {
-    const draftFlag: boolean =
-      vfile.data?.frontmatter?.draft === true || vfile.data?.frontmatter?.draft === "true"
-    return !draftFlag
+  shouldPublish(_ctx, [, vfile]) {
+    return !vfile.path.includes("drafts/") || vfile.path.includes("templates/")
   },
 })

@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "Không có mô tả được cung cấp",
   },
   components: {
-    callout: {
+    admonition: {
       note: "Ghi Chú",
       abstract: "Tóm Tắt",
       info: "Thông tin",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "Sáng",
       darkMode: "Tối",
-    },
-    readerMode: {
-      title: "Chế độ đọc",
     },
     explorer: {
       title: "Trong bài này",
@@ -68,7 +65,6 @@ export default {
     error: {
       title: "Không Tìm Thấy",
       notFound: "Trang này được bảo mật hoặc không tồn tại.",
-      home: "Trở về trang chủ",
     },
     folderContent: {
       folder: "Thư Mục",

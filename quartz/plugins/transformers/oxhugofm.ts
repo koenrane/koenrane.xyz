@@ -1,4 +1,4 @@
-import { QuartzTransformerPlugin } from "../types"
+import type { QuartzTransformerPlugin } from "../types"
 
 export interface Options {
   /** Replace {{ relref }} with quartz wikilinks []() */
@@ -22,23 +22,22 @@ const defaultOptions: Options = {
   replaceOrgLatex: true,
 }
 
+// Regex for Hugo relref shortcode
 const relrefRegex = new RegExp(/\[([^\]]+)\]\(\{\{< relref "([^"]+)" >\}\}\)/, "g")
+// Regex for predefined heading IDs in Markdown
 const predefinedHeadingIdRegex = new RegExp(/(.*) {#(?:.*)}/, "g")
+// Regex for Hugo shortcodes
 const hugoShortcodeRegex = new RegExp(/{{(.*)}}/, "g")
+// Regex for HTML figure tags
 const figureTagRegex = new RegExp(/< ?figure src="(.*)" ?>/, "g")
-// \\\\\( -> matches \\(
-// (.+?) -> Lazy match for capturing the equation
-// \\\\\) -> matches \\)
+// Regex for inline LaTeX: matches \\( ... \\)
 const inlineLatexRegex = new RegExp(/\\\\\((.+?)\\\\\)/, "g")
-// (?:\\begin{equation}|\\\\\(|\\\\\[) -> start of equation
-// ([\s\S]*?) -> Matches the block equation
-// (?:\\\\\]|\\\\\)|\\end{equation}) -> end of equation
+// Regex for block LaTeX: matches various LaTeX delimiters
 const blockLatexRegex = new RegExp(
   /(?:\\begin{equation}|\\\\\(|\\\\\[)([\s\S]*?)(?:\\\\\]|\\\\\)|\\end{equation})/,
   "g",
 )
-// \$\$[\s\S]*?\$\$ -> Matches block equations
-// \$.*?\$ -> Matches inline equations
+// Regex for Quartz-style LaTeX: matches both inline ($...$) and block ($$...$$) equations
 const quartzLatexRegex = new RegExp(/\$\$[\s\S]*?\$\$|\$.*?\$/, "g")
 
 /**
@@ -47,55 +46,62 @@ const quartzLatexRegex = new RegExp(/\$\$[\s\S]*?\$\$|\$.*?\$/, "g")
  * markdown to make it compatible with quartz but the list of changes applied it
  * is not exhaustive.
  * */
-export const OxHugoFlavouredMarkdown: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
+export const OxHugoFlavouredMarkdown: QuartzTransformerPlugin<Partial<Options> | undefined> = (
+  userOpts,
+) => {
   const opts = { ...defaultOptions, ...userOpts }
   return {
     name: "OxHugoFlavouredMarkdown",
     textTransform(_ctx, src) {
       if (opts.wikilinks) {
+        // Convert Hugo relref shortcodes to Markdown links
         src = src.toString()
-        src = src.replaceAll(relrefRegex, (_value, ...capture) => {
+        src = src.replaceAll(relrefRegex, (value, ...capture) => {
           const [text, link] = capture
           return `[${text}](${link})`
         })
       }
 
       if (opts.removePredefinedAnchor) {
+        // Remove predefined heading IDs
         src = src.toString()
-        src = src.replaceAll(predefinedHeadingIdRegex, (_value, ...capture) => {
+        src = src.replaceAll(predefinedHeadingIdRegex, (value, ...capture) => {
           const [headingText] = capture
           return headingText
         })
       }
 
       if (opts.removeHugoShortcode) {
+        // Remove Hugo shortcodes
         src = src.toString()
-        src = src.replaceAll(hugoShortcodeRegex, (_value, ...capture) => {
+        src = src.replaceAll(hugoShortcodeRegex, (value, ...capture) => {
           const [scContent] = capture
           return scContent
         })
       }
 
       if (opts.replaceFigureWithMdImg) {
+        // Replace HTML figure tags with Markdown image syntax
         src = src.toString()
-        src = src.replaceAll(figureTagRegex, (_value, ...capture) => {
+        src = src.replaceAll(figureTagRegex, (value, ...capture) => {
           const [src] = capture
           return `![](${src})`
         })
       }
 
       if (opts.replaceOrgLatex) {
+        // Convert org-mode LaTeX to Quartz-compatible LaTeX
         src = src.toString()
-        src = src.replaceAll(inlineLatexRegex, (_value, ...capture) => {
+        src = src.replaceAll(inlineLatexRegex, (value, ...capture) => {
           const [eqn] = capture
           return `$${eqn}$`
         })
-        src = src.replaceAll(blockLatexRegex, (_value, ...capture) => {
+        src = src.replaceAll(blockLatexRegex, (value, ...capture) => {
           const [eqn] = capture
           return `$$${eqn}$$`
         })
 
-        // ox-hugo escapes _ as \_
+        // Unescape underscores in LaTeX equations
         src = src.replaceAll(quartzLatexRegex, (value) => {
           return value.replaceAll("\\_", "_")
         })

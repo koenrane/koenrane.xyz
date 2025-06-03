@@ -1,11 +1,19 @@
+import type { Root } from "hast"
+
 import matter from "gray-matter"
+import { JSON_SCHEMA, load as loadYAML } from "js-yaml"
 import remarkFrontmatter from "remark-frontmatter"
-import { QuartzTransformerPlugin } from "../types"
-import yaml from "js-yaml"
 import toml from "toml"
-import { FilePath, FullSlug, getFileExtension, slugifyFilePath, slugTag } from "../../util/path"
-import { QuartzPluginData } from "../vfile"
+import { visit } from "unist-util-visit"
+import { VFile } from "vfile"
+
+import type { QuartzTransformerPlugin } from "../types"
+import type { QuartzPluginData } from "../vfile"
+
 import { i18n } from "../../i18n"
+import { escapeHTML } from "../../util/escape"
+import { slugTag } from "../../util/path"
+import { urlRegex } from "./utils"
 
 export interface Options {
   delimiters: string | [string, string]
@@ -17,10 +25,38 @@ const defaultOptions: Options = {
   language: "yaml",
 }
 
-function coalesceAliases(data: { [key: string]: any }, aliases: string[]) {
+/**
+ * Gathers text from all text nodes plus any content nested inside <code> blocks.
+ * Returns a single string that you can store for indexing.
+ */
+function gatherAllText(tree: Root): string {
+  let allText = ""
+  visit(tree, (node) => {
+    if (
+      // @ts-expect-error: mixing AST node types
+      (node.type === "text" || node.type === "inlineCode") &&
+      "value" in node &&
+      typeof node.value === "string"
+    ) {
+      allText += node.value + " "
+    }
+  })
+  return allText
+}
+
+function coalesceAliases(data: { [key: string]: string[] }, aliases: string[]) {
   for (const alias of aliases) {
     if (data[alias] !== undefined && data[alias] !== null) return data[alias]
   }
+  return []
+}
+
+// I don't want tags to be case-sensitive
+function transformTag(tag: string): string {
+  const trimmedTag = tag.trim()
+  if (trimmedTag === "AI") return trimmedTag
+  const newTag = tag.toLowerCase().trim().replace(/\s+/g, "-")
+  return newTag
 }
 
 function coerceToArray(input: string | string[]): string[] | undefined {
@@ -31,7 +67,7 @@ function coerceToArray(input: string | string[]): string[] | undefined {
     input = input
       .toString()
       .split(",")
-      .map((tag: string) => tag.trim())
+      .map((tag: string) => tag.toLowerCase())
   }
 
   // remove all non-strings
@@ -40,86 +76,51 @@ function coerceToArray(input: string | string[]): string[] | undefined {
     .map((tag: string | number) => tag.toString())
 }
 
-function getAliasSlugs(aliases: string[]): FullSlug[] {
-  const res: FullSlug[] = []
-  for (const alias of aliases) {
-    const isMd = getFileExtension(alias) === "md"
-    const mockFp = isMd ? alias : alias + ".md"
-    const slug = slugifyFilePath(mockFp as FilePath)
-    res.push(slug)
-  }
-
-  return res
-}
-
-export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
+export const FrontMatter: QuartzTransformerPlugin<Partial<Options> | undefined> = (userOpts) => {
   const opts = { ...defaultOptions, ...userOpts }
   return {
     name: "FrontMatter",
-    markdownPlugins(ctx) {
-      const { cfg, allSlugs } = ctx
+    markdownPlugins({ cfg }) {
       return [
         [remarkFrontmatter, ["yaml", "toml"]],
         () => {
-          return (_, file) => {
-            const fileData = Buffer.from(file.value as Uint8Array)
-            const { data } = matter(fileData, {
+          return (tree: Root, file: VFile) => {
+            const fileContent = file.value?.toString() ?? ""
+            const { data } = matter(fileContent, {
               ...opts,
               engines: {
-                yaml: (s) => yaml.load(s, { schema: yaml.JSON_SCHEMA }) as object,
+                yaml: (s) => loadYAML(s, { schema: JSON_SCHEMA }) as object,
                 toml: (s) => toml.parse(s) as object,
               },
             })
 
-            if (data.title != null && data.title.toString() !== "") {
+            if (data.title && data.title.toString() !== "") {
               data.title = data.title.toString()
             } else {
               data.title = file.stem ?? i18n(cfg.configuration.locale).propertyDefaults.title
             }
 
-            const tags = coerceToArray(coalesceAliases(data, ["tags", "tag"]))
-            if (tags) data.tags = [...new Set(tags.map((tag: string) => slugTag(tag)))]
-
-            const aliases = coerceToArray(coalesceAliases(data, ["aliases", "alias"]))
-            if (aliases) {
-              data.aliases = aliases // frontmatter
-              file.data.aliases = getAliasSlugs(aliases)
-              allSlugs.push(...file.data.aliases)
+            const tags = coerceToArray(coalesceAliases(data, ["tags", "tag"]) || [])
+            const lowerCaseTags = tags?.map((tag: string) => transformTag(tag))
+            if (tags) {
+              data.tags = [...new Set(lowerCaseTags?.map((tag: string) => slugTag(tag)))]
             }
 
-            if (data.permalink != null && data.permalink.toString() !== "") {
-              data.permalink = data.permalink.toString() as FullSlug
-              const aliases = file.data.aliases ?? []
-              aliases.push(data.permalink)
-              file.data.aliases = aliases
-              allSlugs.push(data.permalink)
-            }
-
-            const cssclasses = coerceToArray(coalesceAliases(data, ["cssclasses", "cssclass"]))
+            const aliases = coerceToArray(coalesceAliases(data, ["aliases", "alias"]) || [])
+            if (aliases) data.aliases = aliases
+            const cssclasses = coerceToArray(
+              coalesceAliases(data, ["cssclasses", "cssclass"]) || [],
+            )
             if (cssclasses) data.cssclasses = cssclasses
 
-            const socialImage = coalesceAliases(data, ["socialImage", "image", "cover"])
-
-            const created = coalesceAliases(data, ["created", "date"])
-            if (created) data.created = created
-            const modified = coalesceAliases(data, [
-              "modified",
-              "lastmod",
-              "updated",
-              "last-modified",
-            ])
-            if (modified) data.modified = modified
-            const published = coalesceAliases(data, ["published", "publishDate", "date"])
-            if (published) data.published = published
-
-            if (socialImage) data.socialImage = socialImage
-
-            // Remove duplicate slugs
-            const uniqueSlugs = [...new Set(allSlugs)]
-            allSlugs.splice(0, allSlugs.length, ...uniqueSlugs)
-
-            // fill in frontmatter
+            // Fill out frontmatter data
             file.data.frontmatter = data as QuartzPluginData["frontmatter"]
+
+            // Gather text from all text + code nodes
+            let combinedText = gatherAllText(tree)
+            combinedText = escapeHTML(combinedText)
+            combinedText = combinedText.replace(urlRegex, "$<domain>$<path>")
+            file.data.text = combinedText
           }
         },
       ]
@@ -129,24 +130,17 @@ export const FrontMatter: QuartzTransformerPlugin<Partial<Options>> = (userOpts)
 
 declare module "vfile" {
   interface DataMap {
-    aliases: FullSlug[]
     frontmatter: { [key: string]: unknown } & {
       title: string
     } & Partial<{
         tags: string[]
         aliases: string[]
-        modified: string
-        created: string
-        published: string
         description: string
-        socialDescription: string
-        publish: boolean | string
-        draft: boolean | string
+        publish: boolean
+        draft: boolean
         lang: string
         enableToc: string
         cssclasses: string[]
-        socialImage: string
-        comments: boolean | string
       }>
   }
 }

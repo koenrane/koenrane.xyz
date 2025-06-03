@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "Geen beschrijving gegeven.",
   },
   components: {
-    callout: {
+    admonition: {
       note: "Notitie",
       abstract: "Samenvatting",
       info: "Info",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "Lichte modus",
       darkMode: "Donkere modus",
-    },
-    readerMode: {
-      title: "Leesmodus",
     },
     explorer: {
       title: "Verkenner",
@@ -69,7 +66,6 @@ export default {
     error: {
       title: "Niet gevonden",
       notFound: "Deze pagina is niet zichtbaar of bestaat niet.",
-      home: "Keer terug naar de start pagina",
     },
     folderContent: {
       folder: "Map",

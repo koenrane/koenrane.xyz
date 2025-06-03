@@ -1,133 +1,112 @@
-import { computePosition, flip, inline, shift } from "@floating-ui/dom"
-import { normalizeRelativeURLs } from "../../util/path"
-import { fetchCanonical } from "./util"
+import { animate } from "./component_script_utils"
+import {
+  createPopover,
+  setPopoverPosition,
+  attachPopoverEventListeners,
+  PopoverOptions,
+  escapeLeadingIdNumber,
+} from "./popover_helpers"
 
-const p = new DOMParser()
-let activeAnchor: HTMLAnchorElement | null = null
-
-async function mouseEnterHandler(
-  this: HTMLAnchorElement,
-  { clientX, clientY }: { clientX: number; clientY: number },
-) {
-  const link = (activeAnchor = this)
-  if (link.dataset.noPopover === "true") {
+/**
+ * Handles the mouse enter event for link elements
+ * @returns A cleanup function to remove event listeners and timeout
+ */
+function mouseEnterHandler(this: HTMLLinkElement) {
+  const parentOfPopover = document.getElementById("quartz-root")
+  if (!parentOfPopover || this.dataset.noPopover === "true") {
     return
   }
 
-  async function setPosition(popoverElement: HTMLElement) {
-    const { x, y } = await computePosition(link, popoverElement, {
-      strategy: "fixed",
-      middleware: [inline({ x: clientX, y: clientY }), shift(), flip()],
-    })
-    Object.assign(popoverElement.style, {
-      transform: `translate(${x.toFixed()}px, ${y.toFixed()}px)`,
-    })
+  const thisUrl = new URL(document.location.href)
+  thisUrl.hash = ""
+  thisUrl.search = ""
+  const targetUrl = new URL(this.href)
+  let hash = targetUrl.hash
+  targetUrl.hash = ""
+  targetUrl.search = ""
+
+  const popoverOptions: PopoverOptions = {
+    parentElement: parentOfPopover,
+    targetUrl,
+    linkElement: this,
   }
 
-  function showPopover(popoverElement: HTMLElement) {
-    clearActivePopover()
-    popoverElement.classList.add("active-popover")
-    setPosition(popoverElement as HTMLElement)
+  const showPopover = async () => {
+    const popoverElement = await createPopover(popoverOptions)
+    if (!popoverElement) {
+      throw new Error("Failed to create popover")
+    }
+
+    parentOfPopover.prepend(popoverElement)
+
+    const updatePosition = () => {
+      setPopoverPosition(popoverElement, this)
+    }
+
+    updatePosition()
+
+    window.addEventListener("resize", updatePosition)
+
+    const cleanup = attachPopoverEventListeners(popoverElement, this)
+
+    // skipcq: JS-0098
+    void popoverElement.offsetWidth
+
+    popoverElement.classList.add("popover-visible")
 
     if (hash !== "") {
-      const targetAnchor = `#popover-internal-${hash.slice(1)}`
-      const heading = popoverInner.querySelector(targetAnchor) as HTMLElement | null
+      hash = `${hash}-popover`
+      hash = escapeLeadingIdNumber(hash)
+      const heading = popoverElement.querySelector(hash) as HTMLElement | null
       if (heading) {
-        // leave ~12px of buffer when scrolling to a heading
+        const popoverInner = popoverElement.querySelector(".popover-inner") as HTMLElement
+
         popoverInner.scroll({ top: heading.offsetTop - 12, behavior: "instant" })
       }
     }
+
+    return () => {
+      cleanup()
+      window.removeEventListener("resize", updatePosition)
+    }
   }
 
-  const targetUrl = new URL(link.href)
-  const hash = decodeURIComponent(targetUrl.hash)
-  targetUrl.hash = ""
-  targetUrl.search = ""
-  const popoverId = `popover-${link.pathname}`
-  const prevPopoverElement = document.getElementById(popoverId)
-
-  // dont refetch if there's already a popover
-  if (!!document.getElementById(popoverId)) {
-    showPopover(prevPopoverElement as HTMLElement)
-    return
+  // Use requestAnimationFrame to delay showing the popover
+  const cleanupShow = () => {
+    return animate(
+      300,
+      () => undefined,
+      async () => {
+        await showPopover()
+      },
+    )
   }
 
-  const response = await fetchCanonical(targetUrl).catch((err) => {
-    console.error(err)
-  })
+  const cleanup = cleanupShow()
 
-  if (!response) return
-  const [contentType] = response.headers.get("Content-Type")!.split(";")
-  const [contentTypeCategory, typeInfo] = contentType.split("/")
-
-  const popoverElement = document.createElement("div")
-  popoverElement.id = popoverId
-  popoverElement.classList.add("popover")
-  const popoverInner = document.createElement("div")
-  popoverInner.classList.add("popover-inner")
-  popoverInner.dataset.contentType = contentType ?? undefined
-  popoverElement.appendChild(popoverInner)
-
-  switch (contentTypeCategory) {
-    case "image":
-      const img = document.createElement("img")
-      img.src = targetUrl.toString()
-      img.alt = targetUrl.pathname
-
-      popoverInner.appendChild(img)
-      break
-    case "application":
-      switch (typeInfo) {
-        case "pdf":
-          const pdf = document.createElement("iframe")
-          pdf.src = targetUrl.toString()
-          popoverInner.appendChild(pdf)
-          break
-        default:
-          break
-      }
-      break
-    default:
-      const contents = await response.text()
-      const html = p.parseFromString(contents, "text/html")
-      normalizeRelativeURLs(html, targetUrl)
-      // prepend all IDs inside popovers to prevent duplicates
-      html.querySelectorAll("[id]").forEach((el) => {
-        const targetID = `popover-internal-${el.id}`
-        el.id = targetID
-      })
-      const elts = [...html.getElementsByClassName("popover-hint")]
-      if (elts.length === 0) return
-
-      elts.forEach((elt) => popoverInner.appendChild(elt))
+  return () => {
+    cleanup()
+    window.removeEventListener("resize", showPopover)
   }
-
-  if (!!document.getElementById(popoverId)) {
-    return
-  }
-
-  document.body.appendChild(popoverElement)
-  if (activeAnchor !== this) {
-    return
-  }
-
-  showPopover(popoverElement)
 }
 
-function clearActivePopover() {
-  activeAnchor = null
-  const allPopoverElements = document.querySelectorAll(".popover")
-  allPopoverElements.forEach((popoverElement) => popoverElement.classList.remove("active-popover"))
-}
-
+// Add event listeners to all internal links
 document.addEventListener("nav", () => {
-  const links = [...document.querySelectorAll("a.internal")] as HTMLAnchorElement[]
+  const links = [...document.getElementsByClassName("internal")] as HTMLLinkElement[]
   for (const link of links) {
-    link.addEventListener("mouseenter", mouseEnterHandler)
-    link.addEventListener("mouseleave", clearActivePopover)
-    window.addCleanup(() => {
-      link.removeEventListener("mouseenter", mouseEnterHandler)
-      link.removeEventListener("mouseleave", clearActivePopover)
-    })
+    // Define handlers outside to ensure they can be removed
+    let cleanup: (() => void) | undefined
+
+    const handleMouseEnter = async () => {
+      if (cleanup) cleanup()
+      cleanup = mouseEnterHandler.call(link)
+    }
+
+    const handleMouseLeave = () => {
+      if (cleanup) cleanup()
+    }
+
+    link.addEventListener("mouseenter", handleMouseEnter)
+    link.addEventListener("mouseleave", handleMouseLeave)
   }
 })

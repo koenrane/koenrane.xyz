@@ -1,8 +1,9 @@
-import fs from "fs"
 import { Repository } from "@napi-rs/simple-git"
-import { QuartzTransformerPlugin } from "../types"
 import chalk from "chalk"
+import fs from "fs"
 import path from "path"
+
+import type { QuartzTransformerPlugin } from "../types"
 
 export interface Options {
   priority: ("frontmatter" | "git" | "filesystem")[]
@@ -12,14 +13,12 @@ const defaultOptions: Options = {
   priority: ["frontmatter", "git", "filesystem"],
 }
 
-function coerceDate(fp: string, d: any): Date {
-  const dt = new Date(d)
+function coerceDate(fp: string, d: MaybeDate): Date {
+  const dt = new Date(d as string)
   const invalidDate = isNaN(dt.getTime()) || dt.getTime() === 0
   if (invalidDate && d !== undefined) {
     console.log(
-      chalk.yellow(
-        `\nWarning: found invalid date "${d}" in \`${fp}\`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format`,
-      ),
+      `\nWarning: found invalid date "${d}" in \`${fp}\`. Supported formats: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Date#date_time_string_format`,
     )
   }
 
@@ -27,50 +26,50 @@ function coerceDate(fp: string, d: any): Date {
 }
 
 type MaybeDate = undefined | string | number
-export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
+export const CreatedModifiedDate: QuartzTransformerPlugin<Partial<Options> | undefined> = (
+  userOpts,
+) => {
   const opts = { ...defaultOptions, ...userOpts }
   return {
     name: "CreatedModifiedDate",
-    markdownPlugins(ctx) {
+    markdownPlugins() {
       return [
         () => {
-          let repo: Repository | undefined = undefined
-          let repositoryWorkdir: string
-          if (opts.priority.includes("git")) {
-            try {
-              repo = Repository.discover(ctx.argv.directory)
-              repositoryWorkdir = repo.workdir() ?? ctx.argv.directory
-            } catch (e) {
-              console.log(
-                chalk.yellow(`\nWarning: couldn't find git repository for ${ctx.argv.directory}`),
-              )
-            }
-          }
-
+          let repo: Repository | undefined
           return async (_tree, file) => {
-            let created: MaybeDate = undefined
-            let modified: MaybeDate = undefined
-            let published: MaybeDate = undefined
+            let created: MaybeDate
+            let modified: MaybeDate
+            let published: MaybeDate
 
-            const fp = file.data.relativePath!
-            const fullFp = file.data.filePath!
+            const fp = file.data.filePath || ""
+            const fullFp = path.isAbsolute(fp) ? fp : path.posix.join(file.cwd, fp)
             for (const source of opts.priority) {
               if (source === "filesystem") {
                 const st = await fs.promises.stat(fullFp)
                 created ||= st.birthtimeMs
                 modified ||= st.mtimeMs
               } else if (source === "frontmatter" && file.data.frontmatter) {
-                created ||= file.data.frontmatter.created as MaybeDate
-                modified ||= file.data.frontmatter.modified as MaybeDate
-                published ||= file.data.frontmatter.published as MaybeDate
-              } else if (source === "git" && repo) {
+                created ||= file.data.frontmatter.date as MaybeDate
+                modified ||= file.data.frontmatter.lastmod as MaybeDate
+                modified ||= file.data.frontmatter.updated as MaybeDate
+                modified ||= file.data.frontmatter["last-modified"] as MaybeDate
+                const dateStr = file.data.frontmatter.date_published || undefined
+                // const publishedTime = new Date(dateStr).getTime()
+                published ||= (new Date(dateStr as string).getTime() as MaybeDate) || undefined
+              } else if (source === "git") {
+                if (!repo) {
+                  // Get a reference to the main git repo.
+                  // It's either the same as the workdir,
+                  // or 1+ level higher in case of a submodule/subtree setup
+                  repo = Repository.discover(file.cwd)
+                }
+
                 try {
-                  const relativePath = path.relative(repositoryWorkdir, fullFp)
-                  modified ||= await repo.getFileLatestModifiedDateAsync(relativePath)
+                  modified ||= await repo.getFileLatestModifiedDateAsync(file.data.filePath || "")
                 } catch {
                   console.log(
                     chalk.yellow(
-                      `\nWarning: ${file.data.filePath!} isn't yet tracked by git, dates will be inaccurate`,
+                      `\nWarning: ${file.data.filePath} isn't yet tracked by git, last modification date is not available for this file`,
                     ),
                   )
                 }

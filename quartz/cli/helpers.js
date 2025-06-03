@@ -1,8 +1,10 @@
 import { isCancel, outro } from "@clack/prompts"
 import chalk from "chalk"
-import { contentCacheFolder } from "./constants.js"
 import { spawnSync } from "child_process"
 import fs from "fs"
+import process from "node:process"
+
+import { contentCacheFolder } from "./constants.js"
 
 export function escapePath(fp) {
   return fp
@@ -12,9 +14,11 @@ export function escapePath(fp) {
     .trim()
 }
 
+// skipcq: JS-0045
 export function exitIfCancel(val) {
   if (isCancel(val)) {
     outro(chalk.red("Exiting"))
+    // skipcq: JS-0263
     process.exit(0)
   } else {
     return val

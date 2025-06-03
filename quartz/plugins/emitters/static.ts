@@ -1,23 +1,62 @@
-import { FilePath, QUARTZ, joinSegments } from "../../util/path"
-import { QuartzEmitterPlugin } from "../types"
 import fs from "fs"
+
+import type { QuartzEmitterPlugin } from "../types"
+
+import DepGraph from "../../depgraph"
 import { glob } from "../../util/glob"
-import { dirname } from "path"
+import { type FilePath, QUARTZ, joinSegments } from "../../util/path"
 
 export const Static: QuartzEmitterPlugin = () => ({
   name: "Static",
-  async *emit({ argv, cfg }) {
+  getQuartzComponents() {
+    return []
+  },
+  async getDependencyGraph({ argv, cfg }) {
+    const graph = new DepGraph<FilePath>()
+
     const staticPath = joinSegments(QUARTZ, "static")
     const fps = await glob("**", staticPath, cfg.configuration.ignorePatterns)
-    const outputStaticPath = joinSegments(argv.output, "static")
-    await fs.promises.mkdir(outputStaticPath, { recursive: true })
     for (const fp of fps) {
-      const src = joinSegments(staticPath, fp) as FilePath
-      const dest = joinSegments(outputStaticPath, fp) as FilePath
-      await fs.promises.mkdir(dirname(dest), { recursive: true })
-      await fs.promises.copyFile(src, dest)
-      yield dest
+      if (fp === "robots.txt") {
+        graph.addEdge(
+          joinSegments("static", fp) as FilePath,
+          joinSegments(argv.output, fp) as FilePath,
+        )
+      } else {
+        graph.addEdge(
+          joinSegments("static", fp) as FilePath,
+          joinSegments(argv.output, "static", fp) as FilePath,
+        )
+      }
     }
+
+    return graph
   },
-  async *partialEmit() {},
+  async emit({ argv, cfg }): Promise<FilePath[]> {
+    const staticPath = joinSegments(QUARTZ, "static")
+    const fps = await glob("**", staticPath, cfg.configuration.ignorePatterns)
+    const emittedFiles: FilePath[] = []
+
+    // Copy robots.txt to root
+    const robotsTxtPath = joinSegments(staticPath, "robots.txt")
+    if (fs.existsSync(robotsTxtPath)) {
+      await fs.promises.copyFile(robotsTxtPath, joinSegments(argv.output, "robots.txt"))
+      emittedFiles.push(joinSegments(argv.output, "robots.txt") as FilePath)
+    }
+
+    // Copy everything else to /static/
+    await fs.promises.cp(staticPath, joinSegments(argv.output, "static"), {
+      recursive: true,
+      dereference: true,
+    })
+
+    // Add all other files to emitted files list
+    emittedFiles.push(
+      ...(fps
+        .filter((fp) => fp !== "robots.txt")
+        .map((fp) => joinSegments(argv.output, "static", fp)) as FilePath[]),
+    )
+
+    return emittedFiles
+  },
 })

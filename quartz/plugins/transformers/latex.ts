@@ -1,64 +1,70 @@
-import remarkMath from "remark-math"
 import rehypeKatex from "rehype-katex"
 import rehypeMathjax from "rehype-mathjax/svg"
-//@ts-ignore
-import rehypeTypst from "@myriaddreamin/rehype-typst"
-import { QuartzTransformerPlugin } from "../types"
-import { KatexOptions } from "katex"
-import { Options as MathjaxOptions } from "rehype-mathjax/svg"
-//@ts-ignore
-import { Options as TypstOptions } from "@myriaddreamin/rehype-typst"
+import remarkMath from "remark-math"
+
+import type { QuartzTransformerPlugin } from "../types"
 
 interface Options {
-  renderEngine: "katex" | "mathjax" | "typst"
-  customMacros: MacroType
-  katexOptions: Omit<KatexOptions, "macros" | "output">
-  mathJaxOptions: Omit<MathjaxOptions, "macros">
-  typstOptions: TypstOptions
+  renderEngine: "katex" | "mathjax"
+}
+const macros = {
+  "\\abs": "\\left|#1\\right|",
+  "\\prn": "\\left(#1\\right)",
+  "\\brx": "\\left[#1\\right]",
+  "\\set": "\\left\\{#1\\right\\}",
+  "\\defeq": "\\coloneqq",
+  "\\eqdef": "\\eqqcolon",
+  "\\x": "\\mathbf{x}",
+  "\\av": "\\mathbf{a}",
+  "\\bv": "\\mathbf{b}",
+  "\\cv": "\\mathbf{c}",
+  "\\reals": "\\mathbb{R}",
+  "\\argmax": "\\operatorname*{arg\\,max}",
+  "\\argsup": "\\operatorname*{arg\\,sup}",
+  "\\unitvec": "\\mathbf{e}_{#1}",
+  "\\St": "\\mathcal{S}",
+  "\\A": "\\mathcal{A}",
+  "\\rf": "\\mathbf{r}",
+  "\\uf": "\\mathbf{u}",
+  "\\rewardSpace": "\\reals^{\\St}",
+  "\\rewardVS": "\\reals^{\\abs{\\St}}",
+  "\\Prb": "\\mathbb{P}",
+  "\\prob": "\\Prb_{#1}\\prn{#2}",
+  "\\lone": "\\left \\lVert#1\\right \\rVert_1",
+  "\\ltwo": "\\left \\lVert#1\\right \\rVert_2",
+  "\\linfty": "\\left \\lVert#1\\right \\rVert_\\infty",
+  "#": "\\#",
+  "⨉": "×",
+  "⅓": "$\\frac{1}{3}$",
+  "꙳": "$\\star$",
 }
 
-interface MacroType {
-  [key: string]: string
-}
-
-export const Latex: QuartzTransformerPlugin<Partial<Options>> = (opts) => {
+export const Latex: QuartzTransformerPlugin<Options> = (opts?: Options) => {
   const engine = opts?.renderEngine ?? "katex"
-  const macros = opts?.customMacros ?? {}
   return {
     name: "Latex",
     markdownPlugins() {
       return [remarkMath]
     },
     htmlPlugins() {
-      switch (engine) {
-        case "katex": {
-          return [[rehypeKatex, { output: "html", macros, ...(opts?.katexOptions ?? {}) }]]
-        }
-        case "typst": {
-          return [[rehypeTypst, opts?.typstOptions ?? {}]]
-        }
-        case "mathjax": {
-          return [[rehypeMathjax, { macros, ...(opts?.mathJaxOptions ?? {}) }]]
-        }
-        default: {
-          return [[rehypeMathjax, { macros, ...(opts?.mathJaxOptions ?? {}) }]]
-        }
+      if (engine === "katex") {
+        return [
+          [
+            rehypeKatex,
+            { output: "html", strict: false, trust: true, macros, colorIsTextColor: true },
+          ],
+        ]
+      } else {
+        return [rehypeMathjax]
       }
     },
     externalResources() {
-      switch (engine) {
-        case "katex":
-          return {
-            css: [{ content: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/katex.min.css" }],
-            js: [
-              {
-                // fix copy behaviour: https://github.com/KaTeX/KaTeX/blob/main/contrib/copy-tex/README.md
-                src: "https://cdn.jsdelivr.net/npm/katex@0.16.11/dist/contrib/copy-tex.min.js",
-                loadTime: "afterDOMReady",
-                contentType: "external",
-              },
-            ],
-          }
+      if (engine === "katex") {
+        return {
+          css: ["/static/styles/katex.min.css"],
+        }
+      } else {
+        return {}
       }
     },
   }

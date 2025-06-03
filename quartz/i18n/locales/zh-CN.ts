@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "无描述",
   },
   components: {
-    callout: {
+    admonition: {
       note: "笔记",
       abstract: "摘要",
       info: "提示",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "亮色模式",
       darkMode: "暗色模式",
-    },
-    readerMode: {
-      title: "阅读模式",
     },
     explorer: {
       title: "探索",
@@ -68,7 +65,6 @@ export default {
     error: {
       title: "无法找到",
       notFound: "私有笔记或笔记不存在。",
-      home: "返回首页",
     },
     folderContent: {
       folder: "文件夹",

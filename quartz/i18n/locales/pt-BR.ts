@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "Sem descrição",
   },
   components: {
-    callout: {
+    admonition: {
       note: "Nota",
       abstract: "Abstrato",
       info: "Info",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "Tema claro",
       darkMode: "Tema escuro",
-    },
-    readerMode: {
-      title: "Modo leitor",
     },
     explorer: {
       title: "Explorador",
@@ -68,12 +65,11 @@ export default {
     error: {
       title: "Não encontrado",
       notFound: "Esta página é privada ou não existe.",
-      home: "Retornar a página inicial",
     },
     folderContent: {
       folder: "Arquivo",
       itemsUnderFolder: ({ count }) =>
-        count === 1 ? "1 item neste arquivo." : `${count} items neste arquivo.`,
+        count === 1 ? "1 item mneste arquivo." : `${count} items neste arquivo.`,
     },
     tagContent: {
       tag: "Tag",

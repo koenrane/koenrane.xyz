@@ -1,50 +1,48 @@
-import { PerfTimer } from "../util/perf"
+import type { ProcessedContent } from "../plugins/vfile"
+import type { BuildCtx } from "../util/ctx"
+
+import { injectCriticalCSSIntoHTMLFiles } from "../cli/handlers"
 import { getStaticResourcesFromPlugins } from "../plugins"
-import { ProcessedContent } from "../plugins/vfile"
 import { QuartzLogger } from "../util/log"
+import { PerfTimer } from "../util/perf"
 import { trace } from "../util/trace"
-import { BuildCtx } from "../util/ctx"
-import chalk from "chalk"
 
 export async function emitContent(ctx: BuildCtx, content: ProcessedContent[]) {
   const { argv, cfg } = ctx
   const perf = new PerfTimer()
-  const log = new QuartzLogger(ctx.argv.verbose)
+  const log = new QuartzLogger()
 
-  log.start(`Emitting files`)
+  log.start("Emitting output files")
 
   let emittedFiles = 0
+  const emittedPaths: string[] = []
   const staticResources = getStaticResourcesFromPlugins(ctx)
-  await Promise.all(
-    cfg.plugins.emitters.map(async (emitter) => {
-      try {
-        const emitted = await emitter.emit(ctx, content, staticResources)
-        if (Symbol.asyncIterator in emitted) {
-          // Async generator case
-          for await (const file of emitted) {
-            emittedFiles++
-            if (ctx.argv.verbose) {
-              console.log(`[emit:${emitter.name}] ${file}`)
-            } else {
-              log.updateText(`${emitter.name} -> ${chalk.gray(file)}`)
-            }
-          }
-        } else {
-          // Array case
-          emittedFiles += emitted.length
-          for (const file of emitted) {
-            if (ctx.argv.verbose) {
-              console.log(`[emit:${emitter.name}] ${file}`)
-            } else {
-              log.updateText(`${emitter.name} -> ${chalk.gray(file)}`)
-            }
-          }
+
+  // First pass: emit all content
+  for (const emitter of cfg.plugins.emitters) {
+    try {
+      const emitted = await emitter.emit(ctx, content, staticResources)
+      emittedFiles += emitted.length
+      emittedPaths.push(...emitted)
+
+      if (ctx.argv.verbose) {
+        for (const file of emitted) {
+          console.log(`[emit:${emitter.name}] ${file}`)
         }
-      } catch (err) {
-        trace(`Failed to emit from plugin \`${emitter.name}\``, err as Error)
       }
-    }),
-  )
+    } catch (err) {
+      trace(`Failed to emit from plugin \`${emitter.name}\``, err as Error)
+    }
+  }
+
+  // Second pass: generate critical CSS for all HTML files
+  const htmlFiles = emittedPaths.filter((fp) => fp.endsWith(".html"))
+  if (htmlFiles.length > 0 && !argv.skipCriticalCSS) {
+    log.start("Generating critical CSS")
+    await injectCriticalCSSIntoHTMLFiles(htmlFiles, argv.output)
+    log.end(`Injected critical CSS into ${htmlFiles.length} files`)
+  }
 
   log.end(`Emitted ${emittedFiles} files to \`${argv.output}\` in ${perf.timeSince()}`)
+  return emittedFiles
 }

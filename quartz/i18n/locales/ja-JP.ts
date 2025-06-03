@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "説明なし",
   },
   components: {
-    callout: {
+    admonition: {
       note: "ノート",
       abstract: "抄録",
       info: "情報",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "ライトモード",
       darkMode: "ダークモード",
-    },
-    readerMode: {
-      title: "リーダーモード",
     },
     explorer: {
       title: "エクスプローラー",
@@ -68,7 +65,6 @@ export default {
     error: {
       title: "Not Found",
       notFound: "ページが存在しないか、非公開設定になっています。",
-      home: "ホームページに戻る",
     },
     folderContent: {
       folder: "フォルダ",

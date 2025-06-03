@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "Nici o descriere furnizată",
   },
   components: {
-    callout: {
+    admonition: {
       note: "Notă",
       abstract: "Rezumat",
       info: "Informație",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "Modul luminos",
       darkMode: "Modul întunecat",
-    },
-    readerMode: {
-      title: "Modul de citire",
     },
     explorer: {
       title: "Explorator",
@@ -58,7 +55,7 @@ export default {
     },
     contentMeta: {
       readingTime: ({ minutes }) =>
-        minutes == 1 ? `lectură de 1 minut` : `lectură de ${minutes} minute`,
+        minutes == 1 ? "lectură de 1 minut" : `lectură de ${minutes} minute`,
     },
   },
   pages: {
@@ -69,7 +66,6 @@ export default {
     error: {
       title: "Pagina nu a fost găsită",
       notFound: "Fie această pagină este privată, fie nu există.",
-      home: "Reveniți la pagina de pornire",
     },
     folderContent: {
       folder: "Dosar",

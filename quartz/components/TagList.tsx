@@ -1,17 +1,42 @@
-import { FullSlug, resolveRelative } from "../util/path"
-import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { classNames } from "../util/lang"
+import React from "react"
 
-const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
-  const tags = fileData.frontmatter?.tags
+import { type QuartzPluginData } from "../plugins/vfile"
+import { classNames } from "../util/lang"
+import { slugTag } from "../util/path"
+import {
+  type QuartzComponent,
+  type QuartzComponentConstructor,
+  type QuartzComponentProps,
+} from "./types"
+
+// For rendering the tags for a user
+export const formatTag = (tag: string): string => {
+  if (tag.toLowerCase() === "ai") return "AI"
+
+  // Ensure input is a string (using optional chaining for safety)
+  tag = tag?.replace(/-/g, " ").toLowerCase() ?? ""
+  tag = tag?.replaceAll("power seeking", "power-seeking")
+
+  return tag
+}
+
+export const getTags = (fileData: QuartzPluginData) => {
+  let tags = fileData.frontmatter?.tags || []
+  tags = tags.map(formatTag)
+  return tags.sort((a: string, b: string) => b.length - a.length)
+}
+
+export const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentProps) => {
+  const tags = getTags(fileData)
   if (tags && tags.length > 0) {
     return (
-      <ul class={classNames(displayClass, "tags")}>
-        {tags.map((tag) => {
-          const linkDest = resolveRelative(fileData.slug!, `tags/${tag}` as FullSlug)
+      <ul className={classNames(displayClass)}>
+        {tags.map((tag: string) => {
+          const tagSlug = slugTag(tag)
+          const linkDest = `/tags/${tagSlug}`
           return (
-            <li>
-              <a href={linkDest} class="internal tag-link">
+            <li key={tag}>
+              <a href={linkDest} className="internal tag-link">
                 {tag}
               </a>
             </li>
@@ -23,34 +48,5 @@ const TagList: QuartzComponent = ({ fileData, displayClass }: QuartzComponentPro
     return null
   }
 }
-
-TagList.css = `
-.tags {
-  list-style: none;
-  display: flex;
-  padding-left: 0;
-  gap: 0.4rem;
-  margin: 1rem 0;
-  flex-wrap: wrap;
-}
-
-.section-li > .section > .tags {
-  justify-content: flex-end;
-}
-  
-.tags > li {
-  display: inline-block;
-  white-space: nowrap;
-  margin: 0;
-  overflow-wrap: normal;
-}
-
-a.internal.tag-link {
-  border-radius: 8px;
-  background-color: var(--highlight);
-  padding: 0.2rem 0.4rem;
-  margin: 0 0.1rem;
-}
-`
 
 export default (() => TagList) satisfies QuartzComponentConstructor

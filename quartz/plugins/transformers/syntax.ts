@@ -1,5 +1,9 @@
-import { QuartzTransformerPlugin } from "../types"
-import rehypePrettyCode, { Options as CodeOptions, Theme as CodeTheme } from "rehype-pretty-code"
+import rehypePrettyCode, {
+  type Options as CodeOptions,
+  type Theme as CodeTheme,
+} from "rehype-pretty-code"
+
+import type { QuartzTransformerPlugin } from "../types"
 
 interface Theme extends Record<string, CodeTheme> {
   light: CodeTheme
@@ -19,8 +23,10 @@ const defaultOptions: Options = {
   keepBackground: false,
 }
 
-export const SyntaxHighlighting: QuartzTransformerPlugin<Partial<Options>> = (userOpts) => {
-  const opts: CodeOptions = { ...defaultOptions, ...userOpts }
+export const SyntaxHighlighting: QuartzTransformerPlugin<Options> = (
+  userOpts?: Partial<Options>,
+) => {
+  const opts: Partial<CodeOptions> = { ...defaultOptions, ...userOpts }
 
   return {
     name: "SyntaxHighlighting",

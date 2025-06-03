@@ -1,6 +1,6 @@
-import { FullSlug } from "../../util/path"
+import { type FullSlug } from "../../util/path"
 
-export interface CalloutTranslation {
+export interface AdmonitionTranslation {
   note: string
   abstract: string
   info: string
@@ -22,7 +22,7 @@ export interface Translation {
     description: string
   }
   components: {
-    callout: CalloutTranslation
+    admonition: AdmonitionTranslation
     backlinks: {
       title: string
       noBacklinksFound: string
@@ -30,9 +30,6 @@ export interface Translation {
     themeToggle: {
       lightMode: string
       darkMode: string
-    }
-    readerMode: {
-      title: string
     }
     explorer: {
       title: string
@@ -70,7 +67,6 @@ export interface Translation {
     error: {
       title: string
       notFound: string
-      home: string
     }
     folderContent: {
       folder: string

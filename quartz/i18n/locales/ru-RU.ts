@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "Описание отсутствует",
   },
   components: {
-    callout: {
+    admonition: {
       note: "Заметка",
       abstract: "Резюме",
       info: "Инфо",
@@ -28,9 +28,6 @@ export default {
     themeToggle: {
       lightMode: "Светлый режим",
       darkMode: "Тёмный режим",
-    },
-    readerMode: {
-      title: "Режим чтения",
     },
     explorer: {
       title: "Проводник",
@@ -70,7 +67,6 @@ export default {
     error: {
       title: "Страница не найдена",
       notFound: "Эта страница приватная или не существует",
-      home: "Вернуться на главную страницу",
     },
     folderContent: {
       folder: "Папка",

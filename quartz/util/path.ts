@@ -1,6 +1,12 @@
-import { slug as slugAnchor } from "github-slugger"
 import type { Element as HastElement } from "hast"
-import { clone } from "./clone"
+import type { VFile } from "vfile"
+
+import { slug as slugAnchor } from "github-slugger"
+import rfdc from "rfdc"
+
+import { improveFormatting } from "../plugins/transformers/formatting_improvement_html"
+
+export const clone = rfdc()
 
 // this file must be isomorphic so it can't use node libs (e.g. path)
 
@@ -37,20 +43,11 @@ export type RelativeURL = SlugLike<"relative">
 export function isRelativeURL(s: string): s is RelativeURL {
   const validStart = /^\.{1,2}/.test(s)
   const validEnding = !endsWith(s, "index")
-  return validStart && validEnding && ![".md", ".html"].includes(getFileExtension(s) ?? "")
-}
-
-export function isAbsoluteURL(s: string): boolean {
-  try {
-    new URL(s)
-  } catch {
-    return false
-  }
-  return true
+  return validStart && validEnding && ![".md", ".html"].includes(_getFileExtension(s) ?? "")
 }
 
 export function getFullSlug(window: Window): FullSlug {
-  const res = window.document.body.dataset.slug! as FullSlug
+  const res = window.document.body.dataset.slug as FullSlug
   return res
 }
 
@@ -71,8 +68,8 @@ function sluggify(s: string): string {
 
 export function slugifyFilePath(fp: FilePath, excludeExt?: boolean): FullSlug {
   fp = stripSlashes(fp) as FilePath
-  let ext = getFileExtension(fp)
-  const withoutFileExt = fp.replace(new RegExp(ext + "$"), "")
+  let ext = _getFileExtension(fp)
+  const withoutFileExt = fp.replace(new RegExp(`${ext}$`), "")
   if (excludeExt || [".md", ".html", undefined].includes(ext)) {
     ext = ""
   }
@@ -93,12 +90,12 @@ export function simplifySlug(fp: FullSlug): SimpleSlug {
 }
 
 export function transformInternalLink(link: string): RelativeURL {
-  let [fplike, anchor] = splitAnchor(decodeURI(link))
+  const [fplike, anchor] = splitAnchor(decodeURI(link))
 
   const folderPath = isFolderPath(fplike)
-  let segments = fplike.split("/").filter((x) => x.length > 0)
-  let prefix = segments.filter(isRelativeSegment).join("/")
-  let fp = segments.filter((seg) => !isRelativeSegment(seg) && seg !== "").join("/")
+  const segments = fplike.split("/").filter((x) => x.length > 0)
+  const prefix = segments.filter(isRelativeSegment).join("/")
+  const fp = segments.filter((seg) => !isRelativeSegment(seg) && seg !== "").join("/")
 
   // manually add ext here as we want to not strip 'index' if it has an extension
   const simpleSlug = simplifySlug(slugifyFilePath(fp as FilePath))
@@ -111,24 +108,32 @@ export function transformInternalLink(link: string): RelativeURL {
 // from micromorph/src/utils.ts
 // https://github.com/natemoo-re/micromorph/blob/main/src/utils.ts#L5
 const _rebaseHtmlElement = (el: Element, attr: string, newBase: string | URL) => {
-  const rebased = new URL(el.getAttribute(attr)!, newBase)
+  const rebased = new URL(el.getAttribute(attr) ?? "", newBase)
   el.setAttribute(attr, rebased.pathname + rebased.hash)
 }
 export function normalizeRelativeURLs(el: Element | Document, destination: string | URL) {
-  el.querySelectorAll('[href=""], [href^="./"], [href^="../"]').forEach((item) =>
+  el.querySelectorAll('[href^="./"], [href^="../"]').forEach((item) =>
     _rebaseHtmlElement(item, "href", destination),
   )
-  el.querySelectorAll('[src=""], [src^="./"], [src^="../"]').forEach((item) =>
+  el.querySelectorAll('[src^="./"], [src^="../"]').forEach((item) =>
     _rebaseHtmlElement(item, "src", destination),
   )
 }
 
+/**
+ * Rebases a HAST element's attribute to a new base slug
+ *
+ * @param el - HAST element to rebase
+ * @param attr - Attribute to rebase
+ * @param curBase - Current base slug where element originates
+ * @param newBase - New base slug where element will be transcluded
+ */
 const _rebaseHastElement = (
   el: HastElement,
   attr: string,
   curBase: FullSlug,
   newBase: FullSlug,
-) => {
+): void => {
   if (el.properties?.[attr]) {
     if (!isRelativeURL(String(el.properties[attr]))) {
       return
@@ -139,8 +144,34 @@ const _rebaseHastElement = (
   }
 }
 
+/**
+ * Normalizes a HAST element for transclusion by:
+ * 1. Cloning the element to avoid modifying original content
+ * 2. Applying formatting improvements through the HTML transformer
+ * 3. Rebasing relative links to work in the new context
+ *
+ * @param rawEl - Original HAST element to normalize
+ * @param curBase - Current base slug where element originates
+ * @param newBase - New base slug where element will be transcluded
+ * @returns Normalized HAST element with proper formatting and rebased links
+ */
 export function normalizeHastElement(rawEl: HastElement, curBase: FullSlug, newBase: FullSlug) {
   const el = clone(rawEl) // clone so we dont modify the original page
+
+  // Apply formatting improvements to the cloned element
+  const transformer = improveFormatting()
+  transformer(
+    {
+      type: "root",
+      children: [el],
+    },
+    { data: {} } as VFile,
+    () => {
+      // empty because improveFormatting doesn't need a function passed
+    },
+  )
+
+  // Continue with existing link rebasing
   _rebaseHastElement(el, "src", curBase, newBase)
   _rebaseHastElement(el, "href", curBase, newBase)
   if (el.children) {
@@ -158,7 +189,7 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
     .split("/")
     .filter((x) => x !== "")
     .slice(0, -1)
-    .map((_) => "..")
+    .map(() => "..")
     .join("/")
 
   if (rootPath.length === 0) {
@@ -168,17 +199,25 @@ export function pathToRoot(slug: FullSlug): RelativeURL {
   return rootPath as RelativeURL
 }
 
+/**
+ * Resolves a relative path between two slugs
+ *
+ * @param current - Starting slug to resolve from
+ * @param target - Target slug to resolve to
+ * @returns Relative URL path from current to target
+ */
 export function resolveRelative(current: FullSlug, target: FullSlug | SimpleSlug): RelativeURL {
   const res = joinSegments(pathToRoot(current), simplifySlug(target as FullSlug)) as RelativeURL
   return res
 }
 
 export function splitAnchor(link: string): [string, string] {
-  let [fp, anchor] = link.split("#", 2)
+  const fp = link.split("#", 2)[0]
+  let anchor = link.split("#", 2)[1]
   if (fp.endsWith(".pdf")) {
     return [fp, anchor === undefined ? "" : `#${anchor}`]
   }
-  anchor = anchor === undefined ? "" : "#" + slugAnchor(anchor)
+  anchor = anchor === undefined ? "" : `#${slugAnchor(anchor)}`
   return [fp, anchor]
 }
 
@@ -190,26 +229,10 @@ export function slugTag(tag: string) {
 }
 
 export function joinSegments(...args: string[]): string {
-  if (args.length === 0) {
-    return ""
-  }
-
-  let joined = args
-    .filter((segment) => segment !== "" && segment !== "/")
-    .map((segment) => stripSlashes(segment))
+  return args
+    .filter((segment) => segment !== "")
     .join("/")
-
-  // if the first segment starts with a slash, add it back
-  if (args[0].startsWith("/")) {
-    joined = "/" + joined
-  }
-
-  // if the last segment is a folder, add a trailing slash
-  if (args[args.length - 1].endsWith("/")) {
-    joined = joined + "/"
-  }
-
-  return joined
+    .replace(/\/\/+/g, "/")
 }
 
 export function getAllSegmentPrefixes(tags: string): string[] {
@@ -227,14 +250,14 @@ export interface TransformOptions {
 }
 
 export function transformLink(src: FullSlug, target: string, opts: TransformOptions): RelativeURL {
-  let targetSlug = transformInternalLink(target)
+  const targetSlug = transformInternalLink(target)
 
   if (opts.strategy === "relative") {
     return targetSlug as RelativeURL
   } else {
     const folderTail = isFolderPath(targetSlug) ? "/" : ""
     const canonicalSlug = stripSlashes(targetSlug.slice(".".length))
-    let [targetCanonical, targetAnchor] = splitAnchor(canonicalSlug)
+    const [targetCanonical, targetAnchor] = splitAnchor(canonicalSlug)
 
     if (opts.strategy === "shortest") {
       // if the file name is unique, then it's just the filename
@@ -257,7 +280,7 @@ export function transformLink(src: FullSlug, target: string, opts: TransformOpti
 }
 
 // path helpers
-export function isFolderPath(fplike: string): boolean {
+function isFolderPath(fplike: string): boolean {
   return (
     fplike.endsWith("/") ||
     endsWith(fplike, "index") ||
@@ -267,10 +290,10 @@ export function isFolderPath(fplike: string): boolean {
 }
 
 export function endsWith(s: string, suffix: string): boolean {
-  return s === suffix || s.endsWith("/" + suffix)
+  return s === suffix || s.endsWith(`/${suffix}`)
 }
 
-export function trimSuffix(s: string, suffix: string): string {
+function trimSuffix(s: string, suffix: string): string {
   if (endsWith(s, suffix)) {
     s = s.slice(0, -suffix.length)
   }
@@ -282,10 +305,10 @@ function containsForbiddenCharacters(s: string): boolean {
 }
 
 function _hasFileExtension(s: string): boolean {
-  return getFileExtension(s) !== undefined
+  return _getFileExtension(s) !== undefined
 }
 
-export function getFileExtension(s: string): string | undefined {
+function _getFileExtension(s: string): string | undefined {
   return s.match(/\.[A-Za-z0-9]+$/)?.[0]
 }
 

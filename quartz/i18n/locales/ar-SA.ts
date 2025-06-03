@@ -1,4 +1,4 @@
-import { Translation } from "./definition"
+import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
@@ -6,7 +6,7 @@ export default {
     description: "لم يتم تقديم أي وصف",
   },
   components: {
-    callout: {
+    admonition: {
       note: "ملاحظة",
       abstract: "ملخص",
       info: "معلومات",
@@ -32,9 +32,6 @@ export default {
     explorer: {
       title: "المستعرض",
     },
-    readerMode: {
-      title: "وضع القارئ",
-    },
     footer: {
       createdWith: "أُنشئ باستخدام",
     },
@@ -59,9 +56,9 @@ export default {
     contentMeta: {
       readingTime: ({ minutes }) =>
         minutes == 1
-          ? `دقيقة أو أقل للقراءة`
+          ? "دقيقة أو أقل للقراءة"
           : minutes == 2
-            ? `دقيقتان للقراءة`
+            ? "دقيقتان للقراءة"
             : `${minutes} دقائق للقراءة`,
     },
   },
@@ -73,7 +70,6 @@ export default {
     error: {
       title: "غير موجود",
       notFound: "إما أن هذه الصفحة خاصة أو غير موجودة.",
-      home: "العوده للصفحة الرئيسية",
     },
     folderContent: {
       folder: "مجلد",

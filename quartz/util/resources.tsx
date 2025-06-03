@@ -1,6 +1,9 @@
+/* eslint-disable react/no-unknown-property */
+// (For the spa-preserve attribute)
+
 import { randomUUID } from "crypto"
 import { JSX } from "preact/jsx-runtime"
-import { QuartzPluginData } from "../plugins/vfile"
+import React from "react"
 
 export type JSResource = {
   loadTime: "beforeDOMReady" | "afterDOMReady"
@@ -17,18 +20,19 @@ export type JSResource = {
     }
 )
 
-export type CSSResource = {
-  content: string
-  inline?: boolean
-  spaPreserve?: boolean
-}
-
-export function JSResourceToScriptElement(resource: JSResource, preserve?: boolean): JSX.Element {
+export function JSResourceToScriptElement(resource: JSResource): JSX.Element {
   const scriptType = resource.moduleType ?? "application/javascript"
-  const spaPreserve = preserve ?? resource.spaPreserve
+  const toDefer = resource.loadTime === "afterDOMReady"
+
   if (resource.contentType === "external") {
     return (
-      <script key={resource.src} src={resource.src} type={scriptType} spa-preserve={spaPreserve} />
+      <script
+        spa-preserve
+        key={resource.src}
+        src={resource.src}
+        type={scriptType}
+        defer={toDefer}
+      />
     )
   } else {
     const content = resource.script
@@ -36,39 +40,15 @@ export function JSResourceToScriptElement(resource: JSResource, preserve?: boole
       <script
         key={randomUUID()}
         type={scriptType}
-        spa-preserve={spaPreserve}
+        spa-preserve
+        defer={toDefer}
         dangerouslySetInnerHTML={{ __html: content }}
       ></script>
     )
   }
 }
 
-export function CSSResourceToStyleElement(resource: CSSResource, preserve?: boolean): JSX.Element {
-  const spaPreserve = preserve ?? resource.spaPreserve
-  if (resource.inline ?? false) {
-    return <style>{resource.content}</style>
-  } else {
-    return (
-      <link
-        key={resource.content}
-        href={resource.content}
-        rel="stylesheet"
-        type="text/css"
-        spa-preserve={spaPreserve}
-      />
-    )
-  }
-}
-
 export interface StaticResources {
-  css: CSSResource[]
+  css: string[]
   js: JSResource[]
-  additionalHead: (JSX.Element | ((pageData: QuartzPluginData) => JSX.Element))[]
-}
-
-export type StringResource = string | string[] | undefined
-export function concatenateResources(...resources: StringResource[]): StringResource {
-  return resources
-    .filter((resource): resource is string | string[] => resource !== undefined)
-    .flat()
 }

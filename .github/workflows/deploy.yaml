@@ -1,0 +1,96 @@
+name: Deploy to Cloudflare
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: true
+
+on:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  prepare-deploy:
+    runs-on: ubuntu-22.04
+    steps:
+      - uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22.5.1
+      - name: Install Dependencies
+        run: npm ci
+
+      - name: Build Quartz and generate critical CSS
+        run: npx quartz build --no-serve
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+          cache: "pip"
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+      - name: Install xmllint
+        run: |
+          sudo apt-get update
+          sudo apt-get install -y libxml2-utils dos2unix
+
+      - name: Install subfont
+        run: npm install -g subfont
+      - name: Make script executable
+        run: chmod +x ./scripts/subfont.sh
+      - name: Subset fonts
+        run: sh ./scripts/subfont.sh
+      - name: Run site checks
+        run: python scripts/built_site_checks.py --check-fonts
+
+      # Upload the prepared public directory as an artifact
+      - name: Upload prepared site
+        uses: actions/upload-artifact@v4
+        with:
+          name: public-dir
+          path: public/
+
+  verify-tests:
+    runs-on: ubuntu-22.04
+    timeout-minutes: 15
+    steps:
+      - name: Wait for all tests
+        uses: lewagon/wait-on-check-action@v1.3.1
+        with:
+          ref: ${{ github.sha }}
+          repo-token: ${{ secrets.GITHUB_TOKEN }}
+          check-regexp: '^(visual-testing|Run eslint scanning|build \(>=22\))$'
+          wait-interval: 10
+          allowed-conclusions: success,skipped
+          running-workflow-name: "Deploy to Cloudflare"
+
+  deploy:
+    needs: [prepare-deploy, verify-tests]
+    runs-on: ubuntu-22.04
+    steps:
+      # Download the prepared public directory
+      - name: Download prepared site
+        uses: actions/download-artifact@v4
+        with:
+          name: public-dir
+          path: public/
+
+      - name: Install Wrangler
+        run: npm install -g wrangler
+
+      - name: Deploy to Cloudflare Pages
+        env:
+          CLOUDFLARE_API_TOKEN: ${{ secrets.CLOUDFLARE_API_TOKEN }}
+          CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
+          CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
+        run: |
+          export BRANCH=${${{ github.ref }}#refs/heads/}
+          npx wrangler pages deploy ./public --project-name=turntrout --branch $BRANCH
