@@ -28,7 +28,7 @@ The *[About Site](/about-site)* page provides information about this website's d
 
 ### NEWEST
 ---
-- [[https://www.lesswrong.com/posts/5bZ8xFBBHhuFNXSNY/a-guide-to-ai-2027 | A Guide to AI 2027]]
+- [A Guide to AI 2027](/ai-2027-guide)
 
 
 </br>
@@ -65,5 +65,5 @@ The *[About Site](/about-site)* page provides information about this website's d
 
 ### REVIEWS
 ---
-- Book Reviews
+- [Book Reviews](/book-reviews)
 - [Tea Reviews](/tea-reviews)

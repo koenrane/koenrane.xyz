@@ -7,7 +7,7 @@ tags:
   - reviews
   - tea
 ---
-After giving up coffee, I became quite obsessed with tea and began to do extensive research and read about the flavors of different varieties. As a recent avid coffee drinker, I didn't think much about the novelty of loose leaf tea and how enjoyable it would be to peruse tea rooms to find the best flavor that matched my preferences. Where I live currently, there is not much in the way of tea. Coffee seems abundant, which is unsurprising because of its ubiquitous character, even in small towns. Tea has taken a back seat somewhat as a means of caffeine consumption, and only after I began my tea obsession, realized that it was an unfortunate situation. I found that I enjoy the process of finding my preferred variety, exploring all its variations depending on geography, and learning about said variety's rich history. Since I was a regular coffee drinker, I tend to like teas that are on the stronger side, but lighter like Darjeeling, and recently I've gained a love of darker roasted Oolong. Green tea comes in third as a supplement that I enjoy to keep from going through my favorites too fast ($$$) and have plenty of it in stock as backup. 
+After giving up coffee[^1], I became quite obsessed with tea and began to do extensive research and read about the flavors of different varieties. As a recent avid coffee drinker, I didn't think much about the novelty of loose leaf tea and how enjoyable it would be to peruse tea rooms to find the best flavor that matched my preferences. Where I live currently, there is not much in the way of tea. Coffee seems abundant, which is unsurprising because of its ubiquitous character, even in small towns. Tea has taken a back seat somewhat as a means of caffeine consumption, and only after I began my tea obsession, realized that it was an unfortunate situation. I found that I enjoy the process of finding my preferred variety, exploring all its variations depending on geography, and learning about said variety's rich history. Since I was a regular coffee drinker, I tend to like teas that are on the stronger side, but lighter like Darjeeling, and recently I've gained a love of darker roasted Oolong. Green tea comes in third as a supplement that I enjoy to keep from going through my favorites too fast ($$$) and have plenty of it in stock as backup. 
 
 # TEA
 ---
@@ -74,11 +74,16 @@ My process varies between two different times that I decide to brew tea. Often, 
 ## GREEN
 - [[https://www.moonscoffeeandtea.com/store/Ti-Kuan-Yin-Superior-Oolong-p19952571 | Ti Kuan Yin Superior Oolong]] ★★★★★
 
-<div class="iframe">
-The most acclaimed Chinese Oolong is the Ti Kuan Yin with its distinctively sweet, orchid-like flavor. This Fine tea is smooth with a delicate fragrance. An exquisite oolong tea from the Fujian province of China produces a fragrant golden yellow liquor with a floral character that's both light and delicate.
-</div>
+> [!quote] The most acclaimed Chinese Oolong is the Ti Kuan Yin with its distinctively sweet, orchid-like flavor. This Fine tea is smooth with a delicate fragrance. An exquisite oolong tea from the Fujian province of China produces a fragrant golden yellow liquor with a floral character that's both light and delicate.
 
 - Ti Kuan Yin (Tieguanyin 铁观音): This batch seems to be heavily roasted (traditional style), which gives it a deeper and darker flavor and a light grassy taste, but stays clean. It also typically leaves a long-lasting, pleasant aftertaste ("hui gan" 回甘), which seems to be a floral type of sweetness with earthy undertones.
 
+</br>
+
+<!-- spellchecker-disable -->
+: <em><span class="elvish" data-content="Tea, what gives me life each day,">hEÁ jyE7\`B\`V j1pE6E j8"\#\`B 8\~M75%5$ =</span></em>
+<!-- spellchecker-enable -->
 
 </br>
+
+[^footnote]:I switched to tea because I was consuming too much coffee daily, so I've been able to half my caffeine consumption. 

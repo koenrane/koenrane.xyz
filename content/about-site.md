@@ -14,7 +14,7 @@ On this site, the intention is to write on various subjects that involve program
 
 # CONTENT
 ---
-> *All men dream: but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity: but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes, to make them possible.*
+> [!quote] *All men dream: but not equally. Those who dream by night in the dusty recesses of their minds, wake in the day to find that it was vanity: but the dreamers of the day are dangerous men, for they may act on their dreams with open eyes, to make them possible.*
 >
 >[T.E. Lawrence](https://en.wikipedia.org/wiki/T._E._Lawrence), [*Seven Pillars of Wisdom*](https://en.wikipedia.org/wiki/Seven_Pillars_of_Wisdom)
 
@@ -30,11 +30,11 @@ The intent here is to post long-form essays that stem from my research and readi
 
 # PURPOSE
 ---
-> *"Perhaps the great error is believing we’re alone, that the universe is empty of purpose. It is not. We are the purpose."*
+> [!quote]*"Perhaps the great error is believing we’re alone, that the universe is empty of purpose. It is not. We are the purpose."*
 >
 >[Arrival](https://en.wikipedia.org/wiki/Arrival_film), 2016, [*Story of Your Life*](https://raley.english.ucsb.edu/wp-content/uploads/Reading/Chiang-story.pdf), by Ted Chiang
 
-> *"You know what’s the most terrifying thing about the universe? It doesn’t care about you."*
+> [!quote]*"You know what’s the most terrifying thing about the universe? It doesn’t care about you."*
 >
 > [*Three Body Problem*](https://en.wikipedia.org/wiki/The_Three-Body_Problem_novel), Liu Cixin
 
@@ -57,11 +57,11 @@ The payoff in the end is, more often than not, worth it. When I see a finished e
 
 # INFORMATION GATHERING
 ---
-> *"The historian’s task is to tell the story of the past, but the researcher’s task is to uncover the truth that was forgotten."*
+> [!quote]*"The historian’s task is to tell the story of the past, but the researcher’s task is to uncover the truth that was forgotten."*
 >
 > [Jules Michelet](https://en.wikipedia.org/wiki/Jules_Michelet)
 
-> *"If you steal from one author, it’s plagiarism; if you steal from many, it’s research."*
+> [!quote]*"If you steal from one author, it’s plagiarism; if you steal from many, it’s research."*
 >
 > [Wilson Mizner](https://en.wikipedia.org/wiki/Wilson_Mizner)
 
