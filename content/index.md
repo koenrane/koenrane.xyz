@@ -49,6 +49,7 @@ The *[About Site](/about-site)* page provides information about this website's d
 - [[https://docs.google.com/spreadsheets/d/e/2PACX-1vRwP-rk4fyMo5L00mkJrt989AXA6JYjx_pjrqGnBSWSS_7JJ2S9Yj6ylxYP9-jrYZUxrBs8gXHA02RN/pubhtml | Bookantt Chart - Reading Tracker]]
 - [[https://www.goodreads.com/book/show/17332218-words-of-radiance | *Words of Radiance*, Stormlight Archive]], Sanderson
 - [[https://www.goodreads.com/book/show/123471.I_Am_a_Strange_Loop | *I am A Strange Loop*]], Hofstadter
+- [[https://www.amazon.com/Silo-Saga-Wool-Shift-Stories/dp/0358447828 | *Wool*]], Hughey
 
 
 </br>

@@ -364,7 +364,7 @@
 #nav-searchbar {
   @media all and (min-width: $min-desktop-width) {
     order: 2; // Search bar comes after other links
-    margin-top: calc(0.25 * $base-margin);
+    margin-top: calc(1.5 * $base-margin);
   }
 }
 
