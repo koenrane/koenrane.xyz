@@ -960,6 +960,17 @@ iframe {
   margin-bottom: calc(2 * $base-margin);
 }
 
+// Frame for text, mostly quotes
+.frame {
+  border-radius: 5px;
+  border: 1px solid var(--midground);
+  padding: 1rem;
+  margin-bottom: calc(2 * $base-margin);
+  margin-top: calc(2 * $base-margin);
+}
+
+
+
 // Arrows are too high up by default
 .right-arrow {
   vertical-align: -0.0612rem;

@@ -57,9 +57,13 @@ The *[About Site](/about-site)* page provides information about this website's d
 ### BLOG
 ---
 - [Containerized Intentionality](/containerized-intentionality)
+- [On Being A Deep Generalist](/deep-generalist)
+- [Quick Thoughts on Agentic AI](/thoughts-agenticai)
+
 
 </br>
 
-### ESSAYS
+### REVIEWS
 ---
-~
+- Book Reviews
+- [Tea Reviews](/tea-reviews)
