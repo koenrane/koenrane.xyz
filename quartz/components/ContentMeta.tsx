@@ -7,7 +7,7 @@ import { type GlobalConfiguration } from "../cfg"
 import { type QuartzPluginData } from "../plugins/vfile"
 import { Backlinks } from "./Backlinks"
 import { formatTitle } from "./component_utils"
-import { DateElement } from "./Date"
+import { DateElement, DateRangeElement } from "./Date"
 import style from "./styles/contentMeta.scss"
 import { TagList } from "./TagList"
 import { type QuartzComponentConstructor, type QuartzComponentProps } from "./types"
@@ -18,18 +18,18 @@ export function RenderPublicationInfo(
   fileData: QuartzPluginData,
 ): JSX.Element | null {
   const frontmatter = fileData.frontmatter
-  const datePublished = frontmatter?.date_published as Date
+  const datePublished = frontmatter?.date_published
   if (!datePublished || frontmatter?.hide_metadata) {
     return null
   }
 
   const dateElement = (
-    <DateElement
+    <DateRangeElement
       cfg={cfg}
       date={datePublished}
-      monthFormat="long"
-      includeOrdinalSuffix
-      formatOrdinalSuffix
+      monthFormat="iso"
+      includeOrdinalSuffix={false}
+      formatOrdinalSuffix={false}
     />
   )
 
@@ -49,7 +49,7 @@ export function RenderPublicationInfo(
     )
   }
 
-  return <span className="publication-str">Published on {dateElement}</span>
+  return <span className="publication-str">{dateElement}</span>
 }
 
 // Add new function to render last updated info
@@ -279,7 +279,7 @@ export const ContentMetadata = (props: QuartzComponentProps) => {
   const metadataElements = [
     renderSequenceInfo(props.fileData),
     renderTags(props),
-    //renderPostStatistics(props), //remove post statistics sitewide
+    //renderPostStatistics(props), // Publication date now shown at top via PublicationDate component
   ]
 
   const filteredElements = metadataElements.filter(Boolean) // Remove any null or undefined elements

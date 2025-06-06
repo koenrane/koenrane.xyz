@@ -16,7 +16,7 @@ export interface FrontmatterData {
   enableToc?: string
   cssclasses?: string[]
   lang?: string
-  date_published?: string | Date
+  date_published?: string | Date | { start: string | Date; end: string | Date }
   date_updated?: string | Date
   hide_metadata?: boolean
   hide_reading_time?: boolean

@@ -17,9 +17,16 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 # 2025
 ----
+## NEW SITE
+---
 ### JUNE
+- [The Oneiroi's Subject](/the-oneirois-subject)
+- [Tea Reviews](/tea-reviews)
+- [Book Reviews](/book-reviews)
 - replaced pmwiki remote repo with quartz site refactor files
 
+## OLD SITE
+---
 ### MAY
 - [Containerized Intentionality](/containerized-intentionality)
 - added page link to longform LessWrong post: A Guide to AI 2027

@@ -5,6 +5,8 @@ title: THE ONEIROI'S SUBJECT
 subtitle: CHAPTER 2
 description: A story about a troubled researcher, dreams, and how death brings change
 ---
+### CHAPTER 2
+
 There was a quietness in the air, almost like the sound waves in the world had completely stopped. I realized it was dead silent in my sleep before my waking mind knew it. I felt exposed, and I was used to feeling a certain nightly calmness was absent. Something felt out of equilibrium, but I had not physically seen anything, except the vivid unreality of my dream that I was suddenly torn from. 
 
 This dream was out of the ordinary. Normally, I experience a recurring set of dreams with similar timelines, which involve me remembering the previous instance but trying to direct myself on a new course. This one was different. 

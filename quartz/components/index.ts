@@ -11,6 +11,7 @@ import NotFound from "./pages/404"
 import Content from "./pages/Content"
 import FolderContent from "./pages/FolderContent"
 import TagContent from "./pages/TagContent"
+import PublicationDate from "./PublicationDate"
 import RecentNotes from "./RecentNotes"
 import TableOfContents from "./TableOfContents"
 
@@ -30,4 +31,5 @@ export {
   RecentNotes,
   NotFound,
   AuthorList,
+  PublicationDate,
 }

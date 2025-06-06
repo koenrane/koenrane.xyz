@@ -2,6 +2,7 @@
 permalink: thoughts-agenticai
 publish: "true"
 title: QUICK THOUGHTS ON AGENTIC AI
+date_published: 2025-06-04
 tags:
   - blog
   - AI
