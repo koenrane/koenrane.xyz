@@ -165,7 +165,7 @@ export const renderTags = (props: QuartzComponentProps): JSX.Element => {
     <blockquote className="admonition admonition-metadata" data-admonition="tag">
       <div className="admonition-title">
         <div className="admonition-icon"></div>
-        <div className="admonition-title-inner">Tags</div>
+        <div className="admonition-title-inner">~</div>
       </div>
       <div className="admonition-content" id="tags">
         <TagList {...props} />
