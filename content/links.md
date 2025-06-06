@@ -1,6 +1,8 @@
 ---
 title: NEW LINKS
 draft: false
+date_published: 2025-02-06
+status: in-progress
 tags:
   - links
   - reading

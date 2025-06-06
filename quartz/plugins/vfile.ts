@@ -18,6 +18,7 @@ export interface FrontmatterData {
   lang?: string
   date_published?: string | Date | { start: string | Date; end: string | Date }
   date_updated?: string | Date
+  status?: "in-progress" | "finished" | "abandoned"
   hide_metadata?: boolean
   hide_reading_time?: boolean
   original_url?: string

@@ -3,6 +3,10 @@ permalink: ai-2027-guide
 publish: "true"
 title: A GUIDE TO AI 2027
 description: This is my reading companion for ai2027.com
+date_published:
+    start: 2025-04-01
+    end: 2025-05-09
+status: finished
 tags:
   - AI
   - guide

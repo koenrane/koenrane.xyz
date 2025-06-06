@@ -3,7 +3,14 @@ permalink: containerized-intentionality
 publish: true
 hideSubscriptionLinks: false
 description: Some thoughts on intentionality and integrating the concept of a North Star that came to me after a collective journaling session in early 2025
+date_published: 
+  start: 2025-02-10
+  end: 2025-02-14
+status: finished
+tags:
   - blog
+  - journaling
+  - philosophy
 title: CONTAINERIZED INTENTIONALITY
 ---
 

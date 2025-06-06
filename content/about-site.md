@@ -1,6 +1,8 @@
 ---
 title: About This Website
 draft: false
+date_published: 2025-02-26
+status: in-progress
 tags:
   - site
   - development

@@ -4,7 +4,8 @@ publish: "true"
 title: TO THE STOA, WITH LOVE
 date_published:
     start: 2023-07-21 
-    end: 2023-07-22 
+    end: 2023-07-22
+status: finished 
 tags:
   - blog
   - community

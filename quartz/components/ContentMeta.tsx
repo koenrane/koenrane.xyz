@@ -270,6 +270,36 @@ export function renderPostStatistics(props: QuartzComponentProps): JSX.Element |
   )
 }
 
+// Render status information
+export function RenderStatusInfo(fileData: QuartzPluginData): JSX.Element | null {
+  const frontmatter = fileData.frontmatter
+  const status = frontmatter?.status
+  
+  if (!status || frontmatter?.hide_metadata) {
+    return null
+  }
+
+  const statusConfig = {
+    "in-progress": { label: "in-Progress"},
+    "finished": { label: "finished"},
+    "abandoned": { label: "abandoned"}
+  }
+
+  const config = statusConfig[status]
+  if (!config) return null
+
+  return (
+    <span 
+      className="status-str" 
+      style={{ 
+        fontWeight: "400"
+      }}
+    >
+      {config.label}
+    </span>
+  )
+}
+
 export const ContentMetadata = (props: QuartzComponentProps) => {
   if (props.fileData.frontmatter?.hide_metadata || !props.fileData.text) {
     return null

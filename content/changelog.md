@@ -2,6 +2,8 @@
 permalink: changelog
 title: CHANGELOG
 publish: true
+date_published: 2025-02-05
+status: in-progress
 tags:
   - site
   - meta

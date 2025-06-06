@@ -3,6 +3,8 @@ permalink: the-oneirois-subject
 publish: "true"
 title: THE ONEIROI'S SUBJECT
 description: A story about a troubled researcher, dreams, and how death brings change
+date_published: 2023-02-06
+status: in-progress
 tags:
   - fiction
   - writing

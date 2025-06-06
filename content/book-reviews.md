@@ -3,6 +3,8 @@ permalink: book-reviews
 publish: "true"
 title: BOOK REVIEWS
 description: This page contains selections from my library that deserve a review. I don't review every book I read.
+date_published: 2025-03-17
+status: in-progress
 tags:
   - reviews
   - books

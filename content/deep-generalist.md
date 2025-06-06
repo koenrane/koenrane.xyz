@@ -2,6 +2,8 @@
 permalink: deep-generalist
 publish: "true"
 title: ON BEING A DEEP GENERALIST
+date_published: 2025-03-27
+status: finished
 tags:
   - blog
 ---

@@ -3,6 +3,8 @@ permalink: about
 publish: true
 hideSubscriptionLinks: false
 description: I'm Koen Rane, an independent researcher and writer
+date_published: 2025-02-10
+status: in-progress
 tags:
   - personal
 title: About me
