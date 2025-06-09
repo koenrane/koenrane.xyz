@@ -1,30 +1,15 @@
 ---
-title: Testing site features
+title: SITE FEATURE TESTING
 permalink: test-page
 publish: true
-no_dropcap: "false"
 tags:
   - website
 description: Displaying the features of the website for use in visual regression testing.
-authors: Alex Turner
 hideSubscriptionLinks: false
-card_image:
-aliases:
-date_published: 2024-12-04 22:12:56.910555
-date_updated: 2025-04-12 09:51:51.137842
+date_published: 2025-06-08
+status: in-progress
+
 ---
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -50,8 +35,8 @@ Text
 
 Subtitle: I am a subtitle with [a link](/test-page).
 
-# Lists
-
+# LISTS
+---
 > I am a block quote.
 >
 > - Block quotes can contain unordered lists
@@ -81,7 +66,8 @@ Subtitle: I am a subtitle with [a link](/test-page).
         - .
   - The last bullet
 
-## Description list
+## DESCRIPTION LIST
+---
 
 Header 1
 : Test item 1
@@ -97,7 +83,8 @@ Header 1
    </ul>
 </dd>
 
-## Admonition lists
+## ADMONITION LISTS
+---
 
 > [!info] List admonition
 > Testing a list admonition:
@@ -123,7 +110,8 @@ Header 1
 >
 > 2. Yes, the Marauder’s Map influenced the US’s decision to enter World War I.
 
-# Admonitions
+# ADMONITIONS
+---
 
 > [!quote]
 > > [!quote] **Reroll** **A**
@@ -188,7 +176,8 @@ Header 1
 > Hi
 >
 
-# Mermaid diagrams
+# MERMAID DIAGRAMS
+---
 
 ```mermaid
 flowchart TD
@@ -220,7 +209,8 @@ graph TD
     C --> D
 ```
 
-# Captions
+# CAPTIONS
+---
 
 ```python
 a = b + c
@@ -231,7 +221,8 @@ Code: A `<figcaption>` element created from the Markdown cue of "Code:".
 ![Test image.](https://assets.turntrout.com/static/images/posts/goose-majestic.avif)
 Figure: A `<figcaption>` element created from the Markdown cue of "Figure:".
 
-# Tables
+# TABLES
+---
 
 This footnote has a table.[^table]
 
@@ -293,34 +284,39 @@ Table: A `<figcaption>` element created from the Markdown cue of "Table:".
 
 Table: Ensure that word wrapping works properly on table header elements to prevent overflow.
 
-# Media
+# MEDIA
+---
 
-## Video
+## VIDEO
 
 <video autoplay muted loop playsinline aria-label="The baseline RL policy makes a big mess while the AUP policy cleanly destroys the red pellets and finishes the level."><source src="https://assets.turntrout.com/static/images/posts/prune_still-easy_trajectories.mp4" type="video/mp4; codecs=hvc1"><source src="https://assets.turntrout.com/static/images/posts/prune_still-easy_trajectories.webm" type="video/webm"></video>
 
 <video controls width="100%"><source src="https://assets.turntrout.com/alignment-agendas.mp4" type="video/mp4; codecs=hvc1"/>
 <source src="https://assets.turntrout.com/alignment-agendas.webm" type="video/webm"></video>
 
-## Audio
+## AUDIO
 
 <center><audio src="https://assets.turntrout.com/static/audio/batman.mp3" controls> </audio></center>
 
-## Transclusion
+## TRANSCLUSION
+
 >
 > ![[about#^first-para]]
 
-## Images
+## IMAGES
+---
 
 ![Sample complexity of different kinds of DCTs.](https://assets.turntrout.com/static/images/posts/sample-complexity-dcts.avif){.transparent-image}
 
 Figure: This image should be transparent in light mode and have a light background in dark mode.
 
-## Fatebook embed
+## FATEBOOK EMBED
+---
 
 <iframe src="https://fatebook.io/embed/q/are-you-going-to-like-turntrout-com---cm2u10nym00029cc3j1h05pot?compact=true&requireSignIn=false" height="200"></iframe>
 
-# Spoilers
+# SPOLIERS
+---
 >
 >Normal blockquote
 
@@ -328,7 +324,8 @@ Figure: This image should be transparent in light mode and have a light backgrou
 >! Multiple lines can be hidden
 >! Like this!
 
-# Math
+# MATH
+---
 
 Inline math: $e^{i\pi} + 1 = 0$
 
@@ -347,21 +344,23 @@ $$\nabla \cdot \mathbf{E}  =\frac{\rho}{\varepsilon_0} \qquad \nabla \cdot \math
 <img src="https://assets.turntrout.com/static/images/posts/alex_rainbow_2.avif" class="float-right" alt="Alex smiling at the camera; rainbow colored light splays off the wall in the background."/>
 <!-- vale on -->
 
-# Link features
+# LINK FEATURES
+---
 
-## Internal links
+## INTERNAL LINKS
 
 Here's a link to [another page](/shard-theory) with popover preview. [This same-page link goes to the "smallcaps" section.](#smallcaps)
 
-## External links with favicons
+## EXTERNAL LINKS WITH FAVICONS
 
 Check out [GitHub](https://github.com). <img src="https://assets.turntrout.com/static/images/external-favicons/matsprogram_org.avif" class="favicon no-span" alt="">
 
 Links ending [with code tags should still wrap OK: `code.`](#external-links-with-favicons)
 
-# Typography
+# TYPOGRAPHY
+---
 
-## Smallcaps
+## SMALLCAPS
 
 The NATO alliance met in the USA.  SMALLCAPS "capitalization" should be similar to that of normal text (in that a sentence's first letter should be full-height).
 
@@ -374,11 +373,11 @@ The NATO alliance met in the USA.  SMALLCAPS "capitalization" should be similar 
 - ~~ABCDEFGHIJKLMNOPQRSTUVWXYZ~~
 <!--spellchecker-enable-->
 
-## Numbers and units
+## NUMBERS AND UNITS
 
 This computer has 16GB of RAM and runs at 3.2GHz.
 
-## Smart quotes
+## SMART QUOTES
 
 "I am a quote with 'nested' quotes inside of me."
 
@@ -387,15 +386,15 @@ This computer has 16GB of RAM and runs at 3.2GHz.
 >
 > 'I will take the Ring'
 
-## Fractions and math
+## FRACTIONS AND MATH
 
 This solution is 2/3 water, mixed on 01/01/2024. Even more complicated fractions work: 233/250, 2404210/203, -30/50. However, decimal "fractions" (e.g. 3.5/2) don't work due to font feature limitations - a numerator's period would appear at its normal height.
 
-## Ordinal suffixes
+## ORDINAL SUFFIXES
 
 He came in 1st but I came in 5,300,251st. :(
 
-## Dropcaps
+## DROPCAPS
 
 <span id="single-letter-dropcap" class="dropcap" data-first-letter="T">T</span>his paragraph demonstrates a dropcap.
 
@@ -416,52 +415,8 @@ He came in 1st but I came in 5,300,251st. :(
 <span class="dropcap" data-first-letter="D"  style="--before-color: color-mix(in srgb, 65% pink, var(--midground-fainter));">D</span>
 </center>
 
-# Emoji examples
-
-😀 😃 😄 😁 😆 😅 🤣 😂 🙂 🙃 😉 😊 😇 🥰 😍 🤩 😘 😗 ☺ 😚 😙 🥲 😋 😛 😜 🤪 😝 🤑 🤗 🤭 🤫 🤔 🤐 🤨 😐 😑 😶 😏 😒 🙄 😬 🤥 😌 😔 😪 🤤 😴 😷 🤒 🤕 🤢 🤮 🤧 🥵 🥶 🥴 😵 🤯 🤠 🥳 🥸 😎 🤓 🧐 😕 😟 🙁 ☹ 😮 😯 😲 😳 🥺 😦 😧 😨 😰 😥 😢 😭 😱 😖 😣 😞 😓 😩 😫 🥱 😤 😡 😠 🤬 😈 👿 💀 ☠ 💩 🤡 👹 👺 👻 👽 👾 🤖 😺 😸 😹 😻 😼 😽 🙀 😿 😾 💋 👋 🤚 🖐 ✋ 🖖 👌 🤏 ✌ 🤞 🤟 🤘 🤙 👈 👉 👆 🖕 👇 ☝ 👍 👎 ✊ 👊 🤛 🤜 👏 🙌 👐 🤲 🤝 🙏 ✍ 💅 🤳 💪 🦾 🦿 🦵 🦶 👂 🦻 👃 🧠 🦷 🦴 👀 👁 👅 👄
-
-🙈 🙉 🙊 💥 💫 💦 💨 🐵 🐒 🦍 🦧 🐶 🐕 🦮 🐕‍🦺 🐩 🐺 🦊 🦝 🐱 🐈 🐈‍⬛ 🦁 🐯 🐅 🐆 🐴 🐎 🦄 🦓 🦌 🦬 🐮 🐂 🐃 🐄 🐷 🐖 🐗 🐽 🐏 🐑 🐐 🐪 🐫 🦙 🦒 🐘 🦣 🦏 🦛 🐭 🐁 🐀 🐹 🐰 🐇 🐿 🦫 🦔 🦇 🐻 🐻‍❄️ 🐨 🐼 🦥 🦦 🦨 🦘 🦡 🐾 🦃 🐔 🐓 🐣 🐤 🐥 🐦 🐧 🕊 🦅 🦆 🦢 🦉 🦤 🪶 🦩 🦚 🦜 🐸 🐊 🐢 🦎 🐍 🐲 🐉 🦕 🦖 🐳 🐋 🐬 🦭 🐟 🐠 🐡 🦈 🐙 🐚 🐌 🦋 🐛 🐜 🐝 🪲 🐞 🦗 🪳 🕷 🕸 🦂 🦟 🪰 🪱 🦠 💐 🌸 💮 🏵 🌹 🥀 🌺 🌻 🌼 🌷 🌱 🌲 🌳 🌴 🌵 🌾 🌿 ☘ 🍀 🍁 🍂 🍃 🍄 🌰 🦀 🦞 🦐 🦑 🌍 🌎 🌏 🌐 🌑 🌒 🌓 🌔 🌕 🌖 🌗 🌘 🌙 🌚 🌛 🌜 ☀ 🌝 🌞 ⭐ 🌟 🌠 ☁ ⛅ ⛈ 🌤 🌥 🌦 🌧 🌨 🌩 🌪 🌫 🌬 🌈 ☂ ☔ ⚡ ❄ ☃ ⛄ ☄ 🔥 💧 🌊 🎄 ✨ 🎋 🎍
-
-## Emoji comparison
-
-<figure id="emoji-comparison-figure">
- <div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/apple_hearts.avif" alt="Smiling Face With Hearts on Apple">
-      <figcaption>Apple</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/google_hearts.avif" alt="Smiling Face With Hearts on Google">
-      <figcaption>Google</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/microsoft_hearts.avif" alt="Smiling Face With Hearts on Microsoft">
-      <figcaption>Microsoft</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/facebook_hearts.avif" alt="Smiling Face With Hearts on Facebook">
-      <figcaption>Facebook</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/twemoji/1f970.svg" alt="Smiling Face With Hearts on Twitter">
-      <figcaption>Twitter</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/whatsapp_hearts.avif" alt="Smiling Face With Hearts on WhatsApp">
-      <figcaption>WhatsApp</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/samsung_hearts.avif" alt="Smiling Face With Hearts on Samsung">
-      <figcaption>Samsung</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/LG_hearts.avif" alt="Smiling Face With Hearts on LG">
-      <figcaption>LG</figcaption>
-    </div>
-  </div>
-</figure>
-
-# Color palette
+# COLOR PALETTE
+---
 
 <figure>
 <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.5rem; margin-bottom: 1rem;">
@@ -493,11 +448,13 @@ He came in 1st but I came in 5,300,251st. :(
 <figcaption>The palettes for light and dark mode. In dark mode, I decrease the saturation of image assets.</figcaption>
 </figure>
 
-# Footnote demonstration
+# FOOTNOTES
+---
 
 This text omits a detail.[^footnote] This sentence has multiple footnotes.[^1][^2]
 
-# Code blocks
+# CODE BLOCKS
+---
 
 ```json
 "lint-staged": {
@@ -517,7 +474,8 @@ This text omits a detail.[^footnote] This sentence has multiple footnotes.[^1][^
 This is a plain code block without a language specified.
 ```
 
-# Formatting
+# FORMATTING
+---
 
 - Normal
 - _Italics_
@@ -527,7 +485,7 @@ This is a plain code block without a language specified.
 
 <abbr class="small-caps"><code>This is smallcaps within a code block.</code></abbr>
 
-## Special fonts
+## SPECIAL FONTS
 
 Elvish
 <!-- spellchecker-disable -->
@@ -543,7 +501,8 @@ Gold script
 Corrupted text
 : <span class="corrupted">The corruption creeps ever closer...</span>
 
-# What are your timelines?
+# TIMELINES
+---
 
 <div class="timeline">
     <div class="timeline-card">

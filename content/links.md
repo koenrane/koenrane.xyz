@@ -7,12 +7,27 @@ tags:
   - links
   - reading
   - research
+
 ---
 
+Links are posted monthly in chronological order and include any articles, papers, or essays that I find pertinent to my current research and writing. 
 
+</br>
 
 # 2025
 ----
+### MAY
+* [Orienting Toward Wizard Power](https://www.lesswrong.com/posts/Wg6ptgi2DupFuAnXG/orienting-toward-wizard-power), Wentworth 2025
+* [Neural Thermodynamic Laws for Large Language Model Training](https://arxiv.org/pdf/2505.10559), Tegmark, et al 2025
+* [The ZINGULARITY framework for Bayesian artificial neural networks](https://www.aanda.org/10.1051/0004-6361/202553785), Janssen 2025
+* [How to Generate Synthetic Data: A Comprehensive Guide Using Bayesian Sampling and Univariate Distributions](https://towardsdatascience.com/how-to-generate-synthetic-data-a-comprehensive-guide-using-bayesian-sampling-and-univariate-distributions/), 2025
+* [Synthetic Data RL: Task Definition Is All You Need](https://huggingface.co/papers/2505.17063), Guo 2025
+* [[https://arxiv.org/abs/2503.23278 | Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions]]
+* [[https://sakana.ai/ctm/ | Continuous Thought Machines]]
+  * Paper: [[https://arxiv.org/abs/2505.05522 | Continuous Thought Machines]]
+
+
+
 ### APRIL
 * [[https://danieljeffries.substack.com/p/how-to-build-an-american-deepseek | How To build an American DeepSeek]] Jeffries 2025
 * [[https://ai-2027.com/ | AI 2027]], [[https://ai-futures.org/ | AI Futures]] 2025

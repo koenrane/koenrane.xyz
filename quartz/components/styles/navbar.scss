@@ -6,31 +6,42 @@
   & ul {
     list-style: none;
     max-height: none;
-    padding-left: calc(0.5 * $base-margin);
+    padding-left: 0;
     background-color: var(--background);
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    gap: calc(2 * $base-margin);
+    align-items: center;
 
     @media all and (min-width: $min-desktop-width) {
-      margin: $base-margin 0;
+      margin: 0;
     }
 
     & li {
-      text-align: right;
+      text-align: center;
 
       & > a {
         color: var(--midground);
         transition: opacity 0.5s ease-out;
         text-decoration: none;
+        padding: calc(0.5 * $base-margin) calc(1 * $base-margin);
+        border-radius: 4px;
+        
+        &:hover {
+          background-color: var(--midground-faintest);
+        }
       }
     }
   }
 
-  // Desktop
+  // Desktop - horizontal layout
   @media (min-width: $min-desktop-width) {
     display: flex;
     text-align: center;
-    flex-direction: column;
-    height: 100%;
+    flex-direction: row;
+    width: 100%;
+    justify-content: flex-end;
   }
 
   @media (max-width: $max-mobile-width) {
@@ -55,6 +66,8 @@
       clip-path: inset(0 0 -15px -15px);
       width: max-content;
       right: 0;
+      flex-direction: column;
+      gap: 0;
     }
   }
 }
@@ -127,8 +140,9 @@
 /* Center the site name under the pond video */
 #page-title h2,
 #navbar-left h2 {
-  text-align: center;
+  text-align: left;
   color: var(--midground);
+  margin: 0;
 
   & a {
     color: inherit;
@@ -153,7 +167,7 @@
   @media all and (min-width: $min-desktop-width) {
     margin-bottom: 0;
     margin-top: 0;
-    margin-right: calc(0.25 * $base-margin); // Make it flush with the site links
+    margin-right: calc(0.25 * $base-margin);
     font-size: var(--font-size-plus-2);
   }
 }
@@ -165,19 +179,21 @@
   align-items: center;
 
   @media all and (min-width: $min-desktop-width) {
-    flex-direction: column;
-    align-items: flex-end;
+    flex-direction: row;
+    align-items: center;
   }
 }
 
 #navbar-left,
 .navbar-left {
   position: relative;
+  flex-grow: 1;
 }
 
 #navbar-right {
   @media all and (min-width: $min-desktop-width) {
-    margin-right: calc(0.25 * $base-margin);
+    margin-right: 0;
+    gap: calc(1 * $base-margin);
   }
 }
 
@@ -204,8 +220,14 @@
 
 #navbar {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   position: relative;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding: calc(1 * $base-margin) 0;
+  border-bottom: 1px solid var(--midground-faintest);
+  margin-bottom: calc(2 * $base-margin);
 
   @media all and (max-width: $max-mobile-width) {
     justify-content: space-between;
@@ -244,16 +266,19 @@
   // static KR logo styling
 #header-logo-container {
   @media all and (min-width: $min-desktop-width) {
-    width: 120px;
-    height: 120px;
-    min-height: 120px;
-    aspect-ratio: 120 / 120;
+    width: 60px;
+    height: 60px;
+    min-height: 60px;
+    aspect-ratio: 60 / 60;
     display: block;
   }
 
-  // Hide on mobile
   @media all and (max-width: $max-mobile-width) {
-    display: none;
+    width: 40px;
+    height: 40px;
+    min-height: 40px;
+    aspect-ratio: 40 / 40;
+    display: block;
   }
 }
 
@@ -272,8 +297,9 @@
   font-size: var(--font-size-minus-2);
   text-align: right;
   display: flex;
-  flex-direction: row-reverse;
-  margin-top: calc(1 * $base-margin);
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
 
   @media all and (max-width: $max-mobile-width) {
     position: relative;
@@ -298,9 +324,9 @@
     margin-right: calc(0.5 * $base-margin);
 
     @media all and (min-width: $min-desktop-width) {
-      margin-right: 0;
-      margin-bottom: calc(0.5 * $base-margin);
-      align-self: center; // Centered above the auto text
+      margin-right: calc(0.5 * $base-margin);
+      margin-bottom: 0;
+      align-self: center;
     }
   }
 
@@ -308,7 +334,7 @@
     color: var(--midground);
     transition: opacity 0.5s ease;
     margin: 0;
-    margin-right: calc(0.75 * $base-margin);
+    margin-right: 0;
     flex-shrink: 0; // Don't want it to wrap
     font-style: italic; // Differentiate from navbar links
     user-select: all;
@@ -363,8 +389,8 @@
 
 #nav-searchbar {
   @media all and (min-width: $min-desktop-width) {
-    order: 2; // Search bar comes after other links
-    margin-top: calc(1.5 * $base-margin);
+    order: 1;
+    margin-top: 0;
   }
 }
 

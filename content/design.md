@@ -1,46 +1,90 @@
 ---
-title: The design of this website
+title: DESIGN OF THIS WEBSITE
 permalink: design
 publish: true
 tags:
   - website
-description: Showing off and explaining this site's beauty.
-authors: Alex Turner
+  - typescript
+  - CSS
+  - typograhpy
+  - design
+  - meta
 hideSubscriptionLinks: false
 card_image:
-aliases:
-  - website-design
-date_published: 2024-10-31 23:14:34.832290
-date_updated: 2025-04-13 14:25:18.026759
+date_published: 2025-03-18
+status: in-progress 
 no_dropcap: "false"
+
+---
+Koenrane.xyz is implemented as a static website using a custom forked quartz repository and is hosted on a droplet VM as a light-weight instance. 
+
+This site has taken many ideas and suggestions on design and typography from a select few sources. One of those, which will be very obvious to readers will be the website of [Gwern](https://gwern.net). I spent several years reading this site and gathering knowledge for proper ways to build a site that is pleasing to the eyes while providing content that is interesting and adheres to an [iceberg build](https://gwern.net/style-guide#success-metrics-for-the-iceberg-build-process) process, which is one of my highest aims for this site (second to exceptional content). 
+
+Major features include link popups, footnotes, dropcaps, smallcaps, multiple admonition types, inline favicons, which are all presented in a monochrome aesthetic, where the ultimate aim is to present content that can be long-form, long-lasting, and linkable, while being visually appealing to readers.  
+
+
+# PRINCIPLES
+---
+There are many high-level design principles that the concrete features on this site embody. These features collectively support several fundamental design philosophies from UX, visual design, and software engineering:
+
+1. Clarity over cleverness
+   - [Information Architecture](https://medium.com/@mattholla/the-eight-principles-of-information-architecture-6feff11f907a), [Minimalist Aesthetic](https://carlbarenbrug.com/minimal-design), [Cognitive Load Theory](https://www.nngroup.com/articles/minimize-cognitive-load/)
+2. Performance as a feature
+   - [Progressive Enhancement](https://blog.hubspot.com/website/what-is-progressive-enhancement), [Perceived Performance](https://www.sitepoint.com/a-designers-guide-to-fast-websites-and-perceived-performance/), [User-First Optimization](https://medium.com/@MobileAppDesigner/user-first-design-principles-mastering-ui-ux-for-success-6d52f4e8b5e5)
+3. Consistency breeds trust
+   - [Design Systems Thinking](https://medium.com/design-voices/system-thinking-for-designers-e9f025698a32), [Visual Rhythm](https://www.interaction-design.org/literature/article/repetition-pattern-and-rhythm?srsltid=AfmBOoo9Mo6FssSssw9hlR6LEh_9ZXf_5oZDKjDwIp39tMWzBJTV2eMT), [Jakob’s Law](https://lawsofux.com/jakobs-law/?utm_source=chatgpt.com) (users expect consistency)
+4. Respect reader agency
+   - User Control and Freedom, [Progressive Disclosure](https://en.wikipedia.org/wiki/Progressive_disclosure)
+5. Usabilit, not at the expense of character
+   - [Emotional Design](https://www.interaction-design.org/literature/topics/emotional-design), [Delight without Distraction](https://voltagecontrol.com/blog/radical-acts-of-delight/)
+6. Accessibility through semantics
+   - [Semantic Web Principles](https://www.w3.org/DesignIssues/Semantic.html?utm_source=chatgpt.com), [Accessible Design](https://www.w3.org/WAI/tips/designing/)
+7. Robustness via automation
+   - [Defensive Design](https://en.wikipedia.org/wiki/Defensive_design), [Reliability Engineering](https://www.squadcast.com/blog/sre-principles#basic-sre-principles-)
+
+</br>
+
+```mermaid
+flowchart TB
+  A[Human‑Centered Design]
+
+  A --> B[Clarity over Cleverness]
+  B --> B1[Typography & Modular Font Scale]
+  B --> B2[TOCs with Scroll Sync]
+  B --> B3[Metadata: Dates, Next/Prev Nav]
+
+  A --> C[Reader Agency]
+  C --> C1[Collapsible Admonitions]
+  C --> C2[Spoiler Hover‑Reveals]
+  C --> C3[Popovers for Internal Links]
+  C --> C4[Keyboard‑Triggered Search]
+ 
+```
+
+ 
+</br>
+
+## INTERCONNECTION
+
+>[!quote]...interconnection and expressing that interconnection has been the center of all of my thinking and all my computer work has been about expressing and representing and showing interconnection among writings especially, and writing is the process of reducing a tapestry of interconnection to a narrow sequence and this is in a sense illicit. This is a wrongful compression of what should spread out in today's computers. 
+> 
+> [Ted Nelson](http://www.thetednelson.com/), in Herzog's *Lo and Behold*
+
+> [!info] [an honorable and novel attempt that reverberates to the present, Project Xanadu:](https://en.wikipedia.org/wiki/Project_Xanadu)
+
+</br>
+
+
+
+# FEATURES
 ---
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-When I decided to design my own website, I had no experience with web development. After 202 days, 2,220+ commits,[^commits] and 1,008 unit tests, I present `turntrout.com` - the result of my inexperience.
-
-I'm proud of this website and its design. Indulge me and let me explain the choices I made along the way.
-
-[^commits]: I counted my commits by running `git log --author="Alex Turner" --oneline | wc -l`.
-
-![A basic rendition of the article "Think carefully before calling RL policies 'agents'". The website looks bare and amateurish.](https://assets.turntrout.com/static/images/posts/original_site.avif)
-Figure: The beginning of my journey, rendered under my third commit ([`6e687609`](https://github.com/alexander-turner/TurnTrout.com/commit/6e687609a4b8f4bb14d1812c8fca5d833904729e)) on April 1, 2024.
-
-![A pleasing rendition of the article "Think carefully before calling RL policies 'agents'".](https://assets.turntrout.com/static/images/posts/new_site.avif)
-Figure: Content rendered approximately when this article was first published ([`31bba104`](https://github.com/alexander-turner/TurnTrout.com/commit/31bba1043391e055138a07ab5da624e70bab562c)).
-
-# Site rendering basics
+# SITE BASICS
+---
 
 The site is a fork of the [Quartz](https://quartz.jzhao.xyz/) static site generator. While [the build process](https://quartz.jzhao.xyz/advanced/architecture) is rather involved, here's what you need to know for this article:
 
@@ -89,75 +133,12 @@ The site is a fork of the [Quartz](https://quartz.jzhao.xyz/) static site genera
 >
 > Code: I wouldn't want to apply this transform to raw text because it would probably break link addresses (which often contain hyphenated sequences of numbers). However, many HTML transforms aren't text → text.
 
-# Importing the content from my old blog
-
-With the help of the LessWrong moderation team, I [migrated the content from my old blog](/welcome-to-the-pond) via their [GraphIQL](https://lesswrong.com/graphiql) tool. The tool outputs both Markdown and HTML versions of the posts. However, while attempting to import my posts, I found the included Markdown to be a mess. I was staring at 120 posts' worth of invalid Markdown, and - I found this out the hard way - the mess was too complicated to RegEx my way out of.
-
-So I decided to convert the HTML to Markdown on my own using [`turndown`](https://github.com/mixmark-io/turndown). That solved the formatting issues. I was then confronted with compatibility issues. For example, throughout my six years on my old blog, there were _at least three_ footnote formats which I used. I needed to be able to parse a single format. Now imagine that issue, but sprouting up one hundred-fold.
-
-That took a few months.
-
-> [!info]- Details on exporting my content
-> I exported my content using [this query](https://github.com/alexander-turner/TurnTrout.com/blob/import/scripts/graphiql.txt). After downloading the JSON, I ran [`process_json.cjs`](https://github.com/alexander-turner/TurnTrout.com/blob/import/scripts/process_json.cjs) to use [`turndown`](https://github.com/mixmark-io/turndown) to convert the raw HTML to (properly processed) Markdown. Finally, I [preprocessed the Markdown files.](https://github.com/alexander-turner/TurnTrout.com/blob/import/scripts/md_processing_single.py)
-
 # Archiving and dependencies
-
-[Cloudflare](https://www.cloudflare.com/) hosts `TurnTrout.com`. Overall, the site has few external dependencies. In nearly all cases, I host scripts, stylesheets, and media assets on my CDN. If the rest of the Web went down (besides Cloudflare), `turntrout.com` would look nearly the same.[^archive] Furthermore, minimizing embeds (e.g. `<iframe>`s) will minimize the number of invasive tracking cookies.[^video]
-
-[^video]: To avoid YouTube tracking cookies, I even self-host [AI presidents discuss AI alignment agendas](/alignment-tier-list).
-
-[^archive]: Examples of content which is not hosted on my website: There are several `<iframe>` embeds (e.g. Google forms and such). I also use the privacy-friendlier [`umami.is`](https://umami.is/) analytics service and load the script from their site.
-
-My CDN brings me comfort - about 3% of my older image links had already died on LessWrong (e.g. `imgur` links expired). I think LessWrong now hosts assets on their own CDN. However, I do not want my site's content to be tied to their engineering and organizational decisions. I want my content to be timeless.
-
-I wrote [a script](https://github.com/alexander-turner/TurnTrout.com/blob/main/scripts/r2_upload.py) which uploads and backs up relevant media files. Before pushing new assets to my `main` branch, the script:
-
-1. Uploads the assets to my CDN (`assets.turntrout.com`);
-2. Copies the assets to my local mirror of the CDN content;
-3. Removes the assets so they aren't tracked by my `git` repo.
-
-I later describe my [deployment pipeline](#deployment-pipeline) in more detail.
 
 # Color scheme
 
 The color scheme derives from the [Catppuccin](https://catppuccin.com) "latte" (light mode) and "frappe" (dark mode) [palettes](https://github.com/catppuccin/catppuccin/tree/main?tab=readme-ov-file#-palette).
 
-![](https://assets.turntrout.com/static/images/posts/catppuccin.avif)
-Figure: The four Catppuccin palettes.
-
-## Themes
-
-I like the pastel palettes provided by Catppuccin:
-
-<figure>
-<div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 300px), 1fr)); gap: 1.5rem; margin-bottom: 1rem;">
-  <span id="light-demo" class="light-mode" style="border-radius: 5px; padding: 1rem 2rem; border: 2px var(--midground) solid;">
-    <center>Light mode</center>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: 1rem; place-items: center; margin-top: .5rem; margin-bottom: .25rem;">
-      <span style="color: red;">Red</span>
-      <span style="color: orange;">Orange</span>
-      <span style="color: yellow;">Yellow</span>
-      <span style="color: green;">Green</span>
-      <span style="color: blue;">Blue</span>
-      <span style="color: purple;">Purple</span>
-    </div>
-    <center><img src="https://assets.turntrout.com/twemoji/1f970.svg" style="max-width: 100px; max-height: 100px; margin-top: 1rem; filter: none;" alt="Smiling Face With Hearts on Twitter"/></center>
-  </span>
-  <span id="dark-demo" class="dark-mode" style="border-radius: 5px; padding: 1rem 2rem; border: 2px var(--midground) solid;">
-    <center>Dark mode</center>
-    <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(70px, 1fr)); gap: 1rem; place-items: center; margin-top: .5rem; margin-bottom: .25rem;">
-      <span style="color: red;">Red</span>
-      <span style="color: orange;">Orange</span>
-      <span style="color: yellow;">Yellow</span>
-      <span style="color: green;">Green</span>
-      <span style="color: blue;">Blue</span>
-      <span style="color: purple;">Purple</span>
-    </div>
-    <center><img src="https://assets.turntrout.com/twemoji/1f970.svg" style="max-width: 100px; max-height: 100px; margin-top: 1rem; mix-blend-mode: normal;" alt="Smiling Face With Hearts on Twitter"/></center>
-  </span>
-</div>
-<figcaption>The palettes for light and dark mode. In dark mode, I decrease the saturation of image assets.</figcaption>
-</figure>
 
 I use the darkest text color sparingly. The margin text is medium-contrast, as are e.g. list numbers and bullets. I even used CSS to dynamically adjust the luminance of select favicons, avoiding the scourge of common jet-black favicons mixed in with my softer text color. My dark mode button rotates between "automatic", "force light mode", and "force dark mode."
 
@@ -165,13 +146,11 @@ I use the darkest text color sparingly. The margin text is medium-contrast, as a
 
 Color is important to this website, but I need to be tasteful and strict in my usage or the site turns into a mess. For example, in-line [favicons](https://en.wikipedia.org/wiki/Favicon) are colorless (e.g. [YouTube's](https://youtube.com) logo is definitely red). To choose otherwise is to choose chaos and distraction.
 
-When designing visual content, I consider where the reader's eyes go. People visit my site to read my content, and so _the content should catch their eyes first_. The desktop pond scene (with the goose) is the only exception to this rule. I decided that on the desktop, I want a reader to load the page, marvel and smile at the scenic pond, and then bring their eyes to the main text (which has high contrast and is the obvious next visual attractor).
+When designing visual content, I consider where the reader's eyes go. People visit my site to read my content, and so _the content should catch their eyes first_. 
 
-During the build process, I convert all naive CSS assignments of `color:red` (<span style="color:rgb(255,0,0);">imagine if I made you read this</span>) to <span style="color:red">the site's red</span>. Lots of my old equations used raw `red` / `green` / `blue` colors because that's all that my old blog allowed; these colors are converted to the site theme. I even override and standardize the colors used for syntax highlighting in the code blocks.
+During the build process, I convert all naive CSS assignments of `color:red` (<span style="color:rgb(255,0,0);">imagine if I made you read this</span>) to <span style="color:red">the site's red</span>. 
 
 # Site responsiveness
-
-As a static webpage, my life is much simpler than the lives of most web developers. However, by default, users would have to wait a few seconds for each page to load, which I consider unacceptable. I want my site to be responsive even on mobile on slow connections.
 
 Quartz offers basic optimizations, such as [lazy loading](https://developer.mozilla.org/en-US/docs/Web/Performance/Lazy_loading) of assets and [minifying](https://en.wikipedia.org/wiki/Minification_(programming)) JavaScript and CSS files. I further marked the core CSS files for preloading. However, there are a range of more interesting optimizations which Quartz and I implement.
 
@@ -189,66 +168,6 @@ Among lossy compression formats, there are two kings: AVIF and WEBP. Under my te
 
 To demonstrate this liberty, I perform a statistical analysis of the 941 AVIF files hosted on my CDN as of November 9, 2024.[^colab] I downloaded each AVIF file and used `magick` to convert it back to a PNG, measuring the size before and after.
 
-<img alt="Compression ratios: (PNG size) / (AVIF size). A left-skew histogram with tails reaching out to 75x." src="https://assets.turntrout.com/static/images/posts/compression_ratio.svg" class="compression-ratio-graph"/>
-
-Figure: At first blush, most of the compression ratios seem unimpressive. However, the vast majority of the "images" are [favicons](#inline-favicons) which show up next to URLs. These images are already tiny as PNGs (e.g. 2KB), so AVIF can only compress them so much.  
-
-<figure><img src="https://assets.turntrout.com/static/images/posts/goose-majestic.avif" style="max-width: 85%;"> <figcaption>This friendly <abbr class="small-caps">avif</abbr> goose clocks in below <abbr class="small-caps">45kb</abbr>, while its <abbr class="small-caps">png</abbr> equivalent weighs <abbr class="small-caps">450kb</abbr>—a 10× increase!</figcaption></figure>
-
-![A scatterplot showing dramatic decreases in filesize from PNG to AVIF.](https://assets.turntrout.com/static/images/posts/avif_png_scatter.svg)
-Figure: Now the huge savings of AVIF are clearer.
-
-[^colab]: I used a [publicly accessible Colab](https://colab.research.google.com/drive/1XScXuubpzcyhjU6uYRN0ikHVzLFmJj6X?usp=sharing) to generate the AVIF -> PNG compression graphs.
-
-| Metric | Value |
-|:-:|:--|
-| Total PNG size | 280MB |
-| Total AVIF size | 25MB |
-| Overall space savings | 91% |
-
-### Videos
-
-Among modern formats, there appear to be two serious contenders: h265 MP4 ("HEVC") and WEBM (via the VP9 codec). [Reportedly,](https://bitmovin.com/blog/vp9-vs-hevc-h265/) HEVC has better compression than VP9 WEBM. In practice, I've found the opposite.
-
-| Metric | Value |
-|:-:|:--|
-| Total MP4 size | 76MB |
-| Total WEBM size | 61MB |
-| Overall space savings from MP4 -> WEBM | 20% |
-
-Table: Both of these formats are good compared to GIFs. My WEBM files were 10x lighter than my GIFs! For example: [the "goose in a pond" video](https://assets.turntrout.com/static/pond.webm) weighed 561KB in GIF format. The MP4 weighs 260KB while the WEBM weighs 58KB.
-
-So why not just always use WEBM? While [Safari technically "supports" WEBM](https://caniuse.com/webm), _Safari refuses to autoplay & loop WEBMs, or to render transparency_. After reading [an article on how to stably display transparent videos across browsers](https://rotato.app/blog/transparent-videos-for-the-web), I implemented the following scheme:
-
-```html
-<video [attributes]>
-    // Only Safari should support hvc1
-    <source src="video.mp4" type="video/mp4; codecs=hvc1">
-    // All other browsers skip the MP4 and use the second source
-    <source src="video.webm" type="video/webm">
-```
-
-However, it was quite difficult to produce a transparent MP4 (as required by Safari). I eventually used `ffmpeg` to convert a non-transparent MP4 into a ProRes 444 file. I then used my Mac Finder's built-in encoding tool to convert the ProRes 444 to a MOV with transparency... Phew.
-
-#### Website video looping
-
-To make the site quieter and more peaceful, the desktop website's pond video (below) only plays while the mouse hovers over it.
-
-<video autoplay loop muted playsinline><source src="https://assets.turntrout.com/static/images/posts/pond-video-interaction.mp4" type="video/mp4; codecs=hvc1"><source src="https://assets.turntrout.com/static/images/posts/pond-video-interaction.webm" type="video/webm"></video>
-
-Figure: By using [`micromorph`](https://github.com/natemoo-re/micromorph) to preserve the video element, the video doesn't even unload as you navigate through the site. Therefore, the current video frame stays constant until the user hovers over the video again. Furthermore, since auto/light/dark mode selector is above the pond, that provides a natural interaction pathway for the user to realize the "pond image" is actually a "pond video"!
-
-<!-- spellchecker-disable -->
-> [!quote] [`gwern`](https://www.lesswrong.com/posts/Nq2BtFidsnhfLuNAx/announcing-turntrout-com-my-new-digital-home?commentId=vJAsuKGLMmuWCb45h), who suggested this design choice
->
-> In fact, why not make 'fun on hover' a core design principle? "If not friend, why friend-shaped?" Make everything on the site a little friend you can play with. (This would be a good time to try to write down a few catchphrases or design principles to sum up your goals here. Why dropcaps or the animated pond logo? etc) When I look at your pond, I feel like it would be wonderful if the pond was animated on hover - if when I hovered, _then_ it was animated.
->
-> \[...\]
->
-> I also still think that the logo should probably not play by default, and for animations like this, it's better to take an Apple-like attitude about them being enhancements, opted into by user actions, to 'spark joy', but not to be used by default. What do the worst websites do? They animate tons of stuff gratuitously. How much more delightful it is to discover a website with taste & restraint, where there are easter eggs and features to discover as you surf, where, say, the animated logo plays only when you hover over it... Truly an oasis or quiet little pond amidst the howling desert of the contemporary Internet.
->
-> I'm reminded of a _Family Guy_ meme I re-ran into recently: why does Peter Griffin dislike _The Godfather_? Because ["It insists upon itself."](https://x.com/SethMacFarlane/status/1881825910040702979) A website animating the logo unasked for insists upon itself. And this helps instill a design feature: you the reader are in control, and you express this control in part because you can hover over _everything_ to learn more or focus on some things.
-<!-- spellchecker-enable -->
 
 ## Inlining critical CSS
 
@@ -391,14 +310,14 @@ However, text [blocks](https://developer.mozilla.org/en-US/docs/Web/CSS/display)
 A less theme-disciplined man than myself might even flaunt dropcap colorings!
 
 <center id="the-pond-dropcaps" style="font-size:min(4rem, 15vw); line-height: 1;">
-<span class="dropcap" data-first-letter="T" style="--before-color: color-mix(in srgb, 55% red, var(--midground-fainter));">T</span>
-<span class="dropcap" data-first-letter="H" style="--before-color: color-mix(in srgb, 55% orange, var(--midground-fainter));">H</span>
-<span class="dropcap" data-first-letter="E"  style="--before-color: color-mix(in srgb, 65% yellow, var(--midground-fainter));">E</span>
+<span class="dropcap" data-first-letter="A" style="--before-color: color-mix(in srgb, 55% red, var(--midground-fainter));">A</span>
+<span class="dropcap" data-first-letter="B" style="--before-color: color-mix(in srgb, 55% orange, var(--midground-fainter));">B</span>
+<span class="dropcap" data-first-letter="C"  style="--before-color: color-mix(in srgb, 65% yellow, var(--midground-fainter));">C</span>
 <br/>  
-<span class="dropcap" data-first-letter="P"  style="--before-color: color-mix(in srgb, 65% green, var(--midground-fainter));">P</span>
-<span class="dropcap" data-first-letter="O"  style="--before-color: color-mix(in srgb, 65% blue, var(--midground-fainter));">O</span>
-<span class="dropcap" data-first-letter="N"  style="--before-color: color-mix(in srgb, 65% purple, var(--midground-fainter));">N</span>
-<span class="dropcap" data-first-letter="D"  style="--before-color: color-mix(in srgb, 65% pink, var(--midground-fainter));">D</span>
+<span class="dropcap" data-first-letter="W"  style="--before-color: color-mix(in srgb, 65% green, var(--midground-fainter));">W</span>
+<span class="dropcap" data-first-letter="X"  style="--before-color: color-mix(in srgb, 65% blue, var(--midground-fainter));">X</span>
+<span class="dropcap" data-first-letter="Y"  style="--before-color: color-mix(in srgb, 65% purple, var(--midground-fainter));">Y</span>
+<span class="dropcap" data-first-letter="Z"  style="--before-color: color-mix(in srgb, 65% pink, var(--midground-fainter));">Z</span>
 </center>
 
 ## Formatting enhancement
@@ -539,48 +458,6 @@ Therefore, I paid [Hisham Karim](https://www.fiverr.com/hishamhkarim) $121 to ad
 
 Subtitle: This list is not exhaustive.
 
-## Emoji styling
-
-Tasteful emoji usage helps brighten and vivify an article. However, it seems like there are over 9,000 emoji stylings:
-
-<figure id="emoji-comparison-figure">
- <div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/apple_hearts.avif" alt="Smiling Face With Hearts on Apple">
-      <figcaption>Apple</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/google_hearts.avif" alt="Smiling Face With Hearts on Google">
-      <figcaption>Google</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/microsoft_hearts.avif" alt="Smiling Face With Hearts on Microsoft">
-      <figcaption>Microsoft</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/facebook_hearts.avif" alt="Smiling Face With Hearts on Facebook">
-      <figcaption>Facebook</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/twemoji/1f970.svg" alt="Smiling Face With Hearts on Twitter">
-      <figcaption>Twitter</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/whatsapp_hearts.avif" alt="Smiling Face With Hearts on WhatsApp">
-      <figcaption>WhatsApp</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/samsung_hearts.avif" alt="Smiling Face With Hearts on Samsung">
-      <figcaption>Samsung</figcaption>
-    </div>
-    <div class="subfigure">
-      <img src="https://assets.turntrout.com/static/images/posts/LG_hearts.avif" alt="Smiling Face With Hearts on LG">
-      <figcaption>LG</figcaption>
-    </div>
-  </div>
-</figure>
-
-I want the user experience to be consistent, so my build process bakes in the Twitter emoji style: 🥰⭐️✨💘🐟😊🤡😏😮‍💨☺️🥰🎉🤷‍♂️🌊😠🏰❤️😞🙂‍↕️😌🥹🏝️🪂
 
 ## Inline favicons
 
@@ -918,10 +795,13 @@ I try to keep the repository clean of DeepSource issues, but it does point out a
 
 # Acknowledgments
 
-> [!thanks] Thanking people who helped with this site
-> My girlfriend, Emma, decisively pushed me to create this site, which has been one of my great joys of 2024. The LessWrong moderators helped me export my post data. Chase Denecke provided initial encouragement and expertise. Garrett Baker filed several [bug reports](https://docs.google.com/forms/d/e/1FAIpQLScSrZlykZIFyvrk2yxSoVn9VJ6RsLbIjChaDGG0cheVakC5hw/viewform?usp=sf_link). Thomas Kwa trialed an integration of [Plot.ly](https://plotly.com/) graphs. [Said Achmiz and `gwern` provided detailed feedback in public comments.](https://www.lesswrong.com/posts/Nq2BtFidsnhfLuNAx/announcing-turntrout-com-my-new-digital-home?commentId=vJAsuKGLMmuWCb45h)
 
 > [!info] Asset attributions
 > The <img src="https://assets.turntrout.com/static/images/plus.svg" class="inline-img light-svg" alt="Plus sign"/> and <img class="inline-img light-svg" src="https://assets.turntrout.com/static/images/heart.svg" alt="Heart icon"/> are [sourced from the "Dazzle Line Icons"](https://www.svgrepo.com/svg/532997/plus-large) [collection](https://www.svgrepo.com/svg/532473/heart) under the CC attribution license. The link admonition icon <img class="inline-img light-svg" src="https://assets.turntrout.com/static/images/link.svg" alt="A single link from a chain"/> and the same-page "favicon" <img class="inline-img anchor light-svg" src="https://assets.turntrout.com/static/images/anchor.svg" alt="A counterclockwise arrow" /> are sourced from Solar Icons on [SVG repo](https://www.svgrepo.com/svg/529680/link). The Twitter emoji styling is from the [Twemoji repository](https://github.com/twitter/twemoji).
 
 [LessWrong](lesswrong.com) inspired the "previous/next" sequence navigation interface. [`gwern.net`](https://gwern.net) inspired [inline link icons](/design#inline-favicons), [dropcaps](/design#dropcaps), [`linkchecker`](/design#validating-links), prose linting, and [cryptographic timestamping](/design#finishing-touches).
+
+</br>
+
+# SITE TESTING
+>[!info][*Test Page*](/Test%20page)

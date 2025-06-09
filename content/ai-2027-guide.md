@@ -20,12 +20,7 @@ This post aims to help readers navigate the recent AI 2027 website, which contai
 
 > [!info] the summary in the main section contains spoilers about key developments in the scenario. 
 
-<blockquote id="test-collapse" class="admonition info is-collapsible is-collapsed" data-admonition="info" data-admonition-fold="">
-<div class="admonition-title"><div class="admonition-icon"></div><div class="admonition-title-inner">Original post on LessWrong </div><div class="fold-admonition-icon"></div></div>
-<div class="admonition-content"><p>https://www.lesswrong.com/posts/5bZ8xFBBHhuFNXSNY/a-guide-to-ai-2027</p></div>
-</blockquote>
-
-
+> [!info] Original post on [LessWrong](https://www.lesswrong.com/posts/5bZ8xFBBHhuFNXSNY/a-guide-to-ai-2027)
 
 
 </br>
