@@ -1,0 +1,57 @@
+@use "../../styles/variables.scss" as *;
+
+#search-sidebar {
+  display: flex;
+  flex-direction: column;
+  margin: calc(1 * $base-margin) 0;
+
+  & > #search-icon {
+    background-color: var(--midground-faintest);
+    border-radius: 4px;
+    height: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.3s ease;
+
+    &:hover {
+      background-color: var(--midground-fainter);
+    }
+
+    & > p {
+      font-size: var(--font-size-minus-1);
+      color: var(--midground);
+      display: inline;
+      padding: 0;
+      margin-left: calc(0.5 * $base-margin);
+      margin-right: calc(1 * $base-margin);
+      font-weight: $normal-weight;
+    }
+
+    // The actual search icon
+    & svg {
+      cursor: pointer;
+      width: 1rem;
+      height: 1rem;
+      margin-left: calc(1 * $base-margin);
+
+      .search-path {
+        stroke: var(--midground);
+        stroke-width: 2px;
+        transition: stroke 0.3s ease;
+      }
+    }
+
+    &:hover {
+      & svg .search-path {
+        stroke: var(--foreground);
+      }
+
+      & > p {
+        color: var(--foreground);
+      }
+    }
+  }
+} 
