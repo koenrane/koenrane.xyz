@@ -341,6 +341,7 @@ figure,
 
 #article-title {
   margin: 2rem 0 0;
+  text-align: center;
 
   @media all and (max-width: $max-mobile-width) {
     margin-top: $base-margin;

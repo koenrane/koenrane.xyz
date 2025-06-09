@@ -27,6 +27,7 @@ const PublicationDate: QuartzComponent = ({ fileData, cfg }: QuartzComponentProp
         lineHeight: "1.25rem",
         display: "flex",
         alignItems: "center",
+        justifyContent: "center",
         gap: "1rem",
         flexWrap: "wrap"
       }}>
