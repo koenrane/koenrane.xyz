@@ -13,23 +13,50 @@
     flex-direction: row;
     gap: calc(2 * $base-margin);
     align-items: center;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    justify-content: center; // Center the buttons
 
     @media all and (min-width: $min-desktop-width) {
       margin: 0;
+      overflow-x: visible; // No scroll needed on desktop
     }
 
     & li {
       text-align: center;
+      white-space: nowrap; // Prevent text wrapping
 
       & > a {
         color: var(--midground);
-        transition: opacity 0.5s ease-out;
+        transition: all 0.3s ease;
         text-decoration: none;
-        padding: calc(0.5 * $base-margin) calc(1 * $base-margin);
-        border-radius: 4px;
+        padding: calc(0.5 * $base-margin) calc(0.75 * $base-margin);
+        border-radius: 4px; // Rounded corners for individual buttons
+        border: 1px solid var(--midground-faintest);
+        display: inline-block;
+        white-space: nowrap; // Ensure text doesn't wrap within the link
+        width: 150px; // Wider buttons for better distribution
+        text-align: center; // Center text within the fixed width
+        box-sizing: border-box; // Include padding and border in width calculation
+        
+        // Make buttons smaller on medium screens
+        
+        
+        @media (max-width: 1200px) {
+          width: 120px;
+          font-size: 0.9rem;
+        }
+        
+        @media (max-width: 1100px) {
+          width: 100px;
+          font-size: 0.85rem;
+          padding: calc(0.4 * $base-margin) calc(0.6 * $base-margin);
+        }
         
         &:hover {
           background-color: var(--midground-faintest);
+          border-color: var(--midground-faint);
+          color: var(--foreground);
         }
       }
     }
@@ -41,7 +68,7 @@
     text-align: center;
     flex-direction: row;
     width: 100%;
-    justify-content: flex-end;
+    justify-content: center; // Center the menu items
   }
 
   @media (max-width: $max-mobile-width) {
@@ -225,7 +252,7 @@
   justify-content: space-between;
   align-items: center;
   padding: calc(1 * $base-margin) 0;
-  border-bottom: 1px solid var(--midground-faintest);
+  // border-bottom: 1px solid var(--midground-faintest);
   margin-bottom: calc(2 * $base-margin);
 
   @media all and (max-width: $max-mobile-width) {

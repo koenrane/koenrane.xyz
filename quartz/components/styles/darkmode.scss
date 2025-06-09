@@ -10,9 +10,19 @@
   align-items: center;
   justify-content: center;
   margin: calc(1 * $base-margin) 0;
-  padding: calc(0.5 * $base-margin);
-  border-radius: 4px;
-  background-color: var(--midground-faintest);
+  padding: 0 calc(0.5 * $base-margin);
+  //border-radius: 4px;
+  background-color: transparent;
+ // border: 1px solid var(--midground-faint);
+  width: 53%;
+  height: 1.5rem;
+  box-sizing: border-box;
+  cursor: pointer;
+  transition: border-color 0.3s ease;
+
+  &:hover {
+    border-color: var(--midground);
+  }
 
   @media all and (max-width: $max-mobile-width) {
     position: relative;

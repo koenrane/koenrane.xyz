@@ -18,10 +18,10 @@ const config: QuartzConfig = {
     defaultDateType: "published", // What to display on listings
     navbar: {
       pages: [
-        { title: "About me", slug: "/about" },
-        { title: "About Site", slug: "/about-site" },
-        { title: "New Essays", slug: "/changelog" },
-        { title: "Links", slug: "/links" },
+        { title: "ABOUT ME", slug: "/about" },
+        { title: "ABOUT SITE", slug: "/about-site" },
+        { title: "NEW ESSAYS", slug: "/changelog" },
+        { title: "LINKS", slug: "/links" },
       ],
     },
   },

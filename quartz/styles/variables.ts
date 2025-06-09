@@ -1,11 +1,12 @@
-export const pageWidth = 750
+export const pageWidth = 950
 export const mobileBreakpoint = 600
 export const tabletBreakpoint = 1000
 export const leftSidebarWidth = 200
 export const rightSidebarWidth = 330
 export const marginsBegin = 825
 export const topSpacing = "2rem"
-export const minDesktopWidth = pageWidth + leftSidebarWidth + rightSidebarWidth + 24 // Some extra margin for the gap
+//export const minDesktopWidth = pageWidth + leftSidebarWidth + rightSidebarWidth + 24 // Some extra margin for the gap
+export const minDesktopWidth = 1000
 // Prevent overlap of rules when width equals minDesktopWidth
 export const maxMobileWidth = minDesktopWidth - 1
 
