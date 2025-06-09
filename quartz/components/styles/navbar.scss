@@ -96,6 +96,82 @@
       flex-direction: column;
       gap: 0;
     }
+    // Mobile-only search and dark mode ---------------------------------------------------------/
+    .mobile-controls {
+      padding: calc(0.5 * $base-margin);
+      border-top: 1px solid var(--midground-faintest);
+      display: flex;
+      flex-direction: column;
+      gap: calc(0.5 * $base-margin);
+      background-color: var(--background);
+
+      .mobile-search {
+        display: flex;
+        gap: calc(0.5 * $base-margin);
+        align-items: center;
+
+        #mobile-search-button {
+          background: none;
+          border: 1px solid var(--midground-faint);
+          border-radius: 4px;
+          padding: calc(0.25 * $base-margin);
+          color: var(--midground);
+          cursor: pointer;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+
+          &:hover {
+            background-color: var(--midground-faintest);
+          }
+        }
+
+        #mobile-search-bar {
+          flex: 1;
+
+          #mobile-search-input {
+            width: 100%;
+            padding: calc(0.25 * $base-margin) calc(0.5 * $base-margin);
+            border: 1px solid var(--midground-faint);
+            border-radius: 4px;
+            background-color: var(--background);
+            color: var(--foreground);
+            font-size: 0.9rem;
+
+            &:focus {
+              outline: none;
+              border-color: var(--midground);
+            }
+          }
+        }
+      }
+
+      .mobile-darkmode {
+        background: none;
+        border: 1px solid var(--midground-faint);
+        border-radius: 4px;
+        padding: calc(0.5 * $base-margin);
+        color: var(--midground);
+        cursor: pointer;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        align-self: flex-start;
+
+        &:hover {
+          background-color: var(--midground-faintest);
+        }
+
+        svg {
+          width: 20px;
+          height: 20px;
+        }
+
+        #moon-icon {
+          display: none;
+        }
+      }
+    }// ----------------------------------------------------------------------------------------------------------/
   }
 }
 
