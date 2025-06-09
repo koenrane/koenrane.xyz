@@ -1,8 +1,10 @@
 @use "../../styles/variables.scss" as *;
 
 #darkmode-span {
-  z-index: 3;
-  position: relative;
+  z-index: 100;
+  position: fixed;
+  top: calc(1 * $base-margin + 1.5rem + 1 * $base-margin);
+  right: calc(1 * $base-margin);
   font-size: var(--font-size-minus-2);
   text-align: center;
   display: flex;
@@ -14,7 +16,7 @@
   //border-radius: 4px;
   background-color: transparent;
  // border: 1px solid var(--midground-faint);
-  width: 53%;
+  width: auto;
   height: 1.5rem;
   box-sizing: border-box;
   cursor: pointer;

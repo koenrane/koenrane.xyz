@@ -86,7 +86,7 @@ const NavbarComponent: QuartzComponent = ({ cfg, fileData }: QuartzComponentProp
             target="_blank"
             rel="noopener noreferrer"
           >
-            Patreon
+            PATREON
           </a>
         </li>
       </ul>
@@ -103,7 +103,7 @@ const NavbarComponent: QuartzComponent = ({ cfg, fileData }: QuartzComponentProp
             <input
               type="text"
               id="mobile-search-input"
-              placeholder="Search for notes"
+              placeholder="search"
               spellcheck={false}
               autoComplete="off"
               name="searchInput"
