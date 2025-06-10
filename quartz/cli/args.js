@@ -105,4 +105,9 @@ export const BuildArgv = {
     number: true,
     describe: "how many threads to use to parse notes",
   },
+  skipCriticalCSS: {
+    boolean: true,
+    default: false,
+    describe: "skip critical CSS generation (useful for serverless deployments)",
+  },
 }
