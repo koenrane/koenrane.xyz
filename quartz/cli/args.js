@@ -107,6 +107,7 @@ export const BuildArgv = {
   },
   skipCriticalCSS: {
     boolean: true,
+    alias: ["skip-critical-css"],
     default: false,
     describe: "skip critical CSS generation (useful for serverless deployments)",
   },
