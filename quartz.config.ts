@@ -13,7 +13,7 @@ const config: QuartzConfig = {
     enablePopovers: true,
     analytics: null,
     locale: "en-US",
-    baseUrl: "turntrout.com",
+    baseUrl: "koenrane.xyz",
     ignorePatterns: ["private", "templates", ".obsidian"],
     defaultDateType: "published", // What to display on listings
     navbar: {

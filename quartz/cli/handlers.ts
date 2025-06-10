@@ -41,7 +41,7 @@ let cachedCriticalCSS = ""
  * @param argv - Arguments for the build command
  */
 export async function handleBuild(argv: BuildArguments): Promise<void> {
-  console.log(chalk.bgGreen.black(`\n turntrout.com v${version} \n`))
+  console.log(chalk.bgGreen.black(`\n koenrane.xyz v${version} \n`))
 
   // Generate SCSS variables before building
   console.log(chalk.blue("Generating SCSS variables..."))
@@ -123,7 +123,7 @@ export async function handleBuild(argv: BuildArguments): Promise<void> {
     }
 
     const result = await ctx.rebuild().catch((err: Error) => {
-      throw new Error(`Couldn't parse turntrout.com configuration: ${fp}\nReason: ${err}`)
+      throw new Error(`Couldn't parse koenrane.xyz configuration: ${fp}\nReason: ${err}`)
     })
     release()
 
@@ -257,7 +257,7 @@ export async function handleBuild(argv: BuildArguments): Promise<void> {
   wss.on("connection", (ws: WebSocket) => connections.push(ws))
   console.log(
     chalk.cyan(
-      `Started a turntrout.com server listening at http://localhost:${argv.port}${argv.baseDir}`,
+      `Started a koenrane.xyz server listening at http://localhost:${argv.port}${argv.baseDir}`,
     ),
   )
   console.log("Hint: exit with Ctrl+C")

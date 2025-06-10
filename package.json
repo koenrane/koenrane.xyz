@@ -1,14 +1,14 @@
 {
-  "name": "@alexander-turner/turntrout.com",
-  "description": "A blog on AI, personal development, and living a good life.",
+  "name": "@koenrane/koenrane.xyz",
+  "description": "Website of Koen Rane, independent researcher and writer.",
   "private": true,
   "type": "module",
-  "author": "alexander-turner <alex@turntrout.com>",
+  "author": "Koen Rane <koenrane@gmail.com>",
   "license": "CC BY-SA 4.0",
-  "homepage": "https://turntrout.com",
+  "homepage": "https://koenrane.xyz",
   "repository": {
     "type": "git",
-    "url": "https://github.com/alexander-turner/TurnTrout.com/"
+    "url": "https://github.com/koenrane/koenrane.xyz"
   },
   "scripts": {
     "docs": "npx quartz build --serve -d docs",

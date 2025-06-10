@@ -62,7 +62,7 @@ export default (() => {
     }
 
     // Reconstruct the URL for this page (its permalink)
-    const url = new URL(`https://${cfg.baseUrl ?? "turntrout.com"}/${fileData.slug}`)
+    const url = new URL(`https://${cfg.baseUrl ?? "koenrane.xyz"}/${fileData.slug}`)
     const permalink = fileData.permalink || url.href
 
     // Images and other assets ---

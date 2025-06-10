@@ -5,7 +5,7 @@ Allow: /
 Allow: /static/
 
 # Sitemap location
-Sitemap: https://turntrout.com/sitemap.xml
+Sitemap: https://koenrane.xyz/sitemap.xml
 
 # Prevent AI training from scraping sensitive page
 User-agent: *
