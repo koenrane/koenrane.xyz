@@ -5,7 +5,7 @@ import { visit } from "unist-util-visit"
 import type { QuartzTransformerPlugin } from "../types"
 
 /**
- * The ornamental node with a trout image and decorative text.
+ * The ornamental node with a KR logo image and decorative elements
  */
 export const ornamentNode: Element = {
   type: "element",
@@ -29,9 +29,9 @@ export const ornamentNode: Element = {
       tagName: "img",
       children: [],
       properties: {
-        src: "/static/images/Kr(2).png",
+        src: "/images/Kr(2).png",
         style: "height:var(--ornament-size);",
-        alt: "Black and white trout",
+        alt: "KR",
         class: "no-select trout-ornament",
       },
     },
