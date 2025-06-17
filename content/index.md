@@ -20,9 +20,9 @@ tags:
 
 
 
-I am an independent researcher and writer who explores topics that encompass AI, programming, philosophy, biology, self-experimentation, psychology, economics, meditation, and practical life. My hope for this site is to turn years worth of notes into long-form essays. I am also currently writing a fictional novel. 
+I am an independent researcher and writer who explores topics that encompass AI, programming, philosophy, biology, self-experimentation, psychology, economics, meditation, and practical life. My hope for this site is to turn years worth of notes into long-form essays. I am also currently writing fictional short stories. 
 
-The *[About Site](/about-site)* page provides information about this website's design, philosophy, writing intent, and the reason for choosing PmWiki. For information about myself, see the *[About Me](/About)* page. For technical and design information about the site, see *Site Design*. To see site changes, project updates, and general notes on progress, see the *[Changelog](/changelog)* page. For website features, design, and implementation, see the *[Design page](/design)*
+The *[About Site](/about-site)* page provides information about this website's design, philosophy, writing intent, and the reason for choosing PmWiki. For information about myself, see the *[About Me](/about)* page. For technical and design information about the site, see *Site Design*. To see site changes, project updates, and general notes on progress, see the *[Changelog](/changelog)* page. For website features, design, and implementation, see the *[Design page](/design)*
 
 </br>
 
