@@ -71,7 +71,7 @@ Results:
 * Openness to Experience: 96th percentile
 
 <figure class="center">
-<img  src="/static/images/BIG5-graphic.png"/>
+<img  src="https://assets.koenrane.xyz/BIG5-graphic.png"/>
 <figcaption></figcaption>
 </figure>
 
@@ -105,12 +105,12 @@ This assessment was taken in August 2022 and is a decent representation of polit
 [[https://politiscales.party/ | Politiscales]]
 
 <figure class="center">
-<img  src="/static/images/politiscales.webp"/>
+<img  src="https://assets.koenrane.xyz/politiscales.webp"/>
 <figcaption></figcaption>
 </figure>
 
 <figure class="center">
-<img  src="/static/images/pragmatism.png"/>
+<img  src="https://assets.koenrane.xyz/pragmatism.png"/>
 <figcaption></figcaption>
 </figure>
 
