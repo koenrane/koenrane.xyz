@@ -6,15 +6,7 @@ import { QuartzComponent, QuartzComponentConstructor } from "../types"
 const NotFound: QuartzComponent = () => {
   return (
     <article className="popover-hint">
-      <div id="not-found-div">
-        <div>
-          <h1>404</h1>
-          <p>
-            That page doesn’t exist. <br />
-            But don’t leave!
-          </p>
-        </div>
-
+      <div id="not-found-div">  
         <img
           src="https://assets.koenrane.xyz/404-kr.png"
           id="404-kr"
