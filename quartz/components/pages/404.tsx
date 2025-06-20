@@ -11,14 +11,13 @@ const NotFound: QuartzComponent = () => {
           <h1>404</h1>
           <p>
             That page doesn’t exist. <br />
-            But don’t leave! There <br />
-            are other fish in the pond.
+            But don’t leave!
           </p>
         </div>
 
         <img
-          src="https://assets.turntrout.com/static/images/turntrout-art-transparent.avif"
-          id="trout-reading"
+          src="https://assets.koenrane.xyz/404-kr.png"
+          id="404-kr"
           className="no-select"
         ></img>
       </div>
