@@ -29,7 +29,7 @@ export const ornamentNode: Element = {
       tagName: "img",
       children: [],
       properties: {
-        src: "/images/Kr(2).png",
+        src: "https://assets.koenrane.xyz/Kr(2).png",
         style: "height:var(--ornament-size);",
         alt: "KR",
         class: "no-select trout-ornament",
