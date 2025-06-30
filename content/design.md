@@ -16,7 +16,7 @@ status: in-progress
 no_dropcap: "false"
 
 ---
-Koenrane.xyz is implemented as a static website using a custom forked quartz repository and is hosted on a droplet VM.
+Koenrane.xyz is implemented as a static website using a custom forked quartz repository, is hosted in Cloudflare, provides assests with an R2 instance.
 
 This site has taken many ideas and suggestions on design and typography from a select few sources. One of those, which will be very obvious to readers will be the website of [Gwern](https://gwern.net). I spent several years reading this site and gathering knowledge for proper ways to build a site that is pleasing to the eyes while providing content that is interesting and strives to adhere to an [iceberg build](https://gwern.net/style-guide#success-metrics-for-the-iceberg-build-process) process, which is one of my highest aims for this site. 
 
@@ -35,7 +35,7 @@ There are many high-level design principles that the concrete features on this s
    - [Design Systems Thinking](https://medium.com/design-voices/system-thinking-for-designers-e9f025698a32), [Visual Rhythm](https://www.interaction-design.org/literature/article/repetition-pattern-and-rhythm?srsltid=AfmBOoo9Mo6FssSssw9hlR6LEh_9ZXf_5oZDKjDwIp39tMWzBJTV2eMT), [Jakob’s Law](https://lawsofux.com/jakobs-law/?utm_source=chatgpt.com) (users expect consistency)
 4. Respect reader agency
    - User Control and Freedom, [Progressive Disclosure](https://en.wikipedia.org/wiki/Progressive_disclosure)
-5. Usabilit, not at the expense of character
+5. Usability, not at the expense of character
    - [Emotional Design](https://www.interaction-design.org/literature/topics/emotional-design), [Delight without Distraction](https://voltagecontrol.com/blog/radical-acts-of-delight/)
 6. Accessibility through semantics
    - [Semantic Web Principles](https://www.w3.org/DesignIssues/Semantic.html?utm_source=chatgpt.com), [Accessible Design](https://www.w3.org/WAI/tips/designing/)
@@ -50,7 +50,7 @@ For as long as I can remember, I have been irked by inconsistent styling and des
 
 The internet has largely connected many people, projects, and professions, and as the years progressed, we became more mature and thoughtful in our design. There is one project that has sat in its own space, and even though it was not able to fully mature, it was a worthwhile attempt at changing the paradigm of content presentation. That was Project Xanadu. My interest in this project mainly originated from the attitude that the content was most important and that context mattered. The design *served* the content, was radically reader-first, and was an inverse of the attention economy. 
 
->[!quote]...interconnection and expressing that interconnection has been the center of all of my thinking and all my computer work has been about expressing and representing and showing interconnection among writings especially, and writing is the process of reducing a tapestry of interconnection to a narrow sequence and this is in a sense illicit. This is a wrongful compression of what should spread out in today's computers.
+>[!quote]...expressing that interconnection has been the center of all of my thinking and all my computer work has been about expressing and representing and showing interconnection among writings especially, and writing is the process of reducing a tapestry of interconnection to a narrow sequence and this is in a sense illicit. This is a wrongful compression of what should spread out in today's computers.
 > 
 > [Ted Nelson](http://www.thetednelson.com/), in Herzog's *Lo and Behold*
 
@@ -59,4 +59,5 @@ The internet has largely connected many people, projects, and professions, and a
 </br>
 
 # SITE TESTING
+
 >[!info][*Test Page*](/Test%20page)

@@ -16,6 +16,7 @@ import PublicationDate from "./PublicationDate"
 import RecentNotes from "./RecentNotes"
 import Search from "./Search"
 import TableOfContents from "./TableOfContents"
+import SettingsMenuComponent from "./SettingsMenu"
 
 export {
   ArticleTitle,
@@ -36,4 +37,5 @@ export {
   NotFound,
   AuthorList,
   PublicationDate,
+  SettingsMenuComponent as SettingsMenu,
 }
