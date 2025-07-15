@@ -18,7 +18,7 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ----
 
-### JUNE
+## JUNE
 
 - [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)
   - The study investigates the neural underpinnings of creative writing across different participant groups: "Brain-only" (unassisted), "LLM" (Large Language Model-assisted), and "Search Engine" (search engine-assisted). A primary focus is on Delta band connectivity, which consistently shows the most significant disparities between groups. The Brain-only group demonstrates significantly higher and more widespread Delta band activity, indicating greater engagement of deep, slow integrative brain processes, multisensory integration, and internally-driven thought during unassisted writing. Conversely, LLM and Search Engine groups exhibit more externally anchored or intermittently guided cognitive engagement, with notably weaker delta interactions.
@@ -45,7 +45,7 @@ Links are posted monthly in chronological order and include any articles, papers
 - [The Best Tacit Knowledge Videos on Every Subject](https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject)
 
 
-### MAY
+## MAY
 
 * [Orienting Toward Wizard Power](https://www.lesswrong.com/posts/Wg6ptgi2DupFuAnXG/orienting-toward-wizard-power), Wentworth 2025
 * [Neural Thermodynamic Laws for Large Language Model Training](https://arxiv.org/pdf/2505.10559), Tegmark, et al 2025
@@ -58,7 +58,7 @@ Links are posted monthly in chronological order and include any articles, papers
 
 
 
-### APRIL
+## APRIL
 
 * [[https://danieljeffries.substack.com/p/how-to-build-an-american-deepseek | How To build an American DeepSeek]] Jeffries 2025
 * [[https://ai-2027.com/ | AI 2027]], [[https://ai-futures.org/ | AI Futures]] 2025
@@ -73,7 +73,7 @@ Links are posted monthly in chronological order and include any articles, papers
 * [[https://medium.com/deep-code/sensemaking-in-2025-trump-tariffs-edition-7e43e5564b68 | Sensemaking in 2025: Trump Tariffs Edition]], Hall 2025
 
 
-### MARCH
+## MARCH
 
 * re-read: [[https://contraptions.venkateshrao.com/p/the-extended-internet-universe | The Extended Internet Universe]], Venkatash Rao 2019
 * [[https://www.ribbonfarm.com/2024/10/10/ribbonfarm-is-retiring/ | Ribbonfarm is Retiring]], Rao 2024
@@ -87,7 +87,7 @@ Links are posted monthly in chronological order and include any articles, papers
 * [[https://www.nature.com/articles/s41587-025-02584-1 | An open letter to graduate students and other procrastinators: it’s time to write]] Hazelett 2025
 
 
-### FEBRUARY
+## FEBRUARY
 
 Much of my time this month has been spent on researching tools that support the development of this site and implementing visual and basic quality-of-life features to establish a solid foundation for the future. 
 
