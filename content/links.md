@@ -15,8 +15,28 @@ Links are posted monthly in chronological order and include any articles, papers
 </br>
 
 # 2025
+
 ----
+### JUNE
+* [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)
+  * The study investigates the neural underpinnings of creative writing across different participant groups: "Brain-only" (unassisted), "LLM" (Large Language Model-assisted), and "Search Engine" (search engine-assisted). A primary focus is on Delta band connectivity, which consistently shows the most significant disparities between groups. The Brain-only group demonstrates significantly higher and more widespread Delta band activity, indicating greater engagement of deep, slow integrative brain processes, multisensory integration, and internally-driven thought during unassisted writing. Conversely, LLM and Search Engine groups exhibit more externally anchored or intermittently guided cognitive engagement, with notably weaker delta interactions.
+  * N-gram analysis complements these neurological findings, revealing distinct linguistic patterns across groups for different topics. The "Brain-only" group tends to use n-grams reflecting internal thought processes and prosocial framing, while LLM and Search Engine groups show patterns indicative of external sourcing or more direct task-oriented language. The study also tracks changes in brain connectivity patterns across sessions, noting a general trend of increasing connectivity in later sessions for both Brain-only and LLM groups, suggesting adaptation to the task
+* [Ultrafast coherent dynamics of microring modulators](https://www.nature.com/articles/s41566-025-01686-1)
+  - Next-generation computing clusters require ultra-high-bandwidth optical interconnects to support large-scale artificial-intelligence applications. These electronic–photonic co-integrated systems necessitate densely integrated high-speed electro-optical converters. In this context, microring modulators (MRMs) emerge as a promising solution, prized for their exceptional compactness and energy efficiency.
+* [Hitchhiker’s Guide to RAG: From Tiny Files to Tolstoy with OpenAI’s API and LangChain](https://towardsdatascience.com/hitchhikers-guide-to-rag-from-tiny-files-to-tolstoy-with-openais-api-and-langchain/)
+  * Scaling a simple RAG pipeline from simple notes to full books
+* [goose](https://github.com/block/goose)
+  * an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
+* [If---](https://www.poetryfoundation.org/poems/46473/if---), Rudyard Kipling
+* [bitchat-android](https://github.com/permissionlesstech/bitchat-android)
+  * bluetooth mesh chat, IRC vibes
+* [Potemkin Understanding in Large Language Models](https://arxiv.org/abs/2506.21521)
+  * Success on benchmarks only demonstrates potemkin understanding: the illusion of understanding driven by answers irreconcilable with how any human would interpret a concept.
+* [The Best Tacit Knowledge Videos on Every Subject](https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject)
+
+
 ### MAY
+
 * [Orienting Toward Wizard Power](https://www.lesswrong.com/posts/Wg6ptgi2DupFuAnXG/orienting-toward-wizard-power), Wentworth 2025
 * [Neural Thermodynamic Laws for Large Language Model Training](https://arxiv.org/pdf/2505.10559), Tegmark, et al 2025
 * [The ZINGULARITY framework for Bayesian artificial neural networks](https://www.aanda.org/10.1051/0004-6361/202553785), Janssen 2025
@@ -29,6 +49,7 @@ Links are posted monthly in chronological order and include any articles, papers
 
 
 ### APRIL
+
 * [[https://danieljeffries.substack.com/p/how-to-build-an-american-deepseek | How To build an American DeepSeek]] Jeffries 2025
 * [[https://ai-2027.com/ | AI 2027]], [[https://ai-futures.org/ | AI Futures]] 2025
 * [[https://www.lesswrong.com/posts/CqHMdLcdupf7y5buK/an-optimistic-2027-timeline?utm_source=substack&utm_medium=email | An Optimistic 2027 Timeline]], Yitz 2025
@@ -43,6 +64,7 @@ Links are posted monthly in chronological order and include any articles, papers
 
 
 ### MARCH
+
 * re-read: [[https://contraptions.venkateshrao.com/p/the-extended-internet-universe | The Extended Internet Universe]], Venkatash Rao 2019
 * [[https://www.ribbonfarm.com/2024/10/10/ribbonfarm-is-retiring/ | Ribbonfarm is Retiring]], Rao 2024
 * [[https://huggingface.co/papers/2503.05592 | R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning]] 2025
@@ -56,6 +78,7 @@ Links are posted monthly in chronological order and include any articles, papers
 
 
 ### FEBRUARY
+
 Much of my time this month has been spent on researching tools that support the development of this site and implementing visual and basic quality-of-life features to establish a solid foundation for the future. 
 
 - [[https://nxnjz.net/2019/09/how-to-install-pmwiki-on-debian-10-nginx-php-fpm/ | How to Install PmWiki on Debian 10 / Nginx / PHP-FPM]] 
