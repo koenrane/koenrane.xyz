@@ -60,7 +60,7 @@ After giving up coffee[^1], I became quite obsessed with tea and began to do ext
 For drinking tea, I exclusively use a vintage German stein, found in Massachusetts from an individual seller. During my new obsession with steins, which coincided with my love for tea, I spent weeks searching the internet for the perfect vintage mug. Specifically, I looked for one that maintained the artistic style that steins normally have, but avoided ones with specific themes or wording. The one I found is a smaller stein and has a mug-type shape, which isn't too large to use daily. After many uses, I found that I like the steel lid that can be flipped down to keep the tea from getting cold too fast. The electric kettle is an [[https://www.amazon.com/stores/Aicok/page/ABF74667-68FC-40C0-8C00-A3BF9DD31A4A | Aicok]], bought from Amazon, and has never given me any issues. The only downside is that there is no temperature control, so for lighter teas, I don't run a full boil and use a meat thermometer to measure the temperature manually. Since I brew 40oz of tea at a time, I use a 1-quart pitcher from [[https://www.amazon.sg/Kungroo-Airtight-Glass-Coffee-Pitcher/dp/B01MYWISAE | Kungroo]] (used for cold brewing), which has a larger infuser and an airtight lid. Sometimes, I make tea the night before, and in the morning, heat 1 cup at a time on the gas stove. For storage, I use an [[https://www.oxo.com/steel-pop-container-small-square-short-1-1-qt.html | Oxo airtight pop container]].
 
 <figure class="center">
-<img  src="/static/images/tea-equipment.webp"/>
+<img  src="https://assets.koenrane.xyz/tea-equipment.webp"/>
 <figcaption>My daily tea equipment.</figcaption>
 </figure>
 
