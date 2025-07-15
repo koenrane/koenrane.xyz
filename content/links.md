@@ -17,21 +17,30 @@ Links are posted monthly in chronological order and include any articles, papers
 # 2025
 
 ----
+
 ### JUNE
+
 * [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)
   * The study investigates the neural underpinnings of creative writing across different participant groups: "Brain-only" (unassisted), "LLM" (Large Language Model-assisted), and "Search Engine" (search engine-assisted). A primary focus is on Delta band connectivity, which consistently shows the most significant disparities between groups. The Brain-only group demonstrates significantly higher and more widespread Delta band activity, indicating greater engagement of deep, slow integrative brain processes, multisensory integration, and internally-driven thought during unassisted writing. Conversely, LLM and Search Engine groups exhibit more externally anchored or intermittently guided cognitive engagement, with notably weaker delta interactions.
   * N-gram analysis complements these neurological findings, revealing distinct linguistic patterns across groups for different topics. The "Brain-only" group tends to use n-grams reflecting internal thought processes and prosocial framing, while LLM and Search Engine groups show patterns indicative of external sourcing or more direct task-oriented language. The study also tracks changes in brain connectivity patterns across sessions, noting a general trend of increasing connectivity in later sessions for both Brain-only and LLM groups, suggesting adaptation to the task
+
 * [Ultrafast coherent dynamics of microring modulators](https://www.nature.com/articles/s41566-025-01686-1)
-  - Next-generation computing clusters require ultra-high-bandwidth optical interconnects to support large-scale artificial-intelligence applications. These electronic–photonic co-integrated systems necessitate densely integrated high-speed electro-optical converters. In this context, microring modulators (MRMs) emerge as a promising solution, prized for their exceptional compactness and energy efficiency.
+  * Next-generation computing clusters require ultra-high-bandwidth optical interconnects to support large-scale artificial-intelligence applications. These electronic–photonic co-integrated systems necessitate densely integrated high-speed electro-optical converters. In this context, microring modulators (MRMs) emerge as a promising solution, prized for their exceptional compactness and energy efficiency.
+
 * [Hitchhiker’s Guide to RAG: From Tiny Files to Tolstoy with OpenAI’s API and LangChain](https://towardsdatascience.com/hitchhikers-guide-to-rag-from-tiny-files-to-tolstoy-with-openais-api-and-langchain/)
   * Scaling a simple RAG pipeline from simple notes to full books
+
 * [goose](https://github.com/block/goose)
   * an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
+
 * [If---](https://www.poetryfoundation.org/poems/46473/if---), Rudyard Kipling
+
 * [bitchat-android](https://github.com/permissionlesstech/bitchat-android)
   * bluetooth mesh chat, IRC vibes
+
 * [Potemkin Understanding in Large Language Models](https://arxiv.org/abs/2506.21521)
   * Success on benchmarks only demonstrates potemkin understanding: the illusion of understanding driven by answers irreconcilable with how any human would interpret a concept.
+
 * [The Best Tacit Knowledge Videos on Every Subject](https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject)
 
 
