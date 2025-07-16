@@ -25,6 +25,8 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 ### JULY
 
+- new essay: [Four Years of Whoop](/4-years-of-whoop)
+- new essay: [Essay Writing with LLMS Affects Cognition](/brain-on-chatgpt)
 - pmwiki site was completely refactored into a quartz SSG. Previous host server on DigitalOcean was sunset, archived, and shut down. Code files for pmwiki on Github were archived and replaced with Quartz infrastructure and content files, then pulled to local. An instance on Cloudflare was setup, and the domain hosting was transferred there. The first production build was pushed from remote to Cloudflare server to initialize the project and the site was successfully loaded in the browser. An R2 instance was setup for asset hosting and all images were transferred to assets.koenrane.xyz.
 - Numerous formatting and aesthetic adjustments were made to reflect the desired initial look of the site.
 
