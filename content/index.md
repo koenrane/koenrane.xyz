@@ -29,6 +29,7 @@ The *[About Site](/about-site)* page provides information about this website's d
 ### NEWEST
 ---
 - [A Guide to AI 2027](/ai-2027-guide)
+- [Four Years of Whoop](/4-years-of-whoop)
 
 
 </br>
