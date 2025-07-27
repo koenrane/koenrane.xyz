@@ -13,10 +13,10 @@ tags:
 This page contains selections from my library that deserve a review. I don't review every book I read. To track my reading, go here: [Bookantt Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwP-rk4fyMo5L00mkJrt989AXA6JYjx_pjrqGnBSWSS_7JJ2S9Yj6ylxYP9-jrYZUxrBs8gXHA02RN/pubhtml)
 
 
-## THE WAY OF KINGS, SANDERSON 2010
+## *THE WAY OF KINGS*, SANDERSON 2010
 ---
 
-[The Way of Kings](https://www.goodreads.com/book/show/7235533-the-way-of-kings) Brandon Sanderson, 2010 ★★★★☆
+[*The Way of Kings*](https://www.goodreads.com/book/show/7235533-the-way-of-kings)&emsp;Brandon Sanderson&emsp;2010&emsp;★★★★☆
 
 The Way of Kings is the first installment in Brandon Sanderson’s epic fantasy series, The Stormlight Archive. The novel is set in the storm-battered world of Roshar—a land where cataclysmic highstorms shape not only the landscape but also the lives and cultures of its people and has a deep mythical history. The crux of the story revolves around a select few highprinces who are stationed in a conglomerate of camps, each with thousands of loyal fighting men, who fight a people called the Parshendi on the Shattered Plains. Treated as a competition between highprinces and their armies, they race to the location of found gemstones, which are a source of stormlight for magic fabrials and are seen as a measure of wealth. 
 
@@ -32,10 +32,10 @@ The pace of the book was a bit chaotic, mainly because of the consistent flashba
 
 Shallan's character was probably the most interesting in terms of depth and detail. The conversations between Shallan and Jasnah seemed to serve as a vehicle to explore complex moral and philosophical issues. Jasnah challenges Shallan to question what constitutes truth. Rather than accepting inherited or comforting narratives at face value, Jasnah’s skeptical approach forces Shallan to consider whether the truths people live by are absolute or simply convenient constructs of their minds. Shallan’s personal journey is marked by her struggle with self-deception—a defense mechanism that allows her to cope with a brutal and unforgiving world. In her dialogues with Jasnah, she is pushed to confront whether deceiving oneself (or others) can ever be ethically justified. There is a trade-off between emotional survival and intellectual honesty. There is also an ethical responsibility that comes with gaining knowledge, which is a recurring theme, especially ones that can shatter established beliefs or reveal inconvenient truths. I very much liked how Jasnah's character insisted on operating with rigorous inquiry and pursuit of knowledge.
 
-## SANDWORM, GREENBERG 2019
+## *SANDWORM*, GREENBERG 2019
 ---
 
-[Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers](https://www.amazon.com/Sandworm-Cyberwar-Kremlins-Dangerous-Hackers/dp/0385544405) Andy Greenberg, 2019 ★★★☆☆
+[*Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers*](https://www.amazon.com/Sandworm-Cyberwar-Kremlins-Dangerous-Hackers/dp/0385544405)&emsp;Andy Greenberg&emsp;2019&emsp;★★★☆☆
 
 Greenberg follows a Russian military hacking team nicknamed “Sandworm,” tracing their evolution from espionage-focused intrusions into NATO networks to outright destructive attacks on civilian infrastructure. He threads together three major episodes—the 2015 blackout in Ukraine’s power grid, the 2017 NotPetya malware that crippled businesses worldwide, and lesser‑known shadow campaigns by introducing key figures like security researchers, journalists, and the hackers themselves. This is written as a sort of post-mortem and sifts through the details of each major cyber attack (mostly on Ukraine) and how quickly things can escalate, even from a small bug inserted into a system. He explains, in detail supported by cybersecurity experts, the technical aspects of each piece of malware and how it affected individual people, companies, and eventually, whole countries. 
 
@@ -46,10 +46,10 @@ I found the material boring at times, but there were many details for the author
 # SILO SERIES
 ---
 
-## WOOL, HOWEY 2011
+## *WOOL*, HOWEY 2011
 ---
 
-[Wool](https://www.thriftbooks.com/w/wool-omnibus-silo-1_hugh-howey/258324/?resultid=0bec0b47-6602-453d-8074-e9de67e508d3#edition=7143660&idiq=675900) Hugh Howey, 2011 ★★★★★
+[*Wool*](https://www.thriftbooks.com/w/wool-omnibus-silo-1_hugh-howey/258324/?resultid=0bec0b47-6602-453d-8074-e9de67e508d3#edition=7143660&idiq=675900)&emsp;Hugh Howey&emsp;2011&emsp;★★★★★
 
 This book is a plunge into claustrophobic world-building and mystery. The author does an excellent job of making the Silo feel like a living, breathing organism--its dim corridors, hierarchies, and unspoken rules create a constant sense of unease. Sheriff Holston’s early journey outside is haunting and sets the tone: every step into the open air is charged with dread and wonder. When Juliette takes over an investigation, her brash confidence and mechanical know‑how make her a heroine—who I began root for as she attempts to find out the truth all while being thrust into the spotlight, where she is most uncomfortable.
 
@@ -57,8 +57,16 @@ The pacing is deliberate, teasing out revelations one at a time. I found myself 
 
 Overall it's a tense, thought‑provoking read that blends dystopian sci‑fi with a detective‑style mystery.
 
-## SHIFT, HOWEY 2016
+## *SHIFT*, HOWEY 2013
 ---
 
-[Shift](https://www.thriftbooks.com/w/shift_hugh-howey/549376/?resultid=03a21d0a-60e7-46ac-8aaf-ee88f5b29ebb#edition=11159529&idiq=16124985) Hugh Howey, 2016 ★★★★★
+[*Shift*](https://www.thriftbooks.com/w/shift_hugh-howey/549376/?resultid=03a21d0a-60e7-46ac-8aaf-ee88f5b29ebb#edition=11159529&idiq=16124985)&emsp;Hugh Howey&emsp;2013&emsp;★★★★★
+
+Although I was not particularly excited about how the book began, as I continued reading, I realized that the historical narrative arc was an essential part of the series' foundation. This is less about survival and more about the machinery of power, control, and moral compromise. It trades fast-paced rebellion for a slow, suffocating descent into how dystopias are built—not just structurally, but ideologically. Similar to the Manhattan Project and the current race toward AGI, I felt that the main character, Donald Keene, represented the sentiments of scientists after the release of their life-altering technological projects into the world, which were regret and an attempt at redemption.
+
+## *DUST*, HOWEY 2013
+---
+
+[*Dust*](https://www.amazon.com/Dust-Silo-Trilogy-Hugh-Howey/dp/0544838262)&emsp;Hugh Howey&emsp;2013&emsp;★★★★★
+
 

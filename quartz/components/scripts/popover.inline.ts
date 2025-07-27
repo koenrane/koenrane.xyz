@@ -96,7 +96,6 @@ document.addEventListener("nav", () => {
   for (const link of links) {
     // Define handlers outside to ensure they can be removed
     let cleanup: (() => void) | undefined
-
     const handleMouseEnter = async () => {
       if (cleanup) cleanup()
       cleanup = mouseEnterHandler.call(link)
