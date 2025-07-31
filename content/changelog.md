@@ -25,6 +25,7 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 ### JULY
 
+- added content to [Book Reviews](/book-reviews) - Silo Series
 - added spacing elements in book review titles between link, author, and star rankings plus other small formatting errors. 
 - new essay: [Four Years of Whoop](/4-years-of-whoop)
 - new essay: [Essay Writing with LLMS Affects Cognition](/brain-on-chatgpt)

@@ -12,6 +12,7 @@ tags:
 
 This page contains selections from my library that deserve a review. I don't review every book I read. To track my reading, go here: [Bookantt Chart](https://docs.google.com/spreadsheets/d/e/2PACX-1vRwP-rk4fyMo5L00mkJrt989AXA6JYjx_pjrqGnBSWSS_7JJ2S9Yj6ylxYP9-jrYZUxrBs8gXHA02RN/pubhtml)
 
+</br>
 
 ## *THE WAY OF KINGS*, SANDERSON 2010
 ---
@@ -60,13 +61,18 @@ Overall it's a tense, thought‑provoking read that blends dystopian sci‑fi wi
 ## *SHIFT*, HOWEY 2013
 ---
 
-[*Shift*](https://www.thriftbooks.com/w/shift_hugh-howey/549376/?resultid=03a21d0a-60e7-46ac-8aaf-ee88f5b29ebb#edition=11159529&idiq=16124985)&emsp;Hugh Howey&emsp;2013&emsp;★★★★★
+[*Shift*](https://www.thriftbooks.com/w/shift_hugh-howey/549376/?resultid=03a21d0a-60e7-46ac-8aaf-ee88f5b29ebb#edition=11159529&idiq=16124985)&emsp;Hugh Howey&emsp;2013&emsp;★★★★☆
 
 Although I was not particularly excited about how the book began, as I continued reading, I realized that the historical narrative arc was an essential part of the series' foundation. This is less about survival and more about the machinery of power, control, and moral compromise. It trades fast-paced rebellion for a slow, suffocating descent into how dystopias are built—not just structurally, but ideologically. Similar to the Manhattan Project and the current race toward AGI, I felt that the main character, Donald Keene, represented the sentiments of scientists after the release of their life-altering technological projects into the world, which were regret and an attempt at redemption.
 
 ## *DUST*, HOWEY 2013
 ---
 
-[*Dust*](https://www.amazon.com/Dust-Silo-Trilogy-Hugh-Howey/dp/0544838262)&emsp;Hugh Howey&emsp;2013&emsp;★★★★★
+[*Dust*](https://www.amazon.com/Dust-Silo-Trilogy-Hugh-Howey/dp/0544838262)&emsp;Hugh Howey&emsp;2013&emsp;★★★★☆
+
+## *SILO STORIES*, HOWEY 2015
+---
+
+[*Dust*](https://www.goodreads.com/book/show/58802560-silo-stories)&emsp;Hugh Howey&emsp;2015&emsp;★★★★☆
 
 
