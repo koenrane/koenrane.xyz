@@ -1028,3 +1028,32 @@ iframe {
   vertical-align: calc(-0.25 * $base-margin);
   line-height: 100%; // Prevent the lines from being more spaced
 }
+
+/* External link popover styles */
+.external-link-preview {
+  padding: $base-margin;
+  
+  h3 {
+    margin: 0 0 calc(0.5 * $base-margin) 0;
+    font-size: 1.1em;
+    color: var(--darkgray);
+    font-weight: 600;
+  }
+  
+  p {
+    margin: calc(0.25 * $base-margin) 0;
+    font-size: 0.9em;
+    color: var(--gray);
+    line-height: 1.4;
+    
+    strong {
+      color: var(--darkgray);
+      font-weight: 500;
+    }
+    
+    em {
+      color: var(--lightgray);
+      font-style: italic;
+    }
+  }
+}

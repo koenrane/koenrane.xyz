@@ -4,7 +4,7 @@ import { animate } from "./component_script_utils"
 export interface PopoverOptions {
   parentElement: HTMLElement
   targetUrl: URL
-  linkElement: HTMLLinkElement
+  linkElement: HTMLAnchorElement
   customFetch?: typeof fetch
 }
 
@@ -172,7 +172,7 @@ export function computeTop(linkRect: DOMRect, popoverHeight: number): number {
  */
 export function setPopoverPosition(
   popoverElement: HTMLElement,
-  linkElement: HTMLLinkElement,
+  linkElement: HTMLAnchorElement,
 ): void {
   const linkRect = linkElement.getBoundingClientRect()
   const popoverWidth = popoverElement.offsetWidth
@@ -196,7 +196,7 @@ export function setPopoverPosition(
  */
 export function attachPopoverEventListeners(
   popoverElement: HTMLElement,
-  linkElement: HTMLLinkElement,
+  linkElement: HTMLAnchorElement,
 ): () => void {
   let isMouseOverLink = false
   let isMouseOverPopover = false
