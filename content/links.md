@@ -23,6 +23,21 @@ Links are posted monthly in chronological order and include any articles, papers
 - [Silk Road Timeline](https://antilop.cc/sr/)
   - site acts as a public mirror of Silk Road's full lifecycle—from vendor storefronts and community forum discourse to legal fallout.
   - also see from [@thegrugq](https://x.com/thegrugq):  [Dread Pirate Roberts - extortion timeline](http://grugq.tumblr.com/post/62928607375/dread-pirate-roberts-extortion-timeline), [The Maryland Indictment Timeline](http://grugq.tumblr.com/post/62986125689/maryland-indictment-timeline)
+- [Satiety Graphed & The Horsemen of Obesity](https://www.exfatloss.com/p/satiety-graphed-and-the-horsemen)
+  - This is a criticism of the common appeal to satiety without a clear definition, arguing that relying on an undefined concept is problematic, even if, by chance, a diet works. Satiety, not to be confused with physical fullness, can indicate metabolic and dietary health, and knowing it when you see it can work as a pragmatic definition.
+- **GPT-oss release**
+  - Ollama: [OpenAI gpt-oss](https://ollama.com/blog/gpt-oss)
+  - [Welcome GPT OSS, the new open-source model family from OpenAI!](https://ollama.com/blog/gpt-oss)
+    - GPT OSS is a hugely anticipated open-weights release by OpenAI, designed for powerful reasoning, agentic tasks, and versatile developer use cases. It comprises two models: a big one with 117B parameters (gpt-oss-120b), and a smaller one with 21B parameters (gpt-oss-20b). Both are mixture-of-experts (MoEs) and use a 4-bit quantization scheme (MXFP4), enabling fast inference (thanks to fewer active parameters, see details below) while keeping resource usage low. The large model fits on a single H100 GPU, while the small one runs within 16GB of memory and is perfect for consumer hardware and on-device applications.
+  - [Open models by OpenAI](https://openai.com/open-models/)
+    - Advanced open-weight reasoning models to customize for any use case and run anywhere.
+- [Lagerstroemia](https://en.m.wikipedia.org/wiki/Lagerstroemia)
+  - commonly known as crape myrtle (also spelled crepe myrtle or crêpe myrtle), is a genus of deciduous and evergreen trees and shrubs native to the Indian subcontinent, southeast Asia, northern Australia, and other parts of Oceania, cultivated in warmer climates around the world.
+  - I've been taking care of a crepe myrtle on my property for several years and quite enjoy seeing it mature from a sapling. A year after moving into my current house, the tree didn't recover after a harsh winter, so I was forced to cut the tree down, but I left the root system. In a few months, a few saplings began to grow, and after a lot of care and attention, it now has 5 main trunks measuring 6-7 inches in circumference and is over 15ft tall.
+- [Oral treatment of erectile dysfunction with apomorphine SL ](https://pubmed.ncbi.nlm.nih.gov/11741126/#:~:text=This%20compound%20is%20a%20dopaminergic,paraventricularis%20leading%20to%20erectogenic%20signals)
+  - Apomorphine SL (Ixense, Uprima) is a new oral medication shown to be effective in the treatment of erectile dysfunction. This compound is a dopaminergic agonist with affinity for dopamine receptor sites - mostly D(2) - within the brain known to be involved in sexual function. Apomorphine induces selective activation in the nucleus paraventricularis leading to erectogenic signals.
+- [Psilocybin treatment extends cellular lifespan and improves survival of aged mice](https://www.nature.com/articles/s41514-025-00244-x)
+  - Psilocybin, the naturally occurring psychedelic compound produced by hallucinogenic mushrooms, has received attention due to considerable clinical evidence for its therapeutic potential to treat various psychiatric and neurodegenerative indications. However, the underlying molecular mechanisms remain enigmatic, and few studies have explored its systemic impacts. We provide the first experimental evidence that psilocin (the active metabolite of psilocybin) treatment extends cellular lifespan and psilocybin treatment promotes increased longevity in aged mice, suggesting that psilocybin may be a potent geroprotective agent.
 
 ## JUNE
 
