@@ -58,7 +58,7 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
       const description = file.data.frontmatter?.description?.trim() ?? ""
       const cardImage =
         file.data.frontmatter?.card_image ??
-        "https://assets.turntrout.com/static/images/fb_preview.png"
+        "https://assets.koenrane.xyz/fractals2.png"
       const authors = file.data.frontmatter?.authors
 
       for (let slug of slugs) {
@@ -94,7 +94,7 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
               <meta property="og:image" content="${cardImage}">
               <meta property="og:image:width" content="1200">
               <meta property="og:image:height" content="630">
-              <meta property="og:image:alt" content="A pond containing a trout and a goose peacefully swimming near a castle.">
+              <meta property="og:image:alt" content="circular fractal">
               
               <!-- Twitter Card metadata -->
               <meta name="twitter:card" content="summary_large_image">

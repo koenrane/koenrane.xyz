@@ -67,8 +67,8 @@ export default (() => {
 
     // Images and other assets ---
     const iconPath = "/static/images/favicon.ico"
-    const appleIconPath = "https://assets.turntrout.com/static/images/apple-icon.png"
-    const siteImage = "https://assets.turntrout.com/static/images/fb_preview.png"
+    const appleIconPath = "https://assets.koenrane.xyz/Kr(2).png"
+    const siteImage = "https://assets.koenrane.xyz/fractals2.png"
 
     const cardImage = (fileData.frontmatter?.card_image as string) ?? siteImage
 
@@ -164,7 +164,7 @@ export default (() => {
         <meta property="og:title" content={title} />
         <meta property="og:type" content="article" />
         <meta property="og:url" content={permalink as string} />
-        <meta property="og:site_name" content="The Pond" />
+        <meta property="og:site_name" content="Koen Rane" />
         {description && <meta property="og:description" content={description} />}
         {mediaElement}
 
@@ -173,7 +173,7 @@ export default (() => {
         <meta name="twitter:title" content={title} />
         <meta name="twitter:description" content={description} />
         <meta name="twitter:image" content={cardImage} />
-        <meta name="twitter:site" content="@Turn_Trout" />
+        <meta name="twitter:site" content="@KoenRane" />
 
         {/* Twitter author metadata */}
         {authorElement}
