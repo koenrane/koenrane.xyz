@@ -94,7 +94,7 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
               <meta property="og:image" content="${cardImage}">
               <meta property="og:image:width" content="1200">
               <meta property="og:image:height" content="630">
-              <meta property="og:image:alt" content="circular fractal">
+              <meta property="og:image:alt" content="circular KR fractal">
               
               <!-- Twitter Card metadata -->
               <meta name="twitter:card" content="summary_large_image">
