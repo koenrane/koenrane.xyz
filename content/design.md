@@ -10,7 +10,6 @@ tags:
   - design
   - meta
 hideSubscriptionLinks: false
-card_image:
 date_published: 2025-03-18
 status: in-progress 
 no_dropcap: "false"
