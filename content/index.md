@@ -50,6 +50,7 @@ The *[About Site](/about-site)* page provides information about this website's d
 ---
 - [[https://docs.google.com/spreadsheets/d/e/2PACX-1vRwP-rk4fyMo5L00mkJrt989AXA6JYjx_pjrqGnBSWSS_7JJ2S9Yj6ylxYP9-jrYZUxrBs8gXHA02RN/pubhtml | Bookantt Chart - Reading Tracker]]
 - [[https://www.goodreads.com/book/show/17332218-words-of-radiance | *Words of Radiance*, Stormlight Archive]], Sanderson
+- [Provoked: How Washington Started the New Cold War with Russia and the Catastrophe in Ukraine](https://www.amazon.com/Provoked-Washington-Started-Catastrophe-Ukraine/dp/1733647376), Horton 2024
 
 
 </br>
