@@ -18,6 +18,20 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ----
 
+## SEPTEMBER
+
+- [Dokkōdō](https://en.wikipedia.org/wiki/Dokk%C5%8Dd%C5%8D)
+  - Penned by the famous Japanese swordsman Miyamoto Musashi in 1645, just a week before his death, Dokkōdō (which translates roughly to “The Way of Walking Alone” or “The Path of Aloneness”) offers 21 precepts or guiding principles for life. 
+- [Tiny Recursive Model (TRM)](https://www.marktechpost.com/2025/10/09/tiny-recursive-model-trm-a-tiny-7m-model-that-surpass-deepseek-r1-gemini-2-5-pro-and-o3-mini-at-reasoning-on-both-arg-agi-1-and-arc-agi-2/)
+  - Instead of going big with tons of parameters, the designers built a two-layer model that recurses — meaning it iteratively refines a hidden “scratchpad” (latent space) plus a “current solution” over multiple steps. Think “draft + revise” loops rather than throwing everything in one long pass. They unroll this loop many times (up to 16) during training, supervise it “deeply” (i.e. give intermediate guidance), and allow full backpropagation through all those recursions (rather than using fixed-point approximations). Also, they ditch complex modular hierarchies (used by prior models) and instead do all the reasoning via that one compact recurrent core.
+- [The Unbearable Lightness of Lightness](https://annaleptikon.substack.com/p/the-unbearable-lightness-of-lightness?utm_campaign=posts-open-in-app&triedRedirect=true)
+  - This essay explores lightness as both metaphor and existential feeling. Anna draws on personal experience, especially in relation to weightlifting or strength training (or absence thereof), to illustrate how being unable to “carry the iron” can feel like a loss of grounding. This absence of heaviness becomes a motif: when your body can’t bear weight, or you’re missing a part of your own routine, life feels insubstantial, untethered. She suggests that weight (in the literal or metaphorical sense) gives things substance and meaning. Without it, everything feels ethereal, faint—and yet paradoxically, that lightness can be unbearable. She echos the title of Kundera’s The *Unbearable Lightness of Being* and riffs on that tension between the meaningful weight of experience and the drift of what happens when weight is lost.
+- [A trimodal protein language model enables advanced protein searches](https://www.nature.com/articles/s41587-025-02836-0)
+  - ProTrek is built to understand three “languages” of proteins—sequence (the letters making up the protein), structure (its physical 3D shape), and natural language (textual descriptions like “enzyme that repairs DNA”). It embeds all three modes into a shared latent space through clever contrastive learning. In practice, that means you could query a protein by giving any one of those modes and retrieve matches in any of the others.
+- [Regression Language Models for Code](https://huggingface.co/papers/2509.26476)
+  - This paper pushes that idea in a slightly different direction: what if a language model could predict numeric properties of code — things like how much memory it uses, how fast it runs, or how accurate a neural net implemented in code will be?
+
+
 ## AUGUST
 
 - [The Self-Organization of Insight: Entropy and Power Laws in Problem Solving](https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1043&context=jps)

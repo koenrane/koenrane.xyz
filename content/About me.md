@@ -7,7 +7,7 @@ date_published: 2025-02-10
 status: in-progress
 tags:
   - personal
-title: About me
+title: ABOUT ME
 ---
 
 
