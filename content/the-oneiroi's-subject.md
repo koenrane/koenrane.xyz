@@ -26,3 +26,4 @@ This story follows a once-renowned researcher through his life after the recent 
 
 - ## [CHAPTER 1](/os-chapter-1)
 - ## [CHAPTER 2](/os-chapter-2)
+- ## [CHAPTER 3](/os-chapter-3)
