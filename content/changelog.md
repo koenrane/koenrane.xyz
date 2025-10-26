@@ -22,6 +22,8 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 ## NEW SITE
 
 ---
+### OCTOBER
+- [Chapter 3](https://koenrane.xyz/os-chapter-3) of Onieroi's Subject
 
 ### JULY
 
