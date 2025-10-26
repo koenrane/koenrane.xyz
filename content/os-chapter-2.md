@@ -111,7 +111,7 @@ I shook my head to clear my thoughts and came back to reality. Quickly, I picked
 
 "...finally". 
 
-Finally. Back to work. The amount of emotional and mental capacity this has taken from me was hard to measure, but I felt its effects. I pulled out my phone and ed Fei the news. I'm sure she already knows:
+The amount of emotional and mental capacity this has taken from me was hard to measure, but I felt its effects. I pulled out my phone and texted Fei the news. I'm sure she already knows:
 
 </br>
 
