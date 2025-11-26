@@ -14,7 +14,7 @@ tags:
 
 In this post, I try provide a detailed examination of the technical considerations that I see are essential for implementing AI applications using a self-hosted, local system.
 
-## SUMMARY
+# SUMMARY
 
 ---
 
@@ -24,11 +24,11 @@ The second architecture is deliberately lighter—a kind of “minimum viable so
 
 The third architecture is the maximalist local option: a fully self-contained RAG system that uses internal document stores and a locally hosted model accessed through an internal API. This is the cleanest way to get a secure RAG pipeline without depending on external compute, but it’s subject to the harsh reality of whatever hardware is currently humming in your server closet. Model size becomes a real constraint—less a theoretical limit and more an immediate negotiation with your GPUs. Still, for organizations that treat data sovereignty as a non-negotiable, this is the purest expression of that philosophy.
 
-## ON PREM
+# ON PREM
 
 ---
 
-### THE CASE FOR ON PREM
+## THE CASE FOR ON PREM
 
 ---
 
@@ -42,7 +42,7 @@ A modular AI architecture, in practice, is just a collection of small, reasonabl
 - Vendor Independence: By sticking to open APIs, open formats, and containerized components, you erode your reliance on any single vendor’s ecosystem. If a provider decides to adjust their licensing terms in a particularly “visionary” way, or if a new open-source model outperforms the old one overnight (which now happens often enough to be a scheduling hazard), you can switch with minimal ceremony.
 - [Hybrid Deployment](https://www.cloudflare.com/learning/cloud/what-is-hybrid-cloud/): You can keep the sensitive stuff—proprietary data, regulated workflows, anything with compliance teeth—on-prem, while shunting overflow tasks to the cloud when needed. A kind of hybrid vigor emerges: the reliability of local infrastructure with the elasticity of outsourced compute, without knuckling under to either extreme.
 
-### ON-PREM LLM DEPLOYMENT
+## ON-PREM LLM DEPLOYMENT
 
 ---
 
@@ -70,7 +70,7 @@ Monitoring and Scaling:
 
 - Finally, you observe it. Relentlessly. Performance, GPU memory pressure, token throughput, odd security events, pathological prompts that melt your KV cache—everything. Scaling becomes an ongoing negotiation between demand and the hardware that must satisfy it. With enough instrumentation, you eventually develop a feel for when the system is healthy—or about to do something expensive.
 
-### ADVANTAGES
+## ADVANTAGES
 
 ---
 
@@ -88,7 +88,7 @@ A quick breakdown:
 - Secure Updates: Offline update bundles are imported via trusted physical methods, undergoing internal validation and logging.
 - Zero Trust Architecture: Verification of every model, user, and API call(internal REST) to protect against insider threats and rogue execution.
 
-### MODULAR OVERVIEW
+## MODULAR OVERVIEW
 
 ---
 
@@ -165,7 +165,7 @@ A quick breakdown:
     [Trustible](https://trustible.ai),
     [DataRobot](https://www.datarobot.com)
 
-## USE CASE: MODULAR AI
+# USE CASE: MODULAR AI
 
 ---
 
@@ -173,7 +173,7 @@ This particular use case comes from [Modular AI](https://www.modular.com/)—a c
 
 The Modular Platform itself is an open, fully integrated suite of AI libraries and tools designed to accelerate model serving and scale Generative AI deployments without surrendering control to a managed service. The architecture is vertically integrated: hardware at the bottom, Kubernetes at the top, with a series of entry points along the way depending on how deep you want to dive. It’s the kind of system that rewards engineers who like understanding (or rewriting) the machinery instead of treating it as a polite abstraction.  
 
-### MODULAR FRAMEWORK COMPONENTS
+## MODULAR FRAMEWORK COMPONENTS
 
 ---
 
@@ -183,11 +183,13 @@ The Modular Platform itself is an open, fully integrated suite of AI libraries a
 
 - **[Mammoth](https://www.modular.com/mammoth):** Formerly MAX Inference Cluster, Mammoth is the Kubernetes-native control plane, routing substrate, and orchestration layer that makes distributed AI serving tolerable. It handles multi-model management, prefill-aware routing, and disaggregated compute and cache. In practice, it means workloads are automatically routed to the “best” hardware for the job, throughput is maximized, latency minimized, and the system generally behaves like a conscientious air traffic controller rather than a chaotic dispatcher.
 
-## ON-PREM INFRA
+# ON-PREM INFRA
+
+---
 
 This architecture targets medium-to-large enterprises that want serious, on-prem AI without surrendering control. It’s built for both training and inference workloads, with an eye toward modularity so future expansions—whether Generative AI experiments or RAG pipelines—don’t require tearing the whole system down. The emphasis on fully on-prem hardware isn’t just for show: it’s about self-reliance, predictable performance, and keeping sensitive data entirely within the organizational perimeter. (Think of it as trading the convenience of cloud elasticity for a kind of sovereignty that is surprisingly rare in modern AI deployments.)
 
-### CPUs
+## CPUs
 
 ---
 
@@ -198,7 +200,7 @@ While GPUs are the primary accelerators for AI workloads, CPUs are also needed f
 - CPU: Dual Intel Xeon Gold 6444Y (32 cores/64 threads each) or AMD EPYC 9374F (32 cores/64 threads each).
 - RAM: 512GB DDR5 ECC RAM (e.g., 16 x 32GB modules) per server.
 
-### GPUs
+## GPUs
 
 ---
 
@@ -217,13 +219,13 @@ Cluster Specs:
 - For Training: DGX H100 mini cluster: 8 NVIDIA H100 @ 640GB total memory
 - For Inference: NVIDIA L40S cluster 48GB/GPU (for balanced performance/cost)
 
-### MEMORY
+## MEMORY
 
 ---
 
 For this use case, the middle-ground architecture settles on [NVIDIA L40S GPUs](https://www.nvidia.com/en-us/data-center/l40s/) with 48GB of GDDR6 RAM—a choice that balances performance and cost. It’s tuned for AI inference, training, enterprise-scale deployments, and RAG workloads, without hitting the sticker shock of an H100-based setup. The initial system should comfortably handle inference compute for a few hundred employees—enough to act as a practical testbed without overcommitting hardware. If you scale up using L40S, equipping the system with 256–512 GB of [ECC RAM](https://en.wikipedia.org/wiki/ECC_memory) provides sufficient VRAM for multiple concurrent model inferences, plus the headroom to run embedding models, re-rankers, and serve the LLM itself. (In other words, you get a sandbox large enough to experiment seriously, without requiring a data center-sized budget.)
 
-### STORAGE
+## STORAGE
 
 ---
 
@@ -239,17 +241,17 @@ Examples in the wild:
 - [DDN](https://www.ddn.com/) + NVIDIA [BlueField‑3](https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/documents/datasheet-nvidia-bluefield-3-dpu.pdf): DDN integrated BlueField-3 DPUs into its storage appliances.
 - [CoreWeave](https://www.coreweave.com/products/storage#local-storage) + [VAST](https://www.vastdata.com/platform/overview) + BlueField: CoreWeave’s AI object storage uses BlueField DPUs for control-plane
 
-### NETWORKING
+## NETWORKING
 
 ---
 
 A stable, high-speed external network connection—1 Gbps or higher—is basically non-negotiable for on-prem AI deployments. You need it to pull down large datasets, push model updates, and enable either remote collaboration or API-driven inference requests. On a Modular AI stack, particularly in multi-GPU configurations, bandwidth becomes even more critical: supporting medium to large-scale LLMs requires not just enough network for general I/O, but the kind of throughput that keeps GPUs fed and prevents idle cycles. This involves both inter-GPU communication and connectivity across the cluster. On the hardware side, NVIDIA [NVLink](https://www.nvidia.com/en-us/products/workstations/nvlink-bridges/) provides ultra-high-speed GPU-to-GPU lanes—H100 GPUs push 600 GB/s, and a[DGX H100](https://www.nvidia.com/en-sg/data-center/dgx-h100/) system can deliver 900 GB/s bidirectional, scaling up to 256 GPUs with NVLink Switch. PCIe Gen5 ensures fast GPU-to-CPU communication at 128 GB/s, while high-speed Ethernet or InfiniBand, such as NVIDIA [ConnectX-7 VPI](https://www.nvidia.com/en-us/networking/infiniband-adapters/), can deliver up to 400 Gb/s per link for inter-node communication, contributing to a peak bidirectional throughput of around 1 TB/s in DGX H100 clusters. (In practice, this means the network stops being a bottleneck, and the GPUs can actually spend their cycles doing inference rather than waiting for data to trickle in.)
 
-### SOFTWARE
+## SOFTWARE
 
 ---
 
-#### Containerization
+### Containerization
 
 This layer defines the foundational software components that underpin both Kubernetes orchestration and the Modular AI deployment. In practice, Ubuntu 22.04 LTS is the recommended choice, particularly in enterprise settings, because Modular’s development and testing are heavily concentrated on this version. (If you stray from it, you are effectively venturing into a lightly mapped wilderness.) Reference to Modular’s [official documentation on base operating systems](https://docs.modular.com/max/packages#system-requirements) is not optional; it’s where all the subtle compatibility decisions are documented.
 
@@ -257,7 +259,7 @@ Installing Kubernetes on a default Ubuntu install is almost guaranteed to introd
 
 Running the MAX container itself also has prerequisites: the official Docker image provides the complete toolset for local development, testing, and container management outside of Kubernetes. Docker Engine should be part of the base OS setup, not merely tacked on as a Kubernetes requirement—treat it as foundational plumbing rather than optional scaffolding. (In other words, skip it at your own peril; MAX doesn’t forgive half-hearted setups.)
 
-#### Orchestration
+### Orchestration
 
 This layer dives into the Kubernetes setup, which acts as the orchestration backbone for deploying and managing Modular AI inference services. A GPU-enabled Kubernetes cluster is essentially non-negotiable if you want to run MAX and actually leverage GPU acceleration. On Ubuntu 22.04 LTS—the recommended base OS—Kubernetes is officially supported, actively maintained, and tightly integrated. This isn’t just bureaucratic convenience: it’s the difference between a system that survives upgrades and patches versus one that feels like juggling chainsaws while blindfolded. Using Ubuntu 22.04 LTS gives an enterprise-ready path for on-prem deployments, removing a lot of the friction that comes from cobbling together a cluster from generic components.
 
@@ -284,13 +286,13 @@ Software stack:
 - NVIDIA GPU Driver: 550 or higher
   - required for NVIDIA GPU acceleration
 
-### DEVELOPMENT LAYER
+## DEVELOPMENT LAYER
 
 ---
 
 This layer walks through the practical steps of getting Modular’s MAX AI engine up and running inside Kubernetes, and hooking it into models and your MLOps workflow. Think of it less as a rigid checklist and more as a guided tour through the plumbing that makes LLMs actually work on-prem.
 
-#### Max Container Deployment
+### Max Container Deployment
 
 MAX is Modular’s [official Docker container](https://docs.modular.com/max/container) for running GenAI models. It comes with a compatible endpoint for LLMs, so you can actually interact with the models without building a bunch of glue code. Deployment on Kubernetes is handled via Helm (as mentioned above), which basically turns what would otherwise be a fiddly, error-prone process into something declarative and repeatable.
 
@@ -316,7 +318,7 @@ Various MAX container options can be used to cater to different GPU setups and d
 - max-nvidia-full
 - max-nvidia-base
 
-### MODEL SERVING
+## MODEL SERVING
 
 ---
 
@@ -326,15 +328,15 @@ On Modular’s platform, you can export Mojo models, but the main workflow is us
 
 MAX also comes pre-equipped to serve a wide range of pre-trained Generative AI models. Text models like LLaMA, Mistral, and Qwen. Audio models like [Whisper](https://github.com/openai/whisper). Video models such as [Wan](https://github.com/Wan-Video/Wan2.1), [LTX](https://huggingface.co/Lightricks/LTX-Video), and [Open-Sora](https://huggingface.co/hpcai-tech/Open-Sora-v2). Image models, including [Stable Diffusion](https://stability.ai/stable-image). These can all be pointed to with the `--model-path` option when you spin up the MAX container. (In practice, this makes MAX less a single-purpose runtime and more like a universal inference engine for whatever GenAI workload you care to throw at it.)
 
-### ML OPS
+## ML OPS
 
 ---
 
-#### Experiment Tracking and MLflow
+### Experiment Tracking and MLflow
 
 MLflow is basically the Swiss Army knife for the ML lifecycle. Run it on Kubernetes, and it suddenly gains the kind of scalability, reliability, and GPU support that makes it enterprise-usable. You’ll want persistent storage (PVs/PVCs) for experiments and models, expose the UI through a Kubernetes Service, and deploy models either via a FastAPI inference server in Docker—or, if you want something production-grade, through [MLServer](https://github.com/SeldonIO/MLServer) into [KServe](https://github.com/kserve/kserve) or [Seldon Core](https://github.com/SeldonIO/seldon-core). (The distinction matters: one is “good enough to experiment,” the other is “good enough to survive a CEO demo.”)
 
-#### Monitoring
+### Monitoring
 
 Watching AI inference in Kubernetes isn’t optional; you need to know usage, latency, and errors in real time. The standard stack is [Prometheus](https://github.com/prometheus/prometheus) for metrics collection plus [Grafana](https://github.com/grafana/grafana) for dashboards, usually deployed together via the *kube-prometheus-stack* Helm chart. Prometheus scrapes metrics from exporters and lets you query them with PromQL, while Grafana gives you live, glanceable dashboards. If you’re feeling fancy—or running multiple clusters—you can externalize Prometheus, use remote write, or even hook up [Thanos](https://github.com/adavarski/kind-multicluster-thanos-prometheus-grafana-playground) for multi-cluster queries. But for most deployments, running Prometheus inside the cluster is simpler, faster, and less headache-prone. (Metrics are useless if the collector itself keeps dying.)
 
@@ -355,9 +357,9 @@ Watching AI inference in Kubernetes isn’t optional; you need to know usage, la
 - Skillset: You need a solid team across MLOps, DevOps, and networking. This isn’t plug-and-play; complexity scales faster than most org charts.
 - Taken together, this architecture offers a detailed blueprint for a modular, on-prem AI stack capable of handling demanding AI workloads. (In practice, it’s as close as you get to designing your own mini-AI data center without building a literal one from scratch.)
 
-## THE API WAY
+# THE API WAY
 
-### The CASE FOR LLM APIs
+## The CASE FOR LLM APIs
 
 ---
 
@@ -419,7 +421,7 @@ Everything moves through [TLS (AES-256)](https://www.kiteworks.com/risk-complian
 
 Using a RAG system as an example, LLMs can be called through an API where the layer serves as the interface between the internal retrieval pipeline and the external hosted model. Once the relevant documents are retrieved, this layer packages the user's query and the retrieved context into a structured prompt and sends it to the external LLM provider via secure API calls. It handles request formatting, authentication, rate limiting, batching, and error handling for reliable communication. On the response side, it parses the LLM output, applies any post-processing (such as filtering, re-ranking, or enforcing structured outputs), and then passes the result back into the system for consumption by downstream applications. This layer can enforce security and privacy boundaries by ensuring only non-sensitive or pre-approved data is sent out, often working in tandem with the RAG layer to ground the model’s output in the internal knowledgebase without exposing proprietary datasets directly to the external API. Other applications like chatbots can use the same functionality stated above.
 
-## RAG SYSTEM OVERVIEW
+# RAG SYSTEM OVERVIEW
 
 ---
 
@@ -437,7 +439,7 @@ After the model produces its answer, the RAG layer can turn into a skeptical edi
 
 So, this system acts as the tether between the model’s generative fluency and the organization’s actual source of truth, all while keeping the whole operation inside your own walls, behind your firewall, and under your control.
 
-### COMPONENTS
+## COMPONENTS
 
 ---
 
@@ -476,24 +478,24 @@ On the orchestration side, this layer prepares the final augmented prompt that t
 >
 > So, basically, the organization can scale up RAM/CPU linearly with the current document set and query volume, but since a giant transformer is not running locally, just a vector DB and some Python glue will suffice.
 
-### RAG STRATEGIES
+## RAG STRATEGIES
 
 ---
 
-#### Indexing and search
+### Indexing and search
 
 At the bottom of it all, retrieval is just the art of asking: given this question, what’s probably relevant?
 If the corpus is small enough, exact search works fine; otherwise you graduate to the usual approximate nearest neighbor (ANN) methods. These let you trade a bit of recall for big wins in speed and memory—basically the difference between flipping through a few folders and spelunking an entire library.
 
 Most vector DBs now do “hybrid search” out of the box: semantic vectors for meaning, keyword search for precision, plus metadata filters (timestamps, author, doc type) so you don’t accidentally dredge up something from 2014 and present it as gospel. This is also where access control lives, so people only see what they’re allowed to see.
 
-#### Re-ranking and retrieval
+### Re-ranking and retrieval
 
 The first retrieval pass is usually a bit noisy by design—cheap and broad. After that you clean it up. A neural re-ranker (often a cross-encoder) goes through the top candidates and reorders them based on actual relevance instead of raw vector proximity. This two-stage pipeline makes retrieval both fast and accurate.
 
 You can also let the LLM rewrite the user’s query into something more index-friendly. Humans ask weird, elliptical questions; the model can generate a cleaner version that actually hits the right documents.
 
-#### Embedding model
+### Embedding model
 
 Embeddings are the “vocabulary” the rest of the system uses to understand your data, so the model that produces them matters. Generic embeddings from OpenAI, Cohere, or sentence-transformers are fine for broad use cases, but niche domains (medicine, law, finance) often benefit from in-house or fine-tuned models.
 
@@ -501,19 +503,19 @@ High-dimensional embeddings carry more nuance, but cost more to store and search
 
 Cosine normalization (`L2`) is nearly always a good idea, though it does compress some detail; it’s the cost of playing nicely with similarity metrics.
 
-#### Prompt construction and context management
+### Prompt construction and context management
 
 Once you’ve retrieved your candidate chunks, they need to be fed into the LLM. This is where the prompt becomes a kind of scrapbook: pick the 3–8 most useful passages, trim or summarize the extra-long ones, and respect the model’s context window. When in doubt, hierarchical retrieval plus summarization usually beats “just cram everything in.”
 
 Prompt templates matter more than people expect. You want to gently—but firmly—remind the model to use the retrieved context, cite where its info came from, and confess ignorance instead of hallucinating like a caffeinated fiction writer.
 
-#### Generation and Grounding Safeguards
+### Generation and Grounding Safeguards
 
 Hallucinations happen when the LLM runs out of guardrails. You can fight this by making grounding explicit: “Use only the provided context,” “Cite the passage you’re referencing,” “If you can’t find it, say so.”
 
 Some systems even run a post-hoc verification step: compare the model’s claims to the retrieved documents and downgrade or flag anything not supported by evidence. It’s surprisingly effective—like a sanity-checking friend who skims your work before you hit “send.”
 
-#### Dialog and Session State
+### Dialog and Session State
 
 In real life, users don’t ask questions in isolation—they ask follow-ups, clarifications, half-finished thoughts. So a good RAG system tracks conversational context. Temporary memory holds the running dialog; long-term memory can store user preferences or persistent facts (with tighter privacy controls). These memory layers typically live outside the main vector store to keep things clean and auditable.
 
@@ -533,28 +535,28 @@ Logging the whole retrieval chain—query → embeddings → retrieved docs → 
 
 This is how you debug a system that’s seemingly “working” but keeps pulling page 17 of the employee handbook for every query.
 
-#### Security, Privacy, and Governance
+### Security, Privacy, and Governance
 
 RAG pipelines often interact with sensitive internal data, so you don’t get to skip the security chapter. Access controls should exist at the vector store and orchestration layers. PII detection before indexing prevents accidents. Deletion workflows must support the “right to be forgotten.”
 Metadata filters enforce isolation (“only show this user the documents they actually own”), and audit logs keep track of who asked what—useful for compliance and also for catching suspicious behavior.
 
-#### Operational Concerns
+### Operational Concerns
 
 Once people start using the system, scale becomes a problem. Vector DBs may need sharding and replication. Caching saves both time and money. Asynchronous ingestion lets you keep the index fresh without freezing the pipeline. TTLs (time-to-live) decide when stale documents fade away.
 
 For big deployments, distributed clusters and product quantization are your friends—they let you do efficient search without buying a data center.
 
-#### Maintenance and Lifecycle Management
+### Maintenance and Lifecycle Management
 
 RAG systems age. Models get better, embeddings need regeneration, chunking strategies evolve as you learn what users actually search for. Feedback loops—explicit (“thumbs down”) or implicit (click patterns)—help tune retrieval and re-ranking.
 
 This is not a “deploy once and forget it” situation. It’s more like tending a garden: prune old content, refresh embeddings, revisit templates, and keep an eye out for weeds.
 
-#### Human-in-the-Loop (HITL)
+### Human-in-the-Loop (HITL)
 
 Sometimes the model simply isn’t confident—or shouldn’t be. For edge cases, the system can escalate to a human expert, providing the retrieved docs and the model’s draft answer. These human corrections become powerful training data for better retrievers and re-rankers. Over time, this feedback loop can dramatically improve system quality.
 
-## USE CASE #3: FULLY LOCAL RAG
+# USE CASE #3: FULLY LOCAL RAG
 
 ---
 
@@ -568,7 +570,7 @@ Security becomes refreshingly simple and nothing leaves the perimeter anymore, s
 
 In this architecture, the LLM API layer is no longer a thin proxy to a frontier model, it is the model. A self-hosted inference service sitting right next to your retrieval pipeline, fully under your control and fully your responsibility. Functionally, it behaves the same as the external API; politically and operationally, it’s a whole different beast.
 
-### OSS MODELS FOR RAG
+## OSS MODELS FOR RAG
 
 ---
 
