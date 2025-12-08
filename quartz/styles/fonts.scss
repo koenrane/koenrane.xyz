@@ -258,7 +258,7 @@ pre {
   font-family: FiraCode, var(--font-monospace);
   background-color: transparent;
   color: inherit;
-  font-size: 0.81em;
+  font-size: 0.75em;
   font-variant-caps: normal; // Ignore small-caps in code
 }
 
@@ -268,6 +268,28 @@ code {
   a > & {
     font-weight: $normal-weight;
   }
+}
+
+:not(pre) > code,
+:not(pre) code {
+  // display: inline-block;
+  // padding: calc(0.35 * $base-margin) calc(0.75 * $base-margin);
+  margin: 0 calc(0.1 * $base-margin);
+  border-radius: 0;
+  background-color: var(--background);
+  border: 1px solid var(--midground-faint);
+  color: var(--foreground);
+  box-shadow: none;
+}
+
+:root[data-theme="dark"] :not(pre) > code,
+.dark-mode :not(pre) > code,
+:root[data-theme="dark"] :not(pre) code,
+.dark-mode :not(pre) code {
+  background-color: var(--background);
+  border: 1px solid var(--midground-faint);
+  color: var(--foreground);
+  box-shadow: none;
 }
 
 .text-ornament {
