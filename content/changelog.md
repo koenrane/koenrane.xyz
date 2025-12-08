@@ -25,6 +25,12 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 ---
 
 - [So You Want To Run Your Own AI Stack?](/full-local-ai) - Completed essay
+- Transclusion improvements:
+  - Popover behavior: Added sandboxed iframe previews for external links via `quartz/components/scripts/popover.inline.ts` with load/error handling and position updates. Provided text-summary fallback (`external-preview-frame--fallback`).
+  - Styles (`quartz/components/styles/popover.scss`): New external popover layout: `popover-inner--external`, header, and iframe container styles.
+  - Tests (`quartz/components/tests/popover.spec.ts`): Updated external-link hover test to expect sandboxed iframe. Added failure-path test asserting fallback rendering when iframe load is blocked.
+
+
 
 ### OCTOBER
 
@@ -103,6 +109,6 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 - created a [[https://www.digitalocean.com/products/droplets | Digital Ocean Droplet server]] to host the website
 - setup Ubuntu 24.10 x64 OS. Also, setup nginx environment
 - established koenrane.xyz [[https://github.com/koenrane/koenrane.xyz | repo]] in GitHub
-- built pmwiki markdown syntax templates for more efficient text formatting: [[https://github.com/koenrane/koenrane.xyz/blob/main/pmwiki_syntax_template/syntax_template.txt | pmwiki_syntax_template.txt]]
--built pandoc lua filter to convert standard markdown to pmwiki markdown: [[https://github.com/koenrane/koenrane.xyz/blob/main/pandoc/markdown-to-pmwiki.lua | @@markdown-to-pmwiki.lua]]
+- built pmwiki markdown syntax templates for more efficient text formatting: [[https://github.com/koenrane/koenrane.xyz/blob/main/`pmwiki_syntax_template/syntax_template.txt`| pmwiki_syntax_template.txt]]
+-built pandoc lua filter to convert standard markdown to pmwiki markdown: [[https://github.com/koenrane/koenrane.xyz/blob/main/pandoc/markdown-to-pmwiki.lua | `markdown-to-pmwiki.lua`]]
 - Created all current existing wiki pages (as of Feb 2025)
