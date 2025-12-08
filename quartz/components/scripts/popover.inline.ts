@@ -7,27 +7,72 @@ import {
   escapeLeadingIdNumber,
 } from "./popover_helpers"
 
-/**
- * Creates a simple fallback popover for external links
- */
-function createExternalLinkPopover(linkElement: HTMLAnchorElement, targetUrl: URL): HTMLElement {
+const EXTERNAL_IFRAME_SANDBOX =
+  "allow-forms allow-pointer-lock allow-popups allow-popups-to-escape-sandbox allow-same-origin allow-scripts"
+const EXTERNAL_PREVIEW_LOADED_EVENT = "quartz:externalPreviewLoaded"
+
+function buildExternalLinkSummary(linkElement: HTMLAnchorElement, targetUrl: URL): HTMLElement {
+  const summaryElement = document.createElement("section")
+  summaryElement.classList.add("external-link-preview")
+  const linkText = linkElement.textContent?.trim() || linkElement.innerText?.trim() || targetUrl.hostname
+  summaryElement.innerHTML = `
+    <h3>${linkText}</h3>
+    <p><strong>Domain:</strong> ${targetUrl.hostname}</p>
+    <p><strong>URL:</strong> ${targetUrl.href}</p>
+  `
+  return summaryElement
+}
+
+function createExternalFallbackPopover(linkElement: HTMLAnchorElement, targetUrl: URL): HTMLElement {
   const popoverElement = document.createElement("div")
   popoverElement.classList.add("popover")
   const popoverInner = document.createElement("div")
-  popoverInner.classList.add("popover-inner")
+  popoverInner.classList.add("popover-inner", "popover-inner--external")
+  popoverInner.dataset.contentType = "text/html;external-fallback"
+  popoverInner.appendChild(buildExternalLinkSummary(linkElement, targetUrl))
+  popoverElement.appendChild(popoverInner)
+  return popoverElement
+}
+
+function createExternalPreviewPopover(linkElement: HTMLAnchorElement, targetUrl: URL): HTMLElement {
+  const popoverElement = document.createElement("div")
+  popoverElement.classList.add("popover")
+
+  const popoverInner = document.createElement("div")
+  popoverInner.classList.add("popover-inner", "popover-inner--external")
+  popoverInner.dataset.contentType = "text/html;external-preview"
   popoverElement.appendChild(popoverInner)
 
-  // Create content for external link
-  const domain = targetUrl.hostname
-  const linkText = linkElement.textContent || linkElement.innerText || targetUrl.href
-  
-  popoverInner.innerHTML = `
-    <div class="external-link-preview">
-      <h3>${linkText}</h3>
-      <p><strong>Domain:</strong> ${domain}</p>
-      <p><strong>URL:</strong> ${targetUrl.href}</p>
-    </div>
+  const headerElement = document.createElement("header")
+  headerElement.classList.add("external-preview-header")
+  headerElement.innerHTML = `
+    <strong>${linkElement.textContent?.trim() || targetUrl.hostname}</strong>
+    <span>${targetUrl.hostname}</span>
   `
+  popoverInner.appendChild(headerElement)
+
+  const frameWrapper = document.createElement("div")
+  frameWrapper.classList.add("external-preview-frame")
+
+  const previewFrame = document.createElement("iframe")
+  previewFrame.src = targetUrl.toString()
+  previewFrame.loading = "lazy"
+  previewFrame.title = `Preview of ${targetUrl.hostname}`
+  previewFrame.referrerPolicy = "no-referrer"
+  previewFrame.setAttribute("sandbox", EXTERNAL_IFRAME_SANDBOX)
+
+  previewFrame.addEventListener("load", () => {
+    popoverElement.dispatchEvent(new CustomEvent(EXTERNAL_PREVIEW_LOADED_EVENT))
+  })
+
+  previewFrame.addEventListener("error", () => {
+    frameWrapper.replaceChildren(buildExternalLinkSummary(linkElement, targetUrl))
+    frameWrapper.classList.add("external-preview-frame--fallback")
+    popoverElement.dispatchEvent(new CustomEvent(EXTERNAL_PREVIEW_LOADED_EVENT))
+  })
+
+  frameWrapper.appendChild(previewFrame)
+  popoverInner.appendChild(frameWrapper)
 
   return popoverElement
 }
@@ -65,18 +110,16 @@ function mouseEnterHandler(this: HTMLAnchorElement) {
 
   const showPopover = async () => {
     let popoverElement: HTMLElement
+    const targetIsExternal = isExternalUrl(targetUrl)
 
     try {
-      // For external links, use the fallback popover instead of fetching content
-      if (isExternalUrl(targetUrl)) {
-        popoverElement = createExternalLinkPopover(this, targetUrl)
-      } else {
-        popoverElement = await createPopover(popoverOptions)
-      }
+      popoverElement = targetIsExternal
+        ? createExternalPreviewPopover(this, targetUrl)
+        : await createPopover(popoverOptions)
     } catch (error) {
       // If createPopover fails (e.g., CORS, 404, etc.), create a fallback popover
       console.warn("Failed to create popover for", targetUrl.href, error)
-      popoverElement = createExternalLinkPopover(this, targetUrl)
+      popoverElement = createExternalFallbackPopover(this, targetUrl)
     }
 
     if (!popoverElement) {
@@ -91,6 +134,14 @@ function mouseEnterHandler(this: HTMLAnchorElement) {
 
     updatePosition()
 
+    const handleExternalPreviewLoaded = () => {
+      updatePosition()
+    }
+
+    if (targetIsExternal) {
+      popoverElement.addEventListener(EXTERNAL_PREVIEW_LOADED_EVENT, handleExternalPreviewLoaded)
+    }
+
     window.addEventListener("resize", updatePosition)
 
     const cleanup = attachPopoverEventListeners(popoverElement, this)
@@ -100,7 +151,7 @@ function mouseEnterHandler(this: HTMLAnchorElement) {
 
     popoverElement.classList.add("popover-visible")
 
-    if (hash !== "" && !isExternalUrl(targetUrl)) {
+    if (hash !== "" && !targetIsExternal) {
       hash = `${hash}-popover`
       hash = escapeLeadingIdNumber(hash)
       const heading = popoverElement.querySelector(hash) as HTMLElement | null
@@ -114,6 +165,9 @@ function mouseEnterHandler(this: HTMLAnchorElement) {
     return () => {
       cleanup()
       window.removeEventListener("resize", updatePosition)
+      if (targetIsExternal) {
+        popoverElement.removeEventListener(EXTERNAL_PREVIEW_LOADED_EVENT, handleExternalPreviewLoaded)
+      }
     }
   }
 

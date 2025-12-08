@@ -1,4 +1,4 @@
-import { test as base, expect, type Locator } from "@playwright/test"
+import { test as base, expect, type Locator, type Route } from "@playwright/test"
 
 import { minDesktopWidth } from "../../styles/variables"
 import { takeRegressionScreenshot, isDesktopViewport, showingPreview } from "./visual_utils"
@@ -46,18 +46,41 @@ test("Internal links show popover on hover (lostpixel)", async ({ page, dummyLin
   await expect(popover).not.toBeVisible()
 })
 
-test("External links do not show popover on hover (lostpixel)", async ({ page }) => {
+test("External links render sandboxed previews on hover", async ({ page }) => {
   const externalLink = page.locator(".external").first()
   await expect(externalLink).toBeVisible()
 
-  // Initial state - no popover
-  let popover = page.locator(".popover")
-  await expect(popover).not.toBeVisible()
-
-  // Hover over link
   await externalLink.hover()
-  popover = page.locator(".popover")
-  await expect(popover).not.toBeVisible()
+  const popover = page.locator(".popover")
+  await expect(popover).toBeVisible()
+
+  const previewFrame = popover.locator(".external-preview-frame iframe")
+  await expect(previewFrame).toBeVisible()
+  await expect(previewFrame).toHaveAttribute(
+    "sandbox",
+    /allow-forms.*allow-pointer-lock.*allow-popups.*allow-same-origin.*allow-scripts/,
+  )
+})
+
+test("External popover falls back when iframe load fails", async ({ page }) => {
+  const externalLink = page.locator(".external").first()
+  await expect(externalLink).toBeVisible()
+
+  const abortRoute = async (route: Route) => {
+    await route.abort()
+  }
+  await page.route("https://github.com/**", abortRoute)
+
+  try {
+    await externalLink.hover()
+    const popover = page.locator(".popover")
+    await expect(popover).toBeVisible()
+
+    const fallback = popover.locator(".external-preview-frame.external-preview-frame--fallback .external-link-preview")
+    await expect(fallback).toBeVisible()
+  } finally {
+    await page.unroute("https://github.com/**", abortRoute)
+  }
 })
 
 test("Popover content matches target page content", async ({ page, dummyLink }) => {
