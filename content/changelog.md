@@ -18,14 +18,23 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 # 2025
 
-----
-## NEW SITE
+---
+
+### NOVEMBER
 
 ---
+
+- [So You Want To Run Your Own AI Stack?](/full-local-ai) - Completed essay
+
 ### OCTOBER
+
+---
+
 - [Chapter 3](https://koenrane.xyz/os-chapter-3) of Onieroi's Subject
 
 ### JULY
+
+---
 
 - added content to [Book Reviews](/book-reviews) - Silo Series
 - added spacing elements in book review titles between link, author, and star rankings plus other small formatting errors. 
@@ -36,6 +45,8 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 ### JUNE
 
+---
+
 - [The Oneiroi's Subject](/the-oneirois-subject)
 - [Tea Reviews](/tea-reviews)
 - [Book Reviews](/book-reviews)
@@ -43,9 +54,11 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 ## OLD SITE
 
-----
+---
 
 ### MAY
+
+---
 
 - [Containerized Intentionality](/containerized-intentionality)
 - added page link to longform LessWrong post: A Guide to AI 2027
@@ -53,12 +66,16 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 ### APRIL
 
+---
+
 - reformatted page status identifiers to category links for better tracking.
 - significant progress made on Whoop Analysis essay: added TOC and sections on strain, recovery, sleep, and code blocks for strain analysis
 - archived all blog posts into 'z_archive' folder in GitHub
 - added [[https://koenrane.xyz/?n=Main.TeaReviews | Tea Reviews]] page
 
 ### MARCH
+
+---
 
 - created changelog page
 - created 'meta' landing page
@@ -79,6 +96,8 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 - created Fiction section on the home page and added the first chapter of my longstanding fictional novel. ''"The Oneiroi's Subject"'' is a working title and will possibly change at the end. As of March 2025, there are 11 Chapters, all in different states of completion (is any writing ever completed?)
 
 ### FEBRUARY
+
+---
 
 - established the koenrane.xyz domain.
 - created a [[https://www.digitalocean.com/products/droplets | Digital Ocean Droplet server]] to host the website
