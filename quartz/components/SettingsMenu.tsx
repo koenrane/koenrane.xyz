@@ -49,8 +49,8 @@ SettingsMenu.css = `
   }
 
   .settings-button {
-    background: var(--background);
-    border: 1px solid var(--midground-faint);
+    background: transparent;
+    border: none;
     cursor: pointer;
     padding: 8px;
     display: flex;
@@ -59,7 +59,7 @@ SettingsMenu.css = `
     position: relative;
     z-index: 1001;
     border-radius: 4px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    box-shadow: none;
   }
   
   .settings-button svg {
@@ -71,11 +71,11 @@ SettingsMenu.css = `
 
   .settings-button:hover {
     background: var(--midground-faintest);
-    border-color: var(--midground);
+    border-color: transparent;
   }
 
   .settings-button:hover svg {
-    fill: var(--foreground);
+    fill: var(--midground-strong);
   }
 
   .settings-dropdown {
