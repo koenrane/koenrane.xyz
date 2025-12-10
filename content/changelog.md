@@ -20,12 +20,19 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 ---
 
+### DECEMBER
+
+---
+
+- [Forced `article-title` to use container width](https://github.com/koenrane/koenrane.xyz/commit/8f4a815acb9c485e1110890c935808ddf80f67b4)
+- [Nav button granular shrinking and setting gear reformated](https://github.com/koenrane/koenrane.xyz/commit/97e8073029ec5687c9f6aa58674f12801c4a978e)
+
 ### NOVEMBER
 
 ---
 
 - [So You Want To Run Your Own AI Stack?](/full-local-ai) - Completed essay
-- Transclusion improvements:
+- [Transclusion improvements](https://github.com/koenrane/koenrane.xyz/commit/b8401d9a3393d99b7e17fd8fcc17c0ff30692cb1):
   - Popover behavior: Added sandboxed iframe previews for external links via `quartz/components/scripts/popover.inline.ts` with load/error handling and position updates. Provided text-summary fallback (`external-preview-frame--fallback`).
   - Styles (`quartz/components/styles/popover.scss`): New external popover layout: `popover-inner--external`, header, and iframe container styles.
   - Tests (`quartz/components/tests/popover.spec.ts`): Updated external-link hover test to expect sandboxed iframe. Added failure-path test asserting fallback rendering when iframe load is blocked.
