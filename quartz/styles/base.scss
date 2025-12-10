@@ -250,10 +250,11 @@ hr.desktop-only {
     }
 
     & #center-content {
-      flex-grow: 1;
-      flex-shrink: 1;
+      flex: 1 1 $page-width;
       max-width: $page-width;
+      min-width: 0;  /* Critical: allows flex item to shrink below content size */
       overflow-x: hidden;
+      overflow: hidden;  /* Clip any overflow including from children */
       width: 100%;
 
       @media all and (max-width: $max-mobile-width) {
@@ -261,6 +262,12 @@ hr.desktop-only {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+      }
+      
+      /* Ensure all block children respect container width */
+      & > * {
+        max-width: 100%;
+        box-sizing: border-box;
       }
     }
   }

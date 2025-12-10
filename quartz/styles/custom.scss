@@ -342,6 +342,12 @@ figure,
 #article-title {
   margin: 2rem 0 0;
   text-align: center;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  word-break: break-word;
+  max-width: 100%;
+  box-sizing: border-box;
+  width: 100%;  /* Force it to take container width, not intrinsic width */
 
   @media all and (max-width: $max-mobile-width) {
     margin-top: $base-margin;
