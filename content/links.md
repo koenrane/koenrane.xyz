@@ -18,7 +18,44 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ----
 
+## NOVEMBER
+
+---
+
+- [Newcomblike problems are the norm]( https://mindingourway.com/newcomblike-problems-are-the-norm/?ref=hackernoon.com), Soares 2014
+  - real-world decision scenarios constantly leak information and involve prediction, Newcomblike problems are not rare exceptions but the norm — and any complete theory of decision-making (especially for intelligent systems or AI) needs to grapple with that reality.
+- [Why people like your quick bullshit takes better than your high-effort posts](https://www.lesswrong.com/posts/DiiLDbHxbrHLAyXaq/why-people-like-your-quick-bullshit-takes-better-than-your), [eukaryote](https://www.lesswrong.com/users/eukaryote?from=post_header) 2025
+  - differences between the quick post and the effort post
+- [How Parasitic Processing Is Causing You To Suffer](https://lectern.johnvervaeke.com/insights/how-parasitic-processing-is-causing-you-to-spiral), Vervaeke 2025
+  - our brain’s way of trying to make sense of the world can sometimes turn against us and create a downward spiral of anxiety and negativity, something called *parasitic processing*
+- [Laws of (New) Media](https://www.a16z.news/p/laws-of-new-media), McLuhan 2025
+  -  [Andrew McLuhan](https://substack.com/@mcluhan) (grandson of media theorist [Marshall McLuhan](https://en.wikipedia.org/wiki/Marshall_McLuhan)) dives into the classic media theory idea known as the “tetrad” or laws of media, a framework his grandfather and father developed to understand how every technology or medium shapes us and society. Rather than just looking at what a technology does, the tetrad encourages us to ask four questions about any medium: what it enhances in our lives, what it obsolesces or displaces, what it retrieves from the past, and how it reverses into something unexpected when pushed too far.
+- [Economics of Orbital vs Terrestrial Data Centers](https://andrewmccalip.com/space-datacenters), McCalip 2025
+  - "Why compute in orbit? Why should a watt or a flop 250 miles up be more valuable than one on the surface? What advantage justifies moving something as mundane as matrix multiplication into LEO?"
+- [Claude 4.5 Opus Soul Document
+](https://gist.github.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695), Weiss 2025
+- [how to party like an AI researcher](https://jasmi.news/p/neurips-2025), Sun 2025
+  - NeurIPS 2025 is where cutting-edge AI research quietly happens in the background while the real optimization problem is social networking, parties, and who got invited where
+
+
+#### PAPERS
+- [Emergent Heirarchical Reasoning in LLMs Through RL](https://openreview.net/pdf?id=NlkykTqAId), ICLR 2026
+- [Human iPSCs from Aged Donors Retain Their Mitochondrial Aging Signature](https://www.mdpi.com/1422-0067/25/20/11199), Lejri et al, 2024
+  - "Aging represents the leading risk factor for developing neurodegenerative disorders. One of the nine hallmarks of aging is mitochondrial dysfunction. Age-related mitochondrial alterations have been shown to affect mitochondrial energy metabolism, reduction-oxidation homeostasis, and mitochondrial dynamics."
+- [Is Vibe Coding Safe? Benchmarking Vulnerability of Agent-Generated Code in Real-World Tasks](https://arxiv.org/abs/2512.03262), Zhao et al 2025
+  - are vibe coding outputs really safe to deploy in production?
+- [On the Origin of Algorithmic Progress in AI](https://arxiv.org/abs/2511.21622), Gundlach et al 2025
+  - it’s not that clever little tricks magically made small models tens of thousands of times better. Instead, the authors find that most of those massive gains come from how certain algorithms (especially the shift from older architectures like LSTMs to modern Transformers) scale with compute power rather than from incremental tweaks themselves. 
+- [Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity](https://arxiv.org/abs/2510.01171), 2025
+- [CLaRa: Bridging Retrieval and Generation with Continuous Latent Reasoning](https://arxiv.org/abs/2511.18659), He et al 2025
+
+#### CODE 
+- [micrograd]( https://github.com/karpathy/micrograd), Karpathy 2020
+- [ai-data-science-team](https://github.com/business-science/ai-data-science-team), [mdancho84](https://github.com/mdancho84) 2025
+
 ## SEPTEMBER
+
+---
 
 - [Dokkōdō](https://en.wikipedia.org/wiki/Dokk%C5%8Dd%C5%8D)
   - Penned by the famous Japanese swordsman Miyamoto Musashi in 1645, just a week before his death, Dokkōdō (which translates roughly to “The Way of Walking Alone” or “The Path of Aloneness”) offers 21 precepts or guiding principles for life. 
@@ -33,6 +70,8 @@ Links are posted monthly in chronological order and include any articles, papers
 
 
 ## AUGUST
+
+---
 
 - [The Self-Organization of Insight: Entropy and Power Laws in Problem Solving](https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1043&context=jps)
   - The authors are trying to explain how people suddenly gain insight, which is the moment when something “clicks,” and a new structure or strategy emerges that lets one solve a problem in a qualitatively different way. They argue that traditional models in cognitive science (symbolic representations, fixed procedures, etc.) don’t do a great job capturing those abrupt, emergent changes. Instead, Stephen & Dixon suggest thinking of cognition (e.g. insight, problem solving) as a nonlinear dynamical system. This system is open, continuously interacting with the environment, where internal change (in thought, perception, action) can lead to self-organization of new cognitive structure. In this view, insight is not just “applying a known rule” but reorganizing how one is thinking, perceiving, acting.
@@ -68,6 +107,8 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ## JULY
 
+---
+
 - [Silk Road Timeline](https://antilop.cc/sr/)
   - site acts as a public mirror of Silk Road's full lifecycle—from vendor storefronts and community forum discourse to legal fallout.
   - also see from [@thegrugq](https://x.com/thegrugq):  [Dread Pirate Roberts - extortion timeline](http://grugq.tumblr.com/post/62928607375/dread-pirate-roberts-extortion-timeline), [The Maryland Indictment Timeline](http://grugq.tumblr.com/post/62986125689/maryland-indictment-timeline)
@@ -88,6 +129,8 @@ Links are posted monthly in chronological order and include any articles, papers
   - Psilocybin, the naturally occurring psychedelic compound produced by hallucinogenic mushrooms, has received attention due to considerable clinical evidence for its therapeutic potential to treat various psychiatric and neurodegenerative indications. However, the underlying molecular mechanisms remain enigmatic, and few studies have explored its systemic impacts. We provide the first experimental evidence that psilocin (the active metabolite of psilocybin) treatment extends cellular lifespan and psilocybin treatment promotes increased longevity in aged mice, suggesting that psilocybin may be a potent geroprotective agent.
 
 ## JUNE
+
+---
 
 - [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)
   - The study investigates the neural underpinnings of creative writing across different participant groups: "Brain-only" (unassisted), "LLM" (Large Language Model-assisted), and "Search Engine" (search engine-assisted). A primary focus is on Delta band connectivity, which consistently shows the most significant disparities between groups. The Brain-only group demonstrates significantly higher and more widespread Delta band activity, indicating greater engagement of deep, slow integrative brain processes, multisensory integration, and internally-driven thought during unassisted writing. Conversely, LLM and Search Engine groups exhibit more externally anchored or intermittently guided cognitive engagement, with notably weaker delta interactions.
@@ -116,6 +159,8 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ## MAY
 
+---
+
 * [Orienting Toward Wizard Power](https://www.lesswrong.com/posts/Wg6ptgi2DupFuAnXG/orienting-toward-wizard-power), Wentworth 2025
 * [Neural Thermodynamic Laws for Large Language Model Training](https://arxiv.org/pdf/2505.10559), Tegmark, et al 2025
 * [The ZINGULARITY framework for Bayesian artificial neural networks](https://www.aanda.org/10.1051/0004-6361/202553785), Janssen 2025
@@ -128,6 +173,8 @@ Links are posted monthly in chronological order and include any articles, papers
 
 
 ## APRIL
+
+---
 
 * [[https://danieljeffries.substack.com/p/how-to-build-an-american-deepseek | How To build an American DeepSeek]] Jeffries 2025
 * [[https://ai-2027.com/ | AI 2027]], [[https://ai-futures.org/ | AI Futures]] 2025
@@ -144,6 +191,8 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ## MARCH
 
+---
+
 * re-read: [[https://contraptions.venkateshrao.com/p/the-extended-internet-universe | The Extended Internet Universe]], Venkatash Rao 2019
 * [[https://www.ribbonfarm.com/2024/10/10/ribbonfarm-is-retiring/ | Ribbonfarm is Retiring]], Rao 2024
 * [[https://huggingface.co/papers/2503.05592 | R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning]] 2025
@@ -157,6 +206,8 @@ Links are posted monthly in chronological order and include any articles, papers
 
 
 ## FEBRUARY
+
+---
 
 Much of my time this month has been spent on researching tools that support the development of this site and implementing visual and basic quality-of-life features to establish a solid foundation for the future. 
 
