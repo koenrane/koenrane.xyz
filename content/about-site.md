@@ -1,5 +1,5 @@
 ---
-title: About This Website
+title: ABOUT THIS WEBSITE
 draft: false
 date_published: 2025-02-26
 status: in-progress
