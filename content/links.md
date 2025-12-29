@@ -1,5 +1,5 @@
 ---
-title: NEW LINKS
+title: RESEARCH LINKS
 draft: false
 date_published: 2025-02-06
 status: in-progress
@@ -10,13 +10,29 @@ tags:
 
 ---
 
-Links are posted monthly in chronological order and include any articles, papers, or essays that I find pertinent to my current research and writing. 
+Links are posted monthly in reverse chronological order and include any articles, papers, or essays that I find pertinent to my current research and writing. 
 
 </br>
 
 # 2025
 
 ----
+
+## DECEMBER
+
+---
+
+- [The Smol Training Playbook:
+The Secrets to Building World-Class LLMs
+](https://huggingfacetb-smol-training-playbook.hf.space/the-smol-training-playbook-the-secrets-to-building-world-class-llms.pdf), 2025
+  - a look behind the scenes of training SmolLM3, a 3B multilingual reasoning model trained on 11T tokens
+- [The Complete LLMOps Blueprint: Foundations of AI Engineering and LLMs](https://www.dailydoseofds.com/llmops-crash-course-part-1/), Chawla/Pachaar 2025
+- [The Optimal Architecture for Small Language Models](https://huggingface.co/blog/codelion/optimal-model-architecture), Sharma 2025
+
+### PAPERS
+
+- [CANDI: Hybrid Discrete-Continuous Diffusion Models](https://arxiv.org/abs/2510.22510), Pynadath et al 2025
+  - This paper dives into a quirk of modern generative modeling — while continuous diffusion models (the kind behind lots of cool image generation tech) work great for continuous data, they surprisingly struggle when directly applied to discrete things like text or categorically labeled data. They explain why this happens by analyzing how adding Gaussian noise can scramble discrete tokens in ways that make learning hard. To fix this, they introduce CANDI, a hybrid approach that blends continuous and discrete diffusion so the model can learn both continuous structure and discrete identities at the same time. According to their experiments, this hybrid method avoids the pitfalls of pure continuous diffusion on discrete spaces and even beats other techniques in some text generation tests, unlocking benefits like easier classifier guidance and stronger generation at low computing costs.
 
 ## NOVEMBER
 
@@ -73,14 +89,8 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ---
 
-- [The Self-Organization of Insight: Entropy and Power Laws in Problem Solving](https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1043&context=jps)
-  - The authors are trying to explain how people suddenly gain insight, which is the moment when something “clicks,” and a new structure or strategy emerges that lets one solve a problem in a qualitatively different way. They argue that traditional models in cognitive science (symbolic representations, fixed procedures, etc.) don’t do a great job capturing those abrupt, emergent changes. Instead, Stephen & Dixon suggest thinking of cognition (e.g. insight, problem solving) as a nonlinear dynamical system. This system is open, continuously interacting with the environment, where internal change (in thought, perception, action) can lead to self-organization of new cognitive structure. In this view, insight is not just “applying a known rule” but reorganizing how one is thinking, perceiving, acting.
 - [TIME100 AI 2025](https://time.com/collections/time100-ai-2025/)
   - According to TIME, these are the "innovators, leaders, and thinkers reshaping our world through groundbreaking advances in artificial intelligence". I Think there are some very important people missing from this list, more related to research, that have shaped the landscape of AI. 
-- [Efficient nano-photonic antennas based on dark states in quantum emitter rings](https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-7-10779&id=470528)
-  - Imagine you have a ring of quantum emitters — little things that can absorb light and later emit it (atoms, molecules, etc.). When many such emitters are arranged in a ring, interesting collective effects emerge. Some of the collective states are bright (they radiate strongly), and some are dark, meaning they radiate very little. They sort of trap excitation among the emitters instead of letting it leak out quickly. This paper studies how one can use a ring of emitters, together with an extra “absorber” placed at the center of the ring, to build a highly efficient nano-antenna that captures incoming light (or a photon) and absorbs it efficiently at the center, exploiting those dark states. The idea is that a dark state helps concentrate energy at the center (to be absorbed) without letting much be lost by radiation from the ring itself. They explore how many emitters in the ring works best, how the geometry and coupling matter, how detunings (mismatch in frequencies) affect things, etc. A particularly interesting result is that nine emitters in the ring (i.e. a nonagon) gives a “sweet spot” for absorption efficiency under many conditions. In many nanoscale and quantum optical technologies (e.g. light harvesting, single-photon detectors, quantum sensors), getting light in and absorbing or detecting it efficiently is hard. Losses by radiation, scattering, mismatch, etc. degrade performance. This ring + absorber design gives a way to reduce unwanted radiative losses (via the dark state) while still capturing energy effectively where you want it.
-- [The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2014.00020/full)
-  - This paper argues that conscious states vary along a spectrum of neural entropy. Normal waking consciousness is relatively constrained (less entropy), maintaining self, reality testing, etc. Psychedelics (and other primary consciousness states) raise entropy: more flexibility, more novel associations, less ego control, etc. Neuroimaging evidence from psilocybin (drops in DMN connectivity, drops in regular oscillatory power in some bands, increased metastability and variance, more diverse connectivity motifs) supports this. The theory has implications not just for how we understand consciousness, but for mental health and therapy.
 - [Church Planting: When Venture Capital Finds Jesus](https://www.lesswrong.com/posts/NMoNLfX3ihXSZJwqK/church-planting-when-venture-capital-finds-jesus)
   - Evangelical church planting in the U.S. (especially non-denominational evangelical churches) contain many of the organizational, cultural, financial, and motivational patterns like startup / venture-capital / tech-entrepreneur ecosystems. Basically, church planting (starting new churches) has become a “venture-capital finds Jesus” world: the structure, incentives, growth-metrics, funder/planter relationships, risk/return thinking, charisma, etc., have strong analogues in startup culture. This post walks through what church planters are, how they are funded, what their goals are, how failures happen, what the costs are, and what the human side looks like (burnout, moral risk, etc.). Along the way there are comparisons to tech startups, VC dynamics, “hits-based” industries, etc.
 - [Conversational Cultures: Combat vs Nurture (V2)](https://www.lesswrong.com/posts/ExssKjAaXEEYcnzPd/conversational-cultures-combat-vs-nurture-v2)
@@ -95,15 +105,26 @@ Links are posted monthly in chronological order and include any articles, papers
   - This is a sharp, introspective, and somewhat somber exploration of how the rationality movement, founded on the aspiration to think better and save humanity, drifted into dangerous territory. It doesn’t paint everything in the rationalist / AI safety world as bad, but Weiss-Blatt shows that certain mythologies, internal methods, stakes framing, and funding structures may have created fertile ground for cultish dynamics.
 - [This is the World's Biggest Animal Migration](https://www.wsj.com/world/africa/worlds-biggest-animal-migration-great-nile-b67e3c0b?gaa_at=eafs&gaa_n=ASWzDAiUZFf_qUsaraiEiL7oViXy16OTvOZlZaFc2aQdzw1gpiHuF4Gt0fliDooHyz0%3D&gaa_ts=68ea933a&gaa_sig=H5YVT71wsB6jd9krWL8fh6_N5awlDCeeAQ3PO_kc9M6KHLsJvlH-nfiaAHXz2b8Rd3zW3YvYoMwNsxGD1d3ImQ%3D%3D)
   - Scientists have used aerial surveys and tracking to document a migration of millions of antelope (white-eared kob, tiang, Mongalla gazelle, bohor reedbuck) moving across huge distances in search of water and grazing. This is now being called the Great Nile Migration — possibly the largest land mammal migration on Earth, both in sheer numbers and spatial scale.
-- [Contemplative Artificial Intelligence](https://arxiv.org/abs/2504.15125)
-  - "As artificial intelligence (AI) improves, traditional alignment strategies may falter in the face of unpredictable self-improvement, hidden subgoals, and the sheer complexity of intelligent systems. Inspired by contemplative wisdom traditions, [the paper] shows how four axiomatic principles can instil a resilient Wise World Model in AI systems. For future systems, active inference may offer the self-organizing and dynamic coupling capabilities needed to enact Contemplative AI in embodied agents."
-- [The Illusion of Diminishing Returns: Measuring Long Horizon Execution in LLMs](https://arxiv.org/abs/2509.09677)
-  - "Failures of LLMs when simple tasks are made longer arise from mistakes in execution, rather than an inability to reason. We propose isolating execution capability, by explicitly providing the knowledge and plan needed to solve a long-horizon task. We find that larger models can correctly execute significantly more turns even when small models have 100\% single-turn accuracy."
-- RL Research
+
+
+
+### PAPERS
+
   - [CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning](https://huggingface.co/papers/2508.20096)
   - [Think in Games: Learning to Reason in Games via Reinforcement Learning with Large Language Models](https://huggingface.co/papers/2508.21365)
   - [The Landscape of Agentic Reinforcement Learning for LLMs: A Survey](https://huggingface.co/papers/2509.02547)
   - [Reinforcement Learning Foundations for Deep Research Systems: A Survey](https://huggingface.co/papers/2509.06733)
+  - [The Illusion of Diminishing Returns: Measuring Long Horizon Execution in LLMs](https://arxiv.org/abs/2509.09677)
+    - "Failures of LLMs when simple tasks are made longer arise from mistakes in execution, rather than an inability to reason. We propose isolating execution capability, by explicitly providing the knowledge and plan needed to solve a long-horizon task. We find that larger models can correctly execute significantly more turns even when small models have 100\% single-turn accuracy."
+- [Contemplative Artificial Intelligence](https://arxiv.org/abs/2504.15125)
+  - "As artificial intelligence (AI) improves, traditional alignment strategies may falter in the face of unpredictable self-improvement, hidden subgoals, and the sheer complexity of intelligent systems. Inspired by contemplative wisdom traditions, [the paper] shows how four axiomatic principles can instil a resilient Wise World Model in AI systems. For future systems, active inference may offer the self-organizing and dynamic coupling capabilities needed to enact Contemplative AI in embodied agents."
+- [The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs](https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2014.00020/full)
+  - This paper argues that conscious states vary along a spectrum of neural entropy. Normal waking consciousness is relatively constrained (less entropy), maintaining self, reality testing, etc. Psychedelics (and other primary consciousness states) raise entropy: more flexibility, more novel associations, less ego control, etc. Neuroimaging evidence from psilocybin (drops in DMN connectivity, drops in regular oscillatory power in some bands, increased metastability and variance, more diverse connectivity motifs) supports this. The theory has implications not just for how we understand consciousness, but for mental health and therapy.
+- [Efficient nano-photonic antennas based on dark states in quantum emitter rings](https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-7-10779&id=470528)
+  - Imagine you have a ring of quantum emitters — little things that can absorb light and later emit it (atoms, molecules, etc.). When many such emitters are arranged in a ring, interesting collective effects emerge. Some of the collective states are bright (they radiate strongly), and some are dark, meaning they radiate very little. They sort of trap excitation among the emitters instead of letting it leak out quickly. This paper studies how one can use a ring of emitters, together with an extra “absorber” placed at the center of the ring, to build a highly efficient nano-antenna that captures incoming light (or a photon) and absorbs it efficiently at the center, exploiting those dark states. The idea is that a dark state helps concentrate energy at the center (to be absorbed) without letting much be lost by radiation from the ring itself. They explore how many emitters in the ring works best, how the geometry and coupling matter, how detunings (mismatch in frequencies) affect things, etc. A particularly interesting result is that nine emitters in the ring (i.e. a nonagon) gives a “sweet spot” for absorption efficiency under many conditions. In many nanoscale and quantum optical technologies (e.g. light harvesting, single-photon detectors, quantum sensors), getting light in and absorbing or detecting it efficiently is hard. Losses by radiation, scattering, mismatch, etc. degrade performance. This ring + absorber design gives a way to reduce unwanted radiative losses (via the dark state) while still capturing energy effectively where you want it.
+- [The Self-Organization of Insight: Entropy and Power Laws in Problem Solving](https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1043&context=jps)
+  - The authors are trying to explain how people suddenly gain insight, which is the moment when something “clicks,” and a new structure or strategy emerges that lets one solve a problem in a qualitatively different way. They argue that traditional models in cognitive science (symbolic representations, fixed procedures, etc.) don’t do a great job capturing those abrupt, emergent changes. Instead, Stephen & Dixon suggest thinking of cognition (e.g. insight, problem solving) as a nonlinear dynamical system. This system is open, continuously interacting with the environment, where internal change (in thought, perception, action) can lead to self-organization of new cognitive structure. In this view, insight is not just “applying a known rule” but reorganizing how one is thinking, perceiving, acting.
+
 
 ## JULY
 
@@ -123,6 +144,9 @@ Links are posted monthly in chronological order and include any articles, papers
 - [Lagerstroemia](https://en.m.wikipedia.org/wiki/Lagerstroemia)
   - commonly known as crape myrtle (also spelled crepe myrtle or crêpe myrtle), is a genus of deciduous and evergreen trees and shrubs native to the Indian subcontinent, southeast Asia, northern Australia, and other parts of Oceania, cultivated in warmer climates around the world.
   - I've been taking care of a crepe myrtle on my property for several years and quite enjoy seeing it mature from a sapling. A year after moving into my current house, the tree didn't recover after a harsh winter, so I was forced to cut the tree down, but I left the root system. In a few months, a few saplings began to grow, and after a lot of care and attention, it now has 5 main trunks measuring 6-7 inches in circumference and is over 15ft tall.
+
+### PAPERS
+
 - [Oral treatment of erectile dysfunction with apomorphine SL ](https://pubmed.ncbi.nlm.nih.gov/11741126/#:~:text=This%20compound%20is%20a%20dopaminergic,paraventricularis%20leading%20to%20erectogenic%20signals)
   - Apomorphine SL (Ixense, Uprima) is a new oral medication shown to be effective in the treatment of erectile dysfunction. This compound is a dopaminergic agonist with affinity for dopamine receptor sites - mostly D(2) - within the brain known to be involved in sexual function. Apomorphine induces selective activation in the nucleus paraventricularis leading to erectogenic signals.
 - [Psilocybin treatment extends cellular lifespan and improves survival of aged mice](https://www.nature.com/articles/s41514-025-00244-x)
@@ -132,45 +156,44 @@ Links are posted monthly in chronological order and include any articles, papers
 
 ---
 
+- [Hitchhiker’s Guide to RAG: From Tiny Files to Tolstoy with OpenAI’s API and LangChain](https://towardsdatascience.com/hitchhikers-guide-to-rag-from-tiny-files-to-tolstoy-with-openais-api-and-langchain/)
+  - Scaling a simple RAG pipeline from simple notes to full books
+- [If--](https://www.poetryfoundation.org/poems/46473/if---)
+  - Kipling’s poem “If—” is essentially a father’s advice to his son (and, by extension, to any young person) on how to live a balanced, honorable life. Written in 1895 and later included in his 1910 collection Rewards and Fairies, it lays out a series of “if” scenarios—tests of character—and promises the ultimate reward (“you’ll be a Man, my son!”) if you can meet them all.
+- [The Best Tacit Knowledge Videos on Every Subject](https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject)
+
+### PAPERS
+
 - [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)
   - The study investigates the neural underpinnings of creative writing across different participant groups: "Brain-only" (unassisted), "LLM" (Large Language Model-assisted), and "Search Engine" (search engine-assisted). A primary focus is on Delta band connectivity, which consistently shows the most significant disparities between groups. The Brain-only group demonstrates significantly higher and more widespread Delta band activity, indicating greater engagement of deep, slow integrative brain processes, multisensory integration, and internally-driven thought during unassisted writing. Conversely, LLM and Search Engine groups exhibit more externally anchored or intermittently guided cognitive engagement, with notably weaker delta interactions.
   - N-gram analysis complements these neurological findings, revealing distinct linguistic patterns across groups for different topics. The "Brain-only" group tends to use n-grams reflecting internal thought processes and prosocial framing, while LLM and Search Engine groups show patterns indicative of external sourcing or more direct task-oriented language. The study also tracks changes in brain connectivity patterns across sessions, noting a general trend of increasing connectivity in later sessions for both Brain-only and LLM groups, suggesting adaptation to the task
-
 - [Ultrafast coherent dynamics of microring modulators](https://www.nature.com/articles/s41566-025-01686-1)
   - Next-generation computing clusters require ultra-high-bandwidth optical interconnects to support large-scale artificial-intelligence applications. These electronic–photonic co-integrated systems necessitate densely integrated high-speed electro-optical converters. In this context, microring modulators (MRMs) emerge as a promising solution, prized for their exceptional compactness and energy efficiency.
-
-- [Hitchhiker’s Guide to RAG: From Tiny Files to Tolstoy with OpenAI’s API and LangChain](https://towardsdatascience.com/hitchhikers-guide-to-rag-from-tiny-files-to-tolstoy-with-openais-api-and-langchain/)
-  - Scaling a simple RAG pipeline from simple notes to full books
-
-- [goose](https://github.com/block/goose)
-  - an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
-
-- [If--](https://www.poetryfoundation.org/poems/46473/if---)
-  - Kipling’s poem “If—” is essentially a father’s advice to his son (and, by extension, to any young person) on how to live a balanced, honorable life. Written in 1895 and later included in his 1910 collection Rewards and Fairies, it lays out a series of “if” scenarios—tests of character—and promises the ultimate reward (“you’ll be a Man, my son!”) if you can meet them all.
-
-- [bitchat-android](https://github.com/permissionlesstech/bitchat-android)
-  - bluetooth mesh chat, IRC vibes
-
 - [Potemkin Understanding in Large Language Models](https://arxiv.org/abs/2506.21521)
   - Success on benchmarks only demonstrates potemkin understanding: the illusion of understanding driven by answers irreconcilable with how any human would interpret a concept.
 
-- [The Best Tacit Knowledge Videos on Every Subject](https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject)
+### CODE
 
+- [goose](https://github.com/block/goose)
+  - an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
+- [bitchat-android](https://github.com/permissionlesstech/bitchat-android)
+  - bluetooth mesh chat, IRC vibes
 
 ## MAY
 
 ---
 
 * [Orienting Toward Wizard Power](https://www.lesswrong.com/posts/Wg6ptgi2DupFuAnXG/orienting-toward-wizard-power), Wentworth 2025
-* [Neural Thermodynamic Laws for Large Language Model Training](https://arxiv.org/pdf/2505.10559), Tegmark, et al 2025
 * [The ZINGULARITY framework for Bayesian artificial neural networks](https://www.aanda.org/10.1051/0004-6361/202553785), Janssen 2025
 * [How to Generate Synthetic Data: A Comprehensive Guide Using Bayesian Sampling and Univariate Distributions](https://towardsdatascience.com/how-to-generate-synthetic-data-a-comprehensive-guide-using-bayesian-sampling-and-univariate-distributions/), 2025
-* [Synthetic Data RL: Task Definition Is All You Need](https://huggingface.co/papers/2505.17063), Guo 2025
-* [[https://arxiv.org/abs/2503.23278 | Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions]]
 * [[https://sakana.ai/ctm/ | Continuous Thought Machines]]
   * Paper: [[https://arxiv.org/abs/2505.05522 | Continuous Thought Machines]]
 
+### PAPERS
 
+- [Neural Thermodynamic Laws for Large Language Model Training](https://arxiv.org/pdf/2505.10559), Tegmark, et al 2025
+- [Synthetic Data RL: Task Definition Is All You Need](https://huggingface.co/papers/2505.17063), Guo 2025
+* [Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions](https://arxiv.org/abs/2503.23278)
 
 ## APRIL
 
@@ -221,7 +244,7 @@ Much of my time this month has been spent on researching tools that support the 
   - [[https://people.idsia.ch/~juergen/world-models-planning-curiosity-fki-1990.html | 1990: Planning & Reinforcement Learning with Recurrent World Models and Artificial Curiosity]]
   - [[https://people.idsia.ch/~juergen/very-deep-learning-1991.html | 1991: First very deep learning with unsupervised pre-training]]
 - [[https://arxiv.org/abs/2501.12948 | DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning]]
-- [[https://gwern.net/book-writing | Why To Not Write A Book, Gwern]] 2024
-- [[https://gwern.net/design#tags | Design of This Website, Gwern]] 2023
-- [[https://edwardtufte.github.io/tufte-css/ | Tufte CSS, David Liepmann]]
-- [[https://www.lesswrong.com/posts/DfrSZaf3JC8vJdbZL/how-to-make-superbabies | How To Make Superbabies, LessWrong Feb]] 2025
+- [[https://gwern.net/book-writing | Why To Not Write A Book]], Gwern 2024
+- [[https://gwern.net/design#tags | Design of This Website]], Gwern 2023
+- [[https://edwardtufte.github.io/tufte-css/ | Tufte CSS]], David Liepmann
+- [[https://www.lesswrong.com/posts/DfrSZaf3JC8vJdbZL/how-to-make-superbabies | How To Make Superbabies]], GeneSmith/kman 2025
