@@ -1063,3 +1063,35 @@ iframe {
     }
   }
 }
+
+/* Back to top button styles */
+.back-to-top-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+}
+
+.back-to-top-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--midground-faint);
+  border-radius: 4px;
+  background: transparent;
+  color: var(--midground);
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-color: var(--midground);
+    color: var(--foreground);
+    background-color: var(--midground-faintest);
+  }
+
+  svg {
+    margin: 0;
+  }
+}

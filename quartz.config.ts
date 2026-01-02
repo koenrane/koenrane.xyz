@@ -53,7 +53,7 @@ const config: QuartzConfig = {
       Plugin.ColorVariables(),
       Plugin.rehypeCustomSpoiler(),
       Plugin.rehypeCustomSubtitle(),
-      Plugin.TableOfContents(),
+      Plugin.TableOfContents({ maxDepth: 3 }), // Include h1, h2, and h3 in TOC
     ],
     filters: [Plugin.RemoveDrafts()],
     emitters: [

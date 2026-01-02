@@ -15,6 +15,15 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 </br>
 
+# 2026
+
+---
+
+## JANUARY
+
+---
+
+- full [refactor](https://github.com/koenrane/koenrane.xyz/commit/f4f47b674aaba09e97cd184dd065021ac72aef3d) completed of all main body and title font from EB Garamond to Source Serif 4 (Google Fonts). 
 
 # 2025
 
@@ -65,11 +74,11 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 - [Book Reviews](/book-reviews)
 - replaced pmwiki remote repo with quartz site refactor files
 
-## OLD SITE
+# OLD SITE
 
 ---
 
-### MAY
+## MAY
 
 ---
 
@@ -77,7 +86,7 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 - added page link to longform LessWrong post: A Guide to AI 2027
 - added left-padding to `skin.css` to shorten the width of text
 
-### APRIL
+## APRIL
 
 ---
 
@@ -86,7 +95,7 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 - archived all blog posts into 'z_archive' folder in GitHub
 - added [[https://koenrane.xyz/?n=Main.TeaReviews | Tea Reviews]] page
 
-### MARCH
+## MARCH
 
 ---
 
@@ -108,7 +117,7 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 - reformatted About Me and About Site page section titles
 - created Fiction section on the home page and added the first chapter of my longstanding fictional novel. ''"The Oneiroi's Subject"'' is a working title and will possibly change at the end. As of March 2025, there are 11 Chapters, all in different states of completion (is any writing ever completed?)
 
-### FEBRUARY
+## FEBRUARY
 
 ---
 

@@ -13,19 +13,21 @@ title: ABOUT ME
 
 I am an independent researcher and writer interested in various general topics like programming, philosophy, biology, self-experimentation, psychology, economics, meditation, AI, and practical life. I have an eclectic work experience that includes audio/video engineering, data analysis, business intelligence analysis, systems development, and most recently, data engineering. I am also currently writing a fictional novel.
 
-# WORK
+# PERSONAL
+
+---
+
+## WORK
 
 ---
 
 Early on in my career (2013-2016), I worked for a video engineering group, implementing and maintaining large-scale, multi-camera, multi-site, broadcast video infrastructure and computer systems. Additionally, I produced short films, created VFX, and managed the entire archive architecture. Then, from 2016-2021, I pivoted to dual roles as a data/business analyst focused on building custom data applications and web development. From 2021-2024, I worked as a systems development engineer developing data applications for teams of analysts. Currently (Jan 2025), I am working as a data engineer. Amid these professional experiences, I have made a considerable effort to research, read, and write on topics that are interesting to me. 
 
-# USES THIS
+## USES THIS
 
 ---
 
-## SOFTWARE
-
----
+### Software
 
 I run Windows 11 for my local environment, which I use for general applications, reading, consuming content, checking emails, and for my 9-5 development job. Additionally, I run a [[https://www.kali.org/ | Kali Linux]] distro and WSL Linux VM environment for all of my preferred UNIX applications, editing plain text files and any development I prefer to do in Linux. I try to stick to using a CLI daily, so I use [[https://git-scm.com/downloads/guis | Git Bash]] for Git/file management, file editing, directory navigation, and Powershell for scripting Windows admin tasks. I spend the majority of my time in [VS Code](https://github.com/microsoft/vscode) for editing all site content. 
 
@@ -44,9 +46,7 @@ Misc: I use [[https://justgetflux.com/ | f.lux]] for screen tinting that automat
 
 ---
 
-### COMPUTER
-
----
+### Computer
 
 In mid-2020, after several years of dealing with consistent hardware issues from building my own PCs, I went for a desktop replacement laptop. For the past several years, I would usually build a desktop PC from curated parts for my specific needs like gaming and deep learning. To shed the responsibility of constant cable management, updating drivers, and motherboard issues, I opted for portability with a slight loss in computing power. The computing loss has been negligible, which coincided with my increasingly limited involvement in researching, building, and testing deep learning models for vision systems.  
 This time, I went with a refurbished [[https://tinyurl.com/3y4fxjz7 | 2020 Razer Blade Pro 17]] built with an Intel Core i7 9750H [[https://en.wikipedia.org/wiki/Coffee_Lake | (Coffee Lake)]] CPU and a NVIDIA GeForce RTX 2070 [[https://www.nvidia.com/en-us/geforce/gaming-laptops/max-q-technologies/ | Max-Q design]] GPU. So far, it's been a solid replacement. I would not say that the portability of this machine is comparable to other laptops, but what it lacks in that department, it makes up for in processing power. So far, I've had a great experience with Razer as a whole, so I was eager to try its flagship computer. Compared to MSI or Alien, this laptop is twice as thin, and cooling has not been an issue so far. (Major caveat: the battery life when not plugged in is abysmal).  
@@ -58,9 +58,7 @@ Specs:
 * External Storage: LaCie Rugged 1TB Drive
 * Screen: 1080p 144Hz
 
-### OTHER
-
----
+### Other
 
 Concerning monitors, I do not care about high resolution as much as reliability, longevity, and ability to stay within my field of view. Wide and ultra-wide screen monitors have not worked well for me as I've found they tend to make the user want to fill up the visual real estate with multiple windows, making the work environment too cluttered for my taste. Since my current life situation requires a 9-5 developer job, I run a secondary laptop and a third monitor that is used exclusively for work purposes and run a two wireless mouse setup to physically separate the interaction between the two work environments. My desk is a cheap, [[https://a.co/d/8CawLUg | minimal work desk from Amazon]] that I've had for years, and it has worked fine for the cost. Although cable management is a nightmare, even though I have spent an inordinate amount of time drilling cable holders into the frame, making it visually unappealing, it works. To limit the amount of clutter on my desk, I use a three-tier bookshelf next to the workstation where both machines can live with a minimal amount of human interaction. During downtime and while reading, I use a [[https://www.amazon.com/dp/B009B59OPW/ref=pe_386300_440135490_TE_simp_item_image | GD Grip Pro 70]] as a stress reliever and to build general grip strength. In addition to regular job requirements, family obligations require me to be able to see my phone screen all day, so I use a [[https://tinyurl.com/77vr2ubs | Nulaxy dual folding phone stand]] to minimize physical interaction with the device when I receive messages.  
 

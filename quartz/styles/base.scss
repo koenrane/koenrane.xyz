@@ -324,6 +324,11 @@ thead {
   }
 }
 
+// H1 headers in article body should be right-aligned
+article h1:not(#article-title) {
+  text-align: right;
+}
+
 li {
   width: fit-content;
   max-width: fit-content;

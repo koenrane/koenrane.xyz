@@ -29,7 +29,7 @@ The Secrets to Building World-Class LLMs
 - [The Complete LLMOps Blueprint: Foundations of AI Engineering and LLMs](https://www.dailydoseofds.com/llmops-crash-course-part-1/), Chawla/Pachaar 2025
 - [The Optimal Architecture for Small Language Models](https://huggingface.co/blog/codelion/optimal-model-architecture), Sharma 2025
 
-### PAPERS
+#### PAPERS
 
 - [CANDI: Hybrid Discrete-Continuous Diffusion Models](https://arxiv.org/abs/2510.22510), Pynadath et al 2025
   - This paper dives into a quirk of modern generative modeling — while continuous diffusion models (the kind behind lots of cool image generation tech) work great for continuous data, they surprisingly struggle when directly applied to discrete things like text or categorically labeled data. They explain why this happens by analyzing how adding Gaussian noise can scramble discrete tokens in ways that make learning hard. To fix this, they introduce CANDI, a hybrid approach that blends continuous and discrete diffusion so the model can learn both continuous structure and discrete identities at the same time. According to their experiments, this hybrid method avoids the pitfalls of pure continuous diffusion on discrete spaces and even beats other techniques in some text generation tests, unlocking benefits like easier classifier guidance and stronger generation at low computing costs.
@@ -108,7 +108,7 @@ The Secrets to Building World-Class LLMs
 
 
 
-### PAPERS
+#### PAPERS
 
   - [CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforcement Learning](https://huggingface.co/papers/2508.20096)
   - [Think in Games: Learning to Reason in Games via Reinforcement Learning with Large Language Models](https://huggingface.co/papers/2508.21365)
@@ -145,7 +145,7 @@ The Secrets to Building World-Class LLMs
   - commonly known as crape myrtle (also spelled crepe myrtle or crêpe myrtle), is a genus of deciduous and evergreen trees and shrubs native to the Indian subcontinent, southeast Asia, northern Australia, and other parts of Oceania, cultivated in warmer climates around the world.
   - I've been taking care of a crepe myrtle on my property for several years and quite enjoy seeing it mature from a sapling. A year after moving into my current house, the tree didn't recover after a harsh winter, so I was forced to cut the tree down, but I left the root system. In a few months, a few saplings began to grow, and after a lot of care and attention, it now has 5 main trunks measuring 6-7 inches in circumference and is over 15ft tall.
 
-### PAPERS
+#### PAPERS
 
 - [Oral treatment of erectile dysfunction with apomorphine SL ](https://pubmed.ncbi.nlm.nih.gov/11741126/#:~:text=This%20compound%20is%20a%20dopaminergic,paraventricularis%20leading%20to%20erectogenic%20signals)
   - Apomorphine SL (Ixense, Uprima) is a new oral medication shown to be effective in the treatment of erectile dysfunction. This compound is a dopaminergic agonist with affinity for dopamine receptor sites - mostly D(2) - within the brain known to be involved in sexual function. Apomorphine induces selective activation in the nucleus paraventricularis leading to erectogenic signals.
@@ -162,7 +162,7 @@ The Secrets to Building World-Class LLMs
   - Kipling’s poem “If—” is essentially a father’s advice to his son (and, by extension, to any young person) on how to live a balanced, honorable life. Written in 1895 and later included in his 1910 collection Rewards and Fairies, it lays out a series of “if” scenarios—tests of character—and promises the ultimate reward (“you’ll be a Man, my son!”) if you can meet them all.
 - [The Best Tacit Knowledge Videos on Every Subject](https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject)
 
-### PAPERS
+#### PAPERS
 
 - [Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task](https://arxiv.org/abs/2506.08872)
   - The study investigates the neural underpinnings of creative writing across different participant groups: "Brain-only" (unassisted), "LLM" (Large Language Model-assisted), and "Search Engine" (search engine-assisted). A primary focus is on Delta band connectivity, which consistently shows the most significant disparities between groups. The Brain-only group demonstrates significantly higher and more widespread Delta band activity, indicating greater engagement of deep, slow integrative brain processes, multisensory integration, and internally-driven thought during unassisted writing. Conversely, LLM and Search Engine groups exhibit more externally anchored or intermittently guided cognitive engagement, with notably weaker delta interactions.
@@ -172,7 +172,7 @@ The Secrets to Building World-Class LLMs
 - [Potemkin Understanding in Large Language Models](https://arxiv.org/abs/2506.21521)
   - Success on benchmarks only demonstrates potemkin understanding: the illusion of understanding driven by answers irreconcilable with how any human would interpret a concept.
 
-### CODE
+#### CODE
 
 - [goose](https://github.com/block/goose)
   - an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM
@@ -189,7 +189,7 @@ The Secrets to Building World-Class LLMs
 * [[https://sakana.ai/ctm/ | Continuous Thought Machines]]
   * Paper: [[https://arxiv.org/abs/2505.05522 | Continuous Thought Machines]]
 
-### PAPERS
+#### PAPERS
 
 - [Neural Thermodynamic Laws for Large Language Model Training](https://arxiv.org/pdf/2505.10559), Tegmark, et al 2025
 - [Synthetic Data RL: Task Definition Is All You Need](https://huggingface.co/papers/2505.17063), Guo 2025

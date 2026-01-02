@@ -292,7 +292,8 @@ export function RenderStatusInfo(fileData: QuartzPluginData): JSX.Element | null
     <span 
       className="status-str" 
       style={{ 
-        fontWeight: "400"
+        fontWeight: "400",
+        fontStyle: "italic"
       }}
     >
       {config.label}
@@ -306,9 +307,10 @@ export const ContentMetadata = (props: QuartzComponentProps) => {
   }
 
   // Collect all metadata elements
+  // Tags now displayed below article title via TagsBeforeBody component
   const metadataElements = [
     renderSequenceInfo(props.fileData),
-    renderTags(props),
+    //renderTags(props), // Moved to TagsBeforeBody component
     //renderPostStatistics(props), // Publication date now shown at top via PublicationDate component
   ]
 

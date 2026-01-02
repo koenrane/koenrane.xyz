@@ -60,6 +60,27 @@ const rewardPostWarning = (
   </blockquote>
 )
 
+// Back to top button component
+const BackToTopButton = () => (
+  <div className="back-to-top-container">
+    <a href="#" className="back-to-top-button" aria-label="Back to top">
+      <svg 
+        xmlns="http://www.w3.org/2000/svg" 
+        width="20" 
+        height="20" 
+        viewBox="0 0 24 24" 
+        fill="none" 
+        stroke="currentColor" 
+        strokeWidth="2" 
+        strokeLinecap="round" 
+        strokeLinejoin="round"
+      >
+        <path d="M18 15l-6-6-6 6"/>
+      </svg>
+    </a>
+  </div>
+)
+
 const Content: QuartzComponent = ({ fileData, tree }: QuartzComponentProps) => {
   const useDropcap =
     fileData?.frontmatter?.no_dropcap !== true && fileData?.frontmatter?.no_dropcap !== "true"
@@ -78,6 +99,7 @@ const Content: QuartzComponent = ({ fileData, tree }: QuartzComponentProps) => {
       {isQuestion && originalURL && lessWrongQuestion(originalURL as string)}
       {showWarning && rewardPostWarning}
       {content}
+      <BackToTopButton />
     </article>
   )
 }

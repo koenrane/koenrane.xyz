@@ -17,6 +17,7 @@ import RecentNotes from "./RecentNotes"
 import Search from "./Search"
 import TableOfContents from "./TableOfContents"
 import SettingsMenuComponent from "./SettingsMenu"
+import TagsBeforeBody from "./TagsBeforeBody"
 
 export {
   ArticleTitle,
@@ -38,4 +39,5 @@ export {
   AuthorList,
   PublicationDate,
   SettingsMenuComponent as SettingsMenu,
+  TagsBeforeBody,
 }
