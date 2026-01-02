@@ -354,7 +354,7 @@ h6,
   }
 
   & .small-caps {
-    font-weight: lighter;
+    font-weight: 600; // applies to all header smallcaps h1-h6, overrrides the ones in fonts.scss
   }
 
   &[id] > a {

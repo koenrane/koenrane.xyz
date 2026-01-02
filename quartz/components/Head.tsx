@@ -180,7 +180,8 @@ export default (() => {
 
         <link rel="stylesheet" href="/index.css" spa-preserve />
 
-        {/* Google Fonts - Source Serif 4 ---------------------------------------------------------------------------------------------------*/}
+        {/* Google Fonts - Source Serif 4 (body text and headers) */}
+        {/* Variable font with optical sizing (8-60pt) and weights 200-900 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
         <link 
@@ -188,8 +189,6 @@ export default (() => {
           rel="stylesheet" 
           spa-preserve 
         />
-
-        {/* ---------------------------------------------------------------------------------------------------*/}
 
         {fileData.frontmatter?.avoidIndexing && (
           <meta name="robots" content="noindex, noimageindex,nofollow" />
