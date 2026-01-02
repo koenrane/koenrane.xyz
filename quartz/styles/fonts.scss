@@ -14,8 +14,8 @@
   }
 
   --base-line-height: 1.4;
-  --min-font-size: 0.875rem; // 14px
-  --max-font-size: 1.5rem; // 24px
+  --min-font-size: 1.25rem; // 20px
+  --max-font-size: 1.25rem; // 20px (fixed size)
   --base-font-size: clamp(
     var(--min-font-size),
     calc(var(--min-font-size) + 1vw),
@@ -40,7 +40,7 @@ h6,
 .h6 {
   margin-top: calc(3 * #{$base-margin});
   margin-bottom: 1rem;
-  font-weight: 500;
+  font-weight: 700;
   line-height: 1.15;
   letter-spacing: -0.01em;
 
@@ -134,26 +134,40 @@ body {
   --font-bad-handwriting: "BadHandwriting";*/
 
   body {
+    // Dropcap fonts - keeping EBGaramond decorative initials for stylized drop caps
     --font-dropcap-foreground: "EBGaramondInitialsF2", serif;
     --font-dropcap-background: "EBGaramondInitialsF1", serif;
+
+    // Monospace fonts - used for code blocks and inline code
     --font-monospace: "FiraCode", "JetBrains Mono", "Courier New", monospace;
     --font-monospace-theme: "FiraCode", "JetBrains Mono", "Courier New", monospace;
-    --font-text-theme: "EBGaramond", garamond, "Times New Roman", serif;
-    --font-text: "EBGaramond", garamond, "Times New Roman", serif;
-    --font-text-original: "EBGaramondOriginal";
-    --font-text-italic: "EBGaramondItalic", "EBGaramond";
-    --font-text-header: "EBGaramond", garamond, "Times New Roman", serif;
-    --font-text-swash: "EBGaramond:+swsh", cursive;
+
+    // Primary text fonts - Source Serif 4 for body text (loaded from Google Fonts)
+    --font-text-theme: "Source Serif 4", "Times New Roman", serif;
+    --font-text: "Source Serif 4", "Times New Roman", serif;
+    --font-text-original: "Source Serif 4";
+    --font-text-italic: "Source Serif 4", serif;
+
+    // Header font - Source Serif 4 for titles and headings (matching body text)
+    --font-text-header: "Source Serif 4", "Times New Roman", serif;
+
+    // Specialty fonts
+    --font-text-swash: "Source Serif 4", cursive;
     --font-bad-handwriting: "BadHandwriting";
 
-  font-family: "EBGaramond", var(--font-text);
+  // Apply Source Serif 4 as the base font family
+  font-family: "Source Serif 4", var(--font-text);
   line-height: var(--base-line-height);
+
+  // OpenType features: ligatures enabled, character variant 11 (font-specific styling)
   font-feature-settings:
     "liga" 1,
     "cv11" 1;
+
+  // Use oldstyle (lowercase) numerals for body text for better readability
   font-variant-numeric: oldstyle-nums;
 
-  // Code should contain full-height numbers
+  // Code should contain full-height (lining) numbers for technical accuracy
   & code,
   & pre {
     font-variant-numeric: lining-nums;
@@ -244,6 +258,16 @@ article[data-use-dropcap="true"] > p:first-of-type .small-caps {
   font-variant-caps: small-caps; // Fixes kerning in a few cases
   -webkit-font-smoothing: antialiased; // Prevent excess bolding
   font-family: var(--font-text);
+
+  // H1, H2, and H3 small-caps should be bolder for emphasis
+  h1 &,
+  .h1 &,
+  h2 &,
+  .h2 &,
+  h3 &,
+  .h3 & {
+    font-weight: 600;
+  }
 
   dt &,
   b &,
