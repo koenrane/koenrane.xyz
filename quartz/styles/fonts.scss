@@ -13,7 +13,7 @@
     --font-size-plus-#{$i}: #{calculate-scale($i)};
   }
 
-  --base-line-height: 1.4;
+  --base-line-height: 1.6;
   --min-font-size: 1.25rem; // 20px
   --max-font-size: 1.25rem; // 20px (fixed size)
   --base-font-size: clamp(

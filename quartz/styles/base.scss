@@ -66,6 +66,10 @@ ol,
   hyphens: auto;
 }
 
+p {
+  text-align: justify;
+}
+
 .math {
   &.math-display {
     text-align: center;
@@ -488,7 +492,7 @@ hr {
   margin: 2rem auto;
   height: 1px;
   border: none;
-  background-color: var(--midground-faint);
+  background-color: var(--midground-faintest);
 }
 
 audio,
