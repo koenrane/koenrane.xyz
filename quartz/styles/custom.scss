@@ -5,6 +5,9 @@
 
 body {
   min-height: 100vh;
+  height: auto !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
 }
 
 .explorer {

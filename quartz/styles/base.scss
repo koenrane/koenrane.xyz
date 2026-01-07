@@ -8,6 +8,9 @@
 html {
   scroll-behavior: smooth;
   width: 100%;
+  height: auto !important;
+  overflow-y: scroll !important;
+  overflow-x: hidden;
 }
 
 body,
@@ -145,6 +148,8 @@ hr.desktop-only {
     margin: 0 auto;
     padding: 0 calc(2 * $base-margin);
     max-width: $page-width;
+    height: auto;
+    overflow-y: visible;
   }
 
   & article {
@@ -177,7 +182,10 @@ hr.desktop-only {
     @media all and (max-width: $max-mobile-width) {
       flex-direction: column;
       overflow-x: visible;
+      overflow-y: visible;
       gap: 0;
+      height: auto;
+      min-height: 0;
     }
 
     @media all and (min-width: $min-desktop-width) {
@@ -223,7 +231,7 @@ hr.desktop-only {
         @media all and (max-width: $max-mobile-width) {
           gap: 0;
           top: 0;
-          position: sticky;
+          position: relative;  // Changed from sticky - sticky can cause scrolling issues in flex containers
           margin-top: 0;
           align-items: center;
           width: 100%;
@@ -258,7 +266,7 @@ hr.desktop-only {
       max-width: $page-width;
       min-width: 0;  /* Critical: allows flex item to shrink below content size */
       overflow-x: hidden;
-      overflow: hidden;  /* Clip any overflow including from children */
+      overflow-y: visible;  /* Allow vertical scrolling */
       width: 100%;
 
       @media all and (max-width: $max-mobile-width) {
@@ -266,6 +274,8 @@ hr.desktop-only {
         margin-left: 0;
         margin-right: 0;
         width: 100%;
+        height: auto;
+        overflow-y: visible;
       }
       
       /* Ensure all block children respect container width */
