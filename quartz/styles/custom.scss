@@ -359,6 +359,23 @@ figure,
   .popover & {
     margin-top: calc(1.5 * $base-margin) !important;
   }
+
+}
+
+// Year dates in headers are shifted down like subscript with smaller font
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  & .year-date {
+    display: inline-block;
+    position: relative;
+    top: 0.15em;  // Shift down (adjusted for smaller size)
+    font-size: 0.85em;  // Smaller than surrounding text
+    line-height: 1;
+  }
 }
 
 #article-title:has(+ .subtitle),

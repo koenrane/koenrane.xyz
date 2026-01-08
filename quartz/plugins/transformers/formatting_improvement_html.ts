@@ -469,6 +469,35 @@ export function formatOrdinalSuffixes(tree: Root): void {
   })
 }
 
+// Match 4-digit years (1800-2099) in headers
+const yearDateRegex = /\b(1[89]\d{2}|20\d{2})\b/g
+
+/**
+ * Wraps year dates (1800-2099) in headers with a span for styling.
+ * Years are shifted down visually like subscript but same font size.
+ */
+export function formatYearDatesInHeaders(tree: Root): void {
+  const headerTags = ["h1", "h2", "h3", "h4", "h5", "h6"]
+
+  visit(tree, "element", (node) => {
+    if (!headerTags.includes(node.tagName)) return
+
+    // Process text nodes within the header
+    visit(node, "text", (textNode, index, parent) => {
+      if (!parent || index === undefined) return
+
+      replaceRegex(textNode, index, parent, yearDateRegex, (match: RegExpMatchArray) => {
+        const yearSpan = h("span.year-date", match[0])
+        return {
+          before: "",
+          replacedMatch: yearSpan,
+          after: "",
+        }
+      })
+    })
+  })
+}
+
 export const CHARS_TO_MOVE_INTO_LINK_FROM_RIGHT = [
   ".",
   ",",
@@ -894,6 +923,7 @@ export const improveFormatting = (options: Options = {}): Transformer<Root, Root
     formatLNumbers(tree) // L_p-norm formatting
     formatArrows(tree)
     formatOrdinalSuffixes(tree)
+    formatYearDatesInHeaders(tree) // Year dates shifted down in headers
     removeSpaceBeforeFootnotes(tree)
   }
 }
