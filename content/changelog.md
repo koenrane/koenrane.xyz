@@ -23,7 +23,9 @@ Monthly chronological list of writings, changes, and additions. Code changes can
 
 ---
 
-- full [refactor](https://github.com/koenrane/koenrane.xyz/commit/f4f47b674aaba09e97cd184dd065021ac72aef3d) completed of all main body and title font from EB Garamond to Source Serif 4 (Google Fonts). 
+- full [refactor](https://github.com/koenrane/koenrane.xyz/commit/f4f47b674aaba09e97cd184dd065021ac72aef3d) completed of all main body and title font from EB Garamond to Source Serif 4 (Google Fonts).
+- [numerous](https://github.com/koenrane/koenrane.xyz/commit/c2f52f74c7cfe1ef3d3455734581e8c5b6deacd7) site formatting changes, added back to top button, moved tag links under title
+- added [subscript-style](https://github.com/koenrane/koenrane.xyz/commit/b2dec65f73f9e8710a80371ebfb00e3ebf2cb11d) year dates in headers. Wrapped 4-digit years (1800-2099) in `h1-h6` headers with a styled span that shifts them down like subscript text at 75% font size. Adds `formatYearDatesInHeaders()` transformer and `.year-date` CSS class.
 
 # 2025
 
