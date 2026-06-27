@@ -63,21 +63,21 @@ const rewardPostWarning = (
 // Back to top button component
 const BackToTopButton = () => (
   <div className="back-to-top-container">
-    <a href="#" className="back-to-top-button" aria-label="Back to top">
-      <svg 
-        xmlns="http://www.w3.org/2000/svg" 
-        width="20" 
-        height="20" 
-        viewBox="0 0 24 24" 
-        fill="none" 
-        stroke="currentColor" 
-        strokeWidth="2" 
-        strokeLinecap="round" 
+    <button className="back-to-top-button" aria-label="Back to top">
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        width="20"
+        height="20"
+        viewBox="0 0 24 24"
+        fill="none"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
         strokeLinejoin="round"
       >
-        <path d="M18 15l-6-6-6 6"/>
+        <path d="M18 15l-6-6-6 6" />
       </svg>
-    </a>
+    </button>
   </div>
 )
 
@@ -150,5 +150,16 @@ function lessWrongQuestion(url: string): JSX.Element {
     </blockquote>
   )
 }
+
+Content.afterDOMLoaded = `
+document.addEventListener("nav", () => {
+  const btn = document.querySelector(".back-to-top-button")
+  if (btn) {
+    btn.addEventListener("click", () => {
+      window.scrollTo({ top: 0, behavior: "smooth" })
+    })
+  }
+})
+`
 
 export default (() => Content) satisfies QuartzComponentConstructor

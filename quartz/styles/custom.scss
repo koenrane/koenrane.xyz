@@ -1102,7 +1102,7 @@ iframe {
   border-radius: 4px;
   background: transparent;
   color: var(--midground);
-  text-decoration: none;
+  cursor: pointer;
   transition: all 0.2s ease;
 
   &:hover {

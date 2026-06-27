@@ -1,0 +1,18 @@
+{
+  "permissions": {
+    "allow": [
+      "Skill(run)",
+      "Skill(run:*)",
+      "PowerShell(cd \"c:\\\\Users\\\\natha\\\\Desktop\\\\repos\\\\koenrane.xyz\"; Start-Process -NoNewWindow -FilePath \"npx\" -ArgumentList \"quartz\",\"build\",\"--serve\" -RedirectStandardOutput \"$env:TEMP\\\\quartz-out.txt\" -RedirectStandardError \"$env:TEMP\\\\quartz-err.txt\"; Start-Sleep -Seconds 8; Get-Content \"$env:TEMP\\\\quartz-out.txt\",\"$env:TEMP\\\\quartz-err.txt\" -ErrorAction SilentlyContinue | Select-Object -Last 20)",
+      "Bash(npx quartz *)",
+      "Bash(echo \"PID: $!\")",
+      "Read(//tmp/**)",
+      "Bash(sleep 15 && cat /tmp/quartz.log)",
+      "Bash(cat /tmp/quartz.log 2>&1 || echo \"no log found\")",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:8080/)",
+      "Bash(curl -s -o /dev/null -w \"%{http_code}\" http://localhost:3000/)",
+      "Bash(git -C \"c:/Users/natha/Desktop/repos/koenrane.xyz\" config user.name)",
+      "Bash(git -C \"c:/Users/natha/Desktop/repos/koenrane.xyz\" config user.email)"
+    ]
+  }
+}
