@@ -74,7 +74,7 @@ describe("createPopover", () => {
     options = {
       parentElement: document.createElement("div"),
       targetUrl: new URL("http://example.com"),
-      linkElement: document.createElement("a") as unknown as HTMLLinkElement,
+      linkElement: document.createElement("a") as unknown as HTMLAnchorElement,
     }
   })
 
@@ -175,13 +175,13 @@ describe("computeTop", () => {
 
 describe("setPopoverPosition", () => {
   let popoverElement: HTMLElement
-  let linkElement: HTMLLinkElement
+  let linkElement: HTMLAnchorElement
   let centerColumn: HTMLElement
   let rightColumn: HTMLElement
 
   beforeEach(() => {
     popoverElement = document.createElement("div")
-    linkElement = document.createElement("a") as unknown as HTMLLinkElement
+    linkElement = document.createElement("a") as unknown as HTMLAnchorElement
     centerColumn = document.createElement("div")
     rightColumn = document.createElement("div")
 
@@ -290,7 +290,7 @@ describe("setPopoverPosition", () => {
 it("should set popover position within bounds when page is scrolled", () => {
   Object.defineProperty(window, "scrollY", { value: 500 })
 
-  const linkElement = document.createElement("a") as unknown as HTMLLinkElement
+  const linkElement = document.createElement("a") as unknown as HTMLAnchorElement
 
   jest.spyOn(linkElement, "getBoundingClientRect").mockReturnValue({
     bottom: 600,
@@ -319,12 +319,12 @@ it("should set popover position within bounds when page is scrolled", () => {
 
 describe("attachPopoverEventListeners", () => {
   let popoverElement: HTMLElement
-  let linkElement: HTMLLinkElement
+  let linkElement: HTMLAnchorElement
   let cleanup: () => void
 
   beforeEach(() => {
     popoverElement = document.createElement("div")
-    linkElement = document.createElement("a") as unknown as HTMLLinkElement
+    linkElement = document.createElement("a") as unknown as HTMLAnchorElement
     cleanup = attachPopoverEventListeners(popoverElement, linkElement)
   })
 

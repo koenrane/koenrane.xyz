@@ -114,9 +114,9 @@ describe("RenderPublicationInfo", () => {
     expect(result?.props.className).toBe("publication-str")
 
     const children = result?.props.children
-    // Simplified check - just verify structure exists
-    expect(children[0]).toBe("Published on ")
-    expect(children[1]).toBeTruthy() // Just verify date element exists
+    // Without an original_url, the date element is rendered directly (no "Published on " prefix)
+    expect(children).toBeTruthy()
+    expect(children.props.date).toBeTruthy() // Just verify date element exists
   })
 
   it("should render publication info with original URL and favicon", () => {
@@ -193,7 +193,7 @@ describe("renderLastUpdated", () => {
     const linkElement = result?.props.children[0]
 
     expect(linkElement.props.href).toBe(
-      `https://github.com/alexander-turner/TurnTrout.com/blob/main/content/${testPath}`,
+      `https://github.com/koenrane/koenrane.xyz/blob/main/content/${testPath}`,
     )
   })
 })
@@ -298,7 +298,7 @@ describe("date handling", () => {
     expect(updateInfo).not.toBeNull()
 
     // Verify they have different dates in their props
-    const publicationDate = publicationInfo?.props.children[1].props.date
+    const publicationDate = publicationInfo?.props.children.props.date
     const updateDate = updateInfo?.props.children[2].props.date
 
     expect(publicationDate.getTime()).not.toBe(updateDate.getTime())

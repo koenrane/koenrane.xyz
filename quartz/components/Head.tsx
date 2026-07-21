@@ -183,11 +183,11 @@ export default (() => {
         {/* Google Fonts - Source Serif 4 (body text and headers) */}
         {/* Variable font with optical sizing (8-60pt) and weights 200-900 */}
         <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-        <link 
-          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" 
-          rel="stylesheet" 
-          spa-preserve 
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link
+          href="https://fonts.googleapis.com/css2?family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap"
+          rel="stylesheet"
+          spa-preserve
         />
 
         {fileData.frontmatter?.avoidIndexing && (
