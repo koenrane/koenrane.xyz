@@ -53,5 +53,4 @@ jobs:
           CLOUDFLARE_ACCOUNT_ID: ${{ vars.CLOUDFLARE_ACCOUNT_ID }}
           CLOUDFLARE_ZONE_ID: ${{ vars.CLOUDFLARE_ZONE_ID }}
         run: |
-          export BRANCH=${${{ github.ref }}#refs/heads/}
-          npx wrangler pages deploy ./public --project-name=turntrout --branch $BRANCH
+          npx wrangler pages deploy ./public --project-name=koenrane-xyz --branch ${{ github.ref_name }}
