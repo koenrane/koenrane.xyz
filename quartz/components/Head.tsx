@@ -119,7 +119,7 @@ export default (() => {
       return (
         <link
           key={icon}
-          href={`https://assets.turntrout.com/static/icons/${icon}.svg`}
+          href={`https://assets.koenrane.xyz/admonition-icons/${icon}.svg`}
           as="image"
           type="image/svg+xml"
           crossorigin="anonymous"

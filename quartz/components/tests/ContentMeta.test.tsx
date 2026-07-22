@@ -25,7 +25,7 @@ import {
 // Update the mock setup
 jest.mock("../ContentMeta", () => ({
   urlCache: new Map(),
-  TURNTROUT_FAVICON_PATH: "path/to/turntrout/favicon.png",
+  SITE_FAVICON_PATH: "path/to/favicon.png",
 }))
 
 // Mock dependencies

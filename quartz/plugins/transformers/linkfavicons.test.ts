@@ -67,18 +67,8 @@ const createExpectedSpan = (
 describe("Favicon Utilities", () => {
   describe("MaybeSaveFavicon", () => {
     const hostname = "example.com"
-    const avifUrl = "https://assets.turntrout.com/static/images/external-favicons/example_com.avif"
 
-    const mockFetchAndFs = (avifStatus: number, localPngExists: boolean, googleStatus = 200) => {
-      let responseBodyAVIF = ""
-      if (avifStatus === 200) {
-        responseBodyAVIF = "Mock image content"
-      }
-      const AVIFResponse = new Response(responseBodyAVIF, {
-        status: avifStatus,
-        headers: { "Content-Type": "image/avif" },
-      })
-
+    const mockFetchAndFs = (localPngExists: boolean, googleStatus = 200) => {
       let responseBodyGoogle = ""
       if (googleStatus === 200) {
         responseBodyGoogle = "Mock image content"
@@ -88,10 +78,7 @@ describe("Favicon Utilities", () => {
         headers: { "Content-Type": "image/png" },
       })
 
-      jest
-        .spyOn(global, "fetch")
-        .mockResolvedValueOnce(AVIFResponse)
-        .mockResolvedValueOnce(googleResponse)
+      jest.spyOn(global, "fetch").mockResolvedValueOnce(googleResponse)
 
       jest.spyOn(fs.promises, "writeFile").mockResolvedValue(undefined)
 
@@ -105,26 +92,19 @@ describe("Favicon Utilities", () => {
         .mockImplementationOnce(() => Promise.resolve({ size: 1000 } as fs.Stats))
     }
 
-    it.each<[string, number, boolean, string | null, number?]>([
-      ["AVIF exists", 200, false, avifUrl],
-    ])("%s", async (_, avifStatus, localPngExists, expected, googleStatus = 200) => {
-      mockFetchAndFs(avifStatus, localPngExists, googleStatus)
-      expect(await linkfavicons.MaybeSaveFavicon(hostname)).toBe(expected)
-    })
-
     it("should return DEFAULT_PATH when all attempts fail", async () => {
-      mockFetchAndFs(404, false, 404)
+      mockFetchAndFs(false, 404)
       const result = await linkfavicons.MaybeSaveFavicon(hostname)
       expect(result).toBe(linkfavicons.DEFAULT_PATH)
-      expect(global.fetch).toHaveBeenCalledTimes(2) // AVIF and Google attempts
+      expect(global.fetch).toHaveBeenCalledTimes(1) // Google download attempt
     })
 
-    it.each<[string, number, boolean]>([
-      ["Local PNG exists", 404, true],
-      ["Download PNG from Google", 404, false],
-    ])("%s", async (_, avifStatus, localPngExists) => {
+    it.each<[string, boolean]>([
+      ["Local PNG exists", true],
+      ["Download PNG from Google", false],
+    ])("%s", async (_, localPngExists) => {
       const expected = linkfavicons.getQuartzPath(hostname)
-      mockFetchAndFs(avifStatus, localPngExists)
+      mockFetchAndFs(localPngExists)
       expect(await linkfavicons.MaybeSaveFavicon(hostname)).toBe(expected)
     })
 
@@ -149,16 +129,16 @@ describe("Favicon Utilities", () => {
 
     it("should cache and skip previously failed downloads", async () => {
       // Mock all download attempts to fail
-      mockFetchAndFs(404, false, 404)
+      mockFetchAndFs(false, 404)
 
       // First attempt should try all download methods
       const firstResult = await linkfavicons.MaybeSaveFavicon(hostname)
       expect(firstResult).toBe(linkfavicons.DEFAULT_PATH)
-      expect(global.fetch).toHaveBeenCalledTimes(2) // AVIF and Google attempts
+      expect(global.fetch).toHaveBeenCalledTimes(1) // Google download attempt
 
       // Reset mocks for second attempt
       jest.clearAllMocks()
-      mockFetchAndFs(404, false, 404)
+      mockFetchAndFs(false, 404)
 
       // Second attempt should skip immediately due to cached failure
       const secondResult = await linkfavicons.MaybeSaveFavicon(hostname)
@@ -168,7 +148,7 @@ describe("Favicon Utilities", () => {
 
     it("should persist failed downloads to cache file", async () => {
       // Mock all download attempts to fail
-      mockFetchAndFs(404, false, 404)
+      mockFetchAndFs(false, 404)
 
       // Mock writeFileSync
       const writeFileSyncMock = jest.spyOn(fs, "writeFileSync").mockImplementation(() => undefined)
@@ -197,7 +177,7 @@ describe("Favicon Utilities", () => {
       linkfavicons.urlCache.set(faviconPath, linkfavicons.DEFAULT_PATH)
 
       // Mock download attempts (which shouldn't be called)
-      mockFetchAndFs(200, false, 200)
+      mockFetchAndFs(false, 200)
 
       // Attempt to get favicon
       const result = await linkfavicons.MaybeSaveFavicon(hostname)
@@ -211,9 +191,9 @@ describe("Favicon Utilities", () => {
   describe("GetQuartzPath", () => {
     it.each([
       ["www.example.com", "/static/images/external-favicons/example_com.png"],
-      ["localhost", linkfavicons.TURNTROUT_FAVICON_PATH],
-      ["turntrout.com", linkfavicons.TURNTROUT_FAVICON_PATH],
-      ["https://turntrout.com", linkfavicons.TURNTROUT_FAVICON_PATH],
+      ["localhost", linkfavicons.SITE_FAVICON_PATH],
+      ["koenrane.xyz", linkfavicons.SITE_FAVICON_PATH],
+      ["https://koenrane.xyz", linkfavicons.SITE_FAVICON_PATH],
       ["subdomain.example.org", "/static/images/external-favicons/subdomain_example_org.png"],
     ])("should return the correct favicon path for %s", (hostname, expectedPath) => {
       expect(linkfavicons.getQuartzPath(hostname)).toBe(expectedPath)
@@ -391,10 +371,10 @@ describe("Favicon Utilities", () => {
           h(
             "a",
             {
-              href: "https://mailto:throwaway@turntrout.com",
+              href: "https://mailto:throwaway@koenrane.xyz",
               class: "external",
             },
-            [h("code", {}, ["throwaway@turntrout.com"])],
+            [h("code", {}, ["throwaway@koenrane.xyz"])],
           ),
           ".",
         ])
@@ -410,8 +390,8 @@ describe("Favicon Utilities", () => {
 
   describe("linkfavicons.ModifyNode", () => {
     it.each([
-      ["./shard-theory", linkfavicons.TURNTROUT_FAVICON_PATH],
-      ["../shard-theory", linkfavicons.TURNTROUT_FAVICON_PATH],
+      ["./shard-theory", linkfavicons.SITE_FAVICON_PATH],
+      ["../shard-theory", linkfavicons.SITE_FAVICON_PATH],
       ["#test", linkfavicons.ANCHOR_PATH],
       ["mailto:test@example.com", linkfavicons.MAIL_PATH],
       ["mailto:another@domain.org", linkfavicons.MAIL_PATH],

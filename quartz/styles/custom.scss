@@ -554,7 +554,7 @@ img.favicon {
     }
   }
 
-  &[src$="turntrout-favicons/favicon.ico"] {
+  &[src$="/static/images/favicon.ico"] {
     :root[data-theme="light"] & {
       filter: contrast(15%);
     }
@@ -780,7 +780,7 @@ img.emoji {
   }
 }
 
-// For some reason, the last one messes up katex sub on safari (eg https://turntrout.com/statistics-of-a-maze-solving-network#statistically-informed-impressions)
+// For some reason, the last one messes up katex sub on safari
 .vlist-r:last-of-type {
   display: none;
 }

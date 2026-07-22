@@ -14,7 +14,7 @@ import { createLogger } from "./logger_utils"
 const logger = createLogger("linkfavicons")
 
 export const MAIL_PATH = "/static/images/mail.svg"
-export const TURNTROUT_FAVICON_PATH = "/static/images/favicon.ico"
+export const SITE_FAVICON_PATH = "/static/images/favicon.ico"
 export const LESSWRONG_FAVICON_PATH = "/static/images/external-favicons/lesswrong_com.avif"
 const QUARTZ_FOLDER = "quartz"
 const FAVICON_FOLDER = "static/images/external-favicons"
@@ -109,9 +109,9 @@ export async function downloadImage(url: string, imagePath: string): Promise<boo
  * Generates a standardized path for storing favicons in the Quartz system.
  *
  * Handles special cases:
- * - Converts localhost to turntrout.com
+ * - Converts localhost to koenrane.xyz
  * - Removes www. prefix from domains
- * - Uses special path for turntrout.com domain
+ * - Uses special path for the koenrane.xyz domain
  * - Converts dots to underscores for filesystem compatibility
  *
  * @param hostname - Domain name to generate path for (e.g. "example.com")
@@ -119,16 +119,16 @@ export async function downloadImage(url: string, imagePath: string): Promise<boo
  */
 export function getQuartzPath(hostname: string): string {
   logger.debug(`Generating Quartz path for hostname: ${hostname}`)
-  hostname = hostname === "localhost" ? "turntrout.com" : hostname.replace(/^www\./, "")
+  hostname = hostname === "localhost" ? "koenrane.xyz" : hostname.replace(/^www\./, "")
   const sanitizedHostname = hostname.replace(/\./g, "_")
-  const path = sanitizedHostname.includes("turntrout_com")
-    ? TURNTROUT_FAVICON_PATH
+  const path = sanitizedHostname.includes("koenrane_xyz")
+    ? SITE_FAVICON_PATH
     : `/${FAVICON_FOLDER}/${sanitizedHostname}.png`
   logger.debug(`Generated Quartz path: ${path}`)
   return path
 }
 
-const defaultCache = new Map<string, string>([[TURNTROUT_FAVICON_PATH, TURNTROUT_FAVICON_PATH]])
+const defaultCache = new Map<string, string>([[SITE_FAVICON_PATH, SITE_FAVICON_PATH]])
 export function createUrlCache(): Map<string, string> {
   return new Map(defaultCache)
 }
@@ -180,15 +180,14 @@ export async function readFaviconUrls(): Promise<Map<string, string>> {
  *
  * Search order:
  * 1. Check URL cache for previous results
- * 2. Look for AVIF version on CDN
- * 3. Check for local PNG file
- * 4. Try downloading from Google's favicon service
- * 5. Fall back to default if all attempts fail
+ * 2. Check for local PNG file
+ * 3. Try downloading from Google's favicon service
+ * 4. Fall back to default if all attempts fail
  *
  * Caches results (including failures) to avoid repeated lookups
  *
  * @param hostname - Domain to find favicon for
- * @returns Path to favicon (local, CDN, or default)
+ * @returns Path to favicon (local or default)
  */
 export async function MaybeSaveFavicon(hostname: string): Promise<string> {
   logger.info(`Attempting to find or save favicon for ${hostname}`)
@@ -204,21 +203,6 @@ export async function MaybeSaveFavicon(hostname: string): Promise<string> {
     }
     logger.info(`Returning cached favicon for ${hostname}`)
     return cachedValue as string
-  }
-
-  // Check for AVIF version
-  const avifPath = faviconPath.replace(".png", ".avif")
-  const avifUrl = avifPath.startsWith("http") ? avifPath : `https://assets.turntrout.com${avifPath}`
-
-  try {
-    const avifResponse = await fetch(avifUrl)
-    if (avifResponse.ok) {
-      logger.info(`AVIF found for ${hostname}: ${avifUrl}`)
-      urlCache.set(faviconPath, avifUrl)
-      return avifUrl
-    }
-  } catch (err) {
-    logger.error(`Error checking AVIF on ${avifUrl}. ${err}`)
   }
 
   // Check for local PNG
@@ -440,7 +424,7 @@ function normalizeUrl(href: string): string {
     } else if (href.startsWith("../")) {
       href = href.slice(3)
     }
-    href = `https://www.turntrout.com/${href}`
+    href = `https://koenrane.xyz/${href}`
   }
   return href
 }

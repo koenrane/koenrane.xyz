@@ -5,14 +5,11 @@ import * as React from "react"
 
 import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 
-import {
-  TURNTROUT_FAVICON_PATH,
-  LESSWRONG_FAVICON_PATH,
-} from "../../plugins/transformers/linkfavicons"
+import { SITE_FAVICON_PATH, LESSWRONG_FAVICON_PATH } from "../../plugins/transformers/linkfavicons"
 import { htmlToJsx } from "../../util/jsx"
 import { buildNestedList } from "../TableOfContents"
 
-const turntroutFavicon = <img src={TURNTROUT_FAVICON_PATH} className="favicon" alt="" />
+const siteFavicon = <img src={SITE_FAVICON_PATH} className="favicon" alt="" />
 
 const WarningLink = (
   <a
@@ -23,7 +20,7 @@ const WarningLink = (
     Reward is not the optimization ta
     <span className="favicon-span">
       rget
-      {turntroutFavicon}
+      {siteFavicon}
     </span>
   </a>
 )
@@ -50,7 +47,7 @@ const rewardPostWarning = (
         Reward Is Not The Optimization Tar
         <span className="favicon-span">
           get,
-          {turntroutFavicon}
+          {siteFavicon}
         </span>
       </a>{" "}
       this is a misconception that can seriously damage your ability to understand how AI works.

@@ -121,8 +121,8 @@ describe("HTMLFormattingImprovement", () => {
         '<dl><dd>Multipliers like “2×” are 2× more pleasant than “<span class="no-formatting">2x</span>.” </dd></dl>',
       ],
       [
-        '<p>Suppose you tell me, "<code>TurnTrout</code>", we definitely</p>',
-        "<p>Suppose you tell me, “<code>TurnTrout</code>”, we definitely</p>",
+        '<p>Suppose you tell me, "<code>Koenrane</code>", we definitely</p>',
+        "<p>Suppose you tell me, “<code>Koenrane</code>”, we definitely</p>",
       ],
       [
         '<div><p>not confident in that plan - "</p><p>"Why not? You were the one who said we should use the AIs in the first place! Now you don’t like this idea?” she asked, anger rising in her voice.</p></div>',
