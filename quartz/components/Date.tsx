@@ -83,8 +83,8 @@ export function formatDate(
  */
 export function formatDateISO(d: Date): string {
   const year = d.getFullYear()
-  const month = String(d.getMonth() + 1).padStart(2, '0')
-  const day = String(d.getDate()).padStart(2, '0')
+  const month = String(d.getMonth() + 1).padStart(2, "0")
+  const day = String(d.getDate()).padStart(2, "0")
   return `${year}-${month}-${day}`
 }
 
@@ -141,7 +141,6 @@ export function formatDateRange(
 }
 //-------------------------------------------------------------------------------------------------//
 
-
 interface DateElementProps {
   monthFormat?: "long" | "short"
   includeOrdinalSuffix?: boolean
@@ -169,25 +168,34 @@ export const DateRangeElement = ({
   formatOrdinalSuffix,
 }: DateRangeElementProps): JSX.Element => {
   // Check if it's a date range object
-  if (typeof date === 'object' && date !== null && !(date instanceof Date) && 'start' in date && 'end' in date) {
+  if (
+    typeof date === "object" &&
+    date !== null &&
+    !(date instanceof Date) &&
+    "start" in date &&
+    "end" in date
+  ) {
     const startDate = date.start instanceof Date ? date.start : new Date(date.start)
     const endDate = date.end instanceof Date ? date.end : new Date(date.end)
 
     if (!startDate || isNaN(startDate.getTime()) || !endDate || isNaN(endDate.getTime())) {
-      throw new Error(`date range must contain valid Date objects or date strings: ${JSON.stringify(date)}`)
+      throw new Error(
+        `date range must contain valid Date objects or date strings: ${JSON.stringify(date)}`,
+      )
     }
 
-    const formattedRange = monthFormat === "iso" 
-      ? formatDateRangeISO(startDate, endDate)
-      : formatDateRange(
-          startDate,
-          endDate,
-          cfg.locale,
-          monthFormat,
-          includeOrdinalSuffix,
-          formatOrdinalSuffix,
-          "",
-        )
+    const formattedRange =
+      monthFormat === "iso"
+        ? formatDateRangeISO(startDate, endDate)
+        : formatDateRange(
+            startDate,
+            endDate,
+            cfg.locale,
+            monthFormat,
+            includeOrdinalSuffix,
+            formatOrdinalSuffix,
+            "",
+          )
 
     return (
       <time
@@ -205,16 +213,17 @@ export const DateRangeElement = ({
       throw new Error(`date must be a valid Date object or date string: ${date}`)
     }
 
-    const formattedDate = monthFormat === "iso"
-      ? formatDateISO(dateObj)
-      : formatDate(
-          dateObj,
-          cfg.locale,
-          monthFormat,
-          includeOrdinalSuffix,
-          formatOrdinalSuffix,
-          "",
-        )
+    const formattedDate =
+      monthFormat === "iso"
+        ? formatDateISO(dateObj)
+        : formatDate(
+            dateObj,
+            cfg.locale,
+            monthFormat,
+            includeOrdinalSuffix,
+            formatOrdinalSuffix,
+            "",
+          )
 
     return (
       <time
@@ -227,7 +236,6 @@ export const DateRangeElement = ({
   }
 }
 //-------------------------------------------------------------------------------------------------//
-
 
 // Render date element with proper datetime attribute
 export const DateElement = ({

@@ -21,16 +21,18 @@ const PublicationDate: QuartzComponent = ({ fileData, cfg }: QuartzComponentProp
 
   return (
     <div className="publication-date">
-      <p style={{ 
-        textIndent: "-.2rem", 
-        paddingLeft: ".2rem", 
-        lineHeight: "1.25rem",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: "1rem",
-        flexWrap: "wrap"
-      }}>
+      <p
+        style={{
+          textIndent: "-.2rem",
+          paddingLeft: ".2rem",
+          lineHeight: "1.25rem",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          gap: "1rem",
+          flexWrap: "wrap",
+        }}
+      >
         {publicationInfo}
         {statusInfo}
       </p>
@@ -38,4 +40,4 @@ const PublicationDate: QuartzComponent = ({ fileData, cfg }: QuartzComponentProp
   )
 }
 
-export default (() => PublicationDate) satisfies QuartzComponentConstructor 
+export default (() => PublicationDate) satisfies QuartzComponentConstructor

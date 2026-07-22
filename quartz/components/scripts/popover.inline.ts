@@ -14,7 +14,8 @@ const EXTERNAL_PREVIEW_LOADED_EVENT = "quartz:externalPreviewLoaded"
 function buildExternalLinkSummary(linkElement: HTMLAnchorElement, targetUrl: URL): HTMLElement {
   const summaryElement = document.createElement("section")
   summaryElement.classList.add("external-link-preview")
-  const linkText = linkElement.textContent?.trim() || linkElement.innerText?.trim() || targetUrl.hostname
+  const linkText =
+    linkElement.textContent?.trim() || linkElement.innerText?.trim() || targetUrl.hostname
   summaryElement.innerHTML = `
     <h3>${linkText}</h3>
     <p><strong>Domain:</strong> ${targetUrl.hostname}</p>
@@ -23,7 +24,10 @@ function buildExternalLinkSummary(linkElement: HTMLAnchorElement, targetUrl: URL
   return summaryElement
 }
 
-function createExternalFallbackPopover(linkElement: HTMLAnchorElement, targetUrl: URL): HTMLElement {
+function createExternalFallbackPopover(
+  linkElement: HTMLAnchorElement,
+  targetUrl: URL,
+): HTMLElement {
   const popoverElement = document.createElement("div")
   popoverElement.classList.add("popover")
   const popoverInner = document.createElement("div")
@@ -166,7 +170,10 @@ function mouseEnterHandler(this: HTMLAnchorElement) {
       cleanup()
       window.removeEventListener("resize", updatePosition)
       if (targetIsExternal) {
-        popoverElement.removeEventListener(EXTERNAL_PREVIEW_LOADED_EVENT, handleExternalPreviewLoaded)
+        popoverElement.removeEventListener(
+          EXTERNAL_PREVIEW_LOADED_EVENT,
+          handleExternalPreviewLoaded,
+        )
       }
     }
   }
@@ -196,13 +203,13 @@ document.addEventListener("nav", () => {
   for (const link of links) {
     // Skip links that explicitly disable popovers
     // if (link.dataset.noPopover === "true") continue
-    
+
     // Optional: Skip mailto and tel links
     if (link.href.startsWith("mailto:") || link.href.startsWith("tel:")) continue
-    
+
     // Optional: Skip anchor links on the same page
     if (link.href.startsWith("#")) continue
-    
+
     // Define handlers outside to ensure they can be removed
     let cleanup: (() => void) | undefined
 

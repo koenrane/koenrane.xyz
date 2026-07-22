@@ -3,3 +3,6 @@ public
 **.min.*
 node_modules
 .quartz-cache
+
+# Vendored Vale linter style definitions — not ours to format
+.vale-styles

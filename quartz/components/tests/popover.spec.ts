@@ -76,7 +76,9 @@ test("External popover falls back when iframe load fails", async ({ page }) => {
     const popover = page.locator(".popover")
     await expect(popover).toBeVisible()
 
-    const fallback = popover.locator(".external-preview-frame.external-preview-frame--fallback .external-link-preview")
+    const fallback = popover.locator(
+      ".external-preview-frame.external-preview-frame--fallback .external-link-preview",
+    )
     await expect(fallback).toBeVisible()
   } finally {
     await page.unroute("https://github.com/**", abortRoute)

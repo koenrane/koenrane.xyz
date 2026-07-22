@@ -57,8 +57,7 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
       const title = file.data.frontmatter?.title ?? ""
       const description = file.data.frontmatter?.description?.trim() ?? ""
       const cardImage =
-        file.data.frontmatter?.card_image ??
-        "https://assets.koenrane.xyz/fractals2.png"
+        file.data.frontmatter?.card_image ?? "https://assets.koenrane.xyz/fractals2.png"
       const authors = file.data.frontmatter?.authors
 
       for (let slug of slugs) {

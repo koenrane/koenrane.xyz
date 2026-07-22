@@ -231,7 +231,7 @@ hr.desktop-only {
         @media all and (max-width: $max-mobile-width) {
           gap: 0;
           top: 0;
-          position: relative;  // Changed from sticky - sticky can cause scrolling issues in flex containers
+          position: relative; // Changed from sticky - sticky can cause scrolling issues in flex containers
           margin-top: 0;
           align-items: center;
           width: 100%;
@@ -264,9 +264,9 @@ hr.desktop-only {
     & #center-content {
       flex: 1 1 $page-width;
       max-width: $page-width;
-      min-width: 0;  /* Critical: allows flex item to shrink below content size */
+      min-width: 0; /* Critical: allows flex item to shrink below content size */
       overflow-x: hidden;
-      overflow-y: visible;  /* Allow vertical scrolling */
+      overflow-y: visible; /* Allow vertical scrolling */
       width: 100%;
 
       @media all and (max-width: $max-mobile-width) {
@@ -277,7 +277,7 @@ hr.desktop-only {
         height: auto;
         overflow-y: visible;
       }
-      
+
       /* Ensure all block children respect container width */
       & > * {
         max-width: 100%;

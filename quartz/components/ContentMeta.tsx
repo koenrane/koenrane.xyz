@@ -274,26 +274,26 @@ export function renderPostStatistics(props: QuartzComponentProps): JSX.Element |
 export function RenderStatusInfo(fileData: QuartzPluginData): JSX.Element | null {
   const frontmatter = fileData.frontmatter
   const status = frontmatter?.status
-  
+
   if (!status || frontmatter?.hide_metadata) {
     return null
   }
 
   const statusConfig = {
-    "in-progress": { label: "in-Progress"},
-    "finished": { label: "finished"},
-    "abandoned": { label: "abandoned"}
+    "in-progress": { label: "in-Progress" },
+    finished: { label: "finished" },
+    abandoned: { label: "abandoned" },
   }
 
   const config = statusConfig[status]
   if (!config) return null
 
   return (
-    <span 
-      className="status-str" 
-      style={{ 
+    <span
+      className="status-str"
+      style={{
         fontWeight: "400",
-        fontStyle: "italic"
+        fontStyle: "italic",
       }}
     >
       {config.label}

@@ -51,4 +51,4 @@ const DarkModeComponent = (() => {
   return DarkMode
 }) satisfies QuartzComponentConstructor
 
-export default DarkModeComponent 
+export default DarkModeComponent

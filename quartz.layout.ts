@@ -15,7 +15,11 @@ export const sharedPageComponents: SharedLayout = {
 export const defaultContentPageLayout: PageLayout = {
   beforeBody: [Component.ArticleTitle(), Component.TagsBeforeBody(), Component.PublicationDate()],
   left: [],
-  right: [Component.DesktopOnly(Component.TableOfContents()), Component.SettingsMenu(), Component.ContentMeta()],
+  right: [
+    Component.DesktopOnly(Component.TableOfContents()),
+    Component.SettingsMenu(),
+    Component.ContentMeta(),
+  ],
 }
 
 // components for pages that display lists of pages  (e.g. tags or folders)
@@ -27,8 +31,6 @@ export const defaultListPageLayout: PageLayout = {
 
 export default {
   components: {
-    head: [
-      Component.Head(),
-    ],
+    head: [Component.Head()],
   },
 }

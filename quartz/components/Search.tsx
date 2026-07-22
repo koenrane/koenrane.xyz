@@ -33,4 +33,4 @@ const SearchComponent = (() => {
   return Search
 }) satisfies QuartzComponentConstructor
 
-export default SearchComponent 
+export default SearchComponent

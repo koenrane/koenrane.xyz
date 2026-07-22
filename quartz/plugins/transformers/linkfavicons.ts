@@ -14,8 +14,7 @@ import { createLogger } from "./logger_utils"
 const logger = createLogger("linkfavicons")
 
 export const MAIL_PATH = "https://assets.turntrout.com/static/images/mail.svg"
-export const TURNTROUT_FAVICON_PATH =
-  "/static/images/favicon.ico"
+export const TURNTROUT_FAVICON_PATH = "/static/images/favicon.ico"
 export const LESSWRONG_FAVICON_PATH =
   "https://assets.turntrout.com/static/images/external-favicons/lesswrong_com.avif"
 const QUARTZ_FOLDER = "quartz"

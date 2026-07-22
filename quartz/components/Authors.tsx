@@ -10,14 +10,10 @@ const Authors: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {
     return null
   }
 
-
   // file's creation/modification date
-  let authors = fileData.dates?.created 
-    ? new Date(fileData.dates.created).toISOString().split('T')[0]
-    : new Date().toISOString().split('T')[0]
-
-
-
+  let authors = fileData.dates?.created
+    ? new Date(fileData.dates.created).toISOString().split("T")[0]
+    : new Date().toISOString().split("T")[0]
 
   /*let authors = "KR"
   if (fileData.frontmatter?.authors) {

@@ -110,8 +110,6 @@ $fonts-dir: "/static/styles/fonts";
 
 // local @font-face declarations
 
-
-
 // Less commonly used
 @include font-face("DejaVuSerifCondensed-Bold", "DejaVuSerifCondensed-Bold-subset", ".woff2");
 @include font-face("BadHandwriting", "badhandwriting-webfont", ".woff2");
@@ -133,27 +131,27 @@ body {
   --font-text-swash: "Source Serif 4", cursive;
   --font-bad-handwriting: "BadHandwriting";*/
 
-  body {
-    // Dropcap fonts - keeping EBGaramond decorative initials for stylized drop caps
-    --font-dropcap-foreground: "EBGaramondInitialsF2", serif;
-    --font-dropcap-background: "EBGaramondInitialsF1", serif;
+body {
+  // Dropcap fonts - keeping EBGaramond decorative initials for stylized drop caps
+  --font-dropcap-foreground: "EBGaramondInitialsF2", serif;
+  --font-dropcap-background: "EBGaramondInitialsF1", serif;
 
-    // Monospace fonts - used for code blocks and inline code
-    --font-monospace: "FiraCode", "JetBrains Mono", "Courier New", monospace;
-    --font-monospace-theme: "FiraCode", "JetBrains Mono", "Courier New", monospace;
+  // Monospace fonts - used for code blocks and inline code
+  --font-monospace: "FiraCode", "JetBrains Mono", "Courier New", monospace;
+  --font-monospace-theme: "FiraCode", "JetBrains Mono", "Courier New", monospace;
 
-    // Primary text fonts - Source Serif 4 for body text (loaded from Google Fonts)
-    --font-text-theme: "Source Serif 4", "Times New Roman", serif;
-    --font-text: "Source Serif 4", "Times New Roman", serif;
-    --font-text-original: "Source Serif 4";
-    --font-text-italic: "Source Serif 4", serif;
+  // Primary text fonts - Source Serif 4 for body text (loaded from Google Fonts)
+  --font-text-theme: "Source Serif 4", "Times New Roman", serif;
+  --font-text: "Source Serif 4", "Times New Roman", serif;
+  --font-text-original: "Source Serif 4";
+  --font-text-italic: "Source Serif 4", serif;
 
-    // Header font - Source Serif 4 for titles and headings (matching body text)
-    --font-text-header: "Source Serif 4", "Times New Roman", serif;
+  // Header font - Source Serif 4 for titles and headings (matching body text)
+  --font-text-header: "Source Serif 4", "Times New Roman", serif;
 
-    // Specialty fonts
-    --font-text-swash: "Source Serif 4", cursive;
-    --font-bad-handwriting: "BadHandwriting";
+  // Specialty fonts
+  --font-text-swash: "Source Serif 4", cursive;
+  --font-bad-handwriting: "BadHandwriting";
 
   // Apply Source Serif 4 as the base font family
   font-family: "Source Serif 4", var(--font-text);

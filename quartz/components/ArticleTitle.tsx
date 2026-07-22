@@ -26,14 +26,18 @@ function wrapYearDates(text: string): JSX.Element[] {
 
     // Add text before this match (including the character before the year)
     if (matchStart + beforeYear.length > lastIndex) {
-      parts.push(<span key={`text-${lastIndex}`}>{text.slice(lastIndex, matchStart + beforeYear.length)}</span>)
+      parts.push(
+        <span key={`text-${lastIndex}`}>
+          {text.slice(lastIndex, matchStart + beforeYear.length)}
+        </span>,
+      )
     }
 
     // Add the year wrapped in a span
     parts.push(
       <span key={`year-${matchStart}`} className="year-date">
         {year}
-      </span>
+      </span>,
     )
 
     // Update lastIndex to after the year but before afterYear

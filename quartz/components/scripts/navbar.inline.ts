@@ -33,22 +33,24 @@ function pauseVideo(this: HTMLVideoElement): void {
 function setupMobileControls(): void {
   // Mobile search functionality
   const mobileSearchButton = document.getElementById("mobile-search-button")
-  const mobileSearchInput = document.getElementById("mobile-search-input") as HTMLInputElement | null
+  const mobileSearchInput = document.getElementById(
+    "mobile-search-input",
+  ) as HTMLInputElement | null
   const mobileDarkModeButton = document.getElementById("darkmode-toggle")
-  
+
   if (mobileSearchButton && mobileSearchInput) {
     const triggerMainSearch = (searchTerm: string = "") => {
       const mainSearchIcon = document.getElementById("search-icon")
       const mainSearchInput = document.getElementById("search-bar") as HTMLInputElement | null
-      
+
       if (mainSearchIcon && mainSearchInput) {
         // Hide hamburger menu first
         const menu = document.querySelector(".menu")
         if (menu) menu.classList.remove("visible")
-        
+
         // Trigger main search
         mainSearchIcon.click()
-        
+
         // Set search term if provided
         if (searchTerm && mainSearchInput) {
           mainSearchInput.value = searchTerm
@@ -56,18 +58,18 @@ function setupMobileControls(): void {
         }
       }
     }
-    
+
     mobileSearchButton.addEventListener("click", () => {
       triggerMainSearch(mobileSearchInput.value)
     })
-    
+
     mobileSearchInput.addEventListener("keydown", (e) => {
       if (e.key === "Enter") {
         triggerMainSearch(mobileSearchInput.value)
       }
     })
   }
-  
+
   // Mobile dark mode functionality
   if (mobileDarkModeButton) {
     mobileDarkModeButton.addEventListener("click", () => {
@@ -86,10 +88,10 @@ setupHamburgerMenu()
 setupSearch()
 setupScrollHandler() // Mobile: hide navbar on scroll down, show on scroll up
 setupPondVideo()
-setupMobileControls()// Mobile-only search
+setupMobileControls() // Mobile-only search
 
 // Re-run setup functions after SPA navigation
 document.addEventListener("nav", () => {
   setupPondVideo()
-  setupMobileControls()// Mobile-only search
+  setupMobileControls() // Mobile-only search
 })

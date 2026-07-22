@@ -15,7 +15,7 @@
   padding: 0 calc(0.5 * $base-margin);
   //border-radius: 4px;
   background-color: transparent;
- // border: 1px solid var(--midground-faint);
+  // border: 1px solid var(--midground-faint);
   width: auto;
   height: 1.5rem;
   box-sizing: border-box;
@@ -120,4 +120,4 @@
 :root[data-theme-mode="auto"] .theme-toggle-auto {
   visibility: visible;
   opacity: 1;
-} 
+}
