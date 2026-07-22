@@ -1,0 +1,22 @@
+# Normalize line endings: treat all text files as LF in the repo and on checkout.
+# Prevents CRLF from leaking in on Windows checkouts (prettier/CI expect LF).
+* text=auto eol=lf
+
+# Binary assets: never normalize or diff as text.
+*.woff2 binary
+*.woff  binary
+*.ttf   binary
+*.otf   binary
+*.eot   binary
+*.png   binary
+*.jpg   binary
+*.jpeg  binary
+*.gif   binary
+*.ico   binary
+*.avif  binary
+*.webp  binary
+*.mp4   binary
+*.mov   binary
+*.webm  binary
+*.mp3   binary
+*.pdf   binary
