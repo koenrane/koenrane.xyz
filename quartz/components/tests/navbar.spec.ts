@@ -1,6 +1,5 @@
 import { test, expect } from "@playwright/test"
 
-import { videoId as pondVideoId } from "../component_utils"
 import { type Theme } from "../scripts/darkmode"
 import { takeRegressionScreenshot, isDesktopViewport, setTheme } from "./visual_utils"
 
@@ -213,46 +212,3 @@ for (const theme of ["light", "dark", "auto"]) {
     })
   })
 }
-
-test("Video plays on hover and pauses on mouse leave", async ({ page }) => {
-  const video = page.locator(`video#${pondVideoId}`)
-
-  // Helper to check video state
-  const isPaused = async () => video.evaluate((v: HTMLVideoElement) => v.paused)
-
-  // 1. Initial state: Paused
-  await expect(video).toBeVisible()
-  expect(await isPaused()).toBe(true)
-
-  // 2. Hover over: Plays
-  await video.dispatchEvent("mouseenter")
-  await expect.poll(async () => await isPaused()).toBe(false)
-
-  // 3. Hover away: Pauses
-  await video.dispatchEvent("mouseleave")
-  await expect.poll(async () => await isPaused()).toBe(true)
-})
-
-test("Video plays on hover and pauses on mouse leave (SPA)", async ({ page }) => {
-  const video = page.locator(`video#${pondVideoId}`)
-
-  const isPaused = async () => video.evaluate((v: HTMLVideoElement) => v.paused)
-
-  // 1. Initial state: Paused
-  await expect(video).toBeVisible()
-  expect(await isPaused()).toBe(true)
-
-  // Navigate to a new page
-  const initialUrl = page.url()
-  const localLink = page.locator("a").first()
-  await localLink.click()
-  await page.waitForURL((url) => url.pathname !== initialUrl)
-
-  // 2. Hover over: Plays
-  await video.dispatchEvent("mouseenter")
-  await expect.poll(async () => await isPaused()).toBe(false)
-
-  // 3. Hover away: Pauses
-  await video.dispatchEvent("mouseleave")
-  await expect.poll(async () => await isPaused()).toBe(true)
-})

@@ -386,25 +386,6 @@
   }
 }
 
-/*#pond-video {
-  // Consistent width and spacing for both img and video
-  width: 100%;
-  max-width: 100%;
-  margin-bottom: 0;
-  margin-top: 0;
-  object-fit: contain;
-}*/
-
-/* #header-video-container {
-  @media all and (min-width: $min-desktop-width) {
-    width: 188px;
-    height: 188px;
-    min-height: 188px;
-    aspect-ratio: 188 / 188;
-    display: block;
-  }
-*/
-
 // static KR logo styling
 #header-logo-container {
   @media all and (min-width: $min-desktop-width) {

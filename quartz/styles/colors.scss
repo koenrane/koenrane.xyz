@@ -24,9 +24,7 @@
   --highlight: #949cbb30; // frappeColors.overlay-2 at 20% opacity
 
   & img,
-  & video:not(:has(::backdrop)),
-  // Unsure why this selector is needed
-  & #pond-video {
+  & video:not(:has(::backdrop)) {
     filter: grayscale(50%);
   }
 }
@@ -62,10 +60,6 @@
   & video:not(:has(::backdrop)),
   & iframe:not(:has(::backdrop)) {
     mix-blend-mode: multiply;
-  }
-
-  & #pond-video {
-    filter: saturate(85%);
   }
 }
 

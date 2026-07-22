@@ -5,7 +5,6 @@ import React from "react"
 
 import { i18n } from "../i18n"
 import { type FullSlug, pathToRoot, resolveRelative } from "../util/path"
-import { videoId } from "./component_utils"
 // @ts-expect-error Not a module but a script
 // skipcq: JS-W1028
 import script from "./scripts/navbar.inline"
@@ -48,25 +47,6 @@ const NavbarComponent: QuartzComponent = ({ cfg, fileData }: QuartzComponentProp
       </a>
     </span>
   )
-
-  /*const headerVideoSpan = (
-    <span id="header-video-container" data-persist-video="true">
-      <video
-        id={videoId}
-        className="no-select no-vsc"
-        loop
-        muted
-        playsInline
-        data-persist
-        preload="auto"
-        poster="https://assets.turntrout.com/static/pond_frame.avif"
-        aria-label="A goose and a trout play in a pond in front of a castle."
-      >
-        <source src="https://assets.turntrout.com/static/pond.mov" type="video/mp4; codecs=hvc1" />
-        <source src="https://assets.turntrout.com/static/pond.webm" type="video/webm" />
-      </video>
-    </span>
-  )*/
 
   const pageLinks = (
     <nav className="menu">

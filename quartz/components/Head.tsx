@@ -200,7 +200,6 @@ export default (() => {
         {fontPreloads}
 
         <script defer src="/static/scripts/collapsible-listeners.js" spa-preserve></script>
-        <script defer src="/static/scripts/safari-autoplay.js" spa-preserve></script>
         <script defer src="/static/scripts/remove-css.js"></script>
         {analyticsScript}
 
