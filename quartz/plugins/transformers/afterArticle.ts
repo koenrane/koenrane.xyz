@@ -8,8 +8,7 @@ import { type QuartzPluginData } from "../vfile"
 import { createFaviconElement, MAIL_PATH } from "./linkfavicons"
 import { createSequenceLinksComponent } from "./sequenceLinks"
 
-const SUBSTACK_URL =
-  "https://assets.turntrout.com/static/images/external-favicons/substack_com.avif"
+const SUBSTACK_URL = "/static/images/external-favicons/substack_com.avif"
 
 const newsletterElement = h("a", { href: "https://koenrane.substack.com/subscribe" }, [
   "newsle",
@@ -19,7 +18,7 @@ const newsletterElement = h("a", { href: "https://koenrane.substack.com/subscrib
 const rssSpan = h("span", { className: "favicon-span" }, [
   h("abbr", { class: "small-caps" }, "rss"),
   h("img", {
-    src: "https://assets.turntrout.com/static/images/rss.svg",
+    src: "/static/images/rss.svg",
     id: "rss-svg",
     alt: "RSS icon",
     className: "favicon",

@@ -4,7 +4,7 @@ export var twemoji =
   (function () /*! Copyright Twitter Inc. and other contributors. Licensed under MIT */ {
     "use strict"
     var d = {
-      base: "https://assets.turntrout.com/twemoji%2F",
+      base: "https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/",
       ext: ".svg",
       size: "svg",
       className: "emoji",

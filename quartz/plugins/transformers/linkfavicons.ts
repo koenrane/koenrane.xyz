@@ -13,14 +13,13 @@ import { createLogger } from "./logger_utils"
 
 const logger = createLogger("linkfavicons")
 
-export const MAIL_PATH = "https://assets.turntrout.com/static/images/mail.svg"
+export const MAIL_PATH = "/static/images/mail.svg"
 export const TURNTROUT_FAVICON_PATH = "/static/images/favicon.ico"
-export const LESSWRONG_FAVICON_PATH =
-  "https://assets.turntrout.com/static/images/external-favicons/lesswrong_com.avif"
+export const LESSWRONG_FAVICON_PATH = "/static/images/external-favicons/lesswrong_com.avif"
 const QUARTZ_FOLDER = "quartz"
 const FAVICON_FOLDER = "static/images/external-favicons"
 export const DEFAULT_PATH = ""
-export const ANCHOR_PATH = "https://assets.turntrout.com/static/images/anchor.svg"
+export const ANCHOR_PATH = "/static/images/anchor.svg"
 
 const __filepath = fileURLToPath(import.meta.url)
 const __dirname = path.dirname(gitRoot(__filepath))

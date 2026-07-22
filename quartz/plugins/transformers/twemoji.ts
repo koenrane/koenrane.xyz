@@ -8,7 +8,7 @@ import { visit } from "unist-util-visit"
 import { twemoji } from "./modules/twemoji.min"
 
 export const EMOJI_REPLACEMENT = "⤴"
-export const TWEMOJI_BASE_URL = "https://assets.turntrout.com/twemoji/"
+export const TWEMOJI_BASE_URL = "https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/"
 export const EMOJIS_TO_REPLACE = ["1fabf"]
 
 export interface TwemojiOptions {
