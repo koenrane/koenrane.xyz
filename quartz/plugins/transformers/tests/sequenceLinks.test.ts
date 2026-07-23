@@ -8,7 +8,7 @@ import {
   renderPreviousPost,
   renderNextPost,
   createSequenceLinksDiv,
-  insertAfterTroutOrnament,
+  insertAfterOrnament,
 } from "../sequenceLinks"
 
 describe("renderSequenceTitle", () => {
@@ -84,18 +84,18 @@ describe("createSequenceLinksDiv", () => {
   })
 })
 
-describe("insertAfterTroutOrnament", () => {
-  it("should insert sequence links after trout ornament", () => {
+describe("insertAfterOrnament", () => {
+  it("should insert sequence links after the ornament", () => {
     const tree: Root = {
       type: "root",
       children: [
-        { type: "element", tagName: "div", properties: { id: "trout-ornament" }, children: [] },
+        { type: "element", tagName: "div", properties: { id: "site-ornament" }, children: [] },
         { type: "element", tagName: "p", properties: {}, children: [] },
       ],
     }
     const sequenceLinksDiv = { type: "element", tagName: "div" } as Element
 
-    insertAfterTroutOrnament(tree, sequenceLinksDiv)
+    insertAfterOrnament(tree, sequenceLinksDiv)
     expect(tree.children).toHaveLength(3)
     expect(tree.children[1]).toBe(sequenceLinksDiv)
   })

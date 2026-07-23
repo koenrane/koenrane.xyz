@@ -3,12 +3,12 @@ import type { Root, Element as HastElement } from "hast"
 import { describe, expect, beforeEach, it } from "@jest/globals"
 
 import { BuildCtx } from "../../../util/ctx"
-import { TroutOrnamentHr, maybeInsertOrnament, ornamentNode, insertOrnamentNode } from "../trout_hr"
+import { OrnamentHr, maybeInsertOrnament, ornamentNode, insertOrnamentNode } from "../ornament_hr"
 
-describe("TroutOrnamentHr", () => {
+describe("OrnamentHr", () => {
   it("should return a plugin with the correct name and htmlPlugins", () => {
-    const plugin = TroutOrnamentHr()
-    expect(plugin.name).toBe("TroutOrnamentHr")
+    const plugin = OrnamentHr()
+    expect(plugin.name).toBe("OrnamentHr")
     expect(plugin.htmlPlugins).toBeInstanceOf(Function)
     const mockBuildCtx: BuildCtx = {} as BuildCtx
     expect(plugin.htmlPlugins?.(mockBuildCtx)).toHaveLength(1)

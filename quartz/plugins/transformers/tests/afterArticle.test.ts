@@ -3,16 +3,16 @@ import type { Root, Element } from "hast"
 import { describe, it, expect } from "@jest/globals"
 import { h } from "hastscript"
 
-import { insertAfterTroutOrnament } from "../afterArticle"
+import { insertAfterOrnament } from "../afterArticle"
 
-describe("insertAfterTroutOrnament", () => {
-  it("should insert the components after the trout ornament", () => {
+describe("insertAfterOrnament", () => {
+  it("should insert the components after the ornament", () => {
     // Create a mock tree
     const mockTree: Root = {
       type: "root",
       children: [
         h("div", { id: "some-other-div" }, "Some content"),
-        h("div", { id: "trout-ornament" }, "Trout Ornament"),
+        h("div", { id: "site-ornament" }, "Site Ornament"),
         h("div", { id: "another-div" }, "More content"),
       ],
     }
@@ -22,7 +22,7 @@ describe("insertAfterTroutOrnament", () => {
     const mockRSS: Element = h("a", { href: "/index.xml", class: "rss-link" }, "Subscribe to RSS")
 
     // Call the function
-    insertAfterTroutOrnament(mockTree, [mockSequenceLinks, mockRSS])
+    insertAfterOrnament(mockTree, [mockSequenceLinks, mockRSS])
 
     // Assert that the components were inserted in the correct position
     expect(mockTree.children).toHaveLength(4)
@@ -36,8 +36,8 @@ describe("insertAfterTroutOrnament", () => {
     )
   })
 
-  it("should not modify the tree if trout ornament is not found", () => {
-    // Create a mock tree without trout ornament
+  it("should not modify the tree if the ornament is not found", () => {
+    // Create a mock tree without the ornament
     const mockTree: Root = {
       type: "root",
       children: [
@@ -51,7 +51,7 @@ describe("insertAfterTroutOrnament", () => {
     const mockRSS: Element = h("a", { href: "/index.xml", class: "rss-link" }, "Subscribe to rss")
 
     // Call the function
-    insertAfterTroutOrnament(mockTree, [mockSequenceLinks, mockRSS])
+    insertAfterOrnament(mockTree, [mockSequenceLinks, mockRSS])
 
     // Assert that the tree was not modified
     expect(mockTree.children).toHaveLength(2)

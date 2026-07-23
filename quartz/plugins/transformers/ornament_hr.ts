@@ -12,7 +12,7 @@ export const ornamentNode: Element = {
   tagName: "div",
   properties: {
     style: "align-items:center;display:flex;justify-content:center;",
-    id: "trout-ornament",
+    id: "site-ornament",
   },
   children: [
     {
@@ -32,7 +32,7 @@ export const ornamentNode: Element = {
         src: "https://assets.koenrane.xyz/Kr(2).png",
         style: "height:var(--ornament-size);",
         alt: "KR",
-        class: "no-select trout-ornament",
+        class: "no-select site-ornament",
       },
     },
     {
@@ -88,7 +88,7 @@ export function maybeInsertOrnament(
     node.properties?.["dataFootnotes"] !== undefined &&
     (node.properties?.className as Array<string>)?.includes("footnotes")
   ) {
-    // <hr/> looks weird right before the trout hr, so remove it.
+    // <hr/> looks weird right before the ornament hr, so remove it.
     // Check if there's a newline and then an HR preceding
     const prevElement = parent.children[index - 1] as Element | Text
     if (
@@ -140,7 +140,7 @@ export function insertOrnamentNode(tree: Root): void {
 }
 
 /**
- * Quartz transformer plugin for adding a trout ornament HR.
+ * Quartz transformer plugin for adding an ornament HR.
  * @returns {QuartzTransformerPlugin} The plugin object.
  */
 type TreeTransformer = (tree: Root) => void
@@ -149,9 +149,9 @@ type PluginReturn = {
   htmlPlugins: () => TreeTransformer[]
 }
 
-export const TroutOrnamentHr: QuartzTransformerPlugin = (): PluginReturn => {
+export const OrnamentHr: QuartzTransformerPlugin = (): PluginReturn => {
   return {
-    name: "TroutOrnamentHr",
+    name: "OrnamentHr",
     htmlPlugins() {
       return [
         () => {

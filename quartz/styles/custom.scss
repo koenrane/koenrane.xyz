@@ -272,7 +272,7 @@ sup {
   line-height: 0; // Don't push other lines away
 }
 
-.trout-ornament {
+.site-ornament {
   width: 3rem;
   margin-top: calc(2 * $base-margin);
   margin-bottom: calc(2 * $base-margin);
@@ -493,7 +493,7 @@ img.favicon {
 
   // Make the anchor icon less bright on dark mode
   &[src$="anchor.svg"] {
-    // Rotate the anchor so that it resembles the trout within-site icon
+    // Rotate the anchor so that it resembles the within-site icon
     // also flip it horizontally
     transform: rotate(-90deg) scaleX(-1) scale(1.2);
     filter: invert(27%);

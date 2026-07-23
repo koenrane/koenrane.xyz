@@ -12,7 +12,7 @@ import { formatTitle } from "../../components/component_utils"
 // 2. renderPreviousPost: Creates previous post link element
 // 3. renderNextPost: Creates next post link element
 // 4. createSequenceLinksDiv: Assembles sequence navigation structure
-// 5. insertAfterTroutOrnament: Inserts sequence links after specific element
+// 5. insertAfterOrnament: Inserts sequence links after specific element
 // 6. SequenceLinksTransformer: Main plugin function
 
 // Key functionality:
@@ -118,15 +118,15 @@ export function createSequenceLinksDiv(
 }
 
 /**
- * Inserts the sequence links div after the trout ornament element in the document tree.
+ * Inserts the sequence links div after the ornament element in the document tree.
  */
-export function insertAfterTroutOrnament(tree: Root, sequenceLinksDiv: Element): void {
+export function insertAfterOrnament(tree: Root, sequenceLinksDiv: Element): void {
   visit(tree, "element", (node: Element, index, parent: Element | null) => {
     if (
       index !== undefined &&
       node.tagName === "div" &&
       node.properties &&
-      node.properties.id === "trout-ornament" &&
+      node.properties.id === "site-ornament" &&
       parent
     ) {
       parent.children.splice(index + 1, 0, sequenceLinksDiv)

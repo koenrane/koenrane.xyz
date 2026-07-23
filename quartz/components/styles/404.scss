@@ -20,7 +20,7 @@
   }
 }
 
-img#trout-reading {
+img#site-reading {
   max-width: 40%;
 
   @media (max-width: $tablet-breakpoint) {
@@ -28,7 +28,7 @@ img#trout-reading {
   }
 }
 
-img#trout-reading-popover {
+img#site-reading-popover {
   max-width: 6em;
   margin-left: calc(3 * $base-margin);
 }

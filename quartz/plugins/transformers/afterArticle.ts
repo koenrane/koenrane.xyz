@@ -36,13 +36,13 @@ const mailLink = h("a", { href: "mailto:koenrane@protonmail.com" }, [
 
 const contactMe = h("div", [h("center", ["email:", h("code", {}, [mailLink])])])
 
-export function insertAfterTroutOrnament(tree: Root, components: Element[]) {
+export function insertAfterOrnament(tree: Root, components: Element[]) {
   visit(tree, "element", (node: Element, index, parent: Element | null) => {
     if (
       index !== undefined &&
       node.tagName === "div" &&
       node.properties &&
-      node.properties.id === "trout-ornament" &&
+      node.properties.id === "site-ornament" &&
       parent
     ) {
       const wrapperDiv = h("div", { class: "after-article-components" }, components)
@@ -70,7 +70,7 @@ export const AfterArticle: QuartzTransformerPlugin = () => {
         }
 
         if (components.length > 0) {
-          insertAfterTroutOrnament(tree, components)
+          insertAfterOrnament(tree, components)
         }
       },
     ],
