@@ -17,7 +17,7 @@ except ImportError:
     import utils as script_utils  # type: ignore
 
 R2_BASE_URL: str = "https://assets.koenrane.xyz"
-R2_BUCKET_NAME: str = "koenrane"
+R2_BUCKET_NAME: str = "koenrane-assets"
 _HOME_DIR = Path(os.environ.get("HOME", os.path.expanduser("~")))
 R2_MEDIA_DIR: Path = _HOME_DIR / "Downloads" / "website-media-r2"
 

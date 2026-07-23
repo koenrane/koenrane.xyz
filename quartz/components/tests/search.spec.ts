@@ -69,7 +69,7 @@ test("Search results appear and can be navigated (lostpixel)", async ({ page }, 
     test.skip()
   }
 
-  await search(page, "Steering")
+  await search(page, "reviews")
   // Add wait to ensure search results are fully processed
   await page.waitForTimeout(debounceSearchDelay + 100)
 
@@ -79,7 +79,7 @@ test("Search results appear and can be navigated (lostpixel)", async ({ page }, 
 
   const resultCards = page.locator(".result-card")
   await expect(resultCards.first()).toBeVisible()
-  await expect(resultCards.first()).toContainText("Steering", { timeout: 10000 })
+  await expect(resultCards.first()).toContainText("reviews", { ignoreCase: true, timeout: 10000 })
 
   // Navigate with arrow keys
   await page.keyboard.press("ArrowDown")
@@ -146,7 +146,7 @@ test("Search results are case-insensitive", async ({ page }) => {
 })
 
 test("Search bar is focused after typing", async ({ page }) => {
-  await search(page, "Steering")
+  await search(page, "reviews")
   const searchBar = page.locator("#search-bar")
   await expect(searchBar).toBeFocused()
 })
@@ -162,10 +162,10 @@ test("Search results work for a single character", async ({ page }) => {
 
 test.describe("Search accuracy", () => {
   const searchTerms = [
-    { term: "Josh Turner" },
-    { term: "The Pond" },
-    { term: "United States government" },
-    { term: "gwern" },
+    { term: "Koen Rane" },
+    { term: "Deep Generalist" },
+    { term: "Book Reviews" },
+    { term: "Whoop" },
   ]
   searchTerms.forEach(({ term }) => {
     test(`Search results prioritize full term matches for ${term}`, async ({ page }) => {
@@ -173,11 +173,11 @@ test.describe("Search accuracy", () => {
 
       const previewContainer = page.locator("#preview-container")
       const firstResult = previewContainer.first()
-      await expect(firstResult).toContainText(term)
+      await expect(firstResult).toContainText(term, { ignoreCase: true })
     })
   })
 
-  const titleTerms = ["AI presidents", "AI President", "Alignment"]
+  const titleTerms = ["Tea Reviews", "Book Reviews", "Deep Generalist"]
   titleTerms.forEach((term) => {
     test(`Title search results are ordered before content search results for ${term}`, async ({
       page,
@@ -191,7 +191,7 @@ test.describe("Search accuracy", () => {
     })
   })
 
-  const previewTerms = ["Shrek", "AI presidents", "virus", "Emoji"]
+  const previewTerms = ["Whoop", "Tea", "Generalist", "Cognition"]
   previewTerms.forEach((term) => {
     test(`Term ${term} is previewed in the viewport`, async ({ page }) => {
       test.skip(!showingPreview(page))
@@ -206,13 +206,13 @@ test.describe("Search accuracy", () => {
     })
   })
 
-  test("Slug search results are ordered before content search results for date-me", async ({
+  test("Slug search results are ordered before content search results for tea-reviews", async ({
     page,
   }) => {
-    await search(page, "date-me")
+    await search(page, "tea-reviews")
 
     const firstResult = page.locator("#preview-container").first()
-    await expect(firstResult).toContainText("wife")
+    await expect(firstResult).toContainText("tea", { ignoreCase: true })
   })
 
   test("Nothing shows up for nonsense search terms", async ({ page }) => {
@@ -223,16 +223,19 @@ test.describe("Search accuracy", () => {
     await expect(resultCards.first()).toContainText("No results")
   })
 
-  test("AI presidents doesn't use dropcap", async ({ page }) => {
+  // No koenrane page currently sets `no_dropcap: true`, so there is no page that
+  // opts out of dropcaps to assert against. Re-enable and point at that page once
+  // one designates `no_dropcap: true` in its frontmatter.
+  test.skip("A page with no_dropcap opts out of the dropcap", async ({ page }) => {
     test.skip(!showingPreview(page))
-    await search(page, "AI presidents")
+    await search(page, "changelog")
 
     const previewElement = page.locator("#preview-container > article")
     await expect(previewElement).toHaveAttribute("data-use-dropcap", "false")
   })
 
   test("Test page does use dropcap", async ({ page }) => {
-    await search(page, "test")
+    await search(page, "feature testing")
 
     const previewElement = page.locator("#preview-container > article")
     await expect(previewElement).toHaveAttribute("data-use-dropcap", "true")
@@ -259,7 +262,7 @@ test("Enter key navigates to first result", async ({ page }) => {
 test("Search URL updates as we select different results", async ({ page }) => {
   test.skip(!showingPreview(page))
 
-  await search(page, "Shrek")
+  await search(page, "reviews")
   const previewContainer = page.locator("#preview-container")
 
   // Hover over the first result and click the preview
@@ -272,7 +275,7 @@ test("Search URL updates as we select different results", async ({ page }) => {
   const firstResultUrl = page.url()
 
   await page.keyboard.press("/")
-  await search(page, "Shrek")
+  await search(page, "reviews")
 
   // Hover over the second result and click the preview
   const secondResult = page.locator(".result-card").nth(1)
@@ -288,13 +291,13 @@ test("Search URL updates as we select different results", async ({ page }) => {
 })
 
 test("Emoji search works and is converted to twemoji (lostpixel)", async ({ page }, testInfo) => {
-  await search(page, "Emoji examples")
+  await search(page, "feature testing")
   // Add wait to ensure search results are fully processed
   await page.waitForTimeout(1500)
 
   const firstResult = page.locator(".result-card").first()
   // Assertion on the title's contents for the first result
-  await expect(firstResult).toContainText("Testing Site Features")
+  await expect(firstResult).toContainText("Site Feature Testing", { ignoreCase: true })
   if (showingPreview(page)) {
     await takeRegressionScreenshot(page, testInfo, "", {
       element: "#preview-container",
@@ -309,7 +312,7 @@ test("Emoji search works and is converted to twemoji (lostpixel)", async ({ page
 
 test("Footnote back arrow is properly replaced (lostpixel)", async ({ page }, testInfo) => {
   test.skip(!showingPreview(page))
-  await search(page, "Testing site")
+  await search(page, "feature testing")
   // Add wait to ensure search results are fully processed
   await page.waitForTimeout(debounceSearchDelay + 100)
 
@@ -330,7 +333,7 @@ test("Footnote back arrow is properly replaced (lostpixel)", async ({ page }, te
 
 test.describe("Image's mix-blend-mode attribute", () => {
   test.beforeEach(async ({ page }) => {
-    await search(page, "Testing site")
+    await search(page, "feature testing")
   })
 
   test("is multiply in light mode", async ({ page }) => {
@@ -347,7 +350,7 @@ test.describe("Image's mix-blend-mode attribute", () => {
 
 // Visual regression testing
 test("Opens the 'testing site features' page (lostpixel)", async ({ page }, testInfo) => {
-  await search(page, "Testing site")
+  await search(page, "feature testing")
   // Add wait to ensure search results are fully processed
   await page.waitForTimeout(debounceSearchDelay + 100)
 
@@ -376,9 +379,9 @@ test("Opens the 'testing site features' page (lostpixel)", async ({ page }, test
 test("Search preview shows after bad entry", async ({ page }) => {
   test.skip(!showingPreview(page))
   await search(page, "zzzzzz")
-  await search(page, "Testing site")
+  await search(page, "feature testing")
   await search(page, "zzzzzz")
-  await search(page, "Testing site")
+  await search(page, "feature testing")
 
   const previewContainer = page.locator("#preview-container")
   await expect(previewContainer).toBeVisible()
@@ -393,7 +396,7 @@ test("Search preview shows after searching, closing, and reopening", async ({ pa
 
   const previewContainer = page.locator("#preview-container")
 
-  await search(page, "Testing site")
+  await search(page, "feature testing")
   await expect(previewContainer).toBeVisible()
 
   await page.keyboard.press("Escape")
@@ -403,15 +406,15 @@ test("Search preview shows after searching, closing, and reopening", async ({ pa
   await page.keyboard.press("/")
   await expect(previewContainer).not.toBeVisible()
 
-  await search(page, "Shrek")
+  await search(page, "reviews")
   await expect(previewContainer).toBeVisible()
 })
 
 test("Show search preview, search invalid, then show again", async ({ page }) => {
   test.skip(!showingPreview(page))
-  await search(page, "Testing site")
+  await search(page, "feature testing")
   await search(page, "zzzzzz")
-  await search(page, "Testing site")
+  await search(page, "feature testing")
 
   const previewContainer = page.locator("#preview-container")
   await expect(previewContainer).toBeVisible()
@@ -421,22 +424,22 @@ test("Show search preview, search invalid, then show again", async ({ page }) =>
   await expect(previewContent).toHaveCount(1)
 })
 
-test("The pond dropcaps, search preview visual regression test (lostpixel)", async ({
+test("Koen Rane dropcaps, search preview visual regression test (lostpixel)", async ({
   page,
 }, testInfo) => {
   test.skip(!showingPreview(page))
 
-  await search(page, "Testing site")
+  await search(page, "feature testing")
   // Add wait to ensure search results are fully processed
   await page.waitForTimeout(1500)
 
-  const searchPondDropcaps = page.locator("#the-pond-dropcaps")
-  await searchPondDropcaps.scrollIntoViewIfNeeded()
+  const searchDropcaps = page.locator("#koen-rane-dropcaps")
+  await searchDropcaps.scrollIntoViewIfNeeded()
 
   // Add wait before screenshot
   await page.waitForTimeout(1000)
   await takeRegressionScreenshot(page, testInfo, "", {
-    element: "#the-pond-dropcaps",
+    element: "#koen-rane-dropcaps",
   })
 })
 
@@ -446,7 +449,7 @@ test("Preview container click navigates to the correct page", async ({ page }) =
   // Set viewport to desktop size to ensure preview is visible
   await page.setViewportSize({ width: tabletBreakpoint + 100, height: 800 })
 
-  await search(page, "Testing site")
+  await search(page, "feature testing")
 
   // Get the URL of the first result for comparison
   const firstResult = page.locator(".result-card").first()
@@ -490,7 +493,7 @@ const navigationMethods = [
 
 navigationMethods.forEach(({ down, up, description }) => {
   test(`maintains focus when navigating with ${description}`, async ({ page }) => {
-    await search(page, "Testing Site Features")
+    await search(page, "feature testing")
 
     const totalResults = await page.locator(".result-card").count()
 
@@ -512,7 +515,7 @@ navigationMethods.forEach(({ down, up, description }) => {
 
 navigationMethods.forEach(({ down, description }) => {
   test(`${description} navigation changes which page you enter`, async ({ page }) => {
-    await search(page, "Testing")
+    await search(page, "feature testing")
 
     await page.keyboard.press(down)
     await page.keyboard.press("Enter")
