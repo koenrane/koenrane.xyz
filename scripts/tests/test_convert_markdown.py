@@ -114,7 +114,7 @@ Content with non-convertible card_image.""",
             """---
 title: Test Post
 date: 2023-10-10
-card_image: https://assets.turntrout.com/images/card_images/image.png
+card_image: https://assets.koenrane.xyz/images/card_images/image.png
 ---
 Content with already processed card_image.""",
             "processed.md",

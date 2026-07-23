@@ -22,7 +22,7 @@ set -l INTERNAL_STATUS $status
 
 # Check external links which I control
 linkchecker $TARGET_FILES \
-    --ignore-url="!^https://(assets\.turntrout\.com|github\.com/alexander-turner/TurnTrout\.com)" \
+    --ignore-url="!^https://(assets\.koenrane\.xyz|github\.com/koenrane/koenrane\.xyz)" \
     --no-warnings \
     --check-extern \
     --threads 30 \

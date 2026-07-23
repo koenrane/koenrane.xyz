@@ -121,8 +121,6 @@ Superintelligence
 TLCAN
 Thiergart
 Tratado
-TurnTrout's
-TurnTrout2018
 Twemoji
 UC
 UX
@@ -310,7 +308,6 @@ GPUs
 LMs
 finetunings
 Chulo
-TurnTrout
 webpage
 Subsubsection
 armour
@@ -489,7 +486,6 @@ scalable
 relatedly
 Ko-fi
 Reddit
-TURNTROUT
 ko-fi
 favicon
 self-stimulator

@@ -218,7 +218,7 @@ a = b + c
 
 Code: A `<figcaption>` element created from the Markdown cue of "Code:".
 
-![Test image.](https://assets.turntrout.com/static/images/posts/goose-majestic.avif)
+![Test image.](https://assets.koenrane.xyz/static/images/posts/goose-majestic.avif)
 Figure: A `<figcaption>` element created from the Markdown cue of "Figure:".
 
 # TABLES
@@ -244,7 +244,7 @@ This footnote has a table.[^table]
        </td>
        <td>
          <p>Cell 2: image and list</p>
-          <img style="width: 25%;" src="https://assets.turntrout.com/static/images/posts/goose-majestic.avif" alt="">
+          <img style="width: 25%;" src="https://assets.koenrane.xyz/static/images/posts/goose-majestic.avif" alt="">
            <ol>
              <li>Ordered list item 1</li>
              <li>Ordered list item 2</li>
@@ -262,7 +262,7 @@ This footnote has a table.[^table]
        <td>
          <p>Cell 4: mixed content</p>
          <p>More text here.</p>
-          <img style="width: 25%;" src="https://assets.turntrout.com/static/images/posts/goose-majestic.avif" alt="">
+          <img style="width: 25%;" src="https://assets.koenrane.xyz/static/images/posts/goose-majestic.avif" alt="">
          <ul>
              <li>list item</li>
          </ul>
@@ -289,14 +289,14 @@ Table: Ensure that word wrapping works properly on table header elements to prev
 
 ## VIDEO
 
-<video autoplay muted loop playsinline aria-label="The baseline RL policy makes a big mess while the AUP policy cleanly destroys the red pellets and finishes the level."><source src="https://assets.turntrout.com/static/images/posts/prune_still-easy_trajectories.mp4" type="video/mp4; codecs=hvc1"><source src="https://assets.turntrout.com/static/images/posts/prune_still-easy_trajectories.webm" type="video/webm"></video>
+<video autoplay muted loop playsinline aria-label="The baseline RL policy makes a big mess while the AUP policy cleanly destroys the red pellets and finishes the level."><source src="https://assets.koenrane.xyz/static/images/posts/prune_still-easy_trajectories.mp4" type="video/mp4; codecs=hvc1"><source src="https://assets.koenrane.xyz/static/images/posts/prune_still-easy_trajectories.webm" type="video/webm"></video>
 
-<video controls width="100%"><source src="https://assets.turntrout.com/alignment-agendas.mp4" type="video/mp4; codecs=hvc1"/>
-<source src="https://assets.turntrout.com/alignment-agendas.webm" type="video/webm"></video>
+<video controls width="100%"><source src="https://assets.koenrane.xyz/alignment-agendas.mp4" type="video/mp4; codecs=hvc1"/>
+<source src="https://assets.koenrane.xyz/alignment-agendas.webm" type="video/webm"></video>
 
 ## AUDIO
 
-<center><audio src="https://assets.turntrout.com/static/audio/batman.mp3" controls> </audio></center>
+<center><audio src="https://assets.koenrane.xyz/static/audio/batman.mp3" controls> </audio></center>
 
 ## TRANSCLUSION
 
@@ -306,7 +306,7 @@ Table: Ensure that word wrapping works properly on table header elements to prev
 ## IMAGES
 ---
 
-![Sample complexity of different kinds of DCTs.](https://assets.turntrout.com/static/images/posts/sample-complexity-dcts.avif){.transparent-image}
+![Sample complexity of different kinds of DCTs.](https://assets.koenrane.xyz/static/images/posts/sample-complexity-dcts.avif){.transparent-image}
 
 Figure: This image should be transparent in light mode and have a light background in dark mode.
 
@@ -349,7 +349,7 @@ Here's a link to [another page](/shard-theory) with popover preview. [This same-
 
 ## EXTERNAL LINKS WITH FAVICONS
 
-Check out [GitHub](https://github.com). <img src="https://assets.turntrout.com/static/images/external-favicons/matsprogram_org.avif" class="favicon no-span" alt="">
+Check out [GitHub](https://github.com). <img src="https://assets.koenrane.xyz/static/images/external-favicons/matsprogram_org.avif" class="favicon no-span" alt="">
 
 Links ending [with code tags should still wrap OK: `code.`](#external-links-with-favicons)
 
@@ -426,7 +426,7 @@ He came in 1st but I came in 5,300,251st. :(
       <span style="color: blue;">Blue</span>
       <span style="color: purple;">Purple</span>
     </div>
-    <center><img src="https://assets.turntrout.com/twemoji/1f970.svg" style="max-width: 100px; max-height: 100px; margin-top: 1rem; filter: none;" alt="Smiling Face With Hearts on Twitter"/></center>
+    <center><img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f970.svg" style="max-width: 100px; max-height: 100px; margin-top: 1rem; filter: none;" alt="Smiling Face With Hearts on Twitter"/></center>
   </span>
   <span id="dark-demo" class="dark-mode" style="border-radius: 5px; padding: 1rem 2rem; border: 2px var(--midground) solid;">
     <center>Dark mode</center>
@@ -438,7 +438,7 @@ He came in 1st but I came in 5,300,251st. :(
       <span style="color: blue;">Blue</span>
       <span style="color: purple;">Purple</span>
     </div>
-    <center><img src="https://assets.turntrout.com/twemoji/1f970.svg" style="max-width: 100px; max-height: 100px; margin-top: 1rem; mix-blend-mode: normal;" alt="Smiling Face With Hearts on Twitter"/></center>
+    <center><img src="https://cdn.jsdelivr.net/gh/jdecked/twemoji@15.1.0/assets/svg/1f970.svg" style="max-width: 100px; max-height: 100px; margin-top: 1rem; mix-blend-mode: normal;" alt="Smiling Face With Hearts on Twitter"/></center>
   </span>
 </div>
 <figcaption>The palettes for light and dark mode. In dark mode, I decrease the saturation of image assets.</figcaption>

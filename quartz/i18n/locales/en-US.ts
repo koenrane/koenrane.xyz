@@ -2,7 +2,7 @@ import { type Translation } from "./definition"
 
 export default {
   propertyDefaults: {
-    title: "The Pond",
+    title: "koenrane.xyz",
     description: "Writings about doing good, thinking well, and living happily.",
   },
   components: {

@@ -88,7 +88,7 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
               <meta property="og:title" content="${title}">
               <meta property="og:type" content="article">
               <meta property="og:url" content="${redirUrl}">
-              <meta property="og:site_name" content="The Pond">
+              <meta property="og:site_name" content="koenrane.xyz">
               <meta property="og:description" content="${description}">
               <meta property="og:image" content="${cardImage}">
               <meta property="og:image:width" content="1200">

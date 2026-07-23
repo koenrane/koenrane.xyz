@@ -36,7 +36,7 @@ export const NotFoundPage: QuartzEmitterPlugin = () => {
       const url = new URL(`https://${cfg.baseUrl ?? ""}`)
       const path = url.pathname as FullSlug
       const externalResources = pageResources(path, resources)
-      const notFound = "That page doesn't exist. But don't leave! There are other fish in the pond."
+      const notFound = "That page doesn't exist. But don't leave! There's plenty more to explore."
       const [tree, vfile] = defaultProcessedContent({
         slug,
         text: notFound,

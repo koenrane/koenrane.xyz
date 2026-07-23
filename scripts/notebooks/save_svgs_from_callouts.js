@@ -1,9 +1,11 @@
 import * as fs from "fs"
 import * as path from "path"
+import { fileURLToPath } from "url"
 
-const TURNTROUT_DIR = "/Users/turntrout/Downloads/turntrout.com"
-const CALLOUTS_FILE = `${TURNTROUT_DIR}/quartz/styles/callouts.scss`
-const ICONS_DIR = `${TURNTROUT_DIR}/quartz/static/icons`
+// Resolve the repo root relative to this script (scripts/notebooks/ -> repo root)
+const REPO_DIR = path.resolve(path.dirname(fileURLToPath(import.meta.url)), "..", "..")
+const CALLOUTS_FILE = `${REPO_DIR}/quartz/styles/callouts.scss`
+const ICONS_DIR = `${REPO_DIR}/quartz/static/icons`
 
 // Ensure icons directory exists
 if (!fs.existsSync(ICONS_DIR)) {

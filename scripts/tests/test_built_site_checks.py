@@ -131,8 +131,8 @@ def sample_html() -> str:
     <html>
     <body>
         <a href="http://localhost:8000">Localhost Link</a>
-        <a href="https://turntrout.com">Turntrout Link</a>
-        <a href="/other-page#invalid-anchor">Turntrout Link with Anchor</a>
+        <a href="https://koenrane.xyz">External Link</a>
+        <a href="/other-page#invalid-anchor">External Link with Anchor</a>
         <a href="#valid-anchor">Valid Anchor</a>
         <a href="#invalid-anchor">Invalid Anchor</a>
         <div id="valid-anchor">Valid Anchor Content</div>
@@ -559,7 +559,7 @@ def test_check_file_for_issues(tmp_path):
 
 complicated_blockquote = """
 <blockquote class="callout quote" data-callout="quote">
-<div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"> <a href="https://www.lesswrong.com/posts/2JJtxitp6nqu6ffak/basic-facts-about-language-models-during-training-1#Residual_stream_outliers_grow_rapidly_then_stabilize_and_decline" class="external alias" target="_blank">Basic facts about language models during trai<span style="white-space:nowrap;">ning<img src="https://assets.turntrout.com/static/images/external-favicons/lesswrong_com.avif" class="favicon" alt=""></span></a> &gt; <img src="https://assets.turntrout.com/static/images/posts/m1uteifqbbyox6qp9xnx.avif" alt="" loading="lazy"></div></div>
+<div class="callout-title"><div class="callout-icon"></div><div class="callout-title-inner"> <a href="https://www.lesswrong.com/posts/2JJtxitp6nqu6ffak/basic-facts-about-language-models-during-training-1#Residual_stream_outliers_grow_rapidly_then_stabilize_and_decline" class="external alias" target="_blank">Basic facts about language models during trai<span style="white-space:nowrap;">ning<img src="https://assets.koenrane.xyz/static/images/external-favicons/lesswrong_com.avif" class="favicon" alt=""></span></a> &gt; <img src="https://assets.koenrane.xyz/static/images/posts/m1uteifqbbyox6qp9xnx.avif" alt="" loading="lazy"></div></div>
 </blockquote>
 """
 
@@ -1383,7 +1383,7 @@ def test_check_unprocessed_dashes(html, expected):
         ("<p>Math like 2 < x > 1</p>", []),
         # Complex case with nested elements
         (
-            """<p>&lt;video autoplay loop muted playsinline src="<a href="https://assets.turntrout.com/static/images/posts/safelife2.mp4" class="external alias" target="_blank">https://assets.turntrout.com/static/images/posts/safelife2.<abbr class="small-caps">mp4</abbr><span style="white-space:nowrap;">"<img src="https://assets.turntrout.com/static/images/turntrout-favicons/favicon.ico" class="favicon" alt=""></span></a> style="width: 100%; height: 100%; object-fit: cover; margin: 0" ／type="video/<abbr class="small-caps">mp4</abbr>"&gt;<source src="https://assets.turntrout.com/static/images/posts/safelife2.mp4" type="video/mp4; codecs=hvc1"></p>""",
+            """<p>&lt;video autoplay loop muted playsinline src="<a href="https://assets.koenrane.xyz/static/images/posts/safelife2.mp4" class="external alias" target="_blank">https://assets.koenrane.xyz/static/images/posts/safelife2.<abbr class="small-caps">mp4</abbr><span style="white-space:nowrap;">"<img src="https://assets.koenrane.xyz/static/images/external-favicons/favicon.ico" class="favicon" alt=""></span></a> style="width: 100%; height: 100%; object-fit: cover; margin: 0" ／type="video/<abbr class="small-caps">mp4</abbr>"&gt;<source src="https://assets.koenrane.xyz/static/images/posts/safelife2.mp4" type="video/mp4; codecs=hvc1"></p>""",
             [
                 "Unrendered HTML ['<video ']: <video autoplay loop muted playsinline src=\""
             ],
@@ -2417,12 +2417,12 @@ def test_check_file_for_issues_with_fonts(tmp_path):
             """,
             [],
         ),
-        # Test valid assets.turntrout.com domain
+        # Test valid assets.koenrane.xyz domain
         (
             """
-            <img src="https://assets.turntrout.com/image.jpg">
-            <video src="https://assets.turntrout.com/video.mp4">
-            <source src="https://assets.turntrout.com/audio.mp3">
+            <img src="https://assets.koenrane.xyz/image.jpg">
+            <video src="https://assets.koenrane.xyz/video.mp4">
+            <source src="https://assets.koenrane.xyz/audio.mp3">
             """,
             [],
         ),
@@ -2440,7 +2440,7 @@ def test_check_file_for_issues_with_fonts(tmp_path):
         # Test protocol-relative URLs
         (
             """
-            <img src="https://assets.turntrout.com/image.jpg">
+            <img src="https://assets.koenrane.xyz/image.jpg">
             <img src="https://example.com/image.jpg">
             """,
             [
@@ -2450,7 +2450,7 @@ def test_check_file_for_issues_with_fonts(tmp_path):
         # Test SVG elements
         (
             """
-            <svg src="https://assets.turntrout.com/icon.svg"></svg>
+            <svg src="https://assets.koenrane.xyz/icon.svg"></svg>
             <svg src="https://example.com/icon.svg"></svg>
             """,
             [
@@ -2462,7 +2462,7 @@ def test_check_file_for_issues_with_fonts(tmp_path):
             """
             <div>
                 <img src="/local/image.jpg">
-                <img src="https://assets.turntrout.com/valid.jpg">
+                <img src="https://assets.koenrane.xyz/valid.jpg">
                 <img src="https://invalid.com/image.jpg">
                 <video src="another.com/video.mp4"></video>
             </div>
@@ -3234,9 +3234,9 @@ def test_check_video_source_order_and_match(
             ],
         ),
         (
-            '<a class="external" href="https://%E2%80%8B!%5B%5D(https://assets.turntrout.com/static/images/posts/x3myqQ1.avif">Malformed 2</a>',
+            '<a class="external" href="https://%E2%80%8B!%5B%5D(https://assets.koenrane.xyz/static/images/posts/x3myqQ1.avif">Malformed 2</a>',
             [
-                "Syntactically invalid href: https://%E2%80%8B!%5B%5D(https://assets.turntrout.com/static/images/posts/x3myqQ1.avif"
+                "Syntactically invalid href: https://%E2%80%8B!%5B%5D(https://assets.koenrane.xyz/static/images/posts/x3myqQ1.avif"
             ],
         ),
         (

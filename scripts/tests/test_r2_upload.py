@@ -88,7 +88,7 @@ def test_media_setup(tmp_path: Path, monkeypatch: pytest.MonkeyPatch):
 
 @pytest.fixture
 def mock_git_root(monkeypatch: pytest.MonkeyPatch, tmp_path: Path) -> Path:
-    project_root = tmp_path / "turntrout.com"
+    project_root = tmp_path / "koenrane.xyz"
 
     # Create a mock Repo object
     mock_repo = MagicMock()
@@ -289,10 +289,10 @@ def test_upload_and_move(
     for (file_path, _), expected_content in zip(
         md_files,
         [
-            "Here's an image: ![](https://assets.turntrout.com/static/test.jpg)",
-            "Multiple images: ![](https://assets.turntrout.com/static/test.jpg) ![](https://assets.turntrout.com/static/test.jpg)",
-            "Here's a path which starts with a dot: ![](https://assets.turntrout.com/static/test.jpg)",
-            "Standard: ![](https://assets.turntrout.com/static/test.jpg)\nMultiple: ![](https://assets.turntrout.com/static/test.jpg) ![](https://assets.turntrout.com/static/test.jpg)\nNo match: ![](quartz/static/other.jpg)\nInline: This is an inline ![](https://assets.turntrout.com/static/test.jpg) image.",
+            "Here's an image: ![](https://assets.koenrane.xyz/static/test.jpg)",
+            "Multiple images: ![](https://assets.koenrane.xyz/static/test.jpg) ![](https://assets.koenrane.xyz/static/test.jpg)",
+            "Here's a path which starts with a dot: ![](https://assets.koenrane.xyz/static/test.jpg)",
+            "Standard: ![](https://assets.koenrane.xyz/static/test.jpg)\nMultiple: ![](https://assets.koenrane.xyz/static/test.jpg) ![](https://assets.koenrane.xyz/static/test.jpg)\nNo match: ![](quartz/static/other.jpg)\nInline: This is an inline ![](https://assets.koenrane.xyz/static/test.jpg) image.",
         ],
     ):
         assert file_path.read_text().strip() == expected_content.strip()
@@ -342,7 +342,7 @@ def test_main_upload_all_custom_filetypes(
 
         md_content: str = test_md.read_text()
         for file in ("file4.png", "file5.jpg"):
-            assert f"https://assets.turntrout.com/static/{file}" in md_content
+            assert f"https://assets.koenrane.xyz/static/{file}" in md_content
 
         # Check if rclone was called for both PNG and JPG files
         assert any(
@@ -445,7 +445,7 @@ def test_preserve_path_structure_with_replacement(
 
         updated_md_content = md_file.read_text()
         assert (
-            "![Test Image](https://assets.turntrout.com/static/images/test_static.jpg)"
+            "![Test Image](https://assets.koenrane.xyz/static/images/test_static.jpg)"
             in updated_md_content
         )
 
@@ -714,7 +714,7 @@ def test_update_markdown_references_with_links(
     md_file = content_dir / "test.md"
     md_file.write_text(md_content)
 
-    r2_address = "https://assets.turntrout.com/static/docs/doc.pdf"
+    r2_address = "https://assets.koenrane.xyz/static/docs/doc.pdf"
 
     r2_upload.update_markdown_references(
         test_file, r2_address, references_dir=content_dir
@@ -729,7 +729,7 @@ def test_update_markdown_references_with_links(
 def test_update_markdown_references_no_references_dir():
     """Test handling when no references directory is provided."""
     test_file = Path("quartz/static/test.jpg")
-    r2_address = "https://assets.turntrout.com/static/test.jpg"
+    r2_address = "https://assets.koenrane.xyz/static/test.jpg"
 
     # Should not raise any errors
     r2_upload.update_markdown_references(test_file, r2_address)
@@ -749,7 +749,7 @@ def test_update_markdown_references_verbose_output(
     md_file = content_dir / "test.md"
     md_file.write_text("![](quartz/static/test.jpg)")
 
-    r2_address = "https://assets.turntrout.com/static/test.jpg"
+    r2_address = "https://assets.koenrane.xyz/static/test.jpg"
 
     r2_upload.update_markdown_references(
         test_file, r2_address, references_dir=content_dir, verbose=True

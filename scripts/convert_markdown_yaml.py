@@ -67,7 +67,7 @@ _DOWNLOAD_HEADERS = {
         "AppleWebKit/537.36 (KHTML, like Gecko) "
         "Chrome/91.0.4472.124 Safari/537.36"
     ),
-    "Referer": "https://turntrout.com/",
+    "Referer": "https://koenrane.xyz/",
 }
 
 
@@ -204,7 +204,7 @@ def process_card_image_in_markdown(md_file: Path) -> None:
         or not any(
             card_image_url.endswith(ext) for ext in _CAN_CONVERT_EXTENSIONS
         )
-        or card_image_url.startswith("https://assets.turntrout.com/")
+        or card_image_url.startswith("https://assets.koenrane.xyz/")
     ):
         return
 
