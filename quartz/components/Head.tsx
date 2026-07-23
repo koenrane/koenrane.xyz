@@ -77,10 +77,7 @@ export default (() => {
         <meta property="og:image" content={cardImage} />
         <meta property="og:image:width" content="1200" />
         <meta property="og:image:height" content="630" />
-        <meta
-          property="og:image:alt"
-          content="A pond containing a trout and a goose peacefully swimming near a castle."
-        />
+        <meta property="og:image:alt" content="A circular KR fractal." />
       </>
     )
 

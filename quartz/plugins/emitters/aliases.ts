@@ -100,7 +100,7 @@ export const AliasRedirects: QuartzEmitterPlugin = () => ({
               <meta name="twitter:title" content="${title}">
               <meta name="twitter:description" content="${description}">
               <meta name="twitter:image" content="${cardImage}">
-              <meta name="twitter:site" content="@Turn_Trout">
+              <meta name="twitter:site" content="@KoenRane">
               ${
                 authors
                   ? `
