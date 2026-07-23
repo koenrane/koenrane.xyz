@@ -129,7 +129,7 @@ body {
   --font-text-italic: "Source Serif 4", serif;
   --font-text-header: "Source Serif 4", "Times New Roman", serif;
   --font-text-swash: "Source Serif 4", cursive;
-  --font-bad-handwriting: "BadHandwriting";*/
+  --font-bad-handwriting: "BadHandwriting"; */
 
 body {
   // Dropcap fonts - keeping EBGaramond decorative initials for stylized drop caps
@@ -223,7 +223,7 @@ em {
   font-feature-settings: "frac" 1;
   line-height: normal;
   font-size: 1.2rem;
-  font-family: "Source Serif 4", serif; //changed from EBGaramond12
+  font-family: "Source Serif 4", serif; // changed from EBGaramond12
   vertical-align: -10%;
 }
 
@@ -315,9 +315,9 @@ code {
 }
 
 .text-ornament {
-  font-family: "Source Serif 4", serif; //changed from EBGaramond12
+  font-family: "Source Serif 4", serif; // changed from EBGaramond12
   font-size: 5rem;
-  filter: none !important; //no filter
+  filter: none !important; // no filter
   color: var(--midground);
   opacity: 1;
 }

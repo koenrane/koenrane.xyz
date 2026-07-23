@@ -181,8 +181,7 @@ hr.desktop-only {
 
     @media all and (max-width: $max-mobile-width) {
       flex-direction: column;
-      overflow-x: visible;
-      overflow-y: visible;
+      overflow: visible;
       gap: 0;
       height: auto;
       min-height: 0;
@@ -265,8 +264,7 @@ hr.desktop-only {
       flex: 1 1 $page-width;
       max-width: $page-width;
       min-width: 0; /* Critical: allows flex item to shrink below content size */
-      overflow-x: hidden;
-      overflow-y: visible; /* Allow vertical scrolling */
+      overflow: hidden visible; /* Allow vertical scrolling */
       width: 100%;
 
       @media all and (max-width: $max-mobile-width) {

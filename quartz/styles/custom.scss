@@ -112,7 +112,7 @@ dd {
   margin-top: 0;
   margin-left: $list-padding-left;
   margin-bottom: calc(2 * $base-margin);
-  word-wrap: break-word;
+  overflow-wrap: break-word;
 
   & > p:first-child {
     margin-top: 0;
@@ -234,7 +234,7 @@ p:has(+ ul) {
 a {
   color: var(--color-link);
   white-space: normal;
-  word-break: break-word;
+  overflow-wrap: break-word;
   hyphens: auto;
   margin-top: 0;
   text-underline-offset: 2.5px; // Default underline too close to text
@@ -276,7 +276,7 @@ sup {
   width: 3rem;
   margin-top: calc(2 * $base-margin);
   margin-bottom: calc(2 * $base-margin);
-  filter: none !important; //no filter
+  filter: none !important; // no filter
   opacity: 1; // no opacity, logo as is
 }
 
@@ -340,8 +340,6 @@ figure,
   margin: 2rem 0 0;
   text-align: center;
   overflow-wrap: break-word;
-  word-wrap: break-word;
-  word-break: break-word;
   max-width: 100%;
   box-sizing: border-box;
   width: 100%; /* Force it to take container width, not intrinsic width */
@@ -1053,7 +1051,7 @@ iframe {
   padding: $base-margin;
 
   h3 {
-    margin: 0 0 calc(0.5 * $base-margin) 0;
+    margin: 0 0 calc(0.5 * $base-margin);
     font-size: 1.1em;
     color: var(--darkgray);
     font-weight: 600;

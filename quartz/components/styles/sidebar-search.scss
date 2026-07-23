@@ -11,8 +11,9 @@
 
   & > #search-icon {
     background-color: transparent;
+
     // border: 1px solid var(--midground-faint);
-    border-radius: 0px;
+    border-radius: 0;
     height: 1.5rem;
     width: 100%;
     display: flex;
@@ -24,6 +25,14 @@
 
     &:hover {
       border-color: var(--midground);
+
+      & svg .search-path {
+        stroke: var(--foreground);
+      }
+
+      & > p {
+        color: var(--foreground);
+      }
     }
 
     & > p {
@@ -47,16 +56,6 @@
         stroke: var(--midground);
         stroke-width: 2px;
         transition: stroke 0.3s ease;
-      }
-    }
-
-    &:hover {
-      & svg .search-path {
-        stroke: var(--foreground);
-      }
-
-      & > p {
-        color: var(--foreground);
       }
     }
   }

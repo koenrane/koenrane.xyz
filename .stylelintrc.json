@@ -5,6 +5,9 @@
     "no-invalid-double-slash-comments": null,
     "no-descending-specificity": null,
     "function-no-unknown": null,
-    "scss/function-no-unknown": true
+    "scss/function-no-unknown": true,
+    "property-no-vendor-prefix": null,
+    "media-feature-range-notation": "prefix",
+    "selector-class-pattern": null
   }
 }

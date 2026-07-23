@@ -10,10 +10,9 @@
     background-color: var(--background);
     margin: 0;
     display: flex;
-    flex-direction: row;
+    flex-flow: row nowrap;
     gap: 2px;
     align-items: center;
-    flex-wrap: nowrap;
     overflow-x: auto;
     justify-content: center; // Center the buttons
 
@@ -136,6 +135,7 @@
       flex-direction: column;
       gap: 0;
     }
+
     // Mobile-only search and dark mode ---------------------------------------------------------/
     .mobile-controls {
       padding: calc(0.5 * $base-margin);
@@ -368,6 +368,7 @@
   justify-content: space-between;
   align-items: center;
   padding: calc(1 * $base-margin) 0;
+
   // border-bottom: 1px solid var(--midground-faintest);
   margin-bottom: calc(2 * $base-margin);
 

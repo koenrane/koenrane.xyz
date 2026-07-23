@@ -20,7 +20,7 @@
   --midground-strong: #d24646; // frappeColors.subtext-1
   --foreground: #f7f7f7; // frappeColors.text, modified
   --secondary: #262626; // frappeColors.blue
-  --tertiary: #dddddd; // custom color
+  --tertiary: #ddd; // custom color
   --highlight: #949cbb30; // frappeColors.overlay-2 at 20% opacity
 
   & img,
@@ -53,7 +53,7 @@
   --midground-strong: #d24646; // latteColors.subtext-1
   --foreground: #161616; // latteColors.text
   --secondary: #161616; // latteColors.blue
-  --tertiary: #333333; // custom color
+  --tertiary: #333; // custom color
   --highlight: #7c7f9324; // latteColors.overlay-2 at 20% opacity
 
   & img:not([src$=".svg"]), // don't make SVGs fuzzy
