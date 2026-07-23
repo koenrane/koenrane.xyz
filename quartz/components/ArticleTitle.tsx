@@ -1,4 +1,3 @@
-import React from "react"
 import type { JSX } from "preact"
 
 import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
@@ -21,7 +20,6 @@ function wrapYearDates(text: string): JSX.Element[] {
   while ((match = yearRegex.exec(text)) !== null) {
     const beforeYear = match[1] // Character before year (or empty)
     const year = match[3] // The year itself
-    const afterYear = match[4] // Character after year (or empty)
     const matchStart = match.index
 
     // Add text before this match (including the character before the year)

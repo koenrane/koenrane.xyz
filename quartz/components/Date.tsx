@@ -1,8 +1,6 @@
 // skipcq: JS-W1028, JS-W1028
 import type { JSX } from "preact"
 
-import React from "react"
-
 import { type GlobalConfiguration } from "../cfg"
 import { type ValidLocale } from "../i18n"
 import { type QuartzPluginData } from "../plugins/vfile"

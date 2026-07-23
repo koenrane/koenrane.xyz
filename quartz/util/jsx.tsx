@@ -3,7 +3,6 @@ import type { JSX } from "preact"
 
 import { type Components, type Jsx, toJsxRuntime } from "hast-util-to-jsx-runtime"
 import { Fragment, jsx, jsxs } from "preact/jsx-runtime"
-import * as React from "react"
 
 import type { FilePath } from "./path"
 

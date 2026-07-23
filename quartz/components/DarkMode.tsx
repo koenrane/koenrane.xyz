@@ -1,4 +1,3 @@
-import React from "react"
 import darkmodeStyle from "./styles/darkmode.scss"
 import { type QuartzComponent, type QuartzComponentConstructor } from "./types"
 

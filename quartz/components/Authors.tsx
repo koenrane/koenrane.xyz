@@ -1,5 +1,3 @@
-import React from "react"
-
 import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 import { type GlobalConfiguration } from "../cfg"
@@ -11,7 +9,7 @@ const Authors: QuartzComponent = ({ fileData, cfg }: QuartzComponentProps) => {
   }
 
   // file's creation/modification date
-  let authors = fileData.dates?.created
+  const authors = fileData.dates?.created
     ? new Date(fileData.dates.created).toISOString().split("T")[0]
     : new Date().toISOString().split("T")[0]
 

@@ -15,8 +15,8 @@ import TagContent from "./pages/TagContent"
 import PublicationDate from "./PublicationDate"
 import RecentNotes from "./RecentNotes"
 import Search from "./Search"
-import TableOfContents from "./TableOfContents"
 import SettingsMenuComponent from "./SettingsMenu"
+import TableOfContents from "./TableOfContents"
 import TagsBeforeBody from "./TagsBeforeBody"
 
 export {

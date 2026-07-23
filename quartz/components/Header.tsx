@@ -1,5 +1,3 @@
-import React from "react"
-
 import style from "./styles/header.scss"
 import { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 

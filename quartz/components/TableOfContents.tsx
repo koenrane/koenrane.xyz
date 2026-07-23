@@ -9,7 +9,6 @@ import type { RootContent, Parent, Text, Element, Root } from "hast"
 import type { JSX } from "preact"
 
 import { fromHtml } from "hast-util-from-html"
-import React from "react"
 
 import { createLogger } from "../plugins/transformers/logger_utils"
 import { type TocEntry } from "../plugins/transformers/toc"

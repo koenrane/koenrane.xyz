@@ -1,7 +1,6 @@
 // skipcq: JS-W1028
 import { JSX } from "preact"
 // skipcq: JS-C1003
-import * as React from "react"
 
 import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "../types"
 

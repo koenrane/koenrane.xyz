@@ -1,5 +1,4 @@
 // skipcq: JS-W1028
-import React from "react"
 
 // @ts-expect-error Not a module but a script
 import clipboardScript from "./scripts/clipboard.inline"

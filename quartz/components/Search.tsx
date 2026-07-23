@@ -1,4 +1,3 @@
-import React from "react"
 import searchStyle from "./styles/sidebar-search.scss"
 import { type QuartzComponent, type QuartzComponentConstructor } from "./types"
 

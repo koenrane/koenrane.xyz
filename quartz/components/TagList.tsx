@@ -1,5 +1,3 @@
-import React from "react"
-
 import { type QuartzPluginData } from "../plugins/vfile"
 import { classNames } from "../util/lang"
 import { slugTag } from "../util/path"

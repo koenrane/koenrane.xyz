@@ -1,8 +1,7 @@
-import React from "react"
-
 import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
-import { getTags } from "./TagList"
+
 import { slugTag } from "../util/path"
+import { getTags } from "./TagList"
 
 // Component to display tags between article title and publication date
 const TagsBeforeBody: QuartzComponent = ({ fileData }: QuartzComponentProps) => {

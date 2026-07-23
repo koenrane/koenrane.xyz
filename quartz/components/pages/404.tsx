@@ -1,5 +1,3 @@
-import React from "react"
-
 import notFoundStyle from "../styles/404.scss"
 import { QuartzComponent, QuartzComponentConstructor } from "../types"
 

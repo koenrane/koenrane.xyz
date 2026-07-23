@@ -2,7 +2,6 @@ import type { Element } from "hast"
 
 import { h } from "hastscript"
 import { JSX } from "preact"
-import * as React from "react"
 
 import type { QuartzComponent, QuartzComponentProps } from "../types"
 

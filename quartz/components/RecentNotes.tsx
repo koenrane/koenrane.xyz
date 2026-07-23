@@ -1,5 +1,3 @@
-import React from "react"
-
 import { type GlobalConfiguration } from "../cfg"
 import { i18n } from "../i18n"
 import { type QuartzPluginData } from "../plugins/vfile"

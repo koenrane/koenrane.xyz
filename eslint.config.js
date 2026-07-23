@@ -40,12 +40,21 @@ export default [
   pluginJs.configs.recommended,
   ...tseslint.configs.recommended,
   pluginReact.configs.flat.recommended,
+  // Preact uses the automatic JSX runtime (jsxImportSource: "preact"), so React
+  // does not need to be in scope. Disables react-in-jsx-scope / jsx-uses-react.
+  pluginReact.configs.flat["jsx-runtime"],
 
   {
     settings: {
       react: {
         version: "detect",
       },
+    },
+    // Preact uses lowercase DOM attribute names (spellcheck, crossorigin) and
+    // custom attributes (spa-preserve); React's no-unknown-property rule flags
+    // these as errors, so it does not apply to this Preact codebase.
+    rules: {
+      "react/no-unknown-property": "off",
     },
   },
 ]

@@ -2,7 +2,6 @@ import type { JSX } from "preact"
 
 import { type RootContent, type Parent, type Text, type Element, type Root } from "hast"
 import { fromHtml } from "hast-util-from-html"
-import React from "react"
 
 import { type QuartzPluginData } from "../plugins/vfile"
 import { type FullSlug, type SimpleSlug, resolveRelative, simplifySlug } from "../util/path"

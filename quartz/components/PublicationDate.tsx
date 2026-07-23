@@ -1,5 +1,3 @@
-import React from "react"
-
 import type { QuartzComponent, QuartzComponentConstructor, QuartzComponentProps } from "./types"
 
 import { type GlobalConfiguration } from "../cfg"

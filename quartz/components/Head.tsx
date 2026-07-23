@@ -1,7 +1,6 @@
 /* eslint-disable react/no-unknown-property */
 // (For the spa-preserve attribute)
 // skipcq: JS-W1028
-import React from "react"
 
 import { i18n } from "../i18n"
 import { JSResourceToScriptElement } from "../util/resources"

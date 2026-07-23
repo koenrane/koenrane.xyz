@@ -3,7 +3,6 @@
 import { type Element, type ElementContent, type Root } from "hast"
 import { render } from "preact-render-to-string"
 // skipcq: JS-W1028
-import React from "react"
 import { visit } from "unist-util-visit"
 
 import { type GlobalConfiguration } from "../cfg"
