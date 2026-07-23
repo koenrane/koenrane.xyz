@@ -4,9 +4,11 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+# Disabled: production deploys run via Cloudflare Pages' Git integration,
+# not this workflow. Kept as manual-only (workflow_dispatch) in case a
+# CI-based deploy is ever revived (would need the subfont step fixed first).
 on:
-  push:
-    branches: ["main"]
+  workflow_dispatch:
 
 permissions:
   contents: read
