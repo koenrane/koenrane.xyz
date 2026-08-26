@@ -1,0 +1,3362 @@
+{
+  "http://getguesstimate.com/": {
+    "title": "Guesstimate | A Spreadsheet for the Uncertain",
+    "description": "Plan finances, make strategic decisions, and do risk assessment. Guesstimate uses stochastic models, Monte Carlo simulations, and sensitivity analyses.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:57.006Z"
+  },
+  "http://grugq.tumblr.com/post/62928607375/dread-pirate-roberts-extortion-timeline": {
+    "title": "Dread Pirate Roberts - extortion timeline",
+    "description": "This is interesting in that it might have been a Canadian law enforcement undercover operation. It is a bit convoluted, so I'm not sure I'd buy into it. Its a plausible explanation for how the ID...",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:24.607Z"
+  },
+  "http://grugq.tumblr.com/post/62986125689/maryland-indictment-timeline": {
+    "title": "Maryland Indictment Timeline",
+    "description": "xx / 04 / 2012 - Undercover Agent first contacts Dread Pirate Roberts (DPR) xx / 11 / 2012 - The Employee is hired to admin Silk Road 07 / 12 / 2012 - Undercover agent complains \"small timers, I need...",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:24.540Z"
+  },
+  "http://www.thetednelson.com/": {
+    "title": "The Ted Nelson",
+    "description": "The official home page of Ted Nelson, find out about his work, publications, videos and more.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:11.295Z"
+  },
+  "https://8values.github.io/": {
+    "title": "8values",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.452Z"
+  },
+  "https://a.co/d/8CawLUg": {
+    "title": "Amazon.com",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.031Z"
+  },
+  "https://about/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:40.939Z"
+  },
+  "https://ai-2027.com/": {
+    "title": "AI 2027",
+    "description": "A research-backed AI scenario forecast.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.885Z"
+  },
+  "https://ai-2027.com/research/ai-goals-forecast": {
+    "title": "AI Goals Forecast — AI 2027",
+    "description": "AI 2027 predicts that superhuman AIs will not be aligned to the values and goals intended by their human developers. This supplement justifies that assumption by discussing the possibilities for what goals the AIs end up with.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:48.624Z"
+  },
+  "https://ai-2027.com/research/compute-forecast": {
+    "title": "Compute Forecast — AI 2027",
+    "description": "AI 2027 predicts AIs trained with 1000x more compute than GPT-4 and the internal deployment of hundreds of thousands of AI research assistants by 2027. This supplement introduces the compute production model and the inference compute model behind these predictions.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:51.966Z"
+  },
+  "https://ai-2027.com/research/security-forecast": {
+    "title": "Security Forecast — AI 2027",
+    "description": "AI 2027 predicts AI models will be stolen due to poor security and highly valuable algorithmic secrets will leak through espionage. This supplement justifies why we think this is plausible.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:00.273Z"
+  },
+  "https://ai-2027.com/research/takeoff-forecast": {
+    "title": "Takeoff Forecast — AI 2027",
+    "description": "AI 2027 predicts generally superintelligent AIs in 2028. This supplement introduces our framework for thinking about the progression from AIs that are superhuman coders to generally superintelligent, and justifies why we think it's plausible the progression would take about 1 yea…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:58.236Z"
+  },
+  "https://ai-2027.com/research/timelines-forecast": {
+    "title": "Timelines Forecast — AI 2027",
+    "description": "AI 2027 predicts AIs with superhuman coding ability in 2027. This supplement details our model for forecasting when the Superhuman Coder milestone will be achieved, building off METR's time horizon work, and justifies why we think it’s plausible it is achieved by 2027.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:50.326Z"
+  },
+  "https://ai-2027.com/supplements/ai-goals-forecast": {
+    "title": "AI Goals Forecast — AI 2027",
+    "description": "AI 2027 predicts that superhuman AIs will not be aligned to the values and goals intended by their human developers. This supplement justifies that assumption by discussing the possibilities for what goals the AIs end up with.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:49.012Z"
+  },
+  "https://ai-2027.com/supplements/security-forecast": {
+    "title": "Security Forecast — AI 2027",
+    "description": "AI 2027 predicts AI models will be stolen due to poor security and highly valuable algorithmic secrets will leak through espionage. This supplement justifies why we think this is plausible.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:48.888Z"
+  },
+  "https://ai-2027.com/supplements/takeoff-forecast": {
+    "title": "Takeoff Forecast — AI 2027",
+    "description": "AI 2027 predicts generally superintelligent AIs in 2028. This supplement introduces our framework for thinking about the progression from AIs that are superhuman coders to generally superintelligent, and justifies why we think it's plausible the progression would take about 1 yea…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:49.409Z"
+  },
+  "https://ai-futures.org/": {
+    "title": "AI Futures Project",
+    "description": "Interactive forecasts from the AI Futures Project.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.990Z"
+  },
+  "https://ai.meta.com/": {
+    "title": "AI at Meta: Meta AI Products, Models and Research",
+    "description": "Explore AI at Meta. Use Meta AI to answer questions, create images, and complete tasks for free. Plus AI research, models, and tools for developers.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.139Z"
+  },
+  "https://alignment.anthropic.com/2025/reward-hacking-ooc/": {
+    "title": "Training on Documents about Reward Hacking Induces Reward Hacking",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.849Z"
+  },
+  "https://allenai.org/blog/olmo3": {
+    "title": "Olmo 3: Charting a path through the model flow to lead open-source AI | Ai2",
+    "description": "Our new flagship Olmo 3 model family empowers the open source community with not only state-of-the-art open models, but the entire model flow and full traceability back to training data.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:13.331Z"
+  },
+  "https://andrewmccalip.com/space-datacenters": {
+    "title": "Economics of Orbital vs Terrestrial Data Centers",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:22.531Z"
+  },
+  "https://andymatuschak.org/": {
+    "title": "Andy Matuschak",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.463Z"
+  },
+  "https://annaleptikon.substack.com/p/the-unbearable-lightness-of-lightness?utm_campaign=posts-open-in-app&triedRedirect=true": {
+    "title": "The Unbearable Lightness of Lightness",
+    "description": "Faith in Iron: Why the Value of Lifting Only Reveals Itself After You Leap",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.093Z"
+  },
+  "https://antilop.cc/sr/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.482Z"
+  },
+  "https://apisix.apache.org/": {
+    "title": "Apache APISIX - Open Source API Gateway & AI Gateway",
+    "description": "Apache APISIX is a dynamic, high-performance, open-source API gateway and AI gateway. Features include load balancing, authentication, rate limiting, AI proxying, LLM load balancing, and 100+ plugins.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:19.764Z"
+  },
+  "https://app.grammarly.com/": {
+    "title": "Grammarly",
+    "description": "Grammarly’s free writing app will make sure your messages, documents, and social media posts are clear, mistake-free, and impactful.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.917Z"
+  },
+  "https://arxiv.org/": {
+    "title": "arXiv.org e-Print archive",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.097Z"
+  },
+  "https://arxiv.org/abs/1511.09249": {
+    "title": "On Learning to Think: Algorithmic Information Theory for Novel Combinations of Reinforcement Learning Controllers and Re…",
+    "description": "This paper addresses the general problem of reinforcement learning (RL) in partially observable environments. In 2013, our large RL recurrent neural networks (RNNs) learned from scratch to drive simulated cars from high-dimensional video input. However, real brains are more power…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.404Z"
+  },
+  "https://arxiv.org/abs/1606.06565": {
+    "title": "Concrete Problems in AI Safety",
+    "description": "Rapid progress in machine learning and artificial intelligence (AI) has brought increasing attention to the potential impacts of AI technologies on society. In this paper we discuss one such potential impact: the problem of accidents in machine learning systems, defined as uninte…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.152Z"
+  },
+  "https://arxiv.org/abs/1707.06347": {
+    "title": "Proximal Policy Optimization Algorithms",
+    "description": "We propose a new family of policy gradient methods for reinforcement learning, which alternate between sampling data through interaction with the environment, and optimizing a \"surrogate\" objective function using stochastic gradient ascent. Whereas standard policy gradient method…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:45.662Z"
+  },
+  "https://arxiv.org/abs/1802.08864": {
+    "title": "One Big Net For Everything",
+    "description": "I apply recent work on \"learning to think\" (2015) and on PowerPlay (2011) to the incremental training of an increasingly general problem solver, continually learning to solve new tasks without forgetting previous skills. The problem solver is a single recurrent neural network (or…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.479Z"
+  },
+  "https://arxiv.org/abs/1805.00899": {
+    "title": "AI safety via debate",
+    "description": "To make AI systems broadly useful for challenging real-world tasks, we need them to learn complex human goals and preferences. One approach to specifying complex goals asks humans to judge during training which agent behaviors are safe and useful, but this approach can fail if th…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.033Z"
+  },
+  "https://arxiv.org/abs/1810.08575": {
+    "title": "Supervising strong learners by amplifying weak experts",
+    "description": "Many real world learning tasks involve complex or hard-to-specify objectives, and using an easier-to-specify proxy can lead to poor performance or misaligned behavior. One solution is to have humans provide a training signal by demonstrating or judging performance, but this appro…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:45.544Z"
+  },
+  "https://arxiv.org/abs/2012.07532": {
+    "title": "An overview of 11 proposals for building safe advanced AI",
+    "description": "This paper analyzes and compares 11 different proposals for building safe advanced AI under the current machine learning paradigm, including major contenders such as iterated amplification, AI safety via debate, and recursive reward modeling. Each proposal is evaluated on the fou…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.146Z"
+  },
+  "https://arxiv.org/abs/2210.11416": {
+    "title": "Scaling Instruction-Finetuned Language Models",
+    "description": "Finetuning language models on a collection of datasets phrased as instructions has been shown to improve model performance and generalization to unseen tasks. In this paper we explore instruction finetuning with a particular focus on (1) scaling the number of tasks, (2) scaling t…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.176Z"
+  },
+  "https://arxiv.org/abs/2212.03827": {
+    "title": "Discovering Latent Knowledge in Language Models Without Supervision",
+    "description": "Existing techniques for training language models can be misaligned with the truth: if we train models with imitation learning, they may reproduce errors that humans make; if we train them to generate text that humans rate highly, they may output errors that human evaluators can't…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.048Z"
+  },
+  "https://arxiv.org/abs/2309.15840": {
+    "title": "How to Catch an AI Liar: Lie Detection in Black-Box LLMs by Asking Unrelated Questions",
+    "description": "Large language models (LLMs) can \"lie\", which we define as outputting false statements despite \"knowing\" the truth in a demonstrable sense. LLMs might \"lie\", for example, when instructed to output misinformation. Here, we develop a simple lie detector that requires neither access…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:45.940Z"
+  },
+  "https://arxiv.org/abs/2310.08043": {
+    "title": "Understanding and Controlling a Maze-Solving Policy Network",
+    "description": "To understand the goals and goal representations of AI systems, we carefully study a pretrained reinforcement learning policy that solves mazes by navigating to a range of target squares. We find this network pursues multiple context-dependent goals, and we further identify circu…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:56.905Z"
+  },
+  "https://arxiv.org/abs/2401.05566": {
+    "title": "Sleeper Agents: Training Deceptive LLMs that Persist Through Safety Training",
+    "description": "Humans are capable of strategically deceptive behavior: behaving helpfully in most situations, but then behaving very differently in order to pursue alternative objectives when given the opportunity. If an AI system learned such a deceptive strategy, could we detect it and remove…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.039Z"
+  },
+  "https://arxiv.org/abs/2403.10462": {
+    "title": "Safety Cases: How to Justify the Safety of Advanced AI Systems",
+    "description": "As AI systems become more advanced, companies and regulators will make difficult decisions about whether it is safe to train and deploy them. To prepare for these decisions, we investigate how developers could make a 'safety case,' which is a structured rationale that AI systems…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.157Z"
+  },
+  "https://arxiv.org/abs/2405.05466": {
+    "title": "Poser: Unmasking Alignment Faking LLMs by Manipulating Their Internals",
+    "description": "Like a criminal under investigation, Large Language Models (LLMs) might pretend to be aligned while evaluated and misbehave when they have a good opportunity. Can current interpretability methods catch these 'alignment fakers?' To answer this question, we introduce a benchmark th…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.126Z"
+  },
+  "https://arxiv.org/abs/2406.07358": {
+    "title": "AI Sandbagging: Language Models can Strategically Underperform on Evaluations",
+    "description": "Trustworthy capability evaluations are crucial for ensuring the safety of AI systems, and are becoming a key component of AI regulation. However, the developers of an AI system, or the AI system itself, may have incentives for evaluations to understate the AI's actual capability.…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.027Z"
+  },
+  "https://arxiv.org/abs/2408.08926": {
+    "title": "Cybench: A Framework for Evaluating Cybersecurity Capabilities and Risks of Language Models",
+    "description": "Language Model (LM) agents for cybersecurity that are capable of autonomously identifying vulnerabilities and executing exploits have potential to cause real-world impact. Policymakers, model providers, and researchers in the AI and cybersecurity communities are interested in qua…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:58.297Z"
+  },
+  "https://arxiv.org/abs/2411.15114": {
+    "title": "RE-Bench: Evaluating frontier AI R&D capabilities of language model agents against human experts",
+    "description": "Frontier AI safety policies highlight automation of AI research and development (R&D) by AI agents as an important capability to anticipate. However, there exist few evaluations for AI R&D capabilities, and none that are highly realistic and have a direct comparison to human perf…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.661Z"
+  },
+  "https://arxiv.org/abs/2412.04984": {
+    "title": "Frontier Models are Capable of In-context Scheming",
+    "description": "Frontier models are increasingly trained and deployed as autonomous agent. One safety concern is that AI agents might covertly pursue misaligned goals, hiding their true capabilities and objectives - also known as scheming. We study whether models have the capability to scheme in…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.090Z"
+  },
+  "https://arxiv.org/abs/2412.14093": {
+    "title": "Alignment faking in large language models",
+    "description": "We present a demonstration of a large language model engaging in alignment faking: selectively complying with its training objective in training to prevent modification of its behavior out of training. First, we give Claude 3 Opus a system prompt stating it is being trained to an…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:56.887Z"
+  },
+  "https://arxiv.org/abs/2501.12948": {
+    "title": "DeepSeek-R1: Incentivizing Reasoning Capability in LLMs via Reinforcement Learning",
+    "description": "General reasoning represents a long-standing and formidable challenge in artificial intelligence. Recent breakthroughs, exemplified by large language models (LLMs) and chain-of-thought prompting, have achieved considerable success on foundational reasoning tasks. However, this su…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.549Z"
+  },
+  "https://arxiv.org/abs/2502.15850": {
+    "title": "Forecasting Frontier Language Model Agent Capabilities",
+    "description": "As Language Models (LMs) increasingly operate as autonomous agents, accurately forecasting their capabilities becomes crucial for societal preparedness. We evaluate six forecasting methods that predict downstream capabilities of LM agents. We use \"one-step\" approaches that predic…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.690Z"
+  },
+  "https://arxiv.org/abs/2503.23278": {
+    "title": "Model Context Protocol (MCP): Landscape, Security Threats, and Future Research Directions",
+    "description": "The Model Context Protocol (MCP) is an emerging open standard that defines a unified, bi-directional communication and dynamic discovery protocol between AI models and external tools or resources, aiming to enhance interoperability and reduce fragmentation across diverse systems.…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.593Z"
+  },
+  "https://arxiv.org/abs/2504.01849": {
+    "title": "An Approach to Technical AGI Safety and Security",
+    "description": "Artificial General Intelligence (AGI) promises transformative benefits but also presents significant risks. We develop an approach to address the risk of harms consequential enough to significantly harm humanity. We identify four areas of risk: misuse, misalignment, mistakes, and…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:49.069Z"
+  },
+  "https://arxiv.org/abs/2504.01849?utm_source=substack&utm_medium=email": {
+    "title": "An Approach to Technical AGI Safety and Security",
+    "description": "Artificial General Intelligence (AGI) promises transformative benefits but also presents significant risks. We develop an approach to address the risk of harms consequential enough to significantly harm humanity. We identify four areas of risk: misuse, misalignment, mistakes, and…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.651Z"
+  },
+  "https://arxiv.org/abs/2504.15125": {
+    "title": "Contemplative Artificial Intelligence",
+    "description": "As artificial intelligence (AI) improves, traditional alignment strategies may falter in the face of unpredictable self-improvement, hidden subgoals, and the sheer complexity of intelligent systems. Inspired by contemplative wisdom traditions, we show how four axiomatic principle…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.561Z"
+  },
+  "https://arxiv.org/abs/2505.05522": {
+    "title": "Continuous Thought Machines",
+    "description": "Biological brains demonstrate complex neural activity, where neural dynamics are critical to how brains process information. Most artificial neural networks ignore the complexity of individual neurons. We challenge that paradigm. By incorporating neuron-level processing and synch…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.539Z"
+  },
+  "https://arxiv.org/abs/2506.08872": {
+    "title": "Your Brain on ChatGPT: Accumulation of Cognitive Debt when Using an AI Assistant for Essay Writing Task",
+    "description": "This study explores the neural and behavioral consequences of LLM-assisted essay writing. Participants were divided into three groups: LLM, Search Engine, and Brain-only (no tools). Each completed three sessions under the same condition. In a fourth session, LLM users were reassi…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.896Z"
+  },
+  "https://arxiv.org/abs/2506.21521": {
+    "title": "Potemkin Understanding in Large Language Models",
+    "description": "Large language models (LLMs) are regularly evaluated using benchmark datasets. But what justifies making inferences about an LLM's capabilities based on its answers to a curated set of questions? This paper first introduces a formal framework to address this question. The key is…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.958Z"
+  },
+  "https://arxiv.org/abs/2509.09677": {
+    "title": "The Illusion of Diminishing Returns: Measuring Long Horizon Execution in LLMs",
+    "description": "Does continued scaling of large language models (LLMs) yield diminishing returns? In this work, we show that short-task benchmarks may give an illusion of slowing progress, as even marginal gains in single-step accuracy can compound into exponential improvements in the length of…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.471Z"
+  },
+  "https://arxiv.org/abs/2510.01171": {
+    "title": "Verbalized Sampling: How to Mitigate Mode Collapse and Unlock LLM Diversity",
+    "description": "Post-training alignment often reduces LLM diversity, leading to a phenomenon known as mode collapse. Unlike prior work that attributes this effect to algorithmic limitations, we identify a fundamental, pervasive data-level driver: typicality bias in preference data, whereby annot…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.666Z"
+  },
+  "https://arxiv.org/abs/2510.22510": {
+    "title": "CANDI: Hybrid Discrete-Continuous Diffusion Models",
+    "description": "While continuous diffusion has shown remarkable success in continuous domains such as image generation, its direct application to discrete data has underperformed pure discrete formulations. To understand this gap, we introduce token identifiability, an analytical framework chara…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:21.985Z"
+  },
+  "https://arxiv.org/abs/2511.18659": {
+    "title": "CLaRa: Bridging Retrieval and Generation with Continuous Latent Reasoning",
+    "description": "Retrieval-augmented generation (RAG) enhances large language models (LLMs) with external knowledge but still suffers from long contexts and disjoint retrieval-generation optimization. In this work, we propose CLaRa (Continuous Latent Reasoning), a unified framework that performs…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.677Z"
+  },
+  "https://arxiv.org/abs/2511.21622": {
+    "title": "On the Origin of Algorithmic Progress in AI",
+    "description": "Algorithms have been estimated to increase AI training FLOP efficiency by a factor of 22,000 between 2012 and 2023 [Ho et al., 2024]. Running small-scale ablation experiments on key innovations from this time period, we are able to account for less than 10x of these gains. Survey…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.633Z"
+  },
+  "https://arxiv.org/abs/2512.03262": {
+    "title": "Is Vibe Coding Safe? Benchmarking Vulnerability of Agent-Generated Code in Real-World Tasks",
+    "description": "Vibe coding is a new software development paradigm in which human engineers prompt a large language model (LLM) agent to complete complex coding tasks with little supervision. Although vibe coding is increasingly adopted, is the generated code really safe to deploy in production?…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.514Z"
+  },
+  "https://arxiv.org/html/2504.15546v1": {
+    "title": "A Framework for Testing and Adapting REST APIs as LLM Tools",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.838Z"
+  },
+  "https://arxiv.org/pdf/2107.03374": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:53.692Z"
+  },
+  "https://arxiv.org/pdf/2210.11610": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.643Z"
+  },
+  "https://arxiv.org/pdf/2211.03540": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.890Z"
+  },
+  "https://arxiv.org/pdf/2212.03827": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.930Z"
+  },
+  "https://arxiv.org/pdf/2212.08073": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.836Z"
+  },
+  "https://arxiv.org/pdf/2212.11281": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.411Z"
+  },
+  "https://arxiv.org/pdf/2307.13702": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.017Z"
+  },
+  "https://arxiv.org/pdf/2310.13798": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.843Z"
+  },
+  "https://arxiv.org/pdf/2312.06942": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.887Z"
+  },
+  "https://arxiv.org/pdf/2312.09390": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.081Z"
+  },
+  "https://arxiv.org/pdf/2411.12893": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.494Z"
+  },
+  "https://arxiv.org/pdf/2412.03556": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.584Z"
+  },
+  "https://arxiv.org/pdf/2412.06769": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.510Z"
+  },
+  "https://arxiv.org/pdf/2503.04941": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:54.415Z"
+  },
+  "https://arxiv.org/pdf/2503.14499": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.589Z"
+  },
+  "https://arxiv.org/pdf/2505.10559": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:25.548Z"
+  },
+  "https://arxiv.org/pdf/2506.08872": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:05.457Z"
+  },
+  "https://aws.amazon.com/": {
+    "title": "Cloud Computing Services - Amazon Web Services (AWS)",
+    "description": "Amazon Web Services offers reliable, scalable, and inexpensive cloud computing services. Free to join, pay only for what you use.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:13.415Z"
+  },
+  "https://blog.hubspot.com/website/what-is-progressive-enhancement": {
+    "title": "What is Progressive Enhancement & Why Does it Matter?",
+    "description": "Discover how progressive enhancement can help ensure that your site is accessible for all folks that use it.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:10.777Z"
+  },
+  "https://blogs.dickinson.edu/dcc/2013/03/25/vocabulary-study-with-mnemosyne/": {
+    "title": "Vocabulary Study with Mnemosyne | Dickinson College Commentaries",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.488Z"
+  },
+  "https://blogs.microsoft.com/blog/2023/01/23/microsoftandopenaiextendpartnership/": {
+    "title": "Microsoft and OpenAI extend partnership - The Official Microsoft Blog",
+    "description": "Today, we are announcing the third phase of our long-term partnership with OpenAI through a multiyear, multibillion dollar investment to accelerate AI breakthroughs to ensure these benefits are broadly shared with the world. This agreement follows our previous investments in 2019…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:52.884Z"
+  },
+  "https://blogs.nvidia.com/blog/nvidia-keynote-at-gtc-2025-ai-news-live-updates/": {
+    "title": "GTC 2025 – Announcements and Live Updates",
+    "description": "What’s next in AI is at GTC 2025. Explore the news and live updates from the show, from the keynote to the final session.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:52.294Z"
+  },
+  "https://boomi.com/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.130Z"
+  },
+  "https://carlbarenbrug.com/minimal-design": {
+    "title": "Five Principles for Minimal Design - Carl Barenbrug",
+    "description": "Minimalism in design has been engrained within my thinking ever since I was introduced to the work of Dieter Rams. He revolutionised industrial design in the …",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:10.968Z"
+  },
+  "https://cdn.openai.com/papers/weak-to-strong-generalization.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.256Z"
+  },
+  "https://cerebras.ai/product-chip/": {
+    "title": "Product - Chip - Cerebras",
+    "description": "Meet the Cerebras Wafer-Scale Engine—the world’s largest AI processor. Train deep learning models faster, with lower power consumption and industry-leading efficiency.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:52.622Z"
+  },
+  "https://clang.llvm.org/": {
+    "title": "Clang C Language Family Frontend for LLVM",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.359Z"
+  },
+  "https://cloud.google.com/": {
+    "title": "AI and Cloud Computing Services",
+    "description": "Meet your business challenges head on with AI and cloud computing services from Google, including security, data management, and hybrid & multi-cloud.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.101Z"
+  },
+  "https://cloud.google.com/blog/products/compute/introducing-trillium-6th-gen-tpus": {
+    "title": "Introducing Trillium, sixth-generation TPUs | Google Cloud Blog",
+    "description": "The new sixth-generation Trillium Tensor Processing Unit (TPU) makes it possible to train and serve the next generation of AI foundation models.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:56.278Z"
+  },
+  "https://codepen.io/alvarotrigo/pen/BawBzjM": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:38.434Z"
+  },
+  "https://colab.research.google.com/signup": {
+    "title": "Colab Paid Services Pricing",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.943Z"
+  },
+  "https://contraptions.venkateshrao.com/p/the-extended-internet-universe": {
+    "title": "The Extended Internet Universe",
+    "description": "The Internet is now a very complicated place",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.149Z"
+  },
+  "https://cybench.github.io/": {
+    "title": "Cybench",
+    "description": "Cybench: Evaluating Language Models on Cybersecurity Challenges",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:59.055Z"
+  },
+  "https://danieljeffries.substack.com/p/how-to-build-an-american-deepseek": {
+    "title": "How to Build an American DeepSeek and Why We Need It Now",
+    "description": "The US is Falling Badly Behind in Open Source AI and Real World Robotics and It Could Mean the End of the American Era. But There's Still Time to Turn It Around. Let's Look at How.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.023Z"
+  },
+  "https://darioamodei.com/machines-of-loving-grace": {
+    "title": "Dario Amodei — Machines of Loving Grace",
+    "description": "How AI Could Transform the World for the Better",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.130Z"
+  },
+  "https://dechanic.com/products/dechanic-control-edition-mouse-pad-extended-heavy?variant=10125787717": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:33.896Z"
+  },
+  "https://deepnote.com/": {
+    "title": "Deepnote: Collaborative analytics & data science notebook",
+    "description": "Explore data with Python & SQL, work together with your team, and share insights that lead to action — all in one place with Deepnote.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.189Z"
+  },
+  "https://discord.com/": {
+    "title": "Discord - Group Chat That’s All Fun & Games",
+    "description": "Discord is great for playing games and chilling with friends, or even building a worldwide community. Customize your own space to talk, play, and hang out.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.037Z"
+  },
+  "https://docs.anthropic.com/en/release-notes/system-prompts": {
+    "title": "System prompts",
+    "description": "See updates to the core system prompts on [claude.ai](https://claude.ai) and the [Claude iOS app](https://anthropic.com/ios) and [Claude Android app](https://anthropic.com/android).",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:58.388Z"
+  },
+  "https://docs.conda.io/projects/conda/en/latest/": {
+    "title": "Conda Documentation — conda 26.7.2.dev67 documentation",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.914Z"
+  },
+  "https://docs.google.com/document/d/14PDTL2EVfVCxoQGy3myLwPdZ_ZeLOmKZJ0rK-A4MTCU/edit?": {
+    "title": "[Link-shared] AI R&D automation / takeoff model V2",
+    "description": "Pseudocode for the model GitHub - uvafan/takeoff_modeling_v2 At initialization: EC = effective compute of the latest model is initialized Initialize a pool of N experiments E_1…E_N, each of the form (SD, SP, ED, EM, RT, C, EA, AEM) where Each of the following represents the time…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:57.177Z"
+  },
+  "https://docs.google.com/document/d/1b6IREn9MkRgM5in5qQQcvbmT6Lury0Z5MqhpMRbFAFY/edit?tab=t.0": {
+    "title": "[Link-shared draft] Thoughts on measuring and forecasting algorithmic progress",
+    "description": "Thoughts on measuring and forecasting algorithmic progress Romeo Dean This is an unpublished rough draft link-shared from the AI Futures Model Limitations section and Thomas Larsen’s shortform. I’m unsure how big of a deal these complaints are, how much they are common knowledge,…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.880Z"
+  },
+  "https://docs.google.com/document/d/1rw1pTbLi2brrEP0DcsZMAVhlKp6TKGKNUSFRkkdP_hs/edit?tab=t.0": {
+    "title": "Part 1 - What a compute-centric framework says about takeoff speeds: section 2-5 + appendices",
+    "description": "Link to part 2. Link to part 3. Link to folder. Link to summary. Takeoff speeds report Acknowledgements To Carl Shulman especially for introducing many of the core ideas. Jaime Sevilla, Eduardo Infante Roldán, and others at Epoch for coding up the Full Takeoff Model, creating the…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.628Z"
+  },
+  "https://docs.google.com/spreadsheets/d/1dtvcuK0sG0Gf8F5A1vYLjmOP4q3tSraemyKL4FIKCSs/edit?gid=0": {
+    "title": "2027 - copies/speed",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:53.601Z"
+  },
+  "https://docs.google.com/spreadsheets/d/1Ko-olwjDy6h8rXLZBFpP-e2GibGqRhfV28S4v8xtzrM/edit?gid=1866551567": {
+    "title": "[shared 2024-10-02] AI chip compute forecast",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:53.754Z"
+  },
+  "https://docs.google.com/spreadsheets/d/e/2PACX-1vRwP-rk4fyMo5L00mkJrt989AXA6JYjx_pjrqGnBSWSS_7JJ2S9Yj6ylxYP9-jrYZUxrBs8gXHA02RN/pubhtml": {
+    "title": "Bookantt Chart_v1.6_2025",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:05.316Z"
+  },
+  "https://docs.lib.purdue.edu/cgi/viewcontent.cgi?article=1043&context=jps": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.029Z"
+  },
+  "https://docs.modular.com/max/container": {
+    "title": "MAX container | MAX",
+    "description": "Learn more about the provided Docker container for MAX deployment.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.601Z"
+  },
+  "https://docs.modular.com/max/develop/get-started-with-max-graph-in-python/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.036Z"
+  },
+  "https://docs.modular.com/max/packages": {
+    "title": "Packages | MAX",
+    "description": "Learn how to install MAX tools, set up your environment, and choose between nightly and stable versions",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.445Z"
+  },
+  "https://docs.modular.com/max/packages/": {
+    "title": "Packages | MAX",
+    "description": "Learn how to install MAX tools, set up your environment, and choose between nightly and stable versions",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.407Z"
+  },
+  "https://doi.org/10.1145/3706598.3713778": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:05.804Z"
+  },
+  "https://doi.org/10.48550/arxiv.2410.01396": {
+    "title": "Easy Come, Easy Go? Examining the Perceptions and Learning Effects of LLM-based Chatbot in the Context of Search-as-Lear…",
+    "description": "The cognitive process of Search-as-Learning (SAL) is most effective when searching promotes active encoding of information. The rise of LLMs-based chatbots, which provide instant answers, introduces a trade-off between efficiency and depth of processing. Such answer-centric appro…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:05.752Z"
+  },
+  "https://edwardtufte.github.io/tufte-css/": {
+    "title": "Tufte CSS",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.810Z"
+  },
+  "https://en.m.wikipedia.org/wiki/Lagerstroemia": {
+    "title": "Lagerstroemia - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:24.942Z"
+  },
+  "https://en.wikipedia.org/wiki/Amdahl%27s_law": {
+    "title": "Amdahl's law - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.710Z"
+  },
+  "https://en.wikipedia.org/wiki/Arrival_film": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:41.761Z"
+  },
+  "https://en.wikipedia.org/wiki/Attractor": {
+    "title": "Attractor - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.457Z"
+  },
+  "https://en.wikipedia.org/wiki/Brooks%27s_law": {
+    "title": "Brooks's law - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.788Z"
+  },
+  "https://en.wikipedia.org/wiki/Chaos_theory": {
+    "title": "Chaos theory - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.692Z"
+  },
+  "https://en.wikipedia.org/wiki/Code_signing": {
+    "title": "Code signing - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.721Z"
+  },
+  "https://en.wikipedia.org/wiki/Coffee_Lake": {
+    "title": "Coffee Lake - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:32.508Z"
+  },
+  "https://en.wikipedia.org/wiki/CUDA": {
+    "title": "CUDA - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:16.640Z"
+  },
+  "https://en.wikipedia.org/wiki/Defensive_design": {
+    "title": "Defensive design - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:11.023Z"
+  },
+  "https://en.wikipedia.org/wiki/Dharma": {
+    "title": "Dharma - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.582Z"
+  },
+  "https://en.wikipedia.org/wiki/Dokk%C5%8Dd%C5%8D": {
+    "title": "Dokkōdō - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:22.704Z"
+  },
+  "https://en.wikipedia.org/wiki/ECC_memory": {
+    "title": "ECC memory - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:17.261Z"
+  },
+  "https://en.wikipedia.org/wiki/Eudaimonia": {
+    "title": "Eudaimonia - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.257Z"
+  },
+  "https://en.wikipedia.org/wiki/Expected_utility_hypothesis": {
+    "title": "Expected utility hypothesis - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:58.025Z"
+  },
+  "https://en.wikipedia.org/wiki/Extremely_online": {
+    "title": "Extremely online - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:11.359Z"
+  },
+  "https://en.wikipedia.org/wiki/Floating_point_operations_per_second": {
+    "title": "Floating point operations per second - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.636Z"
+  },
+  "https://en.wikipedia.org/wiki/Free_and_open-source_software": {
+    "title": "Free and open-source software - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.581Z"
+  },
+  "https://en.wikipedia.org/wiki/Gamification": {
+    "title": "Gamification - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:29.610Z"
+  },
+  "https://en.wikipedia.org/wiki/Getting_Things_Done": {
+    "title": "Getting Things Done - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.211Z"
+  },
+  "https://en.wikipedia.org/wiki/Google_Calendar": {
+    "title": "Google Calendar - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:32.205Z"
+  },
+  "https://en.wikipedia.org/wiki/Ikigai": {
+    "title": "Ikigai - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.337Z"
+  },
+  "https://en.wikipedia.org/wiki/Impostor_syndrome": {
+    "title": "Impostor syndrome - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:41.679Z"
+  },
+  "https://en.wikipedia.org/wiki/Instrumental_and_intrinsic_value": {
+    "title": "Instrumental and intrinsic value - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:47.433Z"
+  },
+  "https://en.wikipedia.org/wiki/Jules_Michelet": {
+    "title": "Jules Michelet - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.079Z"
+  },
+  "https://en.wikipedia.org/wiki/Kitsch": {
+    "title": "Kitsch - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:11.241Z"
+  },
+  "https://en.wikipedia.org/wiki/Lindy_effect": {
+    "title": "Lindy effect - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.834Z"
+  },
+  "https://en.wikipedia.org/wiki/Link_rot": {
+    "title": "Link rot - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.042Z"
+  },
+  "https://en.wikipedia.org/wiki/Loss_aversion": {
+    "title": "Loss aversion - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:41.759Z"
+  },
+  "https://en.wikipedia.org/wiki/Marshall_McLuhan": {
+    "title": "Marshall McLuhan - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:22.506Z"
+  },
+  "https://en.wikipedia.org/wiki/Minimalism_(computing)": {
+    "title": "Minimalism (computing) - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.606Z"
+  },
+  "https://en.wikipedia.org/wiki/Mixture_of_experts": {
+    "title": "Mixture of experts - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:53.156Z"
+  },
+  "https://en.wikipedia.org/wiki/Monolithic_application": {
+    "title": "Monolithic application - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.143Z"
+  },
+  "https://en.wikipedia.org/wiki/Moravec%27s_paradox": {
+    "title": "Moravec's paradox - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.309Z"
+  },
+  "https://en.wikipedia.org/wiki/Multi-factor_authentication": {
+    "title": "Multi-factor authentication - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.798Z"
+  },
+  "https://en.wikipedia.org/wiki/Oxygen_saturation_(medicine)": {
+    "title": "Oxygen saturation (medicine) - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:29.386Z"
+  },
+  "https://en.wikipedia.org/wiki/Personal_knowledge_management": {
+    "title": "Personal knowledge management - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.632Z"
+  },
+  "https://en.wikipedia.org/wiki/Photodiode": {
+    "title": "Photodiode - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:29.491Z"
+  },
+  "https://en.wikipedia.org/wiki/Plain_text": {
+    "title": "Plain text - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.690Z"
+  },
+  "https://en.wikipedia.org/wiki/Polaris": {
+    "title": "Polaris - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.405Z"
+  },
+  "https://en.wikipedia.org/wiki/Progressive_disclosure": {
+    "title": "Progressive disclosure - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:10.588Z"
+  },
+  "https://en.wikipedia.org/wiki/Project_Xanadu": {
+    "title": "Project Xanadu - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:11.309Z"
+  },
+  "https://en.wikipedia.org/wiki/Quantified_self": {
+    "title": "Quantified self - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.345Z"
+  },
+  "https://en.wikipedia.org/wiki/Reward_hacking": {
+    "title": "Reward hacking - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:47.501Z"
+  },
+  "https://en.wikipedia.org/wiki/Sandbox_(computer_security)": {
+    "title": "Sandbox (computer security) - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.812Z"
+  },
+  "https://en.wikipedia.org/wiki/Security_information_and_event_management": {
+    "title": "Security information and event management - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:19.910Z"
+  },
+  "https://en.wikipedia.org/wiki/Seven_Pillars_of_Wisdom": {
+    "title": "Seven Pillars of Wisdom - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:41.638Z"
+  },
+  "https://en.wikipedia.org/wiki/Synthetic_data": {
+    "title": "Synthetic data - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.253Z"
+  },
+  "https://en.wikipedia.org/wiki/T._E._Lawrence": {
+    "title": "T. E. Lawrence - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.000Z"
+  },
+  "https://en.wikipedia.org/wiki/Tensor_Processing_Unit": {
+    "title": "Tensor Processing Unit - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:51.226Z"
+  },
+  "https://en.wikipedia.org/wiki/The_Three-Body_Problem_novel": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:41.777Z"
+  },
+  "https://en.wikipedia.org/wiki/The_Time_Machine": {
+    "title": "The Time Machine - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.301Z"
+  },
+  "https://en.wikipedia.org/wiki/TypeScript": {
+    "title": "TypeScript - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.347Z"
+  },
+  "https://en.wikipedia.org/wiki/Web_performance": {
+    "title": "Web performance - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.731Z"
+  },
+  "https://en.wikipedia.org/wiki/Wilson_Mizner": {
+    "title": "Wilson Mizner - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:41.852Z"
+  },
+  "https://en.wikipedia.org/wiki/Zero_trust_architecture": {
+    "title": "Zero trust architecture - Wikipedia",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.695Z"
+  },
+  "https://encharge.io/what-is-b2b-saas/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:48.417Z"
+  },
+  "https://epoch.ai/blog/algorithmic-progress-in-language-models": {
+    "title": "Algorithmic progress in language models",
+    "description": "Progress in pretrained language model performance outpaces expectations, occurring at a pace equivalent to doubling computational power every 5 to 14 months.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.032Z"
+  },
+  "https://epoch.ai/blog/can-ai-scaling-continue-through-2030": {
+    "title": "Can AI scaling continue through 2030?",
+    "description": "We investigate four constraints to scaling AI training: power, chip manufacturing, data, and latency. We predict 2e29 FLOP runs will be feasible by 2030.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:52.540Z"
+  },
+  "https://epoch.ai/blog/explosive-growth-from-ai-a-review-of-the-arguments": {
+    "title": "Explosive growth from AI: A review of the arguments",
+    "description": "Our new article explores whether deployment of advanced AI systems could lead to growth rates ten times higher than those of today’s frontier economies.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.214Z"
+  },
+  "https://epoch.ai/blog/training-compute-of-frontier-ai-models-grows-by-4-5x-per-year": {
+    "title": "Training compute of frontier AI models grows by 4-5x per year",
+    "description": "Our expanded AI model database shows that training compute grew 4-5x/year from 2010 to 2024, with similar trends in frontier and large language models.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:58.722Z"
+  },
+  "https://epoch.ai/blog/trends-in-machine-learning-hardware": {
+    "title": "Trends in machine learning hardware",
+    "description": "FLOP/s performance in 47 ML hardware accelerators doubled every 2.3 years. Switching from FP32 to tensor-FP16 led to a further 10x performance increase.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:51.709Z"
+  },
+  "https://epoch.ai/data-insights/cost-trend-large-scale": {
+    "title": "Training compute costs are doubling every eight months for the largest AI models",
+    "description": "Epoch AI is a research institute investigating key trends and questions that will shape the trajectory and governance of Artificial Intelligence.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.771Z"
+  },
+  "https://epoch.ai/data-insights/llm-inference-price-trends": {
+    "title": "LLM inference prices have fallen rapidly but unequally across tasks",
+    "description": "Epoch AI is a research institute investigating key trends and questions that will shape the trajectory and governance of Artificial Intelligence.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:54.233Z"
+  },
+  "https://epoch.ai/data-insights/nvidia-chip-production?insight-option=Absolute": {
+    "title": "The stock of computing power from NVIDIA chips is doubling every 10 months",
+    "description": "Epoch AI is a research institute investigating key trends and questions that will shape the trajectory and governance of Artificial Intelligence.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:51.677Z"
+  },
+  "https://epoch.ai/gate": {
+    "title": "GATE Model Playground",
+    "description": "Explore AI's economic impact with our interactive model. Adjust compute scaling, automation, and investment to see how AI could transform the global economy.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:56.645Z"
+  },
+  "https://epoch.ai/gradient-updates/frontier-language-models-have-become-much-smaller": {
+    "title": "Frontier language models have become much smaller",
+    "description": "In this Gradient Updates weekly issue, Ege discusses how frontier language models have unexpectedly reversed course on scaling, with current models an order of magnitude smaller than GPT-4.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:52.975Z"
+  },
+  "https://epoch.ai/gradient-updates/moe-vs-dense-models-inference": {
+    "title": "MoE vs AI dense models: How do they compare in inference?",
+    "description": "This Gradient Updates issue explores how mixture-of-experts models compare to dense models in inference, focusing on costs, efficiency, and decoding dynamics.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.000Z"
+  },
+  "https://epoch.ai/gradient-updates/movarec-s-paradox": {
+    "title": "Moravec’s paradox and its implications",
+    "description": "This Gradient Updates issue explains Moravec's paradox and offers a speculative picture of how hard various economic tasks are to automate based on the paradox.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.079Z"
+  },
+  "https://epoch.ai/trends": {
+    "title": "Trends in Artificial Intelligence",
+    "description": "Frontier AI systems are advancing rapidly from increases in compute, hardware performance, software efficiency, and investment. This dashboard explores those dynamics.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:51.317Z"
+  },
+  "https://epochai.substack.com/p/most-ai-value-will-come-from-broad": {
+    "title": "Most AI value will come from broad automation, not from R&D",
+    "description": "AI's biggest impact will come from broad labor automation—not R&D—driving economic growth through scale, not scientific breakthroughs.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:55.930Z"
+  },
+  "https://evals.alignment.org/Evaluating_LMAs_Realistic_Tasks.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:45.577Z"
+  },
+  "https://flyte.org/": {
+    "title": "Flyte 2: Durable AI Runtime | One Platform for Your AI Orchestration Needs",
+    "description": "Recover from infra and code failures, orchestrate dynamic workflows, scale to production.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:15.922Z"
+  },
+  "https://futuresearch.ai/ai-2027": {
+    "title": "AI 2027 Report: A Forecast Critique of the Superintelligence Timeline",
+    "description": "FutureSearch forecasts high probability of superhuman AI coders arriving soon, but not as soon as the much-read ai-2028.com report, due to R&D bottlenecks, commercial incentives, and likely government intervention.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:54.093Z"
+  },
+  "https://futuresearch.ai/openbrain-revenue": {
+    "title": "OpenAI Revenue Projections to 2027: Can It Reach $100B ARR?",
+    "description": "OpenAI revenue grew from $1B in 2023 to $3.7B in 2024 to roughly $7B ARR in early 2025. We model the bull case for reaching $100B ARR by mid-2027, with consumer, enterprise, and AI agent revenue breakdowns.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:50.088Z"
+  },
+  "https://gateway.envoyproxy.io/": {
+    "title": "Gateway",
+    "description": "Envoy Gateway Manage your Application and API traffic with Envoy Gateway. Aimed at making it easy to adopt, use, and manage Envoy Proxy. Deploy as a Standalone or Kubernetes-based API Gateway, implementing and extending the Kubernetes Gateway API. Get Started GitHub Built togethe…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:19.838Z"
+  },
+  "https://gcc.gnu.org/": {
+    "title": "GCC, the GNU Compiler Collection - GNU Project",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.427Z"
+  },
+  "https://gist.github.com/Richard-Weiss/efe157692991535403bd7e7fb20b6695": {
+    "title": "Claude 4.5 Opus Soul Document",
+    "description": "Claude 4.5 Opus Soul Document. GitHub Gist: instantly share code, notes, and snippets.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.995Z"
+  },
+  "https://git-scm.com/downloads/guis": {
+    "title": "Redirecting…",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:30.840Z"
+  },
+  "https://github.com/": {
+    "title": "GitHub · Change is constant. GitHub keeps you ahead.",
+    "description": "Join the world's most widely adopted, AI-powered developer platform where millions of developers, businesses, and the largest open source community build software that advances humanity.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:38.768Z"
+  },
+  "https://github.com/adavarski/kind-multicluster-thanos-prometheus-grafana-playground": {
+    "title": "GitHub - adavarski/kind-multicluster-thanos-prometheus-grafana-playground: KinD: Thanos ( Highly available Prometheus se…",
+    "description": "KinD: Thanos ( Highly available Prometheus setup ) Lab multi-cluster - adavarski/kind-multicluster-thanos-prometheus-grafana-playground",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:20.210Z"
+  },
+  "https://github.com/block/goose": {
+    "title": "GitHub - aaif-goose/goose: an open source, extensible AI agent that goes beyond code suggestions - install, execute, edi…",
+    "description": "an open source, extensible AI agent that goes beyond code suggestions - install, execute, edit, and test with any LLM - aaif-goose/goose",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.533Z"
+  },
+  "https://github.com/business-science/ai-data-science-team": {
+    "title": "GitHub - business-science/ai-data-science-team: An AI-powered data science team of agents to help you perform common dat…",
+    "description": "An AI-powered data science team of agents to help you perform common data science tasks 10X faster. - business-science/ai-data-science-team",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.180Z"
+  },
+  "https://github.com/containerd/containerd": {
+    "title": "GitHub - containerd/containerd: An open and reliable container runtime",
+    "description": "An open and reliable container runtime. Contribute to containerd/containerd development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:18.689Z"
+  },
+  "https://github.com/GeSHi/geshi-1.0": {
+    "title": "GitHub - GeSHi/geshi-1.0: Original version of Generic Syntax Highlighter for PHP",
+    "description": "Original version of Generic Syntax Highlighter for PHP - GeSHi/geshi-1.0",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.492Z"
+  },
+  "https://github.com/grafana/grafana": {
+    "title": "GitHub - grafana/grafana: The open and composable observability and data visualization platform. Visualize metrics, logs…",
+    "description": "The open and composable observability and data visualization platform. Visualize metrics, logs, and traces from multiple sources like Prometheus, Loki, Elasticsearch, InfluxDB, Postgres and many mo...",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:20.051Z"
+  },
+  "https://github.com/karpathy/micrograd": {
+    "title": "GitHub - karpathy/micrograd: A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-lik…",
+    "description": "A tiny scalar-valued autograd engine and a neural net library on top of it with PyTorch-like API - karpathy/micrograd",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.025Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz": {
+    "title": "GitHub - koenrane/koenrane.xyz: site infrastructure and content for koenrane.xyz",
+    "description": "site infrastructure and content for koenrane.xyz. Contribute to koenrane/koenrane.xyz development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.110Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/blob/main/%60pmwiki_syntax_template/syntax_template.txt%60": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.458Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/blob/main/pandoc/markdown-to-pmwiki.lua": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.533Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/blob/main/pub/skins/pmwiki-responsive/skin.css": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.470Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/commit/8f4a815acb9c485e1110890c935808ddf80f67b4": {
+    "title": "force article-title to use container width · koenrane/koenrane.xyz@8f4a815",
+    "description": "site infrastructure and content for koenrane.xyz. Contribute to koenrane/koenrane.xyz development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.142Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/commit/97e8073029ec5687c9f6aa58674f12801c4a978e": {
+    "title": "nav button granular shrinking, gear reformat · koenrane/koenrane.xyz@97e8073",
+    "description": "site infrastructure and content for koenrane.xyz. Contribute to koenrane/koenrane.xyz development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:06.901Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/commit/ad5e416": {
+    "title": "fixed back-to-top button · koenrane/koenrane.xyz@ad5e416",
+    "description": "site infrastructure and content for koenrane.xyz. Contribute to koenrane/koenrane.xyz development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.187Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/commit/b2dec65f73f9e8710a80371ebfb00e3ebf2cb11d": {
+    "title": "subscript-style year dates in headers · koenrane/koenrane.xyz@b2dec65",
+    "description": "site infrastructure and content for koenrane.xyz. Contribute to koenrane/koenrane.xyz development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.243Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/commit/b8401d9a3393d99b7e17fd8fcc17c0ff30692cb1": {
+    "title": "added AI Stack essay to index.md, includes transclusion changes for e… · koenrane/koenrane.xyz@b8401d9",
+    "description": "…xternal sites",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.334Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/commit/c2f52f74c7cfe1ef3d3455734581e8c5b6deacd7": {
+    "title": "numerous site formatting changes, added back to top button, moved tag… · koenrane/koenrane.xyz@c2f52f7",
+    "description": "… links under title",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.415Z"
+  },
+  "https://github.com/koenrane/koenrane.xyz/commit/f4f47b674aaba09e97cd184dd065021ac72aef3d": {
+    "title": "full font refactor to Source Serif 4 · koenrane/koenrane.xyz@f4f47b6",
+    "description": "site infrastructure and content for koenrane.xyz. Contribute to koenrane/koenrane.xyz development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.077Z"
+  },
+  "https://github.com/kserve/kserve": {
+    "title": "GitHub - kserve/kserve: Standardized Distributed Generative and Predictive AI Inference Platform for Scalable, Multi-Fra…",
+    "description": "Standardized Distributed Generative and Predictive AI Inference Platform for Scalable, Multi-Framework Deployment on Kubernetes - kserve/kserve",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.634Z"
+  },
+  "https://github.com/mdancho84": {
+    "title": "mdancho84 - Overview",
+    "description": "Hello. I'm Matt. I'm the founder of @business-science where we train business professionals how to become 6-figure data scientists and grow their careers. - mdancho84",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.075Z"
+  },
+  "https://github.com/METR/eval-analysis-public": {
+    "title": "GitHub - METR/eval-analysis-public: Public repository containing METR's DVC pipeline for eval data analysis",
+    "description": "Public repository containing METR's DVC pipeline for eval data analysis - METR/eval-analysis-public",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:54.615Z"
+  },
+  "https://github.com/microsoft/vscode": {
+    "title": "GitHub - microsoft/vscode: Visual Studio Code",
+    "description": "Visual Studio Code. Contribute to microsoft/vscode development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.596Z"
+  },
+  "https://github.com/mojicians/awesome-mojo": {
+    "title": "GitHub - mojicians/awesome-mojo: A curated list of awesome Mojo 🔥 frameworks, libraries, software and resources",
+    "description": "A curated list of awesome Mojo 🔥 frameworks, libraries, software and resources - mojicians/awesome-mojo",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.544Z"
+  },
+  "https://github.com/nea/MarkdownViewerPlusPlus": {
+    "title": "GitHub - nea/MarkdownViewerPlusPlus: A Notepad++ Plugin to view a Markdown file rendered on-the-fly",
+    "description": "A Notepad++ Plugin to view a Markdown file rendered on-the-fly - nea/MarkdownViewerPlusPlus",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.549Z"
+  },
+  "https://github.com/NVIDIA/nvidia-container-toolkit": {
+    "title": "GitHub - NVIDIA/nvidia-container-toolkit: Build and run containers leveraging NVIDIA GPUs",
+    "description": "Build and run containers leveraging NVIDIA GPUs. Contribute to NVIDIA/nvidia-container-toolkit development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:18.730Z"
+  },
+  "https://github.com/openai/whisper": {
+    "title": "GitHub - openai/whisper: Robust Speech Recognition via Large-Scale Weak Supervision",
+    "description": "Robust Speech Recognition via Large-Scale Weak Supervision - openai/whisper",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.510Z"
+  },
+  "https://github.com/permissionlesstech/bitchat-android": {
+    "title": "GitHub - permissionlesstech/bitchat-android: decentralized mesh chat",
+    "description": "decentralized mesh chat. Contribute to permissionlesstech/bitchat-android development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.719Z"
+  },
+  "https://github.com/poking-agents/modular-public": {
+    "title": "GitHub - poking-agents/modular-public",
+    "description": "Contribute to poking-agents/modular-public development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:54.753Z"
+  },
+  "https://github.com/prometheus/prometheus": {
+    "title": "GitHub - prometheus/prometheus: The Prometheus monitoring system and time series database.",
+    "description": "The Prometheus monitoring system and time series database. - prometheus/prometheus",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.888Z"
+  },
+  "https://github.com/SeldonIO/MLServer": {
+    "title": "GitHub - SeldonIO/MLServer: An inference server for your machine learning models, including support for multiple framewo…",
+    "description": "An inference server for your machine learning models, including support for multiple frameworks, multi-model serving and more - SeldonIO/MLServer",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.585Z"
+  },
+  "https://github.com/SeldonIO/seldon-core": {
+    "title": "GitHub - SeldonIO/seldon-core: An MLOps framework to package, deploy, monitor and manage thousands of production machine…",
+    "description": "An MLOps framework to package, deploy, monitor and manage thousands of production machine learning models - SeldonIO/seldon-core",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:20.086Z"
+  },
+  "https://github.com/tbroadley/spellchecker-cli": {
+    "title": "GitHub - tbroadley/spellchecker-cli: A command-line tool for spellchecking files.",
+    "description": "A command-line tool for spellchecking files. Contribute to tbroadley/spellchecker-cli development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.714Z"
+  },
+  "https://github.com/uvafan/timelines-takeoff-ai-2027": {
+    "title": "GitHub - uvafan/timelines-takeoff-ai-2027",
+    "description": "Contribute to uvafan/timelines-takeoff-ai-2027 development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:54.794Z"
+  },
+  "https://github.com/uvafan/timelines-takeoff-ai-2027?tab=readme-ov-file": {
+    "title": "GitHub - uvafan/timelines-takeoff-ai-2027",
+    "description": "Contribute to uvafan/timelines-takeoff-ai-2027 development by creating an account on GitHub.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:55.240Z"
+  },
+  "https://github.com/Wan-Video/Wan2.1": {
+    "title": "GitHub - Wan-Video/Wan2.1: Wan: Open and Advanced Large-Scale Video Generative Models",
+    "description": "Wan: Open and Advanced Large-Scale Video Generative Models - Wan-Video/Wan2.1",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.479Z"
+  },
+  "https://graydon2.dreamwidth.org/193447.html": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:43.935Z"
+  },
+  "https://gwern.net/": {
+    "title": "Essays · Gwern.net",
+    "description": "Personal website of Gwern Branwen (writer, self-experimenter, and programmer): topics: psychology, statistics, technology, deep learning, anime. This index page is a categorized list of Gwern.net pages.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:10.958Z"
+  },
+  "https://gwern.net/backstop": {
+    "title": "Evolution as Backstop for Reinforcement Learning · Gwern.net",
+    "description": "Markets/evolution as backstops/ground truths for reinforcement learning/optimization: on some connections between Coase’s theory of the firm/linear optimization/DRL/evolution/multicellular life/pain/Internet communities as multi-level optimization problems.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:58.285Z"
+  },
+  "https://gwern.net/blog/2024-writing-online": {
+    "title": "“You Should Write More Online”, by Gwern · Gwern.net",
+    "description": "You should write more online: it is still a good time to influence humans and AI, especially as everyone else foolishly retreats into hiding out of fear.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:42.388Z"
+  },
+  "https://gwern.net/book-writing": {
+    "title": "Why To Not Write A Book · Gwern.net",
+    "description": "A discussion of why I don’t intend to turn Gwern.net into a book, and how trying to write a book can harm writers.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.960Z"
+  },
+  "https://gwern.net/design": {
+    "title": "Design Of This Website · Gwern.net",
+    "description": "Meta page describing Gwern.net, the self-documenting website’s implementation and experiments for better ‘semantic zoom’ of hypertext; technical decisions using Markdown and static hosting.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:27.434Z"
+  },
+  "https://gwern.net/doc/ai/nn/rnn/1992-schmidhuber.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.583Z"
+  },
+  "https://gwern.net/llm-writing": {
+    "title": "Writing for LLMs So They Listen · Gwern.net",
+    "description": "Speculation about what sort of ordinary human writing is most relevant and useful to future AI systems.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:21.088Z"
+  },
+  "https://gwern.net/scaling-hypothesis": {
+    "title": "The Scaling Hypothesis · Gwern.net",
+    "description": "On GPT-3: meta-learning, scaling, implications, and deep theory. The scaling hypothesis: neural nets absorb data & compute, generalizing and becoming more Bayesian as problems get harder, manifesting new abilities even at trivial-by-global-standards-scale. The deep learning revol…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:59.510Z"
+  },
+  "https://gwern.net/style-guide": {
+    "title": "“Manual of Style”, by Gwern, GPT-5 Pro, Claude-4.7-opus · Gwern.net",
+    "description": "Style guide documentation of Gwern.net writing conventions for essays and code.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:10.940Z"
+  },
+  "https://haystack.deepset.ai/": {
+    "title": "Haystack | Haystack",
+    "description": "Create agentic, context engineered AI systems using Haystack’s modular and customizable building blocks, built for real-world, production-ready applications.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.669Z"
+  },
+  "https://helm.sh/": {
+    "title": "Helm",
+    "description": "The package manager for Kubernetes",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:17.892Z"
+  },
+  "https://hiddenlayer.com/": {
+    "title": "HiddenLayer | Total AI Security",
+    "description": "Secure your AI with HiddenLayer’s end-to-end platform that detects threats, protects models, and ensures safe, compliant AI adoption at scale.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.721Z"
+  },
+  "https://huggingface.co/": {
+    "title": "Hugging Face – The AI community building the future.",
+    "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.512Z"
+  },
+  "https://huggingface.co/blog/codelion/optimal-model-architecture": {
+    "title": "The Optimal Architecture for Small Language Models",
+    "description": "A Blog post by Asankhaya Sharma on Hugging Face",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.107Z"
+  },
+  "https://huggingface.co/blog/tiny-agents": {
+    "title": "Tiny Agents: an MCP-powered agent in 50 lines of code",
+    "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.887Z"
+  },
+  "https://huggingface.co/docs/transformers/en/quantization/gptq": {
+    "title": "GPTQ · Hugging Face",
+    "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.970Z"
+  },
+  "https://huggingface.co/docs/transformers/main/kv_cache": {
+    "title": "Cache strategies · Hugging Face",
+    "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.863Z"
+  },
+  "https://huggingface.co/hpcai-tech/Open-Sora-v2": {
+    "title": "hpcai-tech/Open-Sora-v2 · Hugging Face",
+    "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:18.990Z"
+  },
+  "https://huggingface.co/Lightricks/LTX-Video": {
+    "title": "Lightricks/LTX-Video · Hugging Face",
+    "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:18.810Z"
+  },
+  "https://huggingface.co/mistralai": {
+    "title": "mistralai (Mistral AI_)",
+    "description": "Org profile for Mistral AI_ on Hugging Face, the AI community building the future.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.666Z"
+  },
+  "https://huggingface.co/papers/2503.05592": {
+    "title": "Paper page - R1-Searcher: Incentivizing the Search Capability in LLMs via Reinforcement Learning",
+    "description": "Join the discussion on this paper page",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.166Z"
+  },
+  "https://huggingface.co/papers/2505.17063": {
+    "title": "Paper page - Synthetic Data RL: Task Definition Is All You Need",
+    "description": "Join the discussion on this paper page",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.674Z"
+  },
+  "https://huggingface.co/papers/2508.20096": {
+    "title": "Paper page - CODA: Coordinating the Cerebrum and Cerebellum for a Dual-Brain Computer Use Agent with Decoupled Reinforce…",
+    "description": "Join the discussion on this paper page",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.755Z"
+  },
+  "https://huggingface.co/papers/2508.21365": {
+    "title": "Paper page - Think in Games: Learning to Reason in Games via Reinforcement Learning with Large Language Models",
+    "description": "Join the discussion on this paper page",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.734Z"
+  },
+  "https://huggingface.co/papers/2509.02547": {
+    "title": "Paper page - The Landscape of Agentic Reinforcement Learning for LLMs: A Survey",
+    "description": "Join the discussion on this paper page",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.700Z"
+  },
+  "https://huggingface.co/papers/2509.06733": {
+    "title": "Paper page - Reinforcement Learning Foundations for Deep Research Systems: A Survey",
+    "description": "Join the discussion on this paper page",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.714Z"
+  },
+  "https://huggingface.co/papers/2509.26476": {
+    "title": "Paper page - Regression Language Models for Code",
+    "description": "Join the discussion on this paper page",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.206Z"
+  },
+  "https://huggingface.co/spaces/nanotron/ultrascale-playbook?section=high-level_overview": {
+    "title": "The Ultra-Scale Playbook - a Hugging Face Space by nanotron",
+    "description": "The ultimate guide to training LLM on large GPU Clusters",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.372Z"
+  },
+  "https://huggingface.co/unsloth/Llama-3.1-8B-Instruct-GGUF": {
+    "title": "unsloth/Llama-3.1-8B-Instruct-GGUF · Hugging Face",
+    "description": "We’re on a journey to advance and democratize artificial intelligence through open source and open science.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:18.576Z"
+  },
+  "https://huggingfacetb-smol-training-playbook.hf.space/the-smol-training-playbook-the-secrets-to-building-world-class-llms.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:22.113Z"
+  },
+  "https://jamesclear.com/identity-based-habits": {
+    "title": "Identity-Based Habits: How to Actually Stick to Your Goals This Year",
+    "description": "Most of the time we set our goals in the wrong way.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.472Z"
+  },
+  "https://jasmi.news/p/neurips-2025": {
+    "title": "how to party like an AI researcher",
+    "description": "a NeurIPS 2025 scene report",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.661Z"
+  },
+  "https://join.whoop.com/us/en/membership/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.406Z"
+  },
+  "https://jupyter.org/": {
+    "title": "Project Jupyter",
+    "description": "The Jupyter Notebook is a web-based interactive computing platform. The notebook combines live code, equations, narrative text, visualizations, interactive dashboards and other media.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.722Z"
+  },
+  "https://justgetflux.com/": {
+    "title": "f.lux",
+    "description": "Software to warm up your computer display at night, to match your indoor lighting.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.949Z"
+  },
+  "https://kahneman.scholar.princeton.edu/sites/g/files/toruqf3831/files/kahneman/files/living_dk_jr_2005.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:08.592Z"
+  },
+  "https://konghq.com/": {
+    "title": "Kong, The AI Connectivity Company",
+    "description": "From APIs to AI, Kong is the fabric of modern connectivity. Centralize LLM access, automate API workflows, and secure your digital ecosystem at scale.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.415Z"
+  },
+  "https://konghq.com/products/kong-ai-gateway": {
+    "title": "Secure, Scalable AI Gateway for AI Connectivity",
+    "description": "Deliver AI connectivity with centralized security, routing, observability, and cost control for LLMs and MCP resources. Explore Kong AI Gateway!",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.797Z"
+  },
+  "https://kubernetes.io/": {
+    "title": "Production-Grade Container Orchestration",
+    "description": "Kubernetes, also known as K8s, is an open source system for automating deployment, scaling, and management of containerized applications. It groups containers that make up an application into logical units for easy management and discovery. Kubernetes builds upon 15 years of expe…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:15.312Z"
+  },
+  "https://kubernetes.io/docs/reference/kubectl/": {
+    "title": "Command line tool (kubectl)",
+    "description": "Kubernetes provides a command line tool for communicating with a Kubernetes cluster's control plane, using the Kubernetes API. This tool is named kubectl. For configuration, kubectl looks for a file named config in the $HOME/.kube directory. You can specify other kubeconfig files…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:17.959Z"
+  },
+  "https://labelbox.com/": {
+    "title": "Labelbox | The RL data engine for AI teams",
+    "description": "From environments to custom evaluations, we partner with over 90% of leading AI labs in the US and the innovators defining the next frontier of AI.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:14.794Z"
+  },
+  "https://lakera.ai/": {
+    "title": "Lakera: The AI-Native Security Platform to Accelerate GenAI",
+    "description": "The AI-native security platform to accelerate GenAI initiatives—trusted by Fortune 500s, backed by the world’s largest AI red team.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.737Z"
+  },
+  "https://lawsofux.com/jakobs-law/?utm_source=chatgpt.com": {
+    "title": "Jakob’s Law | Laws of UX",
+    "description": "Users spend most of their time on other sites. This means that users prefer your site to work the same way as all the other sites they already know.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.176Z"
+  },
+  "https://lectern.johnvervaeke.com/insights/how-parasitic-processing-is-causing-you-to-spiral": {
+    "title": "The Lectern",
+    "description": "The Lectern is the online education platform of Professor John Vervaeke. We offer online courses as well as live events exploring the intersection between science, philosophy and spirituality.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:22.413Z"
+  },
+  "https://libgen.mx/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.803Z"
+  },
+  "https://lukedrago.substack.com/p/the-intelligence-curse": {
+    "title": "The Intelligence Curse",
+    "description": "With AGI, powerful actors will lose their incentives to invest in people.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.090Z"
+  },
+  "https://medium.com/@h.stoychev87/containerization-docker-and-containers-8e8f28fd0694": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.741Z"
+  },
+  "https://medium.com/@mattholla/the-eight-principles-of-information-architecture-6feff11f907a": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:10.402Z"
+  },
+  "https://medium.com/@MobileAppDesigner/user-first-design-principles-mastering-ui-ux-for-success-6d52f4e8b5e5": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:10.536Z"
+  },
+  "https://medium.com/@paulgoll/nvidias-blackwell-gpus-b100-b200-and-gb200-2441119b6941": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.224Z"
+  },
+  "https://medium.com/@yohoso/llm-inference-optimisation-continuous-batching-2d66844c19e9": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.320Z"
+  },
+  "https://medium.com/deep-code/sensemaking-in-2025-trump-tariffs-edition-7e43e5564b68": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.025Z"
+  },
+  "https://medium.com/design-voices/system-thinking-for-designers-e9f025698a32": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:10.525Z"
+  },
+  "https://metr.org/": {
+    "title": "METR",
+    "description": "METR is a research nonprofit that evaluates frontier AI models to help companies and wider society understand AI capabilities and what risks they pose.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:54.377Z"
+  },
+  "https://metr.org/hcast.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:54.011Z"
+  },
+  "https://milvus.io/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.272Z"
+  },
+  "https://mindingourway.com/newcomblike-problems-are-the-norm/?ref=hackernoon.com": {
+    "title": "Newcomblike problems are the norm",
+    "description": "[Note: This post is part of a set of three where thoughts related to my job leaked into the blog. They don't really fit with the surrounding posts; you may want to skip them.] 1 Last time we looked at Newcomblike problems, which cause trouble for Causal Decision Theory (CDT)",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.352Z"
+  },
+  "https://mistral.ai/": {
+    "title": "Frontier AI LLMs, assistants, agents, services | Mistral",
+    "description": "The most powerful AI platform for enterprises. Customize, fine-tune, and deploy AI assistants, autonomous agents, and multimodal AI with open models.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.889Z"
+  },
+  "https://mlemma.medium.com/the-subscription-business-model-is-getting-out-f-cking-control-heres-why-89623a972cd6": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.293Z"
+  },
+  "https://mlflow.org/": {
+    "title": "MLflow - Open Source AI Platform for Agents, LLMs & Models",
+    "description": "The largest open source AI engineering platform for agents, LLMs, and ML models. Debug, evaluate, monitor, and optimize your AI applications. Built for teams of all sizes.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:15.892Z"
+  },
+  "https://mlir.llvm.org/": {
+    "title": "MLIR",
+    "description": "Multi-Level IR Compiler Framework",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:16.836Z"
+  },
+  "https://model-spec.openai.com/2025-02-12.html": {
+    "title": "OpenAI Model Spec",
+    "description": "The Model Spec specifies desired behavior for the models underlying OpenAI's products (including our APIs).",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.656Z"
+  },
+  "https://moonshotai.github.io/Kimi-K2/": {
+    "title": "Kimi K2: Open Agentic Intelligence",
+    "description": "Kimi K2 is our latest Mixture-of-Experts model with 32 billion activated parameters and 1 trillion total parameters. It achieves state-of-the-art performance in frontier knowledge, math, and coding among non-thinking models.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.364Z"
+  },
+  "https://news.skhynix.com/sk-hynix-begins-volume-production-of-industry-first-hbm3e/": {
+    "title": "SK hynix Begins Volume Production of Industry’s First HBM3E | SK hynix Newsroom",
+    "description": "News Highlights SK hynix extends success of HBM3, marking first case in industry to mass produce HBM3E Supply to a customer comes in 7 months after development announced; best-in-class performance to lead level of AI capabilities to world’s best SK hynix to cement position as glo…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:52.398Z"
+  },
+  "https://nighteye.app/": {
+    "title": "Dark Mode Extension - Night Eye | Trusted By 1M+ Users",
+    "description": "Install Night Eye, a dark mode extension for any website. Pages are processed locally, with no tracking or ads, plus customizable display controls.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.805Z"
+  },
+  "https://notepad-plus-plus.org/": {
+    "title": "Notepad++",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.194Z"
+  },
+  "https://notes.andymatuschak.org/Evergreen_notes": {
+    "title": "Evergreen notes",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.076Z"
+  },
+  "https://notes.andymatuschak.org/zF8xCU4BwXwbmSyp7tmff9i": {
+    "title": "Evergreen notes should be densely linked",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.806Z"
+  },
+  "https://nxnjz.net/2019/09/how-to-install-pmwiki-on-debian-10-nginx-php-fpm/": {
+    "title": "How to Install PmWiki on Debian 10 / Nginx / PHP-FPM - NXNJZ",
+    "description": "Introduction PmWiki is an open-source wiki-based content management system built in PHP that was started in 2002, and is designed for collaborative creation and maintenance of websites. It allows quick editing as well as appearance changes using skins and templates. PmWiki also p…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.974Z"
+  },
+  "https://obsproject.com/download": {
+    "title": "Download | OBS",
+    "description": "Download OBS Studio for Windows, Mac or Linux",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.516Z"
+  },
+  "https://octoml.ai/": {
+    "title": "World Leader in AI Computing",
+    "description": "We create the world’s fastest supercomputer and largest gaming platform.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.655Z"
+  },
+  "https://old.reddit.com/r/MachineLearning/comments/1ielwh5/d_deepseek_schmidhuber_did_it_first/": {
+    "title": "[D] DeepSeek? Schmidhuber did it first.",
+    "description": "Posted in r/MachineLearning by u/SirSourPuss • 864 points and 137 comments",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:27.562Z"
+  },
+  "https://ollama.com/blog/gpt-oss": {
+    "title": "OpenAI gpt-oss · Ollama Blog",
+    "description": "Ollama partners with OpenAI to bring gpt-oss to Ollama and its community.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.843Z"
+  },
+  "https://onnx.ai/onnx/intro/concepts.html": {
+    "title": "ONNX Concepts - ONNX 1.23.0 documentation",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.768Z"
+  },
+  "https://open.substack.com/pub/dwarkesh/p/gwern-branwen?selection=e3c5da5e-6b75-449f-9916-810e8a8e5c28&utm_campaign=post-share-selection&utm_medium=web": {
+    "title": "Gwern — Anonymous writer who predicted AI trajectory on $12K/year salary",
+    "description": "Legacy & Anonymity in the Age of AGI",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.452Z"
+  },
+  "https://openai.com/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.385Z"
+  },
+  "https://openai.com/global-affairs/introducing-openai-for-government/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.235Z"
+  },
+  "https://openai.com/index/accelerating-life-sciences-research-with-retro-biosciences/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.397Z"
+  },
+  "https://openai.com/index/chain-of-thought-monitoring/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.391Z"
+  },
+  "https://openai.com/index/collective-alignment-aug-2025-updates/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.401Z"
+  },
+  "https://openai.com/index/deliberative-alignment/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.388Z"
+  },
+  "https://openai.com/index/introducing-gpt-oss/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.357Z"
+  },
+  "https://openai.com/index/introducing-the-model-spec/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.011Z"
+  },
+  "https://openai.com/index/openai-o1-system-card/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.529Z"
+  },
+  "https://openai.com/index/providing-chatgpt-to-the-entire-us-federal-workforce/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.232Z"
+  },
+  "https://openai.com/open-models/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.850Z"
+  },
+  "https://openpsychometrics.org/tests/IPIP-BFFM/": {
+    "title": "Big Five Personality Test",
+    "description": "Interactive personality measuring the big five personality traits.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.462Z"
+  },
+  "https://openreview.net/forum?id=RNsnSLdmV7": {
+    "title": "Verifying your browser | OpenReview",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:45.897Z"
+  },
+  "https://openreview.net/pdf?id=NlkykTqAId": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.416Z"
+  },
+  "https://openrouter.ai/": {
+    "title": "OpenRouter",
+    "description": "The unified interface for every model. Find the best models & prices for your prompts",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:54.473Z"
+  },
+  "https://opensource.org/ai/open-weights": {
+    "title": "Open Weights: not quite what you’ve been told",
+    "description": "In the rapidly evolving landscape of artificial intelligence, Open Weights have emerged as a buzzword indicating incremental progress in AI transparency. By sharing the final parameters of a traine…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:47.404Z"
+  },
+  "https://opg.optica.org/oe/fulltext.cfm?uri=oe-30-7-10779&id=470528": {
+    "title": "Radware Captcha Page",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:24.408Z"
+  },
+  "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4814445": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:56.776Z"
+  },
+  "https://people.idsia.ch/~juergen/very-deep-learning-1991.html": {
+    "title": "1991: First very deep learning with unsupervised pre-training. First neural network distillation.",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:27.397Z"
+  },
+  "https://people.idsia.ch/~juergen/world-models-planning-curiosity-fki-1990.html": {
+    "title": "1990: Planning & Reinforcement Learning with Recurrent World Models and Artificial Curiosity",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:27.367Z"
+  },
+  "https://politiscales.party/": {
+    "title": "PolitiScales - The political test",
+    "description": "Welcome to the PolitiScales, the online political test. You will be confronted to a series of affirmations and for each of them you will have to click on the button which corresponds the most to your opinion.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:34.323Z"
+  },
+  "https://politiscales.party/about": {
+    "title": "PolitiScales - About",
+    "description": "Welcome to the PolitiScales, the online political test. You will be confronted to a series of affirmations and for each of them you will have to click on the button which corresponds the most to your opinion.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:34.321Z"
+  },
+  "https://pubmed.ncbi.nlm.nih.gov/11741126/": {
+    "title": "pubmed.ncbi.nlm.nih.gov",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:25.021Z"
+  },
+  "https://pubs.rsc.org/en/content/articlepdf/2024/im/d3im00115f": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.511Z"
+  },
+  "https://pytorch.org/": {
+    "title": "PyTorch",
+    "description": "PyTorch Foundation is the deep learning community home for the open source PyTorch framework and ecosystem.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.642Z"
+  },
+  "https://quartz.jzhao.xyz/": {
+    "title": "Welcome to Quartz 5",
+    "description": "Quartz is a fast, batteries-included static-site generator that transforms Markdown content into fully functional websites.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:31.970Z"
+  },
+  "https://qwen.ai/": {
+    "title": "Qwen Studio",
+    "description": "Qwen Studio offers comprehensive functionality spanning chatbot, image and video understanding, image generation, document processing, web search integration, tool utilization, and artifacts.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:15.705Z"
+  },
+  "https://raley.english.ucsb.edu/wp-content/uploads/Reading/Chiang-story.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:41.764Z"
+  },
+  "https://ravenreader.app/": {
+    "title": "Raven Reader",
+    "description": "Raven is a desktop news reader with flexible settings to optimize your experience. No login is required, and no personal data is collected. Just select the websites you want to curate articles from and enjoy!",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.629Z"
+  },
+  "https://releases.ubuntu.com/jammy/": {
+    "title": "Ubuntu 22.04.5 LTS (Jammy Jellyfish)",
+    "description": "CD images for Ubuntu 22.04.5 LTS (Jammy Jellyfish)",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:18.484Z"
+  },
+  "https://roamresearch.com/": {
+    "title": "Roam Research – A note taking tool for networked thought.",
+    "description": "As easy to use as a word document or bulleted list, and as powerful for finding, collecting, and connecting related ideas as a graph database. Collaborate with others in real time, or store all your data locally.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:30.996Z"
+  },
+  "https://sakana.ai/ctm/": {
+    "title": "Sakana AI",
+    "description": "Introducing Continuous Thought Machines",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:25.482Z"
+  },
+  "https://samkriss.substack.com/p/the-cacophony?manualredirect=&utm_campaign=posts-open-in-app&triedRedirect=true": {
+    "title": "The Cacophony",
+    "description": "How to speak in an age of golems",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.227Z"
+  },
+  "https://scholars-stage.org/on-the-tolkienic-hero/": {
+    "title": "On The Tolkienic Hero",
+    "description": "“Bag End” by Tim Doyle.You can purchase this print here.Deep down in him lived still unconquered his plain hobbit-sense: he knew in the core of his heart that he was not large enough to…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.444Z"
+  },
+  "https://sci-hub.se/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:41.887Z"
+  },
+  "https://semianalysis.com/2023/07/05/ai-capacity-constraints-cowos-and/": {
+    "title": "AI Capacity Constraints - CoWoS and HBM Supply Chain",
+    "description": "Quarterly Ramp for Nvidia, Broadcom, Google, AMD, AMD Embedded (Xilinx), Amazon, Marvell, Microsoft, Alchip, Alibaba T-Head, ZTE Sanechips, Samsung, Micron, and SK Hynix",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.033Z"
+  },
+  "https://semianalysis.com/2023/08/30/broadcoms-google-tpu-revenue-explosion/": {
+    "title": "Broadcom’s Google TPU Revenue Explosion, Networking Boom, VMWare Integration",
+    "description": "Broadcom: The Silent Giant in AI Chip Revolution - Putting Numbers To It",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:52.897Z"
+  },
+  "https://semianalysis.com/2024/09/04/multi-datacenter-training-openais/": {
+    "title": "Multi-Datacenter Training: OpenAI's Ambitious Plan To Beat Google's Infrastructure",
+    "description": "Gigawatt Clusters, Telecom Networking, Long Haul Fiber, Hierarchical & Asynchronous SGD, Distributed Infrastructure Winners",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:52.962Z"
+  },
+  "https://semianalysis.com/2024/12/03/amazons-ai-self-sufficiency-trainium2-architecture-networking/": {
+    "title": "Amazon’s AI Self Sufficiency | Trainium2 Architecture &amp; Networking",
+    "description": "Trn2, Trn2-Ultra, Performance, Software, NeuronLinkv3, EFAv3, TCO, 3D Torus, Networking Costs, Supply Chain",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.543Z"
+  },
+  "https://semiconductor.samsung.com/us/news-events/tech-blog/leading-memory-innovation-with-hbm3e/": {
+    "title": "Leading Memory Innovation with HBM3E | Samsung Semiconductor Global",
+    "description": "The pulse of generative AI is racing at a pace that will require the top players in the memory market to produce unparalleled bandwidth to keep up with the number-crunching intensity required by AI/ML and other high-performance computing workloads.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:52.596Z"
+  },
+  "https://situational-awareness.ai/": {
+    "title": "Introduction - SITUATIONAL AWARENESS: The Decade Ahead",
+    "description": "Leopold Aschenbrenner, June 2024 You can see the future first in San Francisco. Over the past year, the talk of the town has shifted from $10 billion compute clusters to $100 billion clusters to trillion-dollar clusters. Every six months another zero is added to the boardroom pla…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:47.231Z"
+  },
+  "https://situational-awareness.ai/lock-down-the-labs/": {
+    "title": "IIIb. Lock Down the Labs: Security for AGI - SITUATIONAL AWARENESS",
+    "description": "The nation’s leading AI labs treat security as an afterthought. Currently, they’re basically handing the key secrets for AGI to the CCP on a silver platter. Securing the AGI secrets and weights against the state-actor threat will be an immense effort, and we’re not on track. They…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.794Z"
+  },
+  "https://skyflow.com/": {
+    "title": "Skyflow | Runtime AI Data Control",
+    "description": "The runtime AI data control platform for enterprises. Skyflow sanitizes data on ingest, protects it at runtime, and enforces policy so you can ship AI safely.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.514Z"
+  },
+  "https://sourceforge.net/projects/pc-equalizer/": {
+    "title": "PC Equalizer - GUI",
+    "description": "Download PC Equalizer - GUI for free. GUI for Equalizer APO, Instantly Boost Your Computer's Audio. PC Equalizer is a Graphical User Interface for \"Equalizer APO\" which is a parametric / graphic equalizer for Windows. Tired of lackluster sound quality on your computer?",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.415Z"
+  },
+  "https://stability.ai/stable-image": {
+    "title": "Stability AI Image Models — Stability AI",
+    "description": "Experience unparalleled image generation capabilities with SDXL Turbo and Stable Diffusion XL. Our models use shorter prompts and generate descriptive images with enhanced composition and realistic aesthetics.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.226Z"
+  },
+  "https://steelseries.com/gaming-headsets/arctis-3": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:33.162Z"
+  },
+  "https://substack.com/@mcluhan": {
+    "title": "Andrew McLuhan | Substack",
+    "description": "Andrew McLuhan is the son of Eric McLuhan, a grandson of Marshall McLuhan, founder and director of The McLuhan Institute (founded 2017). TMI was founded to conserve and continue media studies in the McLuhan tradition.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.219Z"
+  },
+  "https://substack.com/@thezvi/p-155272667": {
+    "title": "On Writing #1",
+    "description": "This isn’t primarily about how I write.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:20.723Z"
+  },
+  "https://takeoffspeeds.com/description.html": {
+    "title": "Description",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:54.772Z"
+  },
+  "https://takeoffspeeds.com/playground.html": {
+    "title": "Playground",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:54.863Z"
+  },
+  "https://theaidigest.org/self-awareness": {
+    "title": "AIs are becoming more self-aware. Here's why that matters - AI Digest",
+    "description": "What will the world look like with more self-aware AIs? Explore the potential benefits and risks",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:57.463Z"
+  },
+  "https://time.com/7086285/ai-transparency-measures/": {
+    "title": "4 Ways to Advance Transparency in Frontier AI Development",
+    "description": "Two experts propose a framework to allow the public to gain insight into what capabilities future AI systems may possess",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:47.366Z"
+  },
+  "https://time.com/collections/time100-ai-2025/": {
+    "title": "The 100 Most Influential People in AI 2025",
+    "description": "Meet the innovators, leaders, and thinkers reshaping our world through advances in artificial intelligence.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:23.284Z"
+  },
+  "https://tinyurl.com/3y4fxjz7": {
+    "title": "Amazon.com",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.109Z"
+  },
+  "https://tinyurl.com/77vr2ubs": {
+    "title": "Amazon.com",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.294Z"
+  },
+  "https://tinyurl.com/7hzbasvr": {
+    "title": "Moleskine Professional Notebooks, 5\" x 8.25\", Quad, 120 Sheets, Black (701139) | Quill.com",
+    "description": "Order Moleskine Professional Notebooks, 5\" x 8.25\", Quad, 120 Sheets, Black (701139) today at Quill.com and get fast shipping. Stack coupons to get free gifts & extra discounts!",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:36.087Z"
+  },
+  "https://towardsdatascience.com/hitchhikers-guide-to-rag-from-tiny-files-to-tolstoy-with-openais-api-and-langchain/": {
+    "title": "Hitchhiker’s Guide to RAG: From Tiny Files to Tolstoy with OpenAI’s API and LangChain | Towards Data Science",
+    "description": "Scaling a simple RAG pipeline from simple notes to full books",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.471Z"
+  },
+  "https://towardsdatascience.com/how-to-generate-synthetic-data-a-comprehensive-guide-using-bayesian-sampling-and-univariate-distributions/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.560Z"
+  },
+  "https://transformer-circuits.pub/2025/attribution-graphs/biology.html": {
+    "title": "On the Biology of a Large Language Model",
+    "description": "We investigate the internal mechanisms used by Claude 3.5 Haiku — Anthropic's lightweight production model — in a variety of contexts, using our circuit tracing methodology.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.762Z"
+  },
+  "https://trustible.ai/": {
+    "title": "Trustible - The AI Governance Platform for Regulated Enterprises - Homepage",
+    "description": "Trustible is the AI governance platform for regulated enterprises. Automate intake, score risk, and prove compliance in one place.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.550Z"
+  },
+  "https://turntrout.com/a-shot-at-the-diamond-alignment-problem": {
+    "title": "A Shot at the Diamond-Alignment Problem",
+    "description": "A technical deep dive exploring how to align an AI with the goal of creating diamonds, rather than more nebulous human values.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.015Z"
+  },
+  "https://turntrout.com/dangers-of-intrinsic-power-seeking": {
+    "title": "Intrinsic Power-Seeking: AI Might Seek Power for Power’s Sake",
+    "description": "Seeking power helps reach lots of goals, so that circuitry will be reinforced a lot. Possible result: the AI reflexively tries to seek power.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.999Z"
+  },
+  "https://tuxedage.wordpress.com/2013/09/04/the-tuxedage-ai-box-experiment-ruleset/": {
+    "title": "The Tuxedage AI-Box Experiment Ruleset.",
+    "description": "After playing the AI-Box Experiment twice, I have found the Eliezer Yudkowsky ruleset to be lacking in a number of ways, and therefore have created my own set of alterations to his rules. I hereby …",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.981Z"
+  },
+  "https://vespa.ai/": {
+    "title": "Vespa.ai",
+    "description": "Vespa is the AI Search Platform for fast, accurate AI search, AI agents, personalization, recommendations, and retrieval.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.117Z"
+  },
+  "https://voltagecontrol.com/blog/radical-acts-of-delight/": {
+    "title": "Radical Acts of Delight",
+    "description": "Click here to leSkye Idehen-Osunde's session at the 2025 Facilitation Lab Summit focused on building psychological safety and credibility in facilitation. .",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.274Z"
+  },
+  "https://wccftech.com/nvidia-unveils-next-gen-rubin-rubin-ultra-blackwell-ultra-gpus-supercharged-vera-cpus/": {
+    "title": "NVIDIA Unveils Next-Gen Rubin, Rubin Ultra, Blackwell Ultra GPUs & Supercharged Vera CPUs",
+    "description": "NVIDIA has just confirmed its next-gen Rubin GPU architecture while announcing Rubin & Blackwell GPUs along with the latest Vera CPU.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:51.161Z"
+  },
+  "https://www.a16z.news/p/laws-of-new-media": {
+    "title": "Laws of (New) Media",
+    "description": "A guest post from Andrew McLuhan",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.543Z"
+  },
+  "https://www.aanda.org/10.1051/0004-6361/202553785": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.540Z"
+  },
+  "https://www.aipanic.news/p/the-rationality-trap?utm_source=post-banner&utm_medium=web&utm_campaign=posts-open-in-app&triedRedirect=true": {
+    "title": "THE RATIONALITY TRAP",
+    "description": "You can listen to the 6,000 words via ElevenLabs",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.894Z"
+  },
+  "https://www.alignmentforum.org/posts/75o8oja43LXGAqbAR/palm-2-and-gpt-4-in-extrapolating-gpt-n-performance": {
+    "title": "PaLM-2 & GPT-4 in \"Extrapolating GPT-N performance\" — AI Alignment Forum",
+    "description": "Two and a half years ago, I wrote Extrapolating GPT-N performance, trying to predict how fast scaled-up models would improve on a few benchmarks. One…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:54.932Z"
+  },
+  "https://www.alignmentforum.org/posts/75o8oja43LXGAqbAR/palm2-and-gpt-4-in-extrapolating-gpt-n-performance": {
+    "title": "PaLM-2 & GPT-4 in \"Extrapolating GPT-N performance\" — AI Alignment Forum",
+    "description": "Two and a half years ago, I wrote Extrapolating GPT-N performance, trying to predict how fast scaled-up models would improve on a few benchmarks. One…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:59.586Z"
+  },
+  "https://www.alignmentforum.org/posts/BAzCGCys4BkzGDCWR/the-prototypical-catastrophic-ai-action-is-getting-root": {
+    "title": "The prototypical catastrophic AI action is getting root access to its datacenter — AI Alignment Forum",
+    "description": "(I think Carl Shulman came up with the “hacking the SSH server” example, thanks to him for that. Thanks to Ryan Greenblatt, Jenny Nitishinskaya, and…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:59.244Z"
+  },
+  "https://www.alignmentforum.org/posts/ceBpLHJDdCt3xfEok/ai-catastrophes-and-rogue-deployments": {
+    "title": "AI catastrophes and rogue deployments — AI Alignment Forum",
+    "description": "[Thanks to Aryan Bhatt, Ansh Radhakrishnan, Adam Kaufman, Vivek Hebbar, Hanna Gabor, Justis Mills, Aaron Scher, Max Nadeau, Ryan Greenblatt, Peter Ba…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:58.852Z"
+  },
+  "https://www.alignmentforum.org/posts/FuGfR3jL3sw6r8kB4/richard-ngo-s-shortform?commentId=iBvvxwynfAqL9yZcr": {
+    "title": "Richard Ngo's Shortform — AI Alignment Forum",
+    "description": "Comment by paulfchristiano - I'm not very convinced by this comment as an objection to \"50% AI grabs power to get reward.\" (I find it more plausible as an objection to \"AI will definitely grab power to get reward.\") [...] This seems to be most of your position but I'm skeptical (…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:58.067Z"
+  },
+  "https://www.alignmentforum.org/posts/pdaGN6pQyQarFHXF4/reward-is-not-the-optimization-target": {
+    "title": "Reward is not the optimization target — AI Alignment Forum",
+    "description": "TurnTrout discusses a common misconception in reinforcement learning: that reward is the optimization target of trained agents. He argues reward is b…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:58.591Z"
+  },
+  "https://www.alteryx.com/": {
+    "title": "AI Data Analytics Platform | Alteryx",
+    "description": "Automate data workflows, reduce manual work, and deliver insights faster with Alteryx One. Integrates with Snowflake, Databricks, and BI tools.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.670Z"
+  },
+  "https://www.amazon.com/Acer-G276HL-Kbix-Frame-Monitor/dp/B0742D9CDX": {
+    "title": "Amazon.com",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:32.839Z"
+  },
+  "https://www.amazon.com/dp/B009B59OPW/ref=pe_386300_440135490_TE_simp_item_image": {
+    "title": "Amazon.com",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:32.804Z"
+  },
+  "https://www.amazon.com/Dust-Silo-Trilogy-Hugh-Howey/dp/0544838262": {
+    "title": "Amazon.com",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:00.725Z"
+  },
+  "https://www.amazon.com/Provoked-Washington-Started-Catastrophe-Ukraine/dp/1733647376": {
+    "title": "Amazon.com",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:20.643Z"
+  },
+  "https://www.amazon.com/Sandworm-Cyberwar-Kremlins-Dangerous-Hackers/dp/0385544405": {
+    "title": "Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers: Greenberg, Andy: 9780385544405: A…",
+    "description": "Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers [Greenberg, Andy] on Amazon.com. *FREE* shipping on qualifying offers. Sandworm: A New Era of Cyberwar and the Hunt for the Kremlin's Most Dangerous Hackers",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:02.260Z"
+  },
+  "https://www.amazon.com/stores/Aicok/page/ABF74667-68FC-40C0-8C00-A3BF9DD31A4A": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:28.489Z"
+  },
+  "https://www.amazon.sg/Kungroo-Airtight-Glass-Coffee-Pitcher/dp/B01MYWISAE": {
+    "title": "Kungroo Airtight Glass Cold Brew Iced Coffee Maker Pitcher Pot, 1 Quart : Amazon.sg",
+    "description": "Kungroo Airtight Glass Cold Brew Iced Coffee Maker Pitcher Pot, 1 Quart : Amazon.sg",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:29.961Z"
+  },
+  "https://www.amd.com/": {
+    "title": "Welcome to AMD",
+    "description": "AMD delivers leadership high-performance and adaptive computing solutions to advance data center AI, AI PCs, intelligent edge devices, gaming, & beyond.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:13.365Z"
+  },
+  "https://www.amd.com/content/dam/amd/en/documents/instinct-tech-docs/white-papers/amd-cdna-3-white-paper.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.113Z"
+  },
+  "https://www.anandtech.com/show/16024/tsmc-details-3nm-process-technology-details-full-node-scaling-for-2h22": {
+    "title": "Checking your browser",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:53.979Z"
+  },
+  "https://www.anthropic.com/": {
+    "title": "Home \\ Anthropic",
+    "description": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.538Z"
+  },
+  "https://www.anthropic.com/research/alignment-faking": {
+    "title": "Alignment faking in large language models",
+    "description": "A paper from Anthropic's Alignment Science team on Alignment Faking in AI large language models",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.186Z"
+  },
+  "https://www.anthropic.com/research/probes-catch-sleeper-agents": {
+    "title": "Simple probes can catch sleeper agents",
+    "description": "Anthropic is an AI safety and research company that's working to build reliable, interpretable, and steerable AI systems.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.692Z"
+  },
+  "https://www.apolloresearch.ai/research/scheming-reasoning-evaluations": {
+    "title": "Frontier Models are Capable of In-Context Scheming",
+    "description": "We evaluated six frontier models for in-context scheming capabilities. We found that multiple frontier models are capable of in-context scheming when strongly nudged to pursue a goal.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:47.553Z"
+  },
+  "https://www.arxiv.org/abs/2210.00881": {
+    "title": "Predicting the Future of AI with AI: High-quality link prediction in an exponentially growing knowledge network",
+    "description": "A tool that could suggest new personalized research directions and ideas by taking insights from the scientific literature could significantly accelerate the progress of science. A field that might benefit from such an approach is artificial intelligence (AI) research, where the…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.432Z"
+  },
+  "https://www.arxiv.org/abs/2303.02819": {
+    "title": "Artificial Intelligence: 70 Years Down the Road",
+    "description": "Artificial intelligence (AI) has a history of nearly a century from its inception to the present day. We have summarized the development trends and discovered universal rules, including both success and failure. We have analyzed the reasons from both technical and philosophical p…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.607Z"
+  },
+  "https://www.arxiv.org/abs/2307.04701": {
+    "title": "Understanding Real-World AI Planning Domains: A Conceptual Framework",
+    "description": "Planning is a pivotal ability of any intelligent system being developed for real-world applications. AI planning is concerned with researching and developing planning systems that automatically compute plans that satisfy some user objective. Identifying and understanding the rele…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.681Z"
+  },
+  "https://www.arxiv.org/abs/2501.17894": {
+    "title": "Progress in Artificial Intelligence and its Determinants",
+    "description": "We study long-run progress in artificial intelligence in a quantitative way. Many measures, including traditional ones such as patents and publications, machine learning benchmarks, and a new Aggregate State of the Art in ML (or ASOTA) Index we have constructed from these, show e…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.400Z"
+  },
+  "https://www.astralcodexten.com/p/theres-a-time-for-everyone?utm_campaign=posts-open-in-app&triedRedirect=true": {
+    "title": "There's A Time For Everyone",
+    "description": "...",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.194Z"
+  },
+  "https://www.baseten.co/": {
+    "title": "Inference Platform: Deploy AI models in production | Baseten",
+    "description": "Serve and scale open-source and custom AI models on the fastest, most reliable inference platform.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.301Z"
+  },
+  "https://www.ccleaner.com/speccy/download": {
+    "title": "Speccy - Free Download",
+    "description": "Download Speccy - the System Information tool",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.835Z"
+  },
+  "https://www.clearerthinking.org/": {
+    "title": "ClearerThinking.org",
+    "description": "Clearer Thinking offers free, online training programs and tools to improve your decision making and sharpen your reasoning.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.760Z"
+  },
+  "https://www.cloudflare.com/learning/access-management/what-is-mutual-tls/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.644Z"
+  },
+  "https://www.cloudflare.com/learning/cloud/what-is-hybrid-cloud/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:12.274Z"
+  },
+  "https://www.coreweave.com/products/storage": {
+    "title": "Storage for AI | CoreWeave",
+    "description": "Learn how CoreWeave cloud storage, with managed storage services, and with partners like VAST Data and WEKA, supports complex AI workloads",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.883Z"
+  },
+  "https://www.crew.ai/": {
+    "title": "BuilderPack · AI actions for HubSpot Agent Builder",
+    "description": "A curated pack of AI research and content actions that drop into any HubSpot workflow and double as tools for Agent Builder (Breeze) agents.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:17.400Z"
+  },
+  "https://www.cudocompute.com/blog/nvidias-blackwell-architecture-breaking-down-the-b100-b200-and-gb200": {
+    "title": "NVIDIA introduces Blackwell GPU lineup",
+    "description": "Learn about NVIDIA's latest GPUs, including the B100, B200, & GB200 GPUs. Discover how this latest architecture opens new levels of performance.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:51.253Z"
+  },
+  "https://www.cursor.com/": {
+    "title": "AI Coding Agent for Building Ambitious Software | Cursor",
+    "description": "Built to make you extraordinarily productive, agents turn ideas into code. Accelerate development by handing off tasks to Cursor.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.594Z"
+  },
+  "https://www.dailydoseofds.com/llmops-crash-course-part-1/": {
+    "title": "Foundations of AI Engineering and LLMs",
+    "description": "LLMOps Part 1: An overview of AI engineering and LLMOps, and the core dimensions that define modern AI systems.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:22.031Z"
+  },
+  "https://www.datarobot.com/": {
+    "title": "DataRobot Homepage | DataRobot",
+    "description": "DataRobot delivers the industry-leading AI applications and platform that maximize impact and minimize risk for your business",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.457Z"
+  },
+  "https://www.ddn.com/": {
+    "title": "DDN: Data Intelligence Platform Built for AI",
+    "description": "Revolutionize your AI & HPC ops with DDN® data storage & management solutions. Achieve peak performance, seamless cloud integration & scalable efficiency.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.725Z"
+  },
+  "https://www.digitalocean.com/products/droplets": {
+    "title": "DigitalOcean Droplets | Scalable Cloud Compute Starting at $4/mo",
+    "description": "DigitalOcean Droplets are simple, scalable virtual machines. Spin up Basic, General Purpose, Memory-, or CPU-Optimized VMs in seconds.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:07.532Z"
+  },
+  "https://www.dwarkesh.com/p/ai-firm": {
+    "title": "What fully automated firms will look like",
+    "description": "Everyone is sleeping on the *collective* advantages AIs will have, which have nothing to do with raw IQ - they can be copied, distilled, merged, scaled, and evolved in ways humans simply can't.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:56.333Z"
+  },
+  "https://www.eff.org/https-everywhere": {
+    "title": "HTTPS Everywhere",
+    "description": "You no longer need HTTPS Everywhere to set HTTPS by default! Major browsers now offer native support for an HTTPS only mode. Learn how to turn it on.Read more about the sunset of HTTPS Everywhere.Since we started offering HTTPS Everywhere, the battle to encrypt the web has made l…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.411Z"
+  },
+  "https://www.evals.anthropic.com/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.179Z"
+  },
+  "https://www.exfatloss.com/p/satiety-graphed-and-the-horsemen": {
+    "title": "Satiety Graphed & The Horsemen of Obesity",
+    "description": "Graph me like one of your French creams",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.467Z"
+  },
+  "https://www.fhi.ox.ac.uk/wp-content/uploads/How-Does-the-Offense-Defense-Balance-Scale-5-21-19.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:45.982Z"
+  },
+  "https://www.flowresearchcollective.com/blog/growth-mindset": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:08.416Z"
+  },
+  "https://www.forethought.org/": {
+    "title": "Forethought",
+    "description": "We are Forethought, a research organization focussed on how to navigate the transition to superintelligent AI systems.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:48.039Z"
+  },
+  "https://www.forethought.org/research/could-advanced-ai-accelerate-the-pace-of-ai-progress-interviews-with-ai": {
+    "title": "Could Advanced AI Accelerate the Pace of AI Progress? Interviews with AI Researchers",
+    "description": "Discussions about AI progress often center on the importance of compute scaling and algorithmic improvements to achieve new capabilities, and there is evidence that AI systems are beginning to contribute to AI progress. This paper explores what might happen to the pace of progres…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:55.314Z"
+  },
+  "https://www.forethought.org/research/preparing-for-the-intelligence-explosion": {
+    "title": "Preparing for the Intelligence Explosion",
+    "description": "Forethought explores what could be done today to meaningfully improve humanity's prospects of successfully navigating the rapid changes an intelligence explosion would bring.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:48.496Z"
+  },
+  "https://www.forethought.org/research/will-ai-r-and-d-automation-cause-a-software-intelligence-explosion": {
+    "title": "Will AI R&D Automation Cause a Software Intelligence Explosion?",
+    "description": "AI systems that accelerate AI R&D could lead to a runaway feedback loop which results in extremely fast AI progress.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:55.890Z"
+  },
+  "https://www.forethought.org/research/will-the-need-to-retrain-ai-models": {
+    "title": "Will the Need to Retrain AI Models from Scratch Block a Software Intelligence Explosion?",
+    "description": "Forethought argues that the serial time needed to retrain AI systems won’t be enough to stop a software intelligence explosion (though it may slow it down somewhat).",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.805Z"
+  },
+  "https://www.frontiersin.org/journals/human-neuroscience/articles/10.3389/fnhum.2014.00020/full": {
+    "title": "Frontiers | The entropic brain: a theory of conscious states informed by neuroimaging research with psychedelic drugs",
+    "description": "Entropy is a dimensionless quantity that is used for measuring uncertainty about the state of a system but it can also imply physical qualities, where high e...",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:24.818Z"
+  },
+  "https://www.getguesstimate.com/models/25630": {
+    "title": "Guesstimate | A Spreadsheet for the Uncertain",
+    "description": "Plan finances, make strategic decisions, and do risk assessment. Guesstimate uses stochastic models, Monte Carlo simulations, and sensitivity analyses.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:56.724Z"
+  },
+  "https://www.ghostery.com/": {
+    "title": "Ghostery Ad Blocker | Best Free Ad Blocker & Privacy Tool",
+    "description": "Take back control of your online privacy with Ghostery. The #1 privacy suite that gives you the power to block ads, stop trackers, and much more.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.627Z"
+  },
+  "https://www.gnu.org/licenses/gpl-3.0.en.html": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.853Z"
+  },
+  "https://www.goodreads.com/book/show/17332218-words-of-radiance": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:20.490Z"
+  },
+  "https://www.goodreads.com/book/show/58802560-silo-stories": {
+    "title": "Silo Stories",
+    "description": "Discover and share books you love on Goodreads.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:02.095Z"
+  },
+  "https://www.goodreads.com/book/show/7235533-the-way-of-kings": {
+    "title": "The Way of Kings (The Stormlight Archive, #1)",
+    "description": "From #1 New York Times bestselling author Brandon Sande…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:01.880Z"
+  },
+  "https://www.guidedtrack.com/programs/4tw22q9/run?abstractResult=Platonist&aestheticResult=Aesthetic+Subjectivist&externalResult=External-world+Realist&freeResult=Compatibilist&godResult=Atheist&knowledgeResult=Contextualist&natureResult=Anti-Humean&metaEthicsResult=Moral+Anti-realist&mindResult=Physicalist&moralResult=Non-cognitivist&newcombResult=One-boxer&normativeResult=Consequentialist&politicsResult=Libertarian&scienceResult=Scientific+Realist&teletransporterResult=Death&truthResult=Epistemic+Truth&zombiesResult=Conceivable-and-possible&ethicsDiagram=Universal+Prescriptivism": {
+    "title": "Results for Learn Your Philosophical Beliefs | GuidedTrack",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:33.768Z"
+  },
+  "https://www.harney.com/": {
+    "title": "Premium Loose Leaf Teas | Harney & Sons",
+    "description": "Shop over 300 tea blends, tea gifts, treats and teaware online from Harney & Sons Tea. Tea bags and loose leaf black tea, green tea, herbal tea, white tea. Shop Now",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:28.676Z"
+  },
+  "https://www.hbs.edu/ris/Publication%20Files/24-038_51f8444f-502c-4139-8bf2-56eb4b65c58a.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.355Z"
+  },
+  "https://www.interaction-design.org/literature/article/repetition-pattern-and-rhythm?srsltid=AfmBOoo9Mo6FssSssw9hlR6LEh_9ZXf_5oZDKjDwIp39tMWzBJTV2eMT": {
+    "title": "Repetition, Pattern, and Rhythm",
+    "description": "As a designer, you have three types of repetition: Repetition, Patterns, Rhythm",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.425Z"
+  },
+  "https://www.interaction-design.org/literature/topics/emotional-design": {
+    "title": "What is Emotional Design? — updated 2026",
+    "description": "Emotional design is the concept of how to create designs that evoke emotions which result in positive user experiences.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.587Z"
+  },
+  "https://www.jetpens.com/Maruman-Mnemosyne-N193A-Twin-Ring-Memo-Pad-Modified-A7-5-mm-Lined/pd/11413": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.353Z"
+  },
+  "https://www.jstor.org/": {
+    "title": "JSTOR Home",
+    "description": "JSTOR is a digital library of academic journals, books, and primary sources.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.283Z"
+  },
+  "https://www.juniper.net/": {
+    "title": "Juniper Networks, Now Part of HPE – Leading the Convergence of AI & Networking",
+    "description": "Proven AI for your network. Mist, the AI-native networking platform makes every connection more reliable, measurable, and secure for businesses.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.324Z"
+  },
+  "https://www.kali.org/": {
+    "title": "Kali Linux | Penetration Testing and Ethical Hacking Linux Distribution",
+    "description": "Home of Kali Linux, an Advanced Penetration Testing Linux distribution used for Penetration Testing, Ethical Hacking and network security assessments.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.059Z"
+  },
+  "https://www.kiteworks.com/risk-compliance-glossary/aes-256-encryption/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:19.999Z"
+  },
+  "https://www.kubeflow.org/": {
+    "title": "Kubeflow",
+    "description": "Kubeflow makes deployment of ML Workflows on Kubernetes straightforward and automated",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.571Z"
+  },
+  "https://www.langchain.com/": {
+    "title": "LangChain: the open agent platform to own your intelligence",
+    "description": "LangChain enables every company to own their intelligence. Control, govern, and compound intelligence with an open agent engineering platform. Trusted by 7k+ organizations.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.695Z"
+  },
+  "https://www.lesswrong.com/posts/5bZ8xFBBHhuFNXSNY/a-guide-to-ai-2027": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:45.552Z"
+  },
+  "https://www.lesswrong.com/posts/CqHMdLcdupf7y5buK/an-optimistic-2027-timeline?utm_source=substack&utm_medium=email": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.825Z"
+  },
+  "https://www.lesswrong.com/posts/DfrSZaf3JC8vJdbZL/how-to-make-superbabies": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.886Z"
+  },
+  "https://www.lesswrong.com/posts/DiiLDbHxbrHLAyXaq/why-people-like-your-quick-bullshit-takes-better-than-your": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.221Z"
+  },
+  "https://www.lesswrong.com/posts/ExssKjAaXEEYcnzPd/conversational-cultures-combat-vs-nurture-v2": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.386Z"
+  },
+  "https://www.lesswrong.com/posts/FG54euEAesRkSZuJN/ryan_greenblatt-s-shortform?commentId=z7sKoyGbgmfL5kLmY": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.014Z"
+  },
+  "https://www.lesswrong.com/posts/GDnRrSTvFkcpShm78/when-is-reward-ever-the-optimization-target?commentId=PwR3nzN99zkJv7Gj9": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.467Z"
+  },
+  "https://www.lesswrong.com/posts/NMoNLfX3ihXSZJwqK/church-planting-when-venture-capital-finds-jesus": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.421Z"
+  },
+  "https://www.lesswrong.com/posts/pRkFkzwKZ2zfa3R6H/without-specific-countermeasures-the-easiest-path-to": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.275Z"
+  },
+  "https://www.lesswrong.com/posts/pz7Mxyr7Ac43tWMaC/against-evolution-as-an-analogy-for-how-humans-will-create": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:58.240Z"
+  },
+  "https://www.lesswrong.com/posts/SXJGSPeQWbACveJhs/the-best-tacit-knowledge-videos-on-every-subject": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.100Z"
+  },
+  "https://www.lesswrong.com/posts/TiBsZ9beNqDHEvXt4/how-we-picture-bayesian-agents": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.695Z"
+  },
+  "https://www.lesswrong.com/posts/TpSFoqoG2M5MAAesg/ai-2027-what-superintelligence-looks-like-1": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.828Z"
+  },
+  "https://www.lesswrong.com/posts/Tzdwetw55JNqFTkzK/why-don-t-we-just-shoggoth-face-paraphraser": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.455Z"
+  },
+  "https://www.lesswrong.com/posts/Wg6ptgi2DupFuAnXG/orienting-toward-wizard-power": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.269Z"
+  },
+  "https://www.lesswrong.com/posts/Wnqua6eQkewL3bqsF/matt-botvinick-on-the-spontaneous-emergence-of-learning": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.133Z"
+  },
+  "https://www.lesswrong.com/posts/xcMngBervaSCgL9cu/levels-of-friction": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.230Z"
+  },
+  "https://www.lesswrong.com/posts/yQSmcfN4kA7rATHGK/many-arguments-for-ai-x-risk-are-wrong": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.425Z"
+  },
+  "https://www.lesswrong.com/users/eukaryote?from=post_header": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:22.130Z"
+  },
+  "https://www.lesswrong.com/users/ruby?from=post_header": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.394Z"
+  },
+  "https://www.lesswrong.com/w/instrumental-convergence": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.931Z"
+  },
+  "https://www.llama.com/": {
+    "title": "Products & Solutions for AI Developers | Meta",
+    "description": "Build with Meta's AI models and tools. Access Muse Spark through Muse Code and Meta Model API with resources to get started.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:13.448Z"
+  },
+  "https://www.llama.com/models/llama-3/": {
+    "title": "Open-source AI Models for Any Application | Llama 3",
+    "description": "Discover Llama 3's open-source AI models you can fine-tune, distill and deploy anywhere. Build smarter applications with flexible AI solutions.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:13.479Z"
+  },
+  "https://www.llama.com/models/llama-4/": {
+    "title": "Unmatched Performance and Efficiency | Llama 4",
+    "description": "Meet Llama 4, the latest multimodal AI model offering cost efficiency, 10M context window and easy deployment. Start building advanced personalized experiences.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:13.512Z"
+  },
+  "https://www.logitech.com/en-us/products/mice/mx-ergo-wireless-trackball-mouse.html?crid=7": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:33.406Z"
+  },
+  "https://www.logitech.com/en-us/products/mice/mx-master-3-mac-wireless-mouse.910-005693.html?crid=7": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:33.389Z"
+  },
+  "https://www.marktechpost.com/2025/10/09/tiny-recursive-model-trm-a-tiny-7m-model-that-surpass-deepseek-r1-gemini-2-5-pro-and-o3-mini-at-reasoning-on-both-arg-agi-1-and-arc-agi-2/": {
+    "title": "Tiny Recursive Model (TRM): A Tiny 7M Model that Surpass DeepSeek-R1, Gemini 2.5 pro, and o3-mini at Reasoning on both A…",
+    "description": "Tiny Recursive Model (TRM): A Tiny 7M Model that Surpass DeepSeek-R1, Gemini 2.5 pro, and o3-mini at Reasoning on both ARG-AGI 1 and ARC-AGI 2",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:23.140Z"
+  },
+  "https://www.mdpi.com/1422-0067/25/20/11199": {
+    "title": "",
+    "description": "",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:23.293Z"
+  },
+  "https://www.micron.com/products/memory/hbm/hbm3e": {
+    "title": "HBM3E",
+    "description": "Micron HBM3E memory is advancing the rate of AI innovation and is designed to keep data flowing though the most demanding data center workloads.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:52.331Z"
+  },
+  "https://www.modular.com/": {
+    "title": "Modular: Inference from Kernel to Cloud",
+    "description": "The unified AI inference stack - from custom GPU kernels to production cloud serving on NVIDIA and AMD. 2x performance. Top open models. Open source stack.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.694Z"
+  },
+  "https://www.modular.com/mammoth": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.021Z"
+  },
+  "https://www.modular.com/max": {
+    "title": "MAX: A high-performance AI serving and modeling framework | MAX",
+    "description": "MAX accelerates AI inference and abstracts hardware complexity for model developers",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:17.529Z"
+  },
+  "https://www.modular.com/mojo": {
+    "title": "Mojo",
+    "description": "The Mojo programming language",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:17.275Z"
+  },
+  "https://www.montecarlodata.com/": {
+    "title": "Monte Carlo | The Agent Trust Platform For Data + AI Observability",
+    "description": "Monte Carlo is the agent trust platform — unifying data, AI, and agent observability so enterprise teams can trust the AI they run in production.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.219Z"
+  },
+  "https://www.moonscoffeeandtea.com/": {
+    "title": "Moons Coffee & Tea | Coffee Roaster & Loose Leaf Teas",
+    "description": "Moons Coffee & Tea is a coffee roaster and tea shop located in Albuquerque, NM. Moons Coffee & Tea has a selection of premium fresh roasted coffees from around the world along with over 100 kinds of fine loose leaf teas.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:28.600Z"
+  },
+  "https://www.moonscoffeeandtea.com/store/Bukhial-Assam-p221092629": {
+    "title": "Shop Now | Moons Coffee & Tea | United States",
+    "description": "Moons Coffee & Tea ships our premium roasted coffees and fine loose leaf teas nationwide.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:29.069Z"
+  },
+  "https://www.moonscoffeeandtea.com/store/House-Blend-Darjeeling-p19952495": {
+    "title": "Shop Now | Moons Coffee & Tea | United States",
+    "description": "Moons Coffee & Tea ships our premium roasted coffees and fine loose leaf teas nationwide.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:29.011Z"
+  },
+  "https://www.moonscoffeeandtea.com/store/Japan-Organic-Sencha-p19952558": {
+    "title": "Shop Now | Moons Coffee & Tea | United States",
+    "description": "Moons Coffee & Tea ships our premium roasted coffees and fine loose leaf teas nationwide.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:29.208Z"
+  },
+  "https://www.moonscoffeeandtea.com/store/Mao-Feng-Long-March-p19952555": {
+    "title": "Shop Now | Moons Coffee & Tea | United States",
+    "description": "Moons Coffee & Tea ships our premium roasted coffees and fine loose leaf teas nationwide.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:28.773Z"
+  },
+  "https://www.moonscoffeeandtea.com/store/Ti-Kuan-Yin-Superior-Oolong-p19952571": {
+    "title": "Shop Now | Moons Coffee & Tea | United States",
+    "description": "Moons Coffee & Tea ships our premium roasted coffees and fine loose leaf teas nationwide.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:29.129Z"
+  },
+  "https://www.nature.com/": {
+    "title": "Nature",
+    "description": "Nature is the foremost international weekly scientific journal in the world and is the flagship journal for Nature Portfolio. It publishes the finest ...",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:44.093Z"
+  },
+  "https://www.nature.com/articles/s41467-023-42875-2": {
+    "title": "Learning few-shot imitation as cultural transmission - Nature Communications",
+    "description": "The modelling of human-like behaviours is one of the challenges in the field of Artificial Intelligence. Inspired by experimental studies of&nbsp;cultural evolution, the authors propose a reinforcement learning approach to generate agents capable of real-time &nbsp;third-person i…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:58.910Z"
+  },
+  "https://www.nature.com/articles/s41514-025-00244-x": {
+    "title": "Psilocybin treatment extends cellular lifespan and improves survival of aged mice - npj Aging",
+    "description": "Psilocybin, the naturally occurring psychedelic compound produced by hallucinogenic mushrooms, has received attention due to considerable clinical evidence for its therapeutic potential to treat various psychiatric and neurodegenerative indications. However, the underlying molecu…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.773Z"
+  },
+  "https://www.nature.com/articles/s41566-025-01686-1": {
+    "title": "Ultrafast coherent dynamics of microring modulators - Nature Photonics",
+    "description": "An ultra-compact, ultra-wide-bandwidth in-phase/quadrature modulator on a silicon chip is demonstrated, enabling coherent transmission for symbol rates up to 180 Gbaud and a net bit rate surpassing 1 Tb s−1 over an 80 km span, with modulation energy consumption as low as 10.4 fJ…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.312Z"
+  },
+  "https://www.nature.com/articles/s41587-025-02584-1": {
+    "title": "An open letter to graduate students and other procrastinators: it’s time to write - Nature Biotechnology",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:10.123Z"
+  },
+  "https://www.nature.com/articles/s41587-025-02836-0": {
+    "title": "A trimodal protein language model enables advanced protein searches - Nature Biotechnology",
+    "description": "A protein foundation model represents protein sequence, structure and function.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.598Z"
+  },
+  "https://www.nejm.org/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.357Z"
+  },
+  "https://www.nngroup.com/articles/minimize-cognitive-load/": {
+    "title": "Minimize Cognitive Load to Maximize Usability",
+    "description": "The total cognitive load, or amount of mental processing power needed to use your site, affects how easily users find content and complete tasks.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.435Z"
+  },
+  "https://www.nordisco.com/products/zebra-f-301-compact-27411-ballpoint-pen-0-7mm-fine-black-ink.html?gad_source=1&gclid=Cj0KCQiA_NC9BhCkARIsABSnSTYUqGlCWtE0HQCQaXDsH_QJ4FWxYW11G_8Eu2pWLBhyucyHcFv8M9QaAjzmEALw_wcB": {
+    "title": "Zebra F-301 Compact 27411 Ballpoint Pen, 0.7mm Fine, Black Ink",
+    "description": "Zebra F-301 Compact 27411 Ballpoint Pen, 0.7mm Fine, Black Ink. UPC 045888274112 A cousin of the Original F-301, the F-301 Compact ballpoint pen also features a stainless steel barrel for long lasting performance, but with the added benefit of expansion and contraction for added…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:34.299Z"
+  },
+  "https://www.nvidia.com/": {
+    "title": "World Leader in AI Computing",
+    "description": "We create the world’s fastest supercomputer and largest gaming platform.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:13.602Z"
+  },
+  "https://www.nvidia.com/content/dam/en-zz/Solutions/Data-Center/documents/datasheet-nvidia-bluefield-3-dpu.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.422Z"
+  },
+  "https://www.nvidia.com/en-sg/data-center/dgx-h100/": {
+    "title": "NVIDIA DGX H100",
+    "description": "World’s Proven Choice for Enterprise AI",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.797Z"
+  },
+  "https://www.nvidia.com/en-us/data-center/a100/": {
+    "title": "NVIDIA A100 GPUs Power the Modern Data Center",
+    "description": "The fastest data center platform for AI and HPC.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:51.365Z"
+  },
+  "https://www.nvidia.com/en-us/data-center/ampere-architecture/": {
+    "title": "NVIDIA Ampere Architecture: The Heart of the Modern Data Center",
+    "description": "The new NVIDIA Ampere architecture is changing the ways data centers operate.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.061Z"
+  },
+  "https://www.nvidia.com/en-us/data-center/gb200-nvl72/": {
+    "title": "NVIDIA GB200 NVL72",
+    "description": "Discover the powerful GB200 NVL72 GPU, engineered for AI workloads and next-gen data centers.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:50.822Z"
+  },
+  "https://www.nvidia.com/en-us/data-center/h100/": {
+    "title": "NVIDIA H100 GPU",
+    "description": "A Massive Leap in Accelerated Compute.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:50.130Z"
+  },
+  "https://www.nvidia.com/en-us/data-center/h200/": {
+    "title": "NVIDIA H200 GPU",
+    "description": "For supercharging AI and HPC workloads.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:50.775Z"
+  },
+  "https://www.nvidia.com/en-us/data-center/l40s/": {
+    "title": "NVIDIA L40S GPU",
+    "description": "The Most Powerful Universal GPU.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.206Z"
+  },
+  "https://www.nvidia.com/en-us/data-center/technologies/hopper-architecture/": {
+    "title": "NVIDIA Hopper GPU Architecture",
+    "description": "World’s most advanced GPU.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.942Z"
+  },
+  "https://www.nvidia.com/en-us/geforce/ada-lovelace-architecture/": {
+    "title": "NVIDIA Ada Lovelace Architecture",
+    "description": "Designed to Deliver Revolutionary Performance!!",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.388Z"
+  },
+  "https://www.nvidia.com/en-us/geforce/gaming-laptops/max-q-technologies/": {
+    "title": "NVIDIA Max-Q Technologies for Laptops",
+    "description": "An advanced suite of AI-powered technologies.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:33.284Z"
+  },
+  "https://www.nvidia.com/en-us/networking/infiniband-adapters/": {
+    "title": "NVIDIA InfiniBand Adapters",
+    "description": "NVIDIA InfiniBand adapters leverage speeds and In-Network Computing, achieving extreme performance and scale.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.983Z"
+  },
+  "https://www.nvidia.com/en-us/products/workstations/nvlink-bridges/": {
+    "title": "NVLink High-Speed GPU Interconnect | NVIDIA Quadro",
+    "description": "Connect two NVIDIA Quadro graphics cards for scalable memory and performance.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.503Z"
+  },
+  "https://www.openphilanthropy.org/research/could-advanced-ai-drive-explosive-economic-growth/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:48.079Z"
+  },
+  "https://www.openphilanthropy.org/research/what-a-compute-centric-framework-says-about-takeoff-speeds/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:55.318Z"
+  },
+  "https://www.oracle.com/cloud/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.122Z"
+  },
+  "https://www.oxo.com/steel-pop-container-small-square-short-1-1-qt.html": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:28.483Z"
+  },
+  "https://www.perplexity.ai/hub/blog/introducing-perplexity-deep-research": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.453Z"
+  },
+  "https://www.pinecone.io/": {
+    "title": "The vector database to build knowledgeable AI | Pinecone",
+    "description": "Search through billions of items for similar matches to any object, in milliseconds. It’s the next generation of search, an API call away.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:14.363Z"
+  },
+  "https://www.planned-obsolescence.org/july-2022-training-game-report/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:57.603Z"
+  },
+  "https://www.pmwiki.org/wiki/Cookbook/Cookbook": {
+    "title": "Cookbook - PmWiki",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:43.023Z"
+  },
+  "https://www.pmwiki.org/wiki/Cookbook/ImagePopup": {
+    "title": "ImagePopup - Cookbook - PmWiki",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.633Z"
+  },
+  "https://www.pmwiki.org/wiki/Skins/Skins": {
+    "title": "Skins - PmWiki",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:43.495Z"
+  },
+  "https://www.poetryfoundation.org/poems/46473/if---": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.060Z"
+  },
+  "https://www.polycase.com/techtalk/ip-rated-enclosures/ip68-vs-ip69.html": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.759Z"
+  },
+  "https://www.python.org/downloads/windows/": {
+    "title": "Python Releases for Windows",
+    "description": "The official home of the Python Programming Language",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:31.484Z"
+  },
+  "https://www.rand.org/pubs/research_briefs/RBA2849-1.html": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:47.257Z"
+  },
+  "https://www.rand.org/pubs/research_reports/RRA2849-1.html": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:58.725Z"
+  },
+  "https://www.razer.com/gaming-speakers/razer-leviathan/RZ05-01260100-R3U1": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:33.918Z"
+  },
+  "https://www.researchgate.net/publication/220387969_Relevance_Realization_and_the_Emerging_Framework_in_Cognitive_Science": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.008Z"
+  },
+  "https://www.researchgate.net/publication/221618539_Optimal_Brain_Damage": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:25.856Z"
+  },
+  "https://www.ribbonfarm.com/2024/10/10/ribbonfarm-is-retiring/": {
+    "title": "Ribbonfarm is Retiring",
+    "description": "After several years of keeping it going in semi-retired, keep-the-lights-on (KTLO) mode, I've decided to officially fully retire this blog. The ribbonfarm.com…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:26.339Z"
+  },
+  "https://www.run.ai/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:15.806Z"
+  },
+  "https://www.seagate.com/": {
+    "title": "Leaders in mass-capacity storage | Seagate US",
+    "description": "Seagate is a leader in mass-capacity data storage. We’ve delivered more than four billion terabytes of capacity over the past four decades. We make storage that scales, bringing trust and integrity to innovations that depend on data. In an era of unprecedented creation, Seagate s…",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.196Z"
+  },
+  "https://www.semianalysis.com/p/ai-capacity-constraints-cowos-and": {
+    "title": "AI Capacity Constraints - CoWoS and HBM Supply Chain",
+    "description": "Quarterly Ramp for Nvidia, Broadcom, Google, AMD, AMD Embedded (Xilinx), Amazon, Marvell, Microsoft, Alchip, Alibaba T-Head, ZTE Sanechips, Samsung, Micron, and SK Hynix",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:53.648Z"
+  },
+  "https://www.silanano.com/insights/unlocking-radical-product-innovation-from-the-inside-out": {
+    "title": "Sila Insights",
+    "description": "Stay up to date with Sila's insights & news.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:29.976Z"
+  },
+  "https://www.sitepoint.com/a-designers-guide-to-fast-websites-and-perceived-performance/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:10.534Z"
+  },
+  "https://www.spotify.com/us/": {
+    "title": "Spotify - Web Player: Music for everyone",
+    "description": "Spotify is a digital music service that gives you access to millions of songs.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:32.345Z"
+  },
+  "https://www.squadcast.com/blog/sre-principles": {
+    "title": "The Guide to SRE Principles",
+    "description": "SRE Principles - Core concepts for building reliable systems.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.617Z"
+  },
+  "https://www.superlinked.com/": {
+    "title": "Open Source Inference for Agents | Superlinked",
+    "description": "Every model your agents call, served from one open-source cluster in your cloud. Open models end to end; 50x cheaper than per-token APIs.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:15.188Z"
+  },
+  "https://www.supermicro.com/": {
+    "title": "Supermicro Data Center Server, Blade, Data Storage, AI System",
+    "description": "The premier provider of advanced Server Building Block Solutions® for 5G/Edge, Data Center, Cloud, Enterprise, Big Data, HPC and Embedded markets worldwide.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.487Z"
+  },
+  "https://www.tecton.ai/": {
+    "title": "Databricks: Leading Data and AI Solutions for Enterprises",
+    "description": "Databricks offers a unified platform for data, analytics and AI. Build better AI with a data-centric approach. Simplify ETL, data warehousing, governance and AI on the Data + AI Platform.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:14.998Z"
+  },
+  "https://www.thriftbooks.com/w/shift_hugh-howey/549376/?resultid=03a21d0a-60e7-46ac-8aaf-ee88f5b29ebb": {
+    "title": "Shift book by Hugh Howey",
+    "description": "Buy a cheap copy of Shift book by Hugh Howey. THE BASIS FOR SILO, NOW A #1 STREAMING SHOW ON APPLE TVIn this second volume in the New York Times best-selling Silo series, Hugh Howey describes the catastrophic... Free Shipping on all orders over $20.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:01.078Z"
+  },
+  "https://www.thriftbooks.com/w/wool-omnibus-silo-1_hugh-howey/258324/?resultid=0bec0b47-6602-453d-8074-e9de67e508d3": {
+    "title": "Wool book by Hugh Howey",
+    "description": "Buy a cheap copy of Wool book by Hugh Howey. THE BASIS FOR SILO, NOW A #1 STREAMING SHOW ON APPLE TVOne of dystopian fiction's masterpieces alongside the likes of 1984 and Brave New World. -- Daily... Free Shipping on all orders over $20.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:01.301Z"
+  },
+  "https://www.tobyord.com/writing/inference-scaling-reshapes-ai-governance": {
+    "title": "Inference Scaling Reshapes AI Governance — Toby Ord",
+    "description": "The shift from scaling up the pre-training compute of AI systems to scaling up their inference compute may have profound effects on AI governance. The nature of these effects depends crucially on whether this new inference compute will primarily be used during external deployment…",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:46.905Z"
+  },
+  "https://www.unclelee.com/": {
+    "title": "Uncle Lee's | Imperial Organic Green Tea",
+    "description": "Uncle Lee's Tea info page",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:28.539Z"
+  },
+  "https://www.uptontea.com/": {
+    "title": "Upton Tea Imports | Online Loose Tea Shop",
+    "description": "Buy loose leaf tea from around the world at Upton Tea Imports. Over 400 high-quality loose leaf teas at great prices with exceptional service since 1989.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:28.947Z"
+  },
+  "https://www.vastdata.com/platform/overview": {
+    "title": "VAST Data Platform Services: AI-Powered Discovery Engine",
+    "description": "VAST delivers the first AI Operating System, unifying storage, database, and compute to drive agentic computing and data intensive workloads. Learn more.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:17.844Z"
+  },
+  "https://www.vellum.ai/llm-parameters/llm-streaming?utm_source=google&utm_medium=organic": {
+    "title": "LLM Streaming - LLM Parameter Guide - Vellum",
+    "description": "Learn how to stream LLM tokens and improve user experience for longer content responses.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:55:12.545Z"
+  },
+  "https://www.w3.org/DesignIssues/Semantic.html?utm_source=chatgpt.com": {
+    "title": "Semantic Web roadmap",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.181Z"
+  },
+  "https://www.w3.org/WAI/tips/designing/": {
+    "title": "Designing for Web Accessibility – Tips for Getting Started",
+    "description": "Summary",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:11.166Z"
+  },
+  "https://www.whoop.com/thelocker/heart-rate-variability-hrv/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.618Z"
+  },
+  "https://www.whoop.com/thelocker/resting-heart-rate-by-age-and-gender/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.660Z"
+  },
+  "https://www.whoop.com/thelocker/what-are-the-best-pulse-points/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.530Z"
+  },
+  "https://www.whoop.com/us/en/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:42.499Z"
+  },
+  "https://www.whoop.com/us/en/thelocker/what-is-respiratory-rate-normal/": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:29.667Z"
+  },
+  "https://www.writingruxandrabio.com/p/scott-alexander-was-right-doubling?utm_campaign=posts-open-in-app&triedRedirect=true": {
+    "title": "Scott Alexander was right: doubling down",
+    "description": "In which I double down on my argument from \"The edgelords were right: a response to Scott Alexander\"",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.121Z"
+  },
+  "https://www.wsj.com/world/africa/worlds-biggest-animal-migration-great-nile-b67e3c0b?gaa_at=eafs&gaa_n=ASWzDAiUZFf_qUsaraiEiL7oViXy16OTvOZlZaFc2aQdzw1gpiHuF4Gt0fliDooHyz0%3D&gaa_ts=68ea933a&gaa_sig=H5YVT71wsB6jd9krWL8fh6_N5awlDCeeAQ3PO_kc9M6KHLsJvlH-nfiaAHXz2b8Rd3zW3YvYoMwNsxGD1d3ImQ%3D%3D": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:23.757Z"
+  },
+  "https://x.com/hardmaru/status/1885490494178025900": {
+    "title": "hardmaru (@hardmaru) on X",
+    "description": "@SchmidhuberAI “DeepSeek? Schmidhuber did it first.” 😏 https://t.co/cw1AhvO6Ws",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:26.805Z"
+  },
+  "https://x.com/MLStreetTalk/status/1943568151603745224": {
+    "title": "Machine Learning Street Talk (@MLStreetTalk) on X",
+    "description": "Professor David Krakauer from @sfiscience delivering a poignant account of how LLMs might affect our cognition in the long run. Filmed at @DivIntelligence",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:05.968Z"
+  },
+  "https://x.com/thegrugq": {
+    "title": "thaddeus e. grugq (@thegrugq) on X",
+    "description": "Hacker :: researcher :: PhD candidate @warstudies @KingsCollegeLon :: thegrugq@gmail.com :: PGP https://t.co/dYipV8y3bo",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:24.531Z"
+  },
+  "https://yoshuabengio.org/wp-content/uploads/2024/08/FlexHEG-Memo_August-2024.pdf": {
+    "title": "",
+    "description": "",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:54:46.301Z"
+  },
+  "https://yunnansourcing.com/": {
+    "title": "Yunnan Sourcing - The Ultimate Source for Yunnan Pu-erh Tea",
+    "description": "Since 2004, we have been in the business of sourcing Yunnan Pu-erh Tea, Chinese Green Tea, Black Tea, Oolong Tea, White Tea, Hei Cha, Teawares, Clay Teapots, and much more! We also offer wholesale pricing in addition to our already competitive retail pricing!",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:28.833Z"
+  },
+  "https://zapier.com/": {
+    "title": "Zapier: Automate AI Workflows, Agents, and Apps",
+    "description": "Build and scale AI workflows and agents across 9,000+ apps with Zapier—the most connected AI orchestration platform. Trusted by 3 million+ businesses.",
+    "frameable": false,
+    "fetchedAt": "2026-08-26T12:55:16.120Z"
+  },
+  "https://zoom.us/": {
+    "title": "One platform to connect | Zoom",
+    "description": "Modernize workflows with Zoom's trusted collaboration tools: including video meetings, Zoom Chat, VoIP phone, webinars, whiteboard, contact center, and events.",
+    "frameable": true,
+    "fetchedAt": "2026-08-26T12:54:32.138Z"
+  }
+}

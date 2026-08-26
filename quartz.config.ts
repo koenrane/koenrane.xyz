@@ -49,6 +49,7 @@ const config: QuartzConfig = {
       Plugin.TagAcronyms(),
       Plugin.OrnamentHr(),
       Plugin.AddFavicons(),
+      Plugin.AddLinkPreviews(),
       Plugin.AfterArticle(),
       Plugin.ColorVariables(),
       Plugin.rehypeCustomSpoiler(),
