@@ -10,6 +10,8 @@ import { h } from "hastscript"
 import * as linkpreviews from "../linkpreviews"
 
 const originalFetch = globalThis.fetch
+/** Nudge used to push a timestamp just past (or keep it just inside) the cache TTL. */
+const ONE_MINUTE_MS = 60_000
 
 beforeEach(() => {
   linkpreviews.previewCache.clear()
@@ -52,6 +54,11 @@ describe("parseFrameAncestors", () => {
       ["'self'", "https://example.com"],
     ],
     ["FRAME-ANCESTORS *", ["*"]],
+    // A CSP value can carry several comma-separated policies, and Headers.get() joins
+    // duplicate CSP headers the same way.
+    ["default-src 'self', frame-ancestors 'none'", ["'none'"]],
+    ["default-src 'self'; img-src *, frame-ancestors 'self'; base-uri 'self'", ["'self'"]],
+    ["frame-ancestors *, default-src 'self'; frame-ancestors 'none'", ["'none'"]],
   ])("parses %p", (header: string, expected: string[] | null) => {
     expect(linkpreviews.parseFrameAncestors(header)).toEqual(expected)
   })
@@ -80,6 +87,21 @@ describe("isFrameable", () => {
       "a CSP without a frame-ancestors directive",
       { "content-security-policy": "default-src 'self'" },
       true,
+    ],
+    ["an empty X-Frame-Options value", { "x-frame-options": "" }, false],
+    [
+      "frame-ancestors 'none' in the second of two comma-separated policies",
+      { "content-security-policy": "default-src 'self', frame-ancestors 'none'" },
+      false,
+    ],
+    [
+      "frame-ancestors 'self' in a later policy of a realistic multi-policy header",
+      {
+        "content-security-policy":
+          "require-trusted-types-for 'script';report-uri https://csp.example/report, " +
+          "base-uri 'self';object-src 'none';frame-ancestors 'self'",
+      },
+      false,
     ],
     [
       "both headers present and disagreeing",
@@ -211,6 +233,28 @@ describe("normalizePreviewUrl", () => {
   })
 })
 
+describe("isPreviewExpired", () => {
+  const buildPreview = (fetchedAt: string): linkpreviews.LinkPreview => ({
+    title: "T",
+    description: "D",
+    frameable: true,
+    fetchedAt,
+  })
+
+  it.each([
+    ["just inside the TTL", linkpreviews.CACHE_TTL_MS - ONE_MINUTE_MS, false],
+    ["just past the TTL", linkpreviews.CACHE_TTL_MS + ONE_MINUTE_MS, true],
+    ["fetched moments ago", 0, false],
+  ])("treats an entry %s as expired=%p", (_name: string, ageMs: number, expected: boolean) => {
+    const preview = buildPreview(new Date(Date.now() - ageMs).toISOString())
+    expect(linkpreviews.isPreviewExpired(preview)).toBe(expected)
+  })
+
+  it("treats an unparseable timestamp as expired", () => {
+    expect(linkpreviews.isPreviewExpired(buildPreview("not a date"))).toBe(true)
+  })
+})
+
 describe("MaybeFetchPreview", () => {
   it("caches negative results so a dead link is fetched only once", async () => {
     mockFetchOnce(new Error("network unreachable"))
@@ -221,16 +265,44 @@ describe("MaybeFetchPreview", () => {
     expect(globalThis.fetch).toHaveBeenCalledTimes(1)
   })
 
-  it("performs no network request when the cache already holds the URL", async () => {
+  it("performs no network request when the cache already holds a fresh entry", async () => {
     mockFetchOnce(new Error("should not be called"))
     linkpreviews.previewCache.set("https://cached.example/", {
       title: "Cached",
       description: "From disk",
       frameable: true,
-      fetchedAt: "2026-01-01T00:00:00.000Z",
+      fetchedAt: new Date().toISOString(),
     })
     const preview = await linkpreviews.MaybeFetchPreview("https://cached.example/")
     expect(preview.title).toBe("Cached")
+    expect(globalThis.fetch).not.toHaveBeenCalled()
+  })
+
+  it("re-probes an entry older than the TTL instead of trusting it", async () => {
+    mockFetchOnce(createResponse({ "x-frame-options": "DENY", "content-type": "text/html" }, ""))
+    linkpreviews.previewCache.set("https://stale.example/", {
+      title: "Stale",
+      description: "Probed long ago",
+      frameable: true,
+      fetchedAt: new Date(Date.now() - linkpreviews.CACHE_TTL_MS - ONE_MINUTE_MS).toISOString(),
+    })
+    const preview = await linkpreviews.MaybeFetchPreview("https://stale.example/")
+    expect(globalThis.fetch).toHaveBeenCalledTimes(1)
+    expect(preview.frameable).toBe(false)
+    expect(linkpreviews.previewCache.get("https://stale.example/")).toBe(preview)
+  })
+
+  it("serves a stale entry rather than fetching when the skip env var is set", async () => {
+    mockFetchOnce(new Error("should not be called"))
+    process.env[linkpreviews.SKIP_ENV_VAR] = "1"
+    linkpreviews.previewCache.set("https://stale.example/", {
+      title: "Stale",
+      description: "Probed long ago",
+      frameable: true,
+      fetchedAt: new Date(Date.now() - linkpreviews.CACHE_TTL_MS - ONE_MINUTE_MS).toISOString(),
+    })
+    const preview = await linkpreviews.MaybeFetchPreview("https://stale.example/")
+    expect(preview.title).toBe("Stale")
     expect(globalThis.fetch).not.toHaveBeenCalled()
   })
 

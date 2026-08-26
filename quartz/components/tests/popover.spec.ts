@@ -100,6 +100,7 @@ test("Frameable external links render a sandboxed iframe preview", async ({ page
   await expect(popover).toBeVisible()
 
   const previewFrame = popover.locator(".external-preview-frame iframe")
+  await expect(previewFrame).toBeVisible()
   await expect(previewFrame).toHaveAttribute(
     "sandbox",
     /allow-forms.*allow-pointer-lock.*allow-popups.*allow-same-origin.*allow-scripts/,

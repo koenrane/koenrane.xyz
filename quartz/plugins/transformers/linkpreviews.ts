@@ -17,6 +17,14 @@ export const MAX_CONCURRENT_FETCHES = 8
 export const MAX_TITLE_CHARS = 120
 export const MAX_DESCRIPTION_CHARS = 280
 export const TRUNCATION_SUFFIX = "…"
+/**
+ * How long a cached probe is trusted before the URL is re-fetched. Framing headers and
+ * page titles do change, and without an expiry a site that adds X-Frame-Options after
+ * being cached as frameable would be framed forever. 30 days keeps ordinary builds warm
+ * (a re-probe costs one GET, spread across the cache's natural age spread) while
+ * guaranteeing every entry is rechecked within a release cycle or two.
+ */
+export const CACHE_TTL_MS = 30 * 24 * 60 * 60 * 1_000
 /** Set to any non-empty value to build from cache alone, performing zero network requests. */
 export const SKIP_ENV_VAR = "SKIP_LINK_PREVIEWS"
 
@@ -50,6 +58,21 @@ export type LinkPreviewCache = Record<string, LinkPreview>
  */
 export function createFailedPreview(): LinkPreview {
   return { title: "", description: "", frameable: false, fetchedAt: new Date().toISOString() }
+}
+
+/**
+ * Decides whether a cached preview is old enough to be re-probed.
+ *
+ * An unparseable `fetchedAt` counts as expired, so a hand-edited or corrupt entry heals
+ * itself on the next build rather than being trusted forever.
+ *
+ * @param preview - The cached preview to age-check.
+ * @returns True when the entry should be treated as a cache miss.
+ */
+export function isPreviewExpired(preview: LinkPreview): boolean {
+  const fetchedAt = Date.parse(preview.fetchedAt)
+  if (Number.isNaN(fetchedAt)) return true
+  return Date.now() - fetchedAt > CACHE_TTL_MS
 }
 
 /**
@@ -88,21 +111,34 @@ export function writeCacheToFile(): void {
 }
 
 /**
- * Extracts the `frame-ancestors` directive from a Content-Security-Policy header.
+ * Extracts the governing `frame-ancestors` directive from a Content-Security-Policy
+ * header value.
+ *
+ * A single header value can carry several comma-separated policies, and `Headers.get()`
+ * joins duplicate CSP response headers with ", " — so the value must be split on ","
+ * into policies before each policy is split on ";" into directives. Splitting on ";"
+ * alone swallows the first directive of every policy after the first.
+ *
+ * Browsers enforce the intersection of all delivered policies, so when more than one
+ * policy names `frame-ancestors` the most restrictive one governs.
  *
  * @param cspHeader - Raw header value, or null when the header is absent.
- * @returns The directive's source tokens, or null when the directive is not present.
+ * @returns The governing directive's source tokens, or null when no policy names it.
  */
 export function parseFrameAncestors(cspHeader: string | null): string[] | null {
   if (!cspHeader) return null
-  for (const directive of cspHeader.split(";")) {
-    const tokens = directive.trim().split(/\s+/)
-    const directiveName = tokens[0]?.toLowerCase()
-    if (directiveName === "frame-ancestors") {
-      return tokens.slice(1).map((token) => token.toLowerCase())
+  let firstMatch: string[] | null = null
+  for (const policy of cspHeader.split(",")) {
+    for (const directive of policy.split(";")) {
+      const tokens = directive.trim().split(/\s+/)
+      if (tokens[0]?.toLowerCase() !== "frame-ancestors") continue
+      const sources = tokens.slice(1).map((token) => token.toLowerCase())
+      // A source list without a wildcard is the more restrictive one, so it governs.
+      if (!sources.includes("*")) return sources
+      firstMatch ??= sources
     }
   }
-  return null
+  return firstMatch
 }
 
 /**
@@ -116,10 +152,10 @@ export function parseFrameAncestors(cspHeader: string | null): string[] | null {
  * @returns True only when framing is provably allowed.
  */
 export function isFrameable(headers: Headers): boolean {
-  // Any X-Frame-Options value (DENY, SAMEORIGIN, the deprecated ALLOW-FROM, or junk)
-  // means the origin has an opinion about framing that we cannot satisfy.
-  const frameOptions = headers.get("x-frame-options")
-  if (frameOptions !== null && frameOptions.trim() !== "") {
+  // The mere presence of X-Frame-Options (DENY, SAMEORIGIN, the deprecated ALLOW-FROM,
+  // junk, or empty) means the origin has an opinion about framing that we cannot prove
+  // we satisfy. Browsers ignore an empty value, but a needless card is the cheap error.
+  if (headers.get("x-frame-options") !== null) {
     return false
   }
 
@@ -224,22 +260,24 @@ export function normalizePreviewUrl(href: string): string | null {
 }
 
 /**
- * Returns the preview for a URL, probing the network only on a cache miss.
+ * Returns the preview for a URL, probing the network only on a cache miss or an expired
+ * entry.
  *
- * Negative and failed results are cached too, so a dead host is probed once per cache
- * lifetime rather than once per build.
+ * Negative and failed results are cached too, so a dead host is probed once per TTL
+ * window rather than once per build.
  *
  * @param url - Normalized URL to look up.
  * @returns The cached or freshly fetched preview.
  */
 export async function MaybeFetchPreview(url: string): Promise<LinkPreview> {
   const cached = previewCache.get(url)
-  if (cached) {
+  if (cached && !isPreviewExpired(cached)) {
     return cached
   }
   if (process.env[SKIP_ENV_VAR]) {
     logger.info(`${SKIP_ENV_VAR} is set; skipping network probe for ${url}`)
-    return createFailedPreview()
+    // A stale entry still beats nothing when we are explicitly told not to fetch.
+    return cached ?? createFailedPreview()
   }
   const preview = await fetchLinkPreview(url)
   previewCache.set(url, preview)
