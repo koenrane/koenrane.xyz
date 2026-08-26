@@ -46,30 +46,94 @@ test("Internal links show popover on hover (lostpixel)", async ({ page, dummyLin
   await expect(popover).not.toBeVisible()
 })
 
-test("External links render sandboxed previews on hover", async ({ page }) => {
-  const externalLink = page.locator(".external").first()
+test("External links render a card and never an iframe when framing is not permitted", async ({
+  page,
+}) => {
+  // github.com serves X-Frame-Options: DENY, so the build-time probe must not have marked
+  // it frameable and the popover must go straight to the card.
+  const externalLink = page.locator("a.external[href^='https://github.com']").first()
   await expect(externalLink).toBeVisible()
+  await expect(externalLink).not.toHaveAttribute("data-preview-frameable", "true")
+
+  await externalLink.hover()
+  const popover = page.locator(".popover")
+  await expect(popover).toBeVisible()
+
+  await expect(popover.locator(".external-link-preview")).toBeVisible()
+  await expect(popover.locator("iframe")).toHaveCount(0)
+})
+
+test("External card shows the build-time title and description as literal text", async ({
+  page,
+}) => {
+  const externalLink = page.locator("a.external[href^='https://github.com']").first()
+  await expect(externalLink).toBeVisible()
+
+  await externalLink.evaluate((link) => {
+    link.setAttribute("data-preview-title", "<img src=x onerror=alert(1)>Injected")
+    link.setAttribute("data-preview-description", "A description from the remote page.")
+  })
+
+  await externalLink.hover()
+  const summary = page.locator(".popover .external-link-preview")
+  await expect(summary).toBeVisible()
+
+  // The remote-controlled title must be text, not parsed markup.
+  await expect(summary.locator("h3")).toHaveText("<img src=x onerror=alert(1)>Injected")
+  await expect(summary.locator("img")).toHaveCount(0)
+  await expect(summary.locator(".external-link-preview-description")).toHaveText(
+    "A description from the remote page.",
+  )
+})
+
+test("Frameable external links render a sandboxed iframe preview", async ({ page }) => {
+  const externalLink = page.locator("a.external[href^='https://github.com']").first()
+  await expect(externalLink).toBeVisible()
+
+  // Opt this link into the iframe path the way the build-time probe would.
+  await externalLink.evaluate((link) => {
+    link.setAttribute("data-preview-frameable", "true")
+  })
 
   await externalLink.hover()
   const popover = page.locator(".popover")
   await expect(popover).toBeVisible()
 
   const previewFrame = popover.locator(".external-preview-frame iframe")
-  await expect(previewFrame).toBeVisible()
   await expect(previewFrame).toHaveAttribute(
     "sandbox",
     /allow-forms.*allow-pointer-lock.*allow-popups.*allow-same-origin.*allow-scripts/,
   )
 })
 
-test("External popover falls back when iframe load fails", async ({ page }) => {
-  const externalLink = page.locator(".external").first()
+test("Frameable external popover falls back to the card when the iframe is too slow", async ({
+  page,
+}) => {
+  const externalLink = page.locator("a.external[href^='https://github.com']").first()
   await expect(externalLink).toBeVisible()
 
-  const abortRoute = async (route: Route) => {
-    await route.abort()
+  // Opt this link into the iframe path the way the build-time probe would.
+  await externalLink.evaluate((link) => {
+    link.setAttribute("data-preview-frameable", "true")
+  })
+
+  // Longer than the popover's own EXTERNAL_PREVIEW_TIMEOUT_MS, so the timeout wins.
+  const SLOW_RESPONSE_DELAY_MS = 10000
+  const FALLBACK_WAIT_MS = 9000
+  const delayRoute = async (route: Route) => {
+    await new Promise((resolve) => setTimeout(resolve, SLOW_RESPONSE_DELAY_MS))
+    try {
+      await route.fulfill({
+        status: 200,
+        contentType: "text/html",
+        body: "<html><body>slow</body></html>",
+      })
+    } catch {
+      // The test asserts well before this resolves, so the route is often already
+      // discarded by teardown. That is the point of the delay, not a failure.
+    }
   }
-  await page.route("https://github.com/**", abortRoute)
+  await page.route("https://github.com/**", delayRoute)
 
   try {
     await externalLink.hover()
@@ -79,9 +143,9 @@ test("External popover falls back when iframe load fails", async ({ page }) => {
     const fallback = popover.locator(
       ".external-preview-frame.external-preview-frame--fallback .external-link-preview",
     )
-    await expect(fallback).toBeVisible()
+    await expect(fallback).toBeVisible({ timeout: FALLBACK_WAIT_MS })
   } finally {
-    await page.unroute("https://github.com/**", abortRoute)
+    await page.unroute("https://github.com/**", delayRoute)
   }
 })
 

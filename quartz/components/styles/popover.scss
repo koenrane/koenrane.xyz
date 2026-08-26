@@ -145,6 +145,13 @@
     font-weight: 500;
   }
 
+  .external-link-preview {
+    .external-link-preview-description {
+      color: var(--midground);
+      font-size: 0.9rem;
+    }
+  }
+
   .external-preview-frame {
     flex: 1 1 auto;
     min-height: 14rem;
